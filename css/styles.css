@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Pericles";
+    src: url(../fnt/Pericles-Regular.ttf) format("truetype");
+}
+.choice-button {
+    background-color: white;
+    color: black;
+    border: solid 1px gray;
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+    margin: 5px;
+}
+.choice-button:hover {
+    background-color: #cecece;
+}
+.continue-button {
+    margin: 7px 5px 5px 5px;
+}
