@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Take Quiz</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <script src="../test.js"></script>
+    <script src="../cpt/functions.js"></script>
+    <script src="../cpt/question-data.js"></script>
+    <link rel="icon" type="favicon" href="../img/survivalcraft.ico">
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Survivalcraft Trivia</h2>
+            <p id="question">Question Placeholder</p>
+            <div>
+                <input class="choice-button" type="button" id="choice_1" value="Placeholder" onclick="gradeAnswer(this.id)"></input>
+                <input class="choice-button" type="button" id="choice_2" value="Placeholder" onclick="gradeAnswer(this.id)"></input>
+                <input class="choice-button" type="button" id="choice_3" value="Placeholder" onclick="gradeAnswer(this.id)"></input>
+                <input class="choice-button" type="button" id="choice_4" value="Placeholder" onclick="gradeAnswer(this.id)"></input>
+            </div>
+            <div>
+                <input class="continue-button" type="button" id="continue" value="Continue" onclick="continueQuiz(this.id)"></input>
+            </div>
+            <div>
+                <input class="quit-button" type="button" id="quit" value="Quit" onclick="stopQuiz(this.id)"></input>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+<html>

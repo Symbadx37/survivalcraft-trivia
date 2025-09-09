@@ -15,6 +15,7 @@
 - Long (20-30)
 - Custom
 
+18 current questions
 
 ## Question Data Structure
 difficultyTier
