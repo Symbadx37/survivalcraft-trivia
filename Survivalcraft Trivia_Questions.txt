@@ -1,0 +1,115 @@
+* All questions and their answers align with the latest version (2.4) of the game.
+
+TIERS:
+Very Easy
+Easy
+Medium
+Hard
+Very Hard
+
+QUESTIONS:
+VERY EASY: What year did Survivalcraft 1.0 release?
+A) 2009
+B) 2011 (✓)
+C) 2013
+D) 2015
+
+VERY EASY: Which update added splitscreen multiplayer?
+A) 1.29
+B) 2.1 (✓)
+C) 2.2
+D) 2.3
+
+EASY: How many game days does it take for raw meat to rot?
+A) 1
+B) 3 (✓)
+C) 5
+D) 7
+
+EASY: What is the maximum number of triangles allowed for a single furniture design?
+A) 200
+B) 250
+C) 300 (✓)
+D) 350
+
+EASY: What is the natural block color of granite?
+A) Red Orange
+B) Light Gray (✓)
+C) White
+D) Dark Gray
+
+EASY: Is limestone a paintable block?
+A) Yes
+B) No (✓)
+
+MEDIUM: A single, non-adjustable delay gate provides a pulse duartion for how long?
+A) 50
+B) 200 (✓)
+C) 300
+D) 500
+
+MEDIUM: How many magnets can be placed in a single world?
+A) 3 
+B) 5
+C) 8 (✓)
+D) 12
+
+MEDIUM: What additional component is required to craft a connected furniture block?
+A) String
+B) Electric wire (✓)
+C) Iron rod
+D) Germanium Crystal
+
+MEDIUM: What is the maximum insulation amount achievable in any survival mode?
+A) 3.16 clo
+B) 4.72 clo
+C) 5.56 clo
+D) 6.49 clo (✓)
+
+MEDIUM: An electric button provides a pulse duration for how long?
+A) 100 ms (✓)
+B) 150 ms
+C) 200 ms
+D) 250 ms
+
+MEDIUM: Which of the following land animals are NOT in the game?
+A) Cheetah (✓)
+B) Gnu Antelope
+C) Rhinocerous
+D) Cassowary
+
+MEDIUM: Which of the following ocean animals are NOT in the game?
+A) Starfish
+B) Killer Whale (✓)
+C) Great White Shark
+D) Beluga
+
+MEDIUM: Can sulphur be used as a fuel source when using a furnace?
+A) Yes, it can smelt all items.
+B) Yes, but it can only smelt some items. (✓)
+C) No, it cannot smelt any items.
+D) No, the furnace will explode.
+
+HARD: If a campfire is exposed to rain or snow, by how much faster does it deplete?
+A) 20%
+B) 40%
+C) 60%
+D) 80% (✓)
+
+HARD: How many unique sound generator sounds are there?
+A) 287
+B) 324
+C) 396
+D) 439 (✓)
+
+HARD: How do you make a Cyan Paint bucket?
+A) Smelt water with white pigment, then smelt white paint with purple flower, then smelt purple paint with malachite.
+B) Smelt water with saltpeter, then smelt white paint with malachite, then smelt pale cyan paint with coal.
+C) Smelt water with white pigment, then smelt white paint with malachite, then smelt pale cyan paint with coal. (✓)
+D) Craft white paint with malachite and coal.
+
+VERY HARD: How do you craft Green Flickering Large Burst (Low) fireworks?
+A) Two sulphur, one coal, two gunpower, one canvas, pale green paint.
+B) One sulphur, two coal, two gunpowder, green paint.
+C) Two sulphur, one coal, four gunpowder, pale green paint. (✓)
+D) Two coal, four gunpowder, green paint.
