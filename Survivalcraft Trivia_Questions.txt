@@ -38,10 +38,6 @@ B) Light Gray (✓)
 C) White
 D) Dark Gray
 
-EASY: Is limestone a paintable block?
-A) Yes
-B) No (✓)
-
 MEDIUM: A single, non-adjustable delay gate provides a pulse duartion for how long?
 A) 50
 B) 200 (✓)
@@ -112,4 +108,5 @@ VERY HARD: How do you craft Green Flickering Large Burst (Low) fireworks?
 A) Two sulphur, one coal, two gunpower, one canvas, pale green paint.
 B) One sulphur, two coal, two gunpowder, green paint.
 C) Two sulphur, one coal, four gunpowder, pale green paint. (✓)
+
 D) Two coal, four gunpowder, green paint.
