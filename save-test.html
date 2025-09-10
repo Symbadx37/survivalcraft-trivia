@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
-    <title>SC Trivia - Home</title>
+    <title>Save Test</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/save.js"></script>
     <link rel="icon" type="favicon" href="img/survivalcraft.ico">
 </head>
 <body>
@@ -12,6 +13,9 @@
         </nav>
     </header>
     <main>
+        <input id="save" type="button" value="Save" onclick="saveData(this.id)"></input>
+        <input id="read" type="button" value="Read" onclick="readData(this.id)"></input>
+        <input id="clear" type="button" value="Clear" onclick="clearData(this.id)"></input>
     </main>
     <footer>
     </footer>

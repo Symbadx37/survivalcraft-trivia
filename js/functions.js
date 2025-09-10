@@ -14,10 +14,7 @@ function startQuiz(id) {
         getRandomQuestion();
         console.log("Random Difficulty " + difficultyIndex)
         console.log("Random Question " + questionIndex)
-
-        loadQuiz();
         window.location.replace("take-quiz.html");
-        console.log("Start quiz");
 }
 
 function initializeTier(quizTier) {
@@ -132,7 +129,7 @@ function getRandomQuestion() {
 }
 
 function continueQuiz() { // Tracks quiz progress, generates new question
-
+    getElement("question").innerHTML = "test";
 }
 
 function gradeQuiz() { // Validates choice input, tracks quiz score, displays question solution
@@ -141,4 +138,5 @@ function gradeQuiz() { // Validates choice input, tracks quiz score, displays qu
 
 function loadQuiz() { // Accepts indexes, accesses string arrays, loads DOM with question/choice data
     getElement("question").innerHTML = "test";
+    console.log("Question loaded");
 }
