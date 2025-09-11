@@ -1,24 +1,34 @@
-// Save data
-function saveData(id) {
-    if (id == "save") {
-        let value = 5;
-        sessionStorage.setItem("data", value);
-        console.log("Data = " + sessionStorage.getItem("data"));
+// Saves user data to local storage
+function saveData(data) {
+    localStorage.setItem('data', JSON.stringify(data));
+    console.log("[SYSTEM]: User data saved to local storage" + " (" + getTime() + ").");
+}
+
+// Reads saved user data and prints to console
+function readData() {
+    if (typeof localStorage.data !== "undefined") {
+        let savedData = getData();
+        console.log("[SYSTEM]: User data (quizTier) = " + JSON.parse(savedData.quizTier) + "."
+           + "\n" + "[SYSTEM]: User data (quizCategory) = " + JSON.parse(savedData.quizCategory) + "."
+           + "\n" + "[SYSTEM]: User data (quizLength) = " + JSON.parse(savedData.quizLength) + "."
+           + "\n" + "[SYSTEM]: User data (quizDuration) = " + JSON.parse(savedData.quizDuration) + "."
+        );
+    } else {
+        console.log("[SYSTEM]: User data is undefined" + " (" + getTime() + ").");
     }
 }
 
-// Read data
-function readData(id) {
-    if (id == "read") {
-        let value = sessionStorage.getItem("data");
-        console.log("Data = " + sessionStorage.getItem("data"));
+// Retrieves saved user data from local storage
+function getData() {
+    let data = {};
+    if (typeof localStorage.data !== "undefined") {
+        data = JSON.parse(localStorage.data);
     }
+    return data;
 }
 
-// Clear data
-function clearData(id) {
-    if (id == "clear") {
-        let value = sessionStorage.removeItem("data");
-        console.log(sessionStorage.getItem("Data = " + "data"));
-    }
+// Clears saves user data from local storage
+function clearData() {
+    localStorage.removeItem('data')
+    console.log("[SYSTEM]: User data cleared from local storage" + " (" + getTime() + ").");
 }

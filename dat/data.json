@@ -1,0 +1,59 @@
+// Parse JSON
+questionIndex[0].question;
+
+{
+    "questionIndex": [
+        {
+            "category_general": [
+                {
+                    "difficulty_ve": [
+                        {
+                            "question": "",
+                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                            "solution": "This is a solution.",
+                            "answer": "A"  
+                        },
+                        {
+                            "question": "",
+                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                            "solution": "This is a solution.",
+                            "answer": "A"  
+                        },
+                        {
+                            "question": "",
+                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                            "solution": "This is a solution.",
+                            "answer": "A"  
+                        },
+                    ],
+                    "difficulty_e": [
+                        {
+                            "question": "",
+                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                            "solution": "This is a solution.",
+                            "answer": "A"  
+                        },
+                        {
+                            "question": "",
+                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                            "solution": "This is a solution.",
+                            "answer": "A"  
+                        },
+                        {
+                            "question": "",
+                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                            "solution": "This is a solution.",
+                            "answer": "A"  
+                        },
+                    ]
+                }
+            ] 
+        },
+
+          {
+            "category_mechanics": [
+                
+            ] 
+        }
+    ]
+}

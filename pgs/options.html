@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css"/>
     <script src="../js/functions.js" defer></script>
-    <script src="../js/question-data.js" defer></script>
+    <script src="../js/data.js" defer></script>
+    <script src="../js/save.js" defer></script>
     <link rel="icon" type="favicon" href="../img/survivalcraft.ico">
 </head>
 <body>
@@ -18,42 +19,54 @@
         <h3>Difficulty Tier</h3>
         <p>Determines the difficulty of each question.</p>
         <div>
-            <input class="opt-button" id="tier_1" type="button" value="Beginner" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="tier_2" type="button" value="Intermediate" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="tier_3" type="button" value="Experienced" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="tier_4" type="button" value="Veteran" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="tier_1" type="button" value="Beginner" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="tier_2" type="button" value="Intermediate" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="tier_3" type="button" value="Experienced" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="tier_4" type="button" value="Veteran" onclick="initializeQuiz(this.id)"></input>
+        </div>
+        <div style="margin-top: 10px">
+            <input class="option-button" id="tier_rdm" type="button" value="RANDOM" onclick="initializeQuiz(this.id)"></input>
         </div>
 
         <h3>Question Category</h3>
         <p>Determines what topics questions will cover.</p>
         <div>
-            <input class="opt-button" id="cat_1" type="button" value="General" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="cat_1" type="button" value="Survival" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="cat_2" type="button" value="Crafting" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="cat_3" type="button" value="Electrics" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="cat_4" type="button" value="Random" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="category_1" type="button" value="General" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="category_2" type="button" value="Game Mechanics" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="category_3" type="button" value="Crafting Recipes" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="category_4" type="button" value="Updates History" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="category_5" type="button" value="Electrics" onclick="initializeQuiz(this.id)"></input>
+        </div>
+        <div style="margin-top: 10px">
+            <input class="option-button" id="category_rdm" type="button" value="RANDOM" onclick="initializeQuiz(this.id)"></input>
         </div>
 
         <h3>Question Count</h3>
         <p>Determines the total number of questions.</p>
         <div>
-            <input class="opt-button" id="length_1" type="button" value="Short" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="length_2" type="button" value="Moderate" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="length_3" type="button" value="Long" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="length_1" type="button" value="Low" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="length_2" type="button" value="Medium" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="length_3" type="button" value="High" onclick="initializeQuiz(this.id)"></input>
+        </div>
+        <div style="margin-top: 10px">
+            <input class="option-button" id="length_rdm" type="button" value="RANDOM" onclick="initializeQuiz(this.id)"></input>
         </div>
 
         <h3>Time Limit</h3>
         <p>Determines the amount of time allotted.</p>
         <div>
-            <input class="opt-button" id="time_1" type="button" value="Short" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="time_2" type="button" value="Moderate" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="time_3" type="button" value="Long" onclick="initializeQuiz(this.id)"></input>
-            <input class="opt-button" id="time_4" type="button" value="None" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="duration_1" type="button" value="Easy" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="duration_2" type="button" value="Medium" onclick="initializeQuiz(this.id)"></input>
+            <input class="option-button" id="duration_3" type="button" value="Hard" onclick="initializeQuiz(this.id)"></input>
+        </div>
+        <div style="margin-top: 10px">
+            <input class="option-button" id="duration_none" type="button" value="NONE" onclick="initializeQuiz(this.id)"></input>
         </div>
 
+        <h3>Start Quiz</h3>
         <div>
-            <input class="start-button" type="button" id="start" value="Start Quiz" onclick="startQuiz(this.id)"></input>
-            <input class="exit-button" type="button" id="exit" value="Exit" onclick="goHome(this.id)"></input>
+            <input class="start-button" type="button" id="start" value="Start" onclick="startQuiz(this.id)"></input>
+            <input class="back-button" type="button" id="back" value="Back" onclick="stopQuiz(this.id)"></input>
         </div>
     </main>
     <footer>

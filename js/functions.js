@@ -1,24 +1,64 @@
 // Global variables
-let quizTier, quizLength, activeTierArray;
-let difficultyIndex, questionIndex;
-const questionCount_ve = 2, questionCount_e = 3, questionCount_m = 8, questionCount_h = 3, questionCount_vh = 1;
-const questionCount_total = questionCount_ve + questionCount_e + questionCount_m + questionCount_h + questionCount_vh;
+let quizTier, quizCategory, quizLength, quizDuration;
+let categoryIndex, difficultyIndex, questionIndex, tierProbability;
 
-// Global functions
+// Question index
+const questionCount = {
+    ve_general: 0, ve_mechanics: 0, ve_recipes: 0, ve_updates: 0, ve_electrics: 0,
+    e_general: 0, e_mechanics: 0, e_recipes: 0, e_updates: 0, e_electrics: 0,
+    m_general: 0, m_mechanics: 0, m_recipes: 0, m_updates: 0, m_electrics: 0,
+    h_general: 0, h_mechanics: 0, h_recipes: 0, h_updates: 0, h_electrics: 0,
+    ve_general: 0, ve_mechanics: 0, ve_recipes: 0, ve_updates: 0, ve_electrics: 0,
+};
+
+const questionTotal = 
+    questionCount.ve_general + questionCount.ve_mechanics + questionCount.ve_recipes + questionCount.ve_updates + questionCount.ve_electrics
+    + questionCount.e_general + questionCount.e_mechanics + questionCount.e_recipes + questionCount.e_updates + questionCount.e_electrics
+    + questionCount.m_general + questionCount.m_mechanics + questionCount.m_recipes + questionCount.m_updates + questionCount.m_electrics
+    + questionCount.h_general + questionCount.h_mechanics + questionCount.h_recipes + questionCount.h_updates + questionCount.h_electrics
+    + questionCount.vh_general + questionCount.vh_mechanics + questionCount.vh_recipes + questionCount.vh_updates + questionCount.vh_electrics;
+
+// GLOBAL FUNCTIONS
+// Retrieves user data from local storage and saves it to global variables
+document.addEventListener('DOMContentLoaded', 
+    function() {
+        let savedData = getData();
+        quizTier = savedData.quizTier;
+        quizCategory = savedData.quizCategory;
+        quizLength = savedData.quizLength;
+        quizDuration = savedData.quizDuration;
+
+        console.log("[SYSTEM]: User data saved to global variables" + " (" + getTime() + ").");
+    }
+);
+
 function getElement(id) {
     return document.getElementById(id);
 }
 
+function getDate() {
+    let currentDate = new Date().toLocaleDateString();
+    return currentDate;
+}
+
+function getTime() {
+    let currentTime = new Date().toLocaleTimeString();
+    return currentTime;
+}
+
 function startQuiz(id) {    
     if (id == "start")
-        getRandomQuestion();
-        console.log("Random Difficulty " + difficultyIndex)
-        console.log("Random Question " + questionIndex)
-        window.location.replace("take-quiz.html");
+        // getRandomQuestion();
+        window.location.replace("quiz.html");
+}
+
+function stopQuiz(id) {    
+    if (id == "back")
+        window.location.replace("../index.html");
 }
 
 function initializeTier(quizTier) {
-    // Probability arrays
+    // Objects for storing probabilities
     const probability_beginner = {1:0.55, 2:0.4, 3:0.05, 4:0.0, 5:0.0}; // Very Easy, Easy, and Medium questions.
     const probability_intermediate = {1:0.4, 2:0.3, 3:0.15, 4:0.5, 5:0.0}; // Very Easy, Easy, Medium, and Hard questions.
     const probability_experienced = {1:0.15, 2:0.40, 3:0.3, 4:0.1, 5:0.05}; // Very Easy, Easy, Medium, Hard, and Very Hard questions.
@@ -27,63 +67,99 @@ function initializeTier(quizTier) {
     // Assign active array
     switch(quizTier) {
         case "1":
-            activeTierArray = probability_beginner;
+            tierProbability = probability_beginner;
             break;
         case "2":
-            activeTierArray = probability_intermediate;
+            tierProbability = probability_intermediate;
             break;
         case "3":
-            activeTierArray = probability_experienced;
+            tierProbability = probability_experienced;
             break;
         case "4":
-            activeTierArray = probability_veteran;
+            tierProbability = probability_veteran;
             break;
         default:
-            activeTierArray = probability_beginner;
+            tierProbability = probability_beginner;
     }
 }
 
 function initializeQuiz(id) {
+    let data = {};
     switch(id) {
         case "tier_1":
-            quizTier = 1;
+            data.quizTier = 1;
             break;
         case "tier_2":
-            quizTier = 2;
+            data.quizTier = 2;
             break;
         case "tier_3":
-            quizTier = 3;
+            data.quizTier = 3;
             break;
         case "tier_4":
-            quizTier = 4;
+            data.quizTier = 4;
+            break;
+         case "tier_rdm":
+            data.quizTier = 5;
+            break;
+        case "category_1":
+            data.quizCategory = 1;
+            break;
+        case "category_2":
+            data.quizCategory = 2;
+            break;
+        case "category_3":
+            data.quizCategory = 3;
+            break;
+        case "category_4":
+            data.quizCategory = 4;
+            break;
+        case "category_5":
+            data.quizCategory = 5;
+            break;
+        case "category_rdm":
+            data.quizCategory = 6;
             break;
         case "length_1":
-            quizLength = 1;
+            data.quizLength = 1;
             break;
         case "length_2":
-            quizLength = 2;
+            data.quizLength = 2;
             break;
         case "length_3":
-            quizLength = 3;
+            data.quizLength = 3;
+            break;
+        case "length_rdm":
+            data.quizLength = 4;
+            break;
+        case "duration_1":
+            data.quizDuration = 1;
+            break;
+        case "duration_2":
+            data.quizDuration = 2;
+            break;
+        case "duration_3":
+            data.quizDuration = 3;
+            break;
+        case "duration_none":
+            data.quizDuration = 4;
             break;
         }
-    console.log("Tier = " + quizTier);
-    console.log("Length = " + quizLength);
+    saveData(data);
     initializeTier(quizTier);
 }
 
 function getRandomQuestion() {
     // Get probability sum
     let sum = 0;
-    for(let i in activeTierArray){
-        sum += activeTierArray[i];
+    for(let i in tierProbability){
+        sum += tierProbability[i];
     }
 
     // Generate random difficulty
     function generateRandomDifficulty() {
         let value = Math.random() * sum;
-        for (let randomDifficulty in activeTierArray) {
-            value -= activeTierArray[randomDifficulty];
+        for (let randomDifficulty in tierProbability) {
+            value -= tierProbability[randomDifficulty];
 
             if (value <= 0) {
                 console.log("Random Difficulty = " + randomDifficulty);
