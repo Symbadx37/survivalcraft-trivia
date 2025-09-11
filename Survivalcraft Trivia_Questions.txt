@@ -7,7 +7,6 @@ Medium
 Hard
 Very Hard
 
-QUESTIONS:
 VERY EASY: What year did Survivalcraft 1.0 release?
 A) 2009
 B) 2011 (✓)
@@ -108,5 +107,204 @@ VERY HARD: How do you craft Green Flickering Large Burst (Low) fireworks?
 A) Two sulphur, one coal, two gunpower, one canvas, pale green paint.
 B) One sulphur, two coal, two gunpowder, green paint.
 C) Two sulphur, one coal, four gunpowder, pale green paint. (✓)
-
 D) Two coal, four gunpowder, green paint.
+
+
+TIER: Question
+A)
+B)
+C)
+D)
+
+General
+Game Mechanics
+Crafting & Smelting
+Updates History
+Electrics
+
+GENERAL
+What year did Survivalcraft 1.0 release?
+(2011)
+What year did Survivalcraft 2.0 release?
+(2016)
+What date did Survivalcraft 1.0 release?
+(November 16th, 2011)
+What date did Survivalcraft 2.0 release?
+(December 10th, 2016)
+When did Survivalcraft release on Android?
+(October 14th, 2012)
+When did Survivalcraft release on Amazon?
+(November 6th, 2012)
+When did Survivalcraft release on iOS?
+(April 2013)
+When did Survivalcraft 2 release on Windows Store?
+(December 14th, 2016)
+When did Survivalcraft 2 release on Steam?
+(It hasn't)
+When did Survivalcraft Day One release?
+(December 10th, 2019)
+How long is the trial period for Survivalcraft Day One?
+(20 minutes)
+
+Who is the developer of Survivalcraft?
+(Igor Kalicinski)
+What is the name of the company that developed and published Survivalcraft?
+(Candy Rufus Games)
+What programming language is Survivalcraft written in?
+(C#)
+What game engine does Survivalcraft utilize?
+(Engine Power)
+What is the name of the official Survivalcraft Discord server?
+(Survivalcraft Content Community)
+What online service is the official Survivalcraft forum hosted with?
+(Tapatalk)
+
+UPDATES HISTORY
+Which update added splitscreen multiplayer?
+(2.1)
+Which update increased the terrain height?
+(2.2)
+Which were electrics first introduced? 
+(Alpha 1.19)
+Which update added river generation?
+(2.1)
+Which update added food rot?
+(2.1)
+Which update added sickness and flu?
+(2.1)
+Which update added NAND and NOR logic gates?
+(1.29)
+Which update added multicolored LEDs?
+(2.1)
+Which update added Mimosa trees?
+(2.2)
+Which update added Tall Spruce trees?
+(1.29)
+Which update added colored wires?
+(2.0)
+Which update added pistons?
+(2.0)
+Which update added changing seasons?
+(2.4)
+Which update improved world file compression?
+(2.3)
+Which update added dispensers?
+(1.28)
+Which update added Community Content?
+(1.20)
+Which update added Poplar trees?
+(2.4)
+Which update added fireworks?
+(1.28)
+Which update added custom palette colors?
+(2.1)
+Which update added Adventure mode?
+(Alpha 1.10)
+Which update added Survival mode?
+(2.3)
+Which update added integrated Dropbox support?
+(Alpha 1.9)
+Which update removed defunct transfer.sh support?
+(2.4)
+When was a search bar added to Community Content?
+(2.4)
+Which update improved the Community Content server, i.e. making it self-hosted instead of cloud-based?
+(None of the above)
+Which update added wildboars?
+(Alpha 1.7)
+Which update added precipitation?
+(Alpha 1.18)
+Which update added copper tools and armor?
+(1.29)
+Which update added the Drum instrument for the sound generator?
+(1.29)
+Which update added custom island terrain generation?
+(2.1)
+Which update made lightbulbs paintable?
+(2.0)
+Which update added great white sharks?
+(2.2)
+Which update added the North Star to the night sky?
+(2.4)
+Which update added explosion ground shake?
+(2.4)
+Which update added the Bass instrument for the sound generator?
+(2.4)
+Which update added variable field of view to the settings menu?
+(2.4)
+Which update added layered fog?
+(2.4)
+Which update added dirt slabs and stairs?
+(2.4)
+Which update added iron signs and ladders?
+(1.28)
+Which update added furniture?
+(2.0)
+Which update added custom player death messages?
+(2.0)
+Which update added semiconductor block?
+(2.0)
+Which update added marble block?
+(Alpha 1.3)
+Which update added the adjustable delay gate?
+(1.29)
+Which update added support for 32-Bit block data?
+(1.29)
+Which update added dimmable lightbulbs?
+(1.29)
+Which update reorganized the creative inventory into seperate block categories?
+(1.29)
+Which update changed motion detector functionality, allowing it to detect piston, projectile, and pickable movement?
+(2.3)
+When was the fixed camera mode added?
+(1.29)
+Which update added clothes dyeing?
+(1.26)
+Which update added incendiary kegs?
+(2.0)
+When were Christmas trees first added?
+(Alpha 1.2)
+Which update added analog electric components?
+(1.23)
+Which update added XOR logic gates?
+(1.21)
+Which update added bulls?
+(Alpha 1.10)
+Which update added the "Despair" button?
+(Alpha 1.1)
+Which update added male and female player distinctions?
+(2.1)
+When were explosives first added?
+(Alpha 1.11)
+Which update added polar bears?
+(Alpha 1.16)
+Which update added pigeons?
+(2.3)
+Which update had zero content additions?
+(Alpha 1.6)
+Which update added muskets?
+(1.28)
+Which update enabled werewolves to interact with blocks, such as opening doors or pressing buttons?
+(2.4)
+What update added the Recipaedia?
+(Alpha 1.1)
+Which update added furnaces?
+(Alpha 1.3)
+Which update added brick blocks?
+(Alpha 1.4)
+Which update added Cruel mode?
+(Alpha 1.7)
+Which update added Creative mode?
+(Alpha 1.8)
+Which update added wooden signs?
+(Alpha 1.10)
+Which update allowed for renaming of existing worlds?
+(Alpha 1.8)
+Which update allowed for flat terrain generation?
+(Alpha 1.12)
+Which update added egg laying?
+(Alpha 1.13)
+Which update added a single block?
+(Alpha 1.14)
+Which update added cactus?
+(Alpha 1.15)
