@@ -1,59 +1,46 @@
-// Parse JSON
-questionIndex[0].question;
-
-{
-    "questionIndex": [
+{   
+    "category_general": [
         {
-            "category_general": [
+            "difficulty_veryEasy": [
                 {
-                    "difficulty_ve": [
-                        {
-                            "question": "",
-                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                            "solution": "This is a solution.",
-                            "answer": "A"  
-                        },
-                        {
-                            "question": "",
-                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                            "solution": "This is a solution.",
-                            "answer": "A"  
-                        },
-                        {
-                            "question": "",
-                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                            "solution": "This is a solution.",
-                            "answer": "A"  
-                        },
-                    ],
-                    "difficulty_e": [
-                        {
-                            "question": "",
-                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                            "solution": "This is a solution.",
-                            "answer": "A"  
-                        },
-                        {
-                            "question": "",
-                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                            "solution": "This is a solution.",
-                            "answer": "A"  
-                        },
-                        {
-                            "question": "",
-                            "choices": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                            "solution": "This is a solution.",
-                            "answer": "A"  
-                        },
-                    ]
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "A"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "A"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "A"  
                 }
-            ] 
-        },
-
-          {
-            "category_mechanics": [
-                
-            ] 
+            ],
+            "difficulty_easy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "A"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "A"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "A"  
+                }
+            ]
         }
-    ]
+    ] 
 }
