@@ -1,0 +1,522 @@
+{   
+    "category_general": [
+        {
+            "difficulty_veryEasy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_easy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_medium": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_hard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_veryHard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ]
+        }
+    ],
+    "category_mechanics": [
+        {
+            "difficulty_veryEasy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_easy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_medium": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_hard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_veryHard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ]
+        }
+    ],
+    "category_recipes": [
+        {
+            "difficulty_veryEasy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_easy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_medium": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_hard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_veryHard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ]
+        }
+    ],
+    "category_updates": [
+        {
+            "difficulty_veryEasy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_easy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_medium": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_hard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_veryHard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ]
+        }
+    ],
+    "category_electrics": [
+        {
+            "difficulty_veryEasy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_easy": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_medium": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_hard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ],
+            "difficulty_veryHard": [
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "This is a solution.",
+                    "answer": "a"  
+                }
+            ]
+        }
+    ]
+}

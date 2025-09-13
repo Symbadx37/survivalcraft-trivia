@@ -1,4 +1,3 @@
-Rework system for storing question data; use objects instead of arrays.
 Create system for tracking generated question indexes.
 Update random question generator to allow priorQuestionIndex handling.
 Update random question generator to allow quizCategory handling.
