@@ -24,8 +24,6 @@
 - Insane; 15 seconds per question (PLANNED)
 - NONE; no time limit is allotted.
 
-
-
 # Internal Variables
 ## Question Tiers
 - Very Easy

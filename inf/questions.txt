@@ -74,6 +74,184 @@ VERY HARD: How do you craft Green Flickering Large Burst (Low) fireworks?
 "Two sulphur, one coal, four gunpowder, pale green paint.",
 "Two coal, four gunpowder, green paint." (C)
 
+UPDATES HISTORY
+VERY EASY: Which update added splitscreen multiplayer?
+(2.1)
+VERY EASY: Which update increased the terrain height to 256 blocks?
+(2.2)
+VERY EASY: Which update added pistons?
+(2.0)
+VERY EASY: Which update added changing seasons?
+(2.4)
+VERY EASY: Which update added furniture?
+(2.0)
+
+EASY: Which update enabled werewolves to interact with blocks, such as opening doors or pressing buttons?
+(2.4)
+EASY: Which update added food rot?
+(2.1)
+EASY: Which update added colored wires?
+(2.0)
+EASY: Which update added dispensers?
+(1.28)
+EASY: Which update added Poplar trees?
+(2.4)
+EASY: When was a search bar added to Community Content?
+(2.4)
+EASY: Which update added Survival mode?
+(2.3)
+EASY: Which update added copper tools and armor?
+(1.29)
+EASY: Which update added explosion ground shake?
+(2.4)
+EASY: Which update added the Bass instrument for the sound generator?
+(2.4)
+EASY: Which update added layered fog?
+(2.4)
+EASY: Which update added dirt slabs and stairs?
+(2.4)
+EASY: Which update added pigeons?
+(2.3)
+EASY: Which update added the hammer tool?
+(2.0)
+EASY: Which update added the stone axe?
+(2.2)
+EASY: Which update added the wooden club?
+(2.2)
+EASY: Which update added the stone club?
+(2.2)
+
+MEDIUM: Which were electrics first introduced? 
+(Alpha 1.19)
+MEDIUM: Which update added river generation?
+(2.1)
+MEDIUM: Which update improved world file compression?
+(2.3)
+MEDIUM: Which update added sickness and flu?
+(2.1)
+MEDIUM: Which update added multicolored LEDs?
+(2.1)
+MEDIUM: Which update added Mimosa trees?
+(2.2)
+MEDIUM: Which update added Tall Spruce trees?
+(1.29)
+MEDIUM: Which update added fireworks?
+(1.28)
+MEDIUM: Which update added the Drum instrument for the sound generator?
+(1.29)
+MEDIUM: Which update added custom island terrain generation?
+(2.1)
+MEDIUM: Which update added great white sharks?
+(2.2)
+MEDIUM: Which update added the North Star to the night sky?
+(2.4)
+MEDIUM: Which update added variable field of view to the settings menu?
+(2.4)
+MEDIUM: Which update added iron signs and ladders?
+(1.28)
+MEDIUM: Which update added the adjustable delay gate?
+(1.29)
+MEDIUM: When was the fixed camera mode added?
+(1.29)
+MEDIUM: Which update added clothes dyeing?
+(1.26)
+MEDIUM: Which update added incendiary kegs?
+(2.0)
+MEDIUM: Which update added male and female player distinctions?
+(2.1)
+MEDIUM: Which update added muskets?
+(1.28)
+MEDIUM: Which update added the player leveling system?
+(2.1)
+MEDIUN: Which update added moose?
+(1.27)
+
+HARD: Which update added NAND and NOR logic gates?
+(1.29)
+HARD: Which update added custom palette colors?
+(2.1)
+HARD: Which update added Adventure mode?
+(Alpha 1.10)
+HARD: Which update added integrated Dropbox support?
+(Alpha 1.9)
+HARD: Which update removed defunct transfer.sh support?
+(2.4)
+HARD: Which update added wildboars?
+(Alpha 1.7)
+HARD: Which update added Community Content?
+(1.20)
+HARD: Which update improved the Community Content server, i.e. making it self-hosted instead of cloud-based?
+(None of the above)
+HARD: Which update added precipitation?
+(Alpha 1.18)
+HARD: Which update made lightbulbs paintable?
+(2.0)
+HARD: Which update added custom player death messages?
+(2.0)
+HARD: Which update added semiconductor block?
+(2.0)
+HARD: Which update added dimmable lightbulbs?
+(1.29)
+HARD: Which update reorganized the creative inventory into seperate block categories?
+(1.29)
+HARD: Which update added analog electric components?
+(1.23)
+HARD: Which update added bulls?
+(Alpha 1.10)
+HARD: When were explosives first added?
+(Alpha 1.11)
+HARD: Which update added polar bears?
+(Alpha 1.16)
+HARD: Which update added horizontal creative flight to the settings menu?
+(2.0)
+HARD: When was the Survivalcraft 2 icon added?
+(2.1)
+HARD: Which update added music to the main menu?
+(2.1)
+HARD: Which update added digging cracks when breaking blocks?
+(1.28)
+
+VERY HARD: Which update added marble block?
+(Alpha 1.3)
+VERY HARD: Which update changed motion detector functionality, allowing it to detect piston, projectile, and pickable movement?
+(2.3)
+VERY HARD: When were Christmas trees first added?
+(Alpha 1.2)
+VERY HARD: Which update added support for 32-Bit block data?
+(1.29)
+VERY HARD: Which update added XOR logic gates?
+(1.21)
+VERY HARD: Which update added the "Despair" button?
+(Alpha 1.1)
+VERY HARD: Which update added the Recipaedia?
+(Alpha 1.1)
+VERY HARD: Which update added furnaces?
+(Alpha 1.3)
+VERY HARD: Which update added brick blocks?
+(Alpha 1.4)
+VERY HARD: Which update added Cruel mode?
+(Alpha 1.7)
+VERY HARD: Which update added Creative mode?
+(Alpha 1.8)
+VERY HARD: Which update added wooden signs?
+(Alpha 1.10)
+VERY HARD: Which update allowed for renaming of existing worlds?
+(Alpha 1.8)
+VERY HARD: Which update allowed for flat terrain generation?
+(Alpha 1.12)
+VERY HARD: Which update added egg laying?
+(Alpha 1.13)
+VERY HARD: Which update added a single block?
+(Alpha 1.14)
+VERY HARD: Which update added cactus?
+(Alpha 1.15)
+VERY HARD: Which update had zero content additions?
+(Alpha 1.6)
+VERY HARD: Which update added the Engine Power logo?
+(1.27)
+VERY HARD: Which update added support for left-handed controls?
+(1.28)
+
 ELECTRICS
 EASY: An electric button provides a pulse duration for how long?
 100 ms, 150 ms, 200 ms, 250 ms (A)
