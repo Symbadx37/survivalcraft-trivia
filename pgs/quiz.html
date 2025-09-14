@@ -4,10 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css"/>
-    <script src="../js/Quiz_Actions.js" defer></script>
-    <script src="../js/Quiz_Initialize.js" defer></script>
-    <script src="../js/Quiz_Save.js" defer></script>
-    <script type="module" src="../js/Quiz_Data.js"></script>
+    <script src="../js/quizActions.js" defer></script>
+    <script src="../js/initializeQuiz.js" defer></script>
+    <script src="../js/updateLocalStorage.js" defer></script>
+    <script src="../js/generateQuestion.js" defer></script>
+    <script type="module" src="../js/lookupQuestionData.js" defer></script>
     <link rel="icon" type="favicon" href="../img/survivalcraft.ico">
 </head>
 <body>
@@ -18,12 +19,12 @@
     <main>
         <div>
             <h2>Survivalcraft Trivia</h2>
-            <p id="question">Question Placeholder</p>
+            <p id="question">null</p>
             <div>
-                <input class="choice-button" type="button" id="choice_1" value="Placeholder" onclick="gradeAnswer(this.id)"></input>
-                <input class="choice-button" type="button" id="choice_2" value="Placeholder" onclick="gradeAnswer(this.id)"></input>
-                <input class="choice-button" type="button" id="choice_3" value="Placeholder" onclick="gradeAnswer(this.id)"></input>
-                <input class="choice-button" type="button" id="choice_4" value="Placeholder" onclick="gradeAnswer(this.id)"></input>
+                <input class="choice-button" type="button" id="choice_1" value="" onclick="gradeQuiz(this.id)"></input>
+                <input class="choice-button" type="button" id="choice_2" value="" onclick="gradeQuiz(this.id)"></input>
+                <input class="choice-button" type="button" id="choice_3" value="" onclick="gradeQuiz(this.id)"></input>
+                <input class="choice-button" type="button" id="choice_4" value="" onclick="gradeQuiz(this.id)"></input>
             </div>
             <div>
                 <input class="continue-button" type="button" id="continue" value="Continue" onclick="continueQuiz(this.id)"></input>

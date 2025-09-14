@@ -1,0 +1,66 @@
+function generateQuestion() {
+    if (typeof localStorage.indexData === "undefined") initializeData("indexData_generatedIndexes");
+    
+    let indexData = getData("indexData");
+    let quizData = getData("quizData");
+    let categoryIndex = getCategoryIndex();
+    let difficultyIndex = getDifficultyIndex();
+    let questionIndex = getQuestionIndex();
+
+    indexData.categoryIndex = categoryIndex;
+    indexData.difficultyIndex = difficultyIndex;
+    indexData.questionIndex = questionIndex;
+    saveData("indexData", indexData);
+
+    function getCategoryIndex() {
+        if (indexData.quizCategory == 5) {
+            let randomNumber = Math.floor((Math.random() * categoryCount) + 1);
+            let randomCategory = randomNumber;
+            console.log("[SYSTEM]: Parameter randomCategory = " + randomCategory + " (" + getTime() + ").");
+        } else {
+            randomCategory = quizData.quizCategory;
+            console.log("[SYSTEM]: Parameter quizCategory = " + quizData.quizCategory + " (" + getTime() + ").");
+        }
+        return randomCategory;
+    } 
+
+    function getDifficultyIndex() {
+        let probabilitySum = 0;
+        for(let i in quizData.tierProbability){
+            probabilitySum += quizData.tierProbability[i];
+        }
+        let randomNumber = Math.random() * probabilitySum;
+        for (let i in quizData.tierProbability) {
+                randomNumber -= quizData.tierProbability[i];
+            if (randomNumber <= 0) {
+                randomDifficulty = parseInt(i);
+                console.log("[SYSTEM]: Parameter randomDifficulty = " + randomDifficulty + " (" + getTime() + ").");    
+                return randomDifficulty;
+            }
+        }
+    }
+
+    function getQuestionIndex() {
+        let questionIndexRange = questionCount[categoryIndex][difficultyIndex];
+        let randomQuestion;
+        generateRandomIndex();
+        lookupIndex();
+        function generateRandomIndex() {
+            let randomNumber = Math.floor((Math.random() * questionIndexRange) + 1);
+            randomQuestion = randomNumber;
+        }
+        function lookupIndex() {
+            for (let lookupIndex = 1; lookupIndex >= questionIndexRange; lookupIndex++) {
+                if (indexData["generatedIndexes"][categoryIndex][difficultyIndex][randomQuestion - 1] == randomQuestion) {
+                    generateRandomIndex();
+                    lookupIndex();
+                }
+            }
+            let nextIndex = indexData["nextIndex"][categoryIndex][difficultyIndex];
+            indexData["generatedIndexes"][categoryIndex][difficultyIndex][nextIndex] = randomQuestion;
+            indexData["nextIndex"][categoryIndex][difficultyIndex] = indexData["nextIndex"][categoryIndex][difficultyIndex] + 1;
+            console.log("[SYSTEM]: Parameter randomQuestion = " + randomQuestion + " (" + getTime() + ").");
+        }
+        return randomQuestion;
+    }
+}

@@ -1,310 +1,95 @@
-* All questions and their answers align with the latest version (2.4) of the game.
-
-TIERS:
-Very Easy
-Easy
-Medium
-Hard
-Very Hard
-
-VERY EASY: What year did Survivalcraft 1.0 release?
-A) 2009
-B) 2011 (✓)
-C) 2013
-D) 2015
-
-VERY EASY: Which update added splitscreen multiplayer?
-A) 1.29
-B) 2.1 (✓)
-C) 2.2
-D) 2.3
-
-EASY: How many game days does it take for raw meat to rot?
-A) 1
-B) 3 (✓)
-C) 5
-D) 7
-
-EASY: What is the maximum number of triangles allowed for a single furniture design?
-A) 200
-B) 250
-C) 300 (✓)
-D) 350
-
-EASY: What is the natural block color of granite?
-A) Red Orange
-B) Light Gray (✓)
-C) White
-D) Dark Gray
-
-MEDIUM: A single, non-adjustable delay gate provides a pulse duartion for how long?
-A) 50
-B) 200 (✓)
-C) 300
-D) 500
-
-MEDIUM: How many magnets can be placed in a single world?
-A) 3 
-B) 5
-C) 8 (✓)
-D) 12
-
-MEDIUM: What additional component is required to craft a connected furniture block?
-A) String
-B) Electric wire (✓)
-C) Iron rod
-D) Germanium Crystal
-
-MEDIUM: What is the maximum insulation amount achievable in any survival mode?
-A) 3.16 clo
-B) 4.72 clo
-C) 5.56 clo
-D) 6.49 clo (✓)
-
-MEDIUM: An electric button provides a pulse duration for how long?
-A) 100 ms (✓)
-B) 150 ms
-C) 200 ms
-D) 250 ms
-
-MEDIUM: Which of the following land animals are NOT in the game?
-A) Cheetah (✓)
-B) Gnu Antelope
-C) Rhinocerous
-D) Cassowary
-
-MEDIUM: Which of the following ocean animals are NOT in the game?
-A) Starfish
-B) Killer Whale (✓)
-C) Great White Shark
-D) Beluga
-
-MEDIUM: Can sulphur be used as a fuel source when using a furnace?
-A) Yes, it can smelt all items.
-B) Yes, but it can only smelt some items. (✓)
-C) No, it cannot smelt any items.
-D) No, the furnace will explode.
-
-HARD: If a campfire is exposed to rain or snow, by how much faster does it deplete?
-A) 20%
-B) 40%
-C) 60%
-D) 80% (✓)
-
-HARD: How many unique sound generator sounds are there?
-A) 287
-B) 324
-C) 396
-D) 439 (✓)
-
-HARD: How do you make a Cyan Paint bucket?
-A) Smelt water with white pigment, then smelt white paint with purple flower, then smelt purple paint with malachite.
-B) Smelt water with saltpeter, then smelt white paint with malachite, then smelt pale cyan paint with coal.
-C) Smelt water with white pigment, then smelt white paint with malachite, then smelt pale cyan paint with coal. (✓)
-D) Craft white paint with malachite and coal.
-
-VERY HARD: How do you craft Green Flickering Large Burst (Low) fireworks?
-A) Two sulphur, one coal, two gunpower, one canvas, pale green paint.
-B) One sulphur, two coal, two gunpowder, green paint.
-C) Two sulphur, one coal, four gunpowder, pale green paint. (✓)
-D) Two coal, four gunpowder, green paint.
-
-
-TIER: Question
-A)
-B)
-C)
-D)
-
-General
-Game Mechanics
-Crafting & Smelting
-Updates History
-Electrics
-
 GENERAL
-What year did Survivalcraft 1.0 release?
+VERY EASY: What nickname does the developer of Survivalcraft often go by?
+(Kaalus)
+EASY: What year did Survivalcraft 1.0 release?
 (2011)
-What year did Survivalcraft 2.0 release?
+EASY: What year did Survivalcraft 2.0 release?
 (2016)
-What date did Survivalcraft 1.0 release?
-(November 16th, 2011)
-What date did Survivalcraft 2.0 release?
-(December 10th, 2016)
-When did Survivalcraft release on Android?
-(October 14th, 2012)
-When did Survivalcraft release on Amazon?
-(November 6th, 2012)
-When did Survivalcraft release on iOS?
-(April 2013)
-When did Survivalcraft 2 release on Windows Store?
-(December 14th, 2016)
-When did Survivalcraft 2 release on Steam?
-(It hasn't)
-When did Survivalcraft Day One release?
-(December 10th, 2019)
-How long is the trial period for Survivalcraft Day One?
-(20 minutes)
-
-Who is the developer of Survivalcraft?
+EASY: Who is the developer of Survivalcraft?
 (Igor Kalicinski)
-What is the name of the company that developed and published Survivalcraft?
+EASY: What is the name of the company that developed and published Survivalcraft?
 (Candy Rufus Games)
-What programming language is Survivalcraft written in?
-(C#)
-What game engine does Survivalcraft utilize?
-(Engine Power)
-What is the name of the official Survivalcraft Discord server?
+MEDIUM: What date did Survivalcraft 1.0 release?
+(November 16th, 2011)
+MEDIUM: What date did Survivalcraft 2.0 release?
+(December 10th, 2016)
+MEDIUM: When did Survivalcraft release on Android?
+(October 14th, 2012)
+MEDIUM: When did Survivalcraft release on Amazon?
+(November 6th, 2012)
+MEDIUM: When did Survivalcraft 2 release on Windows Store?
+(December 14th, 2016)
+MEDIUM: What is the name of the official Survivalcraft Discord server?
 (Survivalcraft Content Community)
-What online service is the official Survivalcraft forum hosted with?
+HARD: When did Survivalcraft release on iOS?
+(April 2013)
+HARD: When did Survivalcraft 2 release on Steam?
+(It hasn't)
+HARD: When did Survivalcraft Day One release?
+(December 10th, 2019)
+HARD: How long is the trial period for Survivalcraft Day One?
+(20 minutes)
+HARD: What programming language is Survivalcraft written in?
+(C#)
+HARD: What game engine does Survivalcraft utilize?
+(Engine Power)
+HARD: What online service is the official Survivalcraft forum hosted with?
 (Tapatalk)
 
-UPDATES HISTORY
-Which update added splitscreen multiplayer?
-(2.1)
-Which update increased the terrain height?
-(2.2)
-Which were electrics first introduced? 
-(Alpha 1.19)
-Which update added river generation?
-(2.1)
-Which update added food rot?
-(2.1)
-Which update added sickness and flu?
-(2.1)
-Which update added NAND and NOR logic gates?
-(1.29)
-Which update added multicolored LEDs?
-(2.1)
-Which update added Mimosa trees?
-(2.2)
-Which update added Tall Spruce trees?
-(1.29)
-Which update added colored wires?
-(2.0)
-Which update added pistons?
-(2.0)
-Which update added changing seasons?
-(2.4)
-Which update improved world file compression?
-(2.3)
-Which update added dispensers?
-(1.28)
-Which update added Community Content?
-(1.20)
-Which update added Poplar trees?
-(2.4)
-Which update added fireworks?
-(1.28)
-Which update added custom palette colors?
-(2.1)
-Which update added Adventure mode?
-(Alpha 1.10)
-Which update added Survival mode?
-(2.3)
-Which update added integrated Dropbox support?
-(Alpha 1.9)
-Which update removed defunct transfer.sh support?
-(2.4)
-When was a search bar added to Community Content?
-(2.4)
-Which update improved the Community Content server, i.e. making it self-hosted instead of cloud-based?
-(None of the above)
-Which update added wildboars?
-(Alpha 1.7)
-Which update added precipitation?
-(Alpha 1.18)
-Which update added copper tools and armor?
-(1.29)
-Which update added the Drum instrument for the sound generator?
-(1.29)
-Which update added custom island terrain generation?
-(2.1)
-Which update made lightbulbs paintable?
-(2.0)
-Which update added great white sharks?
-(2.2)
-Which update added the North Star to the night sky?
-(2.4)
-Which update added explosion ground shake?
-(2.4)
-Which update added the Bass instrument for the sound generator?
-(2.4)
-Which update added variable field of view to the settings menu?
-(2.4)
-Which update added layered fog?
-(2.4)
-Which update added dirt slabs and stairs?
-(2.4)
-Which update added iron signs and ladders?
-(1.28)
-Which update added furniture?
-(2.0)
-Which update added custom player death messages?
-(2.0)
-Which update added semiconductor block?
-(2.0)
-Which update added marble block?
-(Alpha 1.3)
-Which update added the adjustable delay gate?
-(1.29)
-Which update added support for 32-Bit block data?
-(1.29)
-Which update added dimmable lightbulbs?
-(1.29)
-Which update reorganized the creative inventory into seperate block categories?
-(1.29)
-Which update changed motion detector functionality, allowing it to detect piston, projectile, and pickable movement?
-(2.3)
-When was the fixed camera mode added?
-(1.29)
-Which update added clothes dyeing?
-(1.26)
-Which update added incendiary kegs?
-(2.0)
-When were Christmas trees first added?
-(Alpha 1.2)
-Which update added analog electric components?
-(1.23)
-Which update added XOR logic gates?
-(1.21)
-Which update added bulls?
-(Alpha 1.10)
-Which update added the "Despair" button?
-(Alpha 1.1)
-Which update added male and female player distinctions?
-(2.1)
-When were explosives first added?
-(Alpha 1.11)
-Which update added polar bears?
-(Alpha 1.16)
-Which update added pigeons?
-(2.3)
-Which update had zero content additions?
-(Alpha 1.6)
-Which update added muskets?
-(1.28)
-Which update enabled werewolves to interact with blocks, such as opening doors or pressing buttons?
-(2.4)
-What update added the Recipaedia?
-(Alpha 1.1)
-Which update added furnaces?
-(Alpha 1.3)
-Which update added brick blocks?
-(Alpha 1.4)
-Which update added Cruel mode?
-(Alpha 1.7)
-Which update added Creative mode?
-(Alpha 1.8)
-Which update added wooden signs?
-(Alpha 1.10)
-Which update allowed for renaming of existing worlds?
-(Alpha 1.8)
-Which update allowed for flat terrain generation?
-(Alpha 1.12)
-Which update added egg laying?
-(Alpha 1.13)
-Which update added a single block?
-(Alpha 1.14)
-Which update added cactus?
-(Alpha 1.15)
+GAME MECHANICS
+EASY: How many game days does it take for raw meat to rot?
+1, 3, 5, 7 (B)
+
+EASY: What is the maximum number of triangles allowed for a single furniture design?
+200, 250, 300, 350 (C)
+
+MEDIUM: How many magnets can be placed in a single world?
+3, 5, 7, 12 (C)
+
+MEDIUM: What additional component is required to craft a connected furniture block?
+String, Electric Wire, Iron Rod, Germanium Crystal (B)
+
+MEDIUM: What is the maximum insulation amount achievable in any survival mode?
+3.16 clo, 4.72 clo, 5.56 clo, 6.49 clo (D)
+
+MEDIUM: Can sulphur be used as a fuel source when using a furnace?
+"Yes, it can smelt all items.", 
+"Yes, but it can only smelt some items.", 
+"No, it cannot smelt any items.", 
+"No, the furnace will explode." (B)
+
+HARD: If a campfire is exposed to rain or snow, by how much faster does it deplete?
+20%, 40%, 60%, 80% (D)
+
+CRAFTING RECIPES
+HARD: How do you make a Cyan Paint bucket?
+"Smelt water with white pigment, then smelt white paint with purple flower, then smelt purple paint with malachite.", 
+"Smelt water with saltpeter, then smelt white paint with malachite, then smelt pale cyan paint with coal.",
+"Smelt water with white pigment, then smelt white paint with malachite, then smelt pale cyan paint with coal.",
+"Craft white paint with malachite and coal." (C)
+
+VERY HARD: How do you craft Green Flickering Large Burst (Low) fireworks?
+"Two sulphur, one coal, two gunpower, one canvas, pale green paint.",
+"One sulphur, two coal, two gunpowder, green paint.",
+"Two sulphur, one coal, four gunpowder, pale green paint.",
+"Two coal, four gunpowder, green paint." (C)
+
+ELECTRICS
+EASY: An electric button provides a pulse duration for how long?
+100 ms, 150 ms, 200 ms, 250 ms (A)
+
+MEDIUM: A single, non-adjustable delay gate provides a pulse duartion for how long?
+50, 200, 300, 500 (B)
+
+HARD: How many unique sound generator sounds are there?
+287, 324, 396, 439 (D)
+
+MISCELLANEOUS
+EASY: What is the natural block color of granite?
+Red Orange, Light Gray, White, Dark Gray (B)
+
+MEDIUM: Which of the following land animals are NOT in the game?
+Cheetah, Gnu Antelope, Rhinocerous, Cassowary (A)
+
+MEDIUM: Which of the following ocean animals are NOT in the game?
+Starfish, Killer Whale, Great White Shark, Beluga (B)

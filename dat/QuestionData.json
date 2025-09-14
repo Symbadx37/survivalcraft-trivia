@@ -3,13 +3,7 @@
         {
             "difficulty_veryEasy": [
                 {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
+                    "question": "",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
@@ -22,12 +16,6 @@
                 }
             ],
             "difficulty_easy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -53,12 +41,6 @@
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
                 }
             ],
             "difficulty_hard": [
@@ -73,21 +55,9 @@
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
                 }
             ],
             "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -103,15 +73,9 @@
             ]
         }
     ],
-    "category_mechanics": [
+    "category_gameMechanics": [
         {
             "difficulty_veryEasy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -137,21 +101,9 @@
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
                 }
             ],
             "difficulty_medium": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -177,21 +129,9 @@
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
                 }
             ],
             "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -207,15 +147,9 @@
             ]
         }
     ],
-    "category_recipes": [
+    "category_craftingRecipes": [
         {
             "difficulty_veryEasy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -241,21 +175,9 @@
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
                 }
             ],
             "difficulty_medium": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -281,21 +203,9 @@
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
                 }
             ],
             "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -311,15 +221,9 @@
             ]
         }
     ],
-    "category_updates": [
+    "category_updatesHistory": [
         {
             "difficulty_veryEasy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -345,21 +249,9 @@
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
                 }
             ],
             "difficulty_medium": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -385,21 +277,9 @@
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
                 }
             ],
             "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -429,25 +309,13 @@
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                     "solution": "This is a solution.",
                     "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
                 }
             ],
             "difficulty_easy": [
                 {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "question": "An electric button provides a pulse duration for how long?",
+                    "choice": ["100 ms", "150 ms", "200 ms", "250 ms"],
+                    "solution": "A regular push-button (and furniture buttons) produces a pulse duration for exactly 100 milliseconds (0.1 seconds). Such details are stated in the recipaedia menu, as well as being testable in game. If you're not convinced, try timing it yourself!",
                     "answer": "a"  
                 },
                 {
@@ -459,16 +327,10 @@
             ],
             "difficulty_medium": [
                 {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "question": "A single, non-adjustable delay gate provides a pulse duartion for how long?",
+                    "choice": ["50 ms", "200 ms", "300 ms", "500 ms"],
+                    "solution": "A single, non-adjustable delay gate provides a delay of 200 milliseconds (0.2 seconds).",
+                    "answer": "b"  
                 },
                 {
                     "question": "This is a question.",
@@ -479,16 +341,10 @@
             ],
             "difficulty_hard": [
                 {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "question": "How many unique sound generator sounds are there?",
+                    "choice": ["287", "324", "396", "439"],
                     "solution": "This is a solution.",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "answer": "d"  
                 },
                 {
                     "question": "This is a question.",
@@ -498,12 +354,6 @@
                 }
             ],
             "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
-                },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
