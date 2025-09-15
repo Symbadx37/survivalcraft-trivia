@@ -5,9 +5,11 @@
 - Experienced
 - Veteran
 ## Question Category
-- General
+- General Knowledge
 - Game Mechanics
 - Crafting Recipes (PLANNED)
+- Creature Behaviors (PLANNED)
+- Blocks and Pickables (PLANNED)
 - Updates History
 - Electrics (PLANNED)
 - RANDOM; selects from all categories.
@@ -23,6 +25,11 @@
 - Very Hard; 30 seconds per question (PLANNED)
 - Insane; 15 seconds per question (PLANNED)
 - NONE; no time limit is allotted.
+## Quiz Toggles
+- MODE TYPE: Quiz or Test (PLANNED)
+  Quiz mode grades results after each question; Test mode only grades results after the quiz is finished.
+- CALCULATE POINTS: Yes or no (PLANNED)
+- SHOW SOLUTION: Yes or no (PLANNED)
 
 # Internal Variables
 ## Question Tiers
@@ -31,3 +38,5 @@
 - Medium
 - Hard
 - Very Hard
+## Question Data
+- Question, Choice, Solution, Answer, Type

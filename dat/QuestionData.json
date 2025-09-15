@@ -1,17 +1,17 @@
 {   
-    "category_general": [
+    "category_generalKnowledge": [
         {
             "difficulty_veryEasy": [
                 {
                     "question": "",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -19,13 +19,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -33,13 +33,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -47,13 +47,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -61,13 +61,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ]
@@ -79,13 +79,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -93,13 +93,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -107,13 +107,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -121,13 +121,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -135,13 +135,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ]
@@ -153,13 +153,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -167,13 +167,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -181,13 +181,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -195,13 +195,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -209,13 +209,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ]
@@ -225,71 +225,583 @@
         {
             "difficulty_veryEasy": [
                 {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "question": "What was the most recent update?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"
                 },
                 {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "question": "What is the next update version?",
+                    "choice": ["2.4", "2.5", "2.6", "3.0"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"
+                },
+                {
+                    "question": "Which update added proper PC controls?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"
+                },
+                {
+                    "question": "Which update adding proper player crouching?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"
+                },
+                {
+                    "question": "Which update added splitscreen multiplayer?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"
+                },
+                {
+                    "question": "Which update increased the terrain height to 256 blocks?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"
+                },
+                {
+                    "question": "Which update changed the UI style to use rounded shapes?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice" 
+                },
+                {
+                    "question": "When were pistons added?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice" 
+                },
+                {
+                    "question": "Which update added changing seasons?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice" 
+                },
+                {
+                    "question": "Which update added furniture?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice" 
                 }
             ],
             "difficulty_easy": [
                 {
-                    "question": "This is a question.",
+                    "question": "Which update enabled werewolves to interact with blocks, such as opening doors or pressing buttons?",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
                 },
                 {
-                    "question": "This is a question.",
+                    "question": "Which update added food rot?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice" 
+                },
+                {
+                    "question": "Which update added colored wires?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added dispensers?",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added Poplar trees?",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "When was a search bar added to Community Content?",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added Survival mode?",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added copper tools and armor?",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added explosion ground shake?",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added the Bass instrument for the sound generator?",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added layered fog?",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added dirt slabs and stairs?",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "When were pigeons added?",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added the hammer tool?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added the stone axe?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added the wooden club?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added the stone club?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "When were cairns added?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "When were default player names added?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"   
                 }
             ],
             "difficulty_medium": [
                 {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "question": "Which were electrics first introduced? ",
+                    "choice": ["Alpha 1.13", "Alpha 1.15", "Alpha 1.17", "Alpha 1.19"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
                 },
                 {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "question": "Which update added river generation?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice" 
+                },
+                {
+                    "question": "Which update improved world file compression?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added sickness and flu?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added multicolored LEDs?",
+                    "choice": ["1.29", "2.0", "2.1", "2.2"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added Mimosa trees?",
+                    "choice": ["1.29", "2.0", "2.1", "2.2"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "When were Tall Spruce trees added?",
+                    "choice": ["1.27", "1.28", "1.29", "2.0"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added fireworks?",
+                    "choice": ["1.26", "1.27", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added the Drum instrument for the sound generator?",
+                    "choice": ["1.27", "1.28", "1.29", "2.0"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added custom island terrain generation?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added great white sharks?",
+                    "choice": ["2.0", "2.1", "2.2", "2.3"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added the North Star to the night sky?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added variable field of view to the settings menu?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added iron signs and ladders?",
+                    "choice": ["1.26", "1.27", "1.28", "1.29"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added the adjustable delay gate?",
+                    "choice": ["1.27", "1.28", "1.29", "2.0"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "When was the fixed camera mode added?",
+                    "choice": ["1.27", "1.28", "1.29", "2.0"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added clothes dyeing?",
+                    "choice": ["1.24", "1.25", "1.26", "1.27"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added incendiary kegs?",
+                    "choice": ["1.29", "2.0", "2.1", "2.2"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added male and female player distinctions?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "When were muskets added?",
+                    "choice": ["1.27", "1.28", "1.29", "2.0"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added the player leveling system?",
+                    "choice": ["1.29", "2.0", "2.1", "2.2"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added moose?",
+                    "choice": ["1.27", "1.28", "1.29", "2.0"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added pickables prioritization?",
+                    "choice": ["2.1", "2.2", "2.3", "2.4"],
+                    "solution": "undefined",
+                    "answer": "d",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "Which update added bison?",
+                    "choice": ["1.28", "1.29", "2.0", "2.1"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "When was the campfire block added?",
+                    "choice": ["1.26", "1.27", "1.28", "1.29"],
+                    "solution": "undefined",
+                    "answer": "b",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "When were jaguars and leopards added?",
+                    "choice": ["1.29", "2.0", "2.1", "2.2"],
+                    "solution": "undefined",
+                    "answer": "c",
+                    "type": "multipleChoice"   
                 }
             ],
             "difficulty_hard": [
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
-                    "answer": "a"  
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice" 
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
+                },
+                {
+                    "question": "This is a question.",
+                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                    "solution": "undefined",
+                    "answer": "a",
+                    "type": "multipleChoice"   
                 }
             ],
             "difficulty_veryHard": [
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ]
@@ -301,13 +813,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -321,7 +833,7 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -335,7 +847,7 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -343,13 +855,13 @@
                 {
                     "question": "How many unique sound generator sounds are there?",
                     "choice": ["287", "324", "396", "439"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "d"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ],
@@ -357,13 +869,13 @@
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 },
                 {
                     "question": "This is a question.",
                     "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "This is a solution.",
+                    "solution": "undefined",
                     "answer": "a"  
                 }
             ]

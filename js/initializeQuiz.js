@@ -1,11 +1,13 @@
 const tierCount = 4;
-const categoryCount = 5;
+const categoryCount = 7;
 const questionCount = {
-    1: {1: 46, 2: 24, 3: 35, 4: 14, 5: 12}, // Remove sample values
-    2: {1: 25, 2: 12, 3: 53, 4: 24, 5: 35}, // Remove sample values
-    3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-    4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-    5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+    1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}, // General knowledge
+    2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}, // Game Mechanics
+    3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}, // Crafting Recipes
+    4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}, // Creature Behaviors
+    5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}, // Blocks and Pickables
+    6: {1: 10, 2: 19, 3: 26, 4: 25, 5: 20}, // Updates History
+    7: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0} // Electrics
 };
 
 const probability_beginner = {1: 0.55, 2: 0.4, 3: 0.05, 4: 0, 5: 0};
@@ -67,8 +69,14 @@ function initializeQuiz(id) {
         case "category_5":
             quizData.quizCategory = 5;
             break;
-        case "category_rdm":
+        case "category_6":
             quizData.quizCategory = 6;
+            break;
+        case "category_7":
+            quizData.quizCategory = 7;
+            break;
+        case "category_rdm":
+            quizData.quizCategory = 8;
             break;
         case "length_1":
             quizData.quizLength = 1;

@@ -15,7 +15,7 @@ function assignIndexes(id) {
         default: break;
     }
     switch(indexData.categoryIndex) {
-        case 1: category = "general"; break;
+        case 1: category = "generalKnowledge"; break;
         case 2: category = "gameMechanics"; break;
         case 3: category = "craftingRecipes"; break;
         case 4: category = "updatesHistory"; break;
