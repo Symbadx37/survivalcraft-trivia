@@ -310,7 +310,7 @@
         "easy": [
             {
                 "question": "Which update enabled werewolves to interact with blocks, such as opening doors or pressing buttons?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
@@ -331,70 +331,70 @@
             },
             {
                 "question": "Which update added dispensers?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
                 "solution": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added Poplar trees?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When was a search bar added to Community Content?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added Survival mode?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added copper tools and armor?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["1.28", "1.29", "2.0", "2.1"],
                 "solution": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added explosion ground shake?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the Bass instrument for the sound generator?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added layered fog?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added dirt slabs and stairs?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When were pigeons added?",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
@@ -494,7 +494,7 @@
             },
             {
                 "question": "Which update added fireworks?",
-                "choice": ["1.26", "1.27", "ChoiceC", "ChoiceD"],
+                "choice": ["1.26", "1.27", "1.28", "1.29"],
                 "solution": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   

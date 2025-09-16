@@ -5,6 +5,7 @@ function startQuiz() {
     let quizData = getData("quizData");
     quizData.preloadNeeded = true;
     quizData.isActive = true;
+    quizData.activeQuestion = 1;
     saveData("quizData", quizData);
     window.location.replace("quiz.html");
 }
@@ -13,10 +14,10 @@ function startQuiz() {
 function continueQuiz() { 
     let quizData = getData("quizData");
     if (quizData.isSolutionVisible) {
-        if (typeof quizData.activeQuestion == "undefined") {
-            quizData.activeQuestion = 1;
-        } else {
+        if (typeof quizData.activeQuestion == "undefined") quizData.activeQuestion = 1;
+        else {
             quizData.activeQuestion += 1;
+            quizData.isSolutionVisible = false;
         }
         saveData("quizData", quizData);
         generateQuestion();

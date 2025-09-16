@@ -30,20 +30,25 @@ function loadQuiz() {
 function gradeQuiz(id) { 
     let quizData = getData("quizData");
     let indexData = getData("indexData");
-    quizData.isSolutionVisible = true;
-    assignIndexes(id);
-    parseData();
-
-    function parseData() {
-        if (questionData["category_" + category][indexData.difficultyIndex - 1]["difficulty_" + difficulty][indexData.questionIndex - 1]["answer"] != userAnswer) {
-            quizData.questionsWrong += 1;
-            console.log("[SYSTEM]: Submitted answer is incorrect" + " (" + getTime() + ").");
-        } else {
-            quizData.questionsRight += 1;
-            console.log("[SYSTEM]: Submitted answer is correct" + " (" + getTime() + ").");
-        }
+    
+    if (quizData.isSolutionVisible == false) {
+        quizData.isSolutionVisible = true;
+        assignIndexes(id);
+        parseData();
         saveData("quizData", quizData);
     }
+    
+    function parseData() {
+        if (questionData[category][difficulty][indexData.questionIndex - 1]["answer"] != userAnswer) {
+            if (typeof quizData.questionsWrong == "undefined") quizData.questionsWrong = 0;
+                quizData.questionsWrong += 1;
+                console.log("[SYSTEM]: Submitted answer is incorrect" + " (" + getTime() + ").");
+        } else {
+            if (typeof quizData.questionsRight == "undefined") quizData.questionsRight = 0;
+                quizData.questionsRight += 1;
+                console.log("[SYSTEM]: Submitted answer is correct" + " (" + getTime() + ").");
+        } 
+    }  
 }
 
 function assignIndexes(id) {

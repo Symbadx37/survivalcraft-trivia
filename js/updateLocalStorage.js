@@ -24,7 +24,7 @@ function getData(id) {
 
 // Initializes local storage object keys
 function initializeData(id) {
-    if (id === "indexData_generatedIndexes") {
+    if (id === "indexData") {
         let obj = { 
             generatedIndexes: {
                 1: {1: [], 2: [], 3: [], 4: [], 5: []},

@@ -1,5 +1,5 @@
 function generateQuestion() {
-    if (typeof localStorage.indexData === "undefined") initializeData("indexData_generatedIndexes");
+    if (typeof localStorage.indexData === "undefined") initializeData("indexData");
     
     let indexData = getData("indexData");
     let quizData = getData("quizData");
@@ -25,40 +25,51 @@ function generateQuestion() {
     } 
 
     function getDifficultyIndex() {
-        let probabilitySum = 0, randomDifficulty;
+        let probabilitySum = 0, randomNumber = 0, randomDifficulty;
         generateRandomNumber(); 
+        console.log("[SYSTEM]: Parameter randomDifficulty = " + randomDifficulty + " (" + getTime() + ").");
+        return randomDifficulty;
 
-        for(let i in quizData.tierProbability) {
-            probabilitySum += quizData.tierProbability[i];
-        }
         function generateRandomNumber() {
-            let randomNumber = Math.random() * probabilitySum;
+            for(let i in quizData.tierProbability) {
+                probabilitySum += quizData.tierProbability[i];
+            }
+            randomNumber = Math.random() * probabilitySum;
             for (let i in quizData.tierProbability) {
                 randomNumber -= quizData.tierProbability[i];
-                if (randomNumber <= 0) randomDifficulty = parseInt(i);
-            } 
-            if (indexData["nextIndex"][categoryIndex][randomDifficulty] > questionCount[categoryIndex][randomDifficulty]) {
-                delete quizData["tierProbability"][randomDifficulty];
-                generateRandomNumber();
+                if (randomNumber <= 0) {
+                    randomDifficulty = parseInt(i)
+                    if (indexData["nextIndex"][categoryIndex][randomDifficulty] > questionCount[categoryIndex][randomDifficulty]) {
+                        delete quizData["tierProbability"][randomDifficulty];
+                        generateRandomNumber();
+                    }
+                    break;
+                }  
             }
         }
-        return randomDifficulty;          
     }
-
+    
     function getQuestionIndex() {
         let questionIndexRange = questionCount[categoryIndex][difficultyIndex];
         let randomQuestion;
         generateRandomIndex();
         lookupIndex();
+        return randomQuestion;
+
         function generateRandomIndex() {
             let randomNumber = Math.floor((Math.random() * questionIndexRange) + 1);
             randomQuestion = randomNumber;
         }
         function lookupIndex() {
-            for (let lookupIndex = 1; lookupIndex >= questionIndexRange; lookupIndex++) {
-                if (indexData["generatedIndexes"][categoryIndex][difficultyIndex][randomQuestion - 1] == randomQuestion) {
+            console.log("looking up index ...");
+            
+            for (let lookupIndex = 1; lookupIndex <= questionIndexRange; lookupIndex++) {
+                
+                console.log(indexData["generatedIndexes"][categoryIndex][difficultyIndex][lookupIndex - 1]);    
+                if (indexData["generatedIndexes"][categoryIndex][difficultyIndex][lookupIndex - 1] == randomQuestion) {
+                    console.log("index matches, regenerating ...");
                     generateRandomIndex();
-                    lookupIndex();
+                    lookupIndex();   
                 }
             }
             let nextIndex = indexData["nextIndex"][categoryIndex][difficultyIndex];
@@ -66,6 +77,5 @@ function generateQuestion() {
             indexData["nextIndex"][categoryIndex][difficultyIndex] = indexData["nextIndex"][categoryIndex][difficultyIndex] + 1;
             console.log("[SYSTEM]: Parameter randomQuestion = " + randomQuestion + " (" + getTime() + ").");
         }
-        return randomQuestion;
     }
 }
