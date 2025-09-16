@@ -24,8 +24,11 @@ document.addEventListener("DOMContentLoaded",
             quizData.preloadNeeded = false;
             saveData("quizData", quizData);
             console.log("[SYSTEM]: Question data preload complete" + " (" + getTime() + ").");
+            loadQuiz();
         }
-        loadQuiz();
+        else if (typeof quizData.isActive !== "undefined") {
+            loadQuiz();
+        }
     }
 );
 

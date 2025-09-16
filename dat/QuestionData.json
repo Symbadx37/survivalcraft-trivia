@@ -1,884 +1,976 @@
 {   
-    "category_generalKnowledge": [
-        {
-            "difficulty_veryEasy": [
-                {
-                    "question": "",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_easy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_medium": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_hard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ]
-        }
-    ],
-    "category_gameMechanics": [
-        {
-            "difficulty_veryEasy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_easy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_medium": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_hard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ]
-        }
-    ],
-    "category_craftingRecipes": [
-        {
-            "difficulty_veryEasy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_easy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_medium": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_hard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ]
-        }
-    ],
-    "category_updatesHistory": [
-        {
-            "difficulty_veryEasy": [
-                {
-                    "question": "What was the most recent update?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"
-                },
-                {
-                    "question": "What is the next update version?",
-                    "choice": ["2.4", "2.5", "2.6", "3.0"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"
-                },
-                {
-                    "question": "Which update added proper PC controls?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"
-                },
-                {
-                    "question": "Which update adding proper player crouching?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"
-                },
-                {
-                    "question": "Which update added splitscreen multiplayer?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"
-                },
-                {
-                    "question": "Which update increased the terrain height to 256 blocks?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"
-                },
-                {
-                    "question": "Which update changed the UI style to use rounded shapes?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice" 
-                },
-                {
-                    "question": "When were pistons added?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice" 
-                },
-                {
-                    "question": "Which update added changing seasons?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice" 
-                },
-                {
-                    "question": "Which update added furniture?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice" 
-                }
-            ],
-            "difficulty_easy": [
-                {
-                    "question": "Which update enabled werewolves to interact with blocks, such as opening doors or pressing buttons?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added food rot?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice" 
-                },
-                {
-                    "question": "Which update added colored wires?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added dispensers?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added Poplar trees?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "When was a search bar added to Community Content?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added Survival mode?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added copper tools and armor?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added explosion ground shake?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added the Bass instrument for the sound generator?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added layered fog?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added dirt slabs and stairs?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "When were pigeons added?",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added the hammer tool?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added the stone axe?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added the wooden club?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added the stone club?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "When were cairns added?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "When were default player names added?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"   
-                }
-            ],
-            "difficulty_medium": [
-                {
-                    "question": "Which were electrics first introduced? ",
-                    "choice": ["Alpha 1.13", "Alpha 1.15", "Alpha 1.17", "Alpha 1.19"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added river generation?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice" 
-                },
-                {
-                    "question": "Which update improved world file compression?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added sickness and flu?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added multicolored LEDs?",
-                    "choice": ["1.29", "2.0", "2.1", "2.2"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added Mimosa trees?",
-                    "choice": ["1.29", "2.0", "2.1", "2.2"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "When were Tall Spruce trees added?",
-                    "choice": ["1.27", "1.28", "1.29", "2.0"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added fireworks?",
-                    "choice": ["1.26", "1.27", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added the Drum instrument for the sound generator?",
-                    "choice": ["1.27", "1.28", "1.29", "2.0"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added custom island terrain generation?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added great white sharks?",
-                    "choice": ["2.0", "2.1", "2.2", "2.3"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added the North Star to the night sky?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added variable field of view to the settings menu?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added iron signs and ladders?",
-                    "choice": ["1.26", "1.27", "1.28", "1.29"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added the adjustable delay gate?",
-                    "choice": ["1.27", "1.28", "1.29", "2.0"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "When was the fixed camera mode added?",
-                    "choice": ["1.27", "1.28", "1.29", "2.0"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added clothes dyeing?",
-                    "choice": ["1.24", "1.25", "1.26", "1.27"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added incendiary kegs?",
-                    "choice": ["1.29", "2.0", "2.1", "2.2"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added male and female player distinctions?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "When were muskets added?",
-                    "choice": ["1.27", "1.28", "1.29", "2.0"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added the player leveling system?",
-                    "choice": ["1.29", "2.0", "2.1", "2.2"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added moose?",
-                    "choice": ["1.27", "1.28", "1.29", "2.0"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added pickables prioritization?",
-                    "choice": ["2.1", "2.2", "2.3", "2.4"],
-                    "solution": "undefined",
-                    "answer": "d",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "Which update added bison?",
-                    "choice": ["1.28", "1.29", "2.0", "2.1"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "When was the campfire block added?",
-                    "choice": ["1.26", "1.27", "1.28", "1.29"],
-                    "solution": "undefined",
-                    "answer": "b",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "When were jaguars and leopards added?",
-                    "choice": ["1.29", "2.0", "2.1", "2.2"],
-                    "solution": "undefined",
-                    "answer": "c",
-                    "type": "multipleChoice"   
-                }
-            ],
-            "difficulty_hard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice" 
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a",
-                    "type": "multipleChoice"   
-                }
-            ],
-            "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ]
-        }
-    ],
-    "category_electrics": [
-        {
-            "difficulty_veryEasy": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_easy": [
-                {
-                    "question": "An electric button provides a pulse duration for how long?",
-                    "choice": ["100 ms", "150 ms", "200 ms", "250 ms"],
-                    "solution": "A regular push-button (and furniture buttons) produces a pulse duration for exactly 100 milliseconds (0.1 seconds). Such details are stated in the recipaedia menu, as well as being testable in game. If you're not convinced, try timing it yourself!",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_medium": [
-                {
-                    "question": "A single, non-adjustable delay gate provides a pulse duartion for how long?",
-                    "choice": ["50 ms", "200 ms", "300 ms", "500 ms"],
-                    "solution": "A single, non-adjustable delay gate provides a delay of 200 milliseconds (0.2 seconds).",
-                    "answer": "b"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_hard": [
-                {
-                    "question": "How many unique sound generator sounds are there?",
-                    "choice": ["287", "324", "396", "439"],
-                    "solution": "undefined",
-                    "answer": "d"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ],
-            "difficulty_veryHard": [
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                },
-                {
-                    "question": "This is a question.",
-                    "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                    "solution": "undefined",
-                    "answer": "a"  
-                }
-            ]
-        }
-    ]
+    "generalKnowledge": {
+        "veryEasy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "easy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "medium": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            }
+        ],
+        "hard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "veryHard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ]
+    },
+    "gameMechanics": {
+        "veryEasy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "easy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "medium": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            }
+        ],
+        "hard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "veryHard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ]
+    },
+    "craftingRecipes": {
+        "veryEasy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "easy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "medium": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            }
+        ],
+        "hard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "veryHard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ]
+    },
+    "creatureBehaviors": {
+        "veryEasy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "easy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "medium": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            }
+        ],
+        "hard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "veryHard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ]
+    },
+    "blocksPickables": {
+        "veryEasy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            }
+        ],
+        "easy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            }
+        ],
+        "medium": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "hard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            }
+        ],
+        "veryHard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            }
+        ]
+    },
+    "updatesHistory": {
+        "veryEasy": [
+            {
+                "question": "What was the most recent update?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What is the next update version?",
+                "choice": ["2.4", "2.5", "2.6", "3.0"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Which update added proper PC controls?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Which update adding proper player crouching?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Which update added splitscreen multiplayer?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Which update increased the terrain height to 256 blocks?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Which update changed the UI style to use rounded shapes?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice" 
+            },
+            {
+                "question": "When were pistons added?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            },
+            {
+                "question": "Which update added changing seasons?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice" 
+            },
+            {
+                "question": "Which update added furniture?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "easy": [
+            {
+                "question": "Which update enabled werewolves to interact with blocks, such as opening doors or pressing buttons?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added food rot?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice" 
+            },
+            {
+                "question": "Which update added colored wires?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added dispensers?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added Poplar trees?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When was a search bar added to Community Content?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added Survival mode?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added copper tools and armor?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added explosion ground shake?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added the Bass instrument for the sound generator?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added layered fog?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added dirt slabs and stairs?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When were pigeons added?",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added the hammer tool?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added the stone axe?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added the wooden club?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added the stone club?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When were cairns added?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When were default player names added?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            }
+        ],
+        "medium": [
+            {
+                "question": "Which were electrics first introduced? ",
+                "choice": ["Alpha 1.13", "Alpha 1.15", "Alpha 1.17", "Alpha 1.19"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added river generation?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice" 
+            },
+            {
+                "question": "Which update improved world file compression?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added sickness and flu?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added multicolored LEDs?",
+                "choice": ["1.29", "2.0", "2.1", "2.2"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added Mimosa trees?",
+                "choice": ["1.29", "2.0", "2.1", "2.2"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When were Tall Spruce trees added?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added fireworks?",
+                "choice": ["1.26", "1.27", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added the Drum instrument for the sound generator?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added custom island terrain generation?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added great white sharks?",
+                "choice": ["2.0", "2.1", "2.2", "2.3"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added the North Star to the night sky?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added variable field of view to the settings menu?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added iron signs and ladders?",
+                "choice": ["1.26", "1.27", "1.28", "1.29"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added the adjustable delay gate?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When was the fixed camera mode added?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added clothes dyeing?",
+                "choice": ["1.24", "1.25", "1.26", "1.27"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added incendiary kegs?",
+                "choice": ["1.29", "2.0", "2.1", "2.2"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added male and female player distinctions?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When were muskets added?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added the player leveling system?",
+                "choice": ["1.29", "2.0", "2.1", "2.2"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added moose?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added pickables prioritization?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added bison?",
+                "choice": ["1.28", "1.29", "2.0", "2.1"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When was the campfire block added?",
+                "choice": ["1.26", "1.27", "1.28", "1.29"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When were jaguars and leopards added?",
+                "choice": ["1.29", "2.0", "2.1", "2.2"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            }
+        ],
+        "hard": [
+            {
+                "question": "Which update added NAND and NOR logic gates?",
+                "choice": ["1.28", "1.29", "2.0", "2.1"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added custom palette colors?",
+                "choice": ["1.29", "2.0", "2.1", "2.2"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice" 
+            },
+            {
+                "question": "Which update added Adventure mode?",
+                "choice": ["Alpha 1.7", "Alpha 1.10", "Alpha 1.13", "Alpha 1.16"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added integrated Dropbox support?",
+                "choice": ["Alpha 1.5", "Alpha 1.7", "Alpha 1.9", "Alpha 1.11"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update removed defunct transfer.sh support?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added wildboars?",
+                "choice": ["Alpha 1.3", "Alpha 1.5", "Alpha 1.7", "Alpha 1.9"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added Community Content?",
+                "choice": ["Alpha 1.19", "Alpha 1.20", "1.21", "1.22"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update improved the Community Content server, i.e. making it self-hosted instead of cloud-based?",
+                "choice": ["2.2", "2.3", "2.4", "None of the above"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added precipitation?",
+                "choice": ["Alpha 1.15", "Alpha 1.16", "Alpha 1.17", "Alpha 1.18"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update made lightbulbs paintable?",
+                "choice": ["1.28", "1.29", "2.0", "2.1"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added custom player death messages?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added semiconductor block?",
+                "choice": ["1.28", "1.29", "2.0", "2.1"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added dimmable lightbulbs?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update reorganized the creative inventory into seperate block categories?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added analog electric components?",
+                "choice": ["Alpha 1.19", "1.21", "1.23", "1.25"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added bulls?",
+                "choice": ["Alpha 1.6", "Alpha 1.8", "Alpha 1.10", "Alpha 1.12"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When were explosives first added?",
+                "choice": ["Alpha 1.9", "Alpha 1.11", "Alpha 1.13", "Alpha 1.15"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added polar bears?",
+                "choice": ["Alpha 1.12", "Alpha 1.14", "Alpha 1.16", "Alpha 1.18"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added horizontal creative flight to the settings menu?",
+                "choice": ["1.28", "1.29", "2.0", "2.1"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added music to the main menu?",
+                "choice": ["1.29", "2.0", "2.1", "2.2"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added digging cracks when breaking blocks?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "When was wire-through-cobblestone added?",
+                "choice": ["1.29", "2.0", "2.1", "2.2"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which updated made slabs and stairs paintable?",
+                "choice": ["1.27", "1.28", "1.29", "2.0"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update added beluga whales?",
+                "choice": ["1.25", "1.26", "1.27", "1.28"],
+                "solution": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"   
+            },
+            {
+                "question": "Which update changed motion detector functionality, allowing it to detect piston, projectile, and pickable movement?",
+                "choice": ["2.1", "2.2", "2.3", "2.4"],
+                "solution": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"   
+            }
+        ],
+        "veryHard": [
+            {
+                "question": "Which update added marble block?",
+                "choice": ["Alpha 1.1", "Alpha 1.3", "Alpha 1.5", "Alpha 1.7"],
+                "solution": "undefined",
+                "answer": "b"  
+            },
+            {
+                "question": "When were Christmas trees first added?",
+                "choice": ["Alpha 1.1", "Alpha 1.2", "Alpha 1.3", "Alpha 1.4"],
+                "solution": "undefined",
+                "answer": "b"  
+            },
+            {
+                "question": "Which update added support for 32-Bit block data?",
+                "choice": ["1.28", "1.29", "2.0", "2.1"],
+                "solution": "undefined",
+                "answer": "b"  
+            },
+            {
+                "question": "Which update added XOR logic gates?",
+                "choice": ["Alpha 1.19", "1.21", "1.23", "1.25"],
+                "solution": "undefined",
+                "answer": "b"  
+            },
+            {
+                "question": "Which update added the 'Despair' button?",
+                "choice": ["Alpha 1.1", "Alpha 1.3", "Alpha 1.5", "Alpha 1.7"],
+                "solution": "undefined",
+                "answer": "a"  
+            },
+            {
+                "question": "Which update added the Recipaedia?",
+                "choice": ["Alpha 1.1", "Alpha 1.3", "Alpha 1.5", "Alpha 1.7"],
+                "solution": "undefined",
+                "answer": "a"  
+            },
+            {
+                "question": "Which update added furnaces?",
+                "choice": ["Alpha 1.1", "Alpha 1.3", "Alpha 1.5", "Alpha 1.7"],
+                "solution": "undefined",
+                "answer": "b"  
+            },
+            {
+                "question": "Which update added brick blocks?",
+                "choice": ["Alpha 1.2", "Alpha 1.3", "Alpha 1.4", "Alpha 1.5"],
+                "solution": "undefined",
+                "answer": "c"  
+            },
+            {
+                "question": "Which update added Cruel mode?",
+                "choice": ["Alpha 1.3", "Alpha 1.5", "Alpha 1.7", "Alpha 1.9"],
+                "solution": "undefined",
+                "answer": "c"  
+            },
+            {
+                "question": "Which update added Creative mode?",
+                "choice": ["Alpha 1.5", "Alpha 1.6", "Alpha 1.7", "Alpha 1.8"],
+                "solution": "undefined",
+                "answer": "d"  
+            },
+            {
+                "question": "Which update added wooden signs?",
+                "choice": ["Alpha 1.8", "Alpha 1.10", "Alpha 1.12", "Alpha 1.14"],
+                "solution": "undefined",
+                "answer": "b"  
+            },
+            {
+                "question": "Which update allowed for renaming of existing worlds?",
+                "choice": ["Alpha 1.6", "Alpha 1.7", "Alpha 1.8", "Alpha 1.9"],
+                "solution": "undefined",
+                "answer": "c"  
+            },
+            {
+                "question": "Which update allowed for flat terrain generation?",
+                "choice": ["Alpha 1.9", "Alpha 1.10", "Alpha 1.11", "Alpha 1.12"],
+                "solution": "undefined",
+                "answer": "d"  
+            },
+            {
+                "question": "Which update added egg laying?",
+                "choice": ["Alpha 1.11", "Alpha 1.13", "Alpha 1.15", "Alpha 1.17"],
+                "solution": "undefined",
+                "answer": "b"  
+            },
+            {
+                "question": "Which update added a single block?",
+                "choice": ["Alpha 1.13", "Alpha 1.14", "Alpha 1.15", "Alpha 1.16"],
+                "solution": "undefined",
+                "answer": "c"  
+            },
+            {
+                "question": "Which update added cactus?",
+                "choice": ["Alpha 1.11", "Alpha 1.13", "Alpha 1.15", "Alpha 1.17"],
+                "solution": "undefined",
+                "answer": "c"  
+            },
+            {
+                "question": "Which update had zero content additions?",
+                "choice": ["Alpha 1.3", "Alpha 1.6", "Alpha 1.9", "Alpha 1.11"],
+                "solution": "undefined",
+                "answer": "b"  
+            },
+            {
+                "question": "Which update added the Engine Power logo?",
+                "choice": ["Alpha 1.9", "Alpha 1.15", "1.21", "1.27"],
+                "solution": "undefined",
+                "answer": "d"  
+            },
+            {
+                "question": "Which update added support for left-handed controls?",
+                "choice": ["1.22", "1.24", "1.26", "1.28"],
+                "solution": "undefined",
+                "answer": "d"  
+            },
+            {
+                "question": "Which updated added the 'surprise' animal?",
+                "choice": ["Alpha 1.15", "Alpha 1.17", "Alpha 1.19", "1.21"],
+                "solution": "undefined",
+                "answer": "d"  
+            }
+        ]
+    },
+    "electrics": {
+        "veryEasy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "easy": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "medium": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            }
+        ],
+        "hard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ],
+        "veryHard": [
+            {
+                "question": "This is a question.",
+                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "solution": "undefined",
+                "answer": "a",
+                "type": "multipleChoice" 
+            }
+        ]
+    }
 }

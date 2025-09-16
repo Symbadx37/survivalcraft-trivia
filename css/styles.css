@@ -2,14 +2,34 @@
     font-family: "Pericles";
     src: url(../fnt/Pericles-Regular.ttf) format("truetype");
 }
+@font-face {
+    font-family: "Rubik";
+    src: url(../fnt/Rubik_VariableFont.ttf) format("truetype");
+}
+
+/* Default Styles */
+p, body, h1, h2, h3, h4 {
+    font-family: 'Rubik';
+}
+h2 {
+    font-weight: 500;
+}
+h3 {
+    font-weight: 450;
+}
+h4 {
+    font-weight: 300;
+}
+
 .choice-button {
+    font-family: 'Rubik';
     background-color: white;
     color: black;
     border: solid 1px gray;
     border-radius: 5px;
     width: 500px;
     height: 40px;
-    margin: 5px;
+    margin: 5px;  
 }
 .choice-button:hover {
     background-color: #cecece;
@@ -27,5 +47,5 @@
     margin: 7px 0 5px 0;
 }
 .option-button {
-    
+    margin: 5px 1px 5px 1px;
 }

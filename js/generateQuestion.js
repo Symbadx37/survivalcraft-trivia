@@ -25,19 +25,24 @@ function generateQuestion() {
     } 
 
     function getDifficultyIndex() {
-        let probabilitySum = 0;
-        for(let i in quizData.tierProbability){
+        let probabilitySum = 0, randomDifficulty;
+        generateRandomNumber(); 
+
+        for(let i in quizData.tierProbability) {
             probabilitySum += quizData.tierProbability[i];
         }
-        let randomNumber = Math.random() * probabilitySum;
-        for (let i in quizData.tierProbability) {
+        function generateRandomNumber() {
+            let randomNumber = Math.random() * probabilitySum;
+            for (let i in quizData.tierProbability) {
                 randomNumber -= quizData.tierProbability[i];
-            if (randomNumber <= 0) {
-                randomDifficulty = parseInt(i);
-                console.log("[SYSTEM]: Parameter randomDifficulty = " + randomDifficulty + " (" + getTime() + ").");    
-                return randomDifficulty;
+                if (randomNumber <= 0) randomDifficulty = parseInt(i);
+            } 
+            if (indexData["nextIndex"][categoryIndex][randomDifficulty] > questionCount[categoryIndex][randomDifficulty]) {
+                delete quizData["tierProbability"][randomDifficulty];
+                generateRandomNumber();
             }
         }
+        return randomDifficulty;          
     }
 
     function getQuestionIndex() {
