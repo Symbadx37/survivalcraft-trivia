@@ -23,7 +23,6 @@ function generateQuestion() {
         }
         return randomCategory;
     } 
-
     function getDifficultyIndex() {
         let probabilitySum = 0, randomNumber = 0, randomDifficulty;
         generateRandomNumber(); 
@@ -48,7 +47,6 @@ function generateQuestion() {
             }
         }
     }
-    
     function getQuestionIndex() {
         let questionIndexRange = questionCount[categoryIndex][difficultyIndex];
         let randomQuestion;
@@ -61,11 +59,7 @@ function generateQuestion() {
             randomQuestion = randomNumber;
         }
         function lookupIndex() {
-            console.log("looking up index ...");
-            
             for (let lookupIndex = 1; lookupIndex <= questionIndexRange; lookupIndex++) {
-                
-                console.log(indexData["generatedIndexes"][categoryIndex][difficultyIndex][lookupIndex - 1]);    
                 if (indexData["generatedIndexes"][categoryIndex][difficultyIndex][lookupIndex - 1] == randomQuestion) {
                     console.log("index matches, regenerating ...");
                     generateRandomIndex();

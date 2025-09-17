@@ -1,5 +1,7 @@
 // document.addEventListener("DOMContentLoaded", function() {getElement("").addEventListener("click", "functionName");});
 
+// getElement("continue").disabled = true;
+
 // Caches quiz preload, loads quiz page
 function startQuiz() { 
     let quizData = getData("quizData");
@@ -13,12 +15,12 @@ function startQuiz() {
 // Tracks quiz progress, generates new question
 function continueQuiz() { 
     let quizData = getData("quizData");
-    if (quizData.isSolutionVisible) {
+    if (quizData.quizState == 2 || quizData.quizState == 3) {
         if (typeof quizData.activeQuestion == "undefined") quizData.activeQuestion = 1;
         else {
             quizData.activeQuestion += 1;
-            quizData.isSolutionVisible = false;
         }
+        quizData.quizState = 2;
         saveData("quizData", quizData);
         generateQuestion();
         loadQuiz();

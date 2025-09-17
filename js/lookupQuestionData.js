@@ -30,14 +30,11 @@ function loadQuiz() {
 function gradeQuiz(id) { 
     let quizData = getData("quizData");
     let indexData = getData("indexData");
+    quizData.isSolutionVisible = true;
+    assignIndexes(id);
+    parseData(); 
     
-    if (quizData.isSolutionVisible == false) {
-        quizData.isSolutionVisible = true;
-        assignIndexes(id);
-        parseData();
-        saveData("quizData", quizData);
-    }
-    
+    saveData("quizData", quizData);
     function parseData() {
         if (questionData[category][difficulty][indexData.questionIndex - 1]["answer"] != userAnswer) {
             if (typeof quizData.questionsWrong == "undefined") quizData.questionsWrong = 0;

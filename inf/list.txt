@@ -1,4 +1,27 @@
-Create system for tracking generated question indexes.
-Update random question generator to allow priorQuestionIndex handling.
-Update random question generator to allow quizCategory handling.
-Update random question generator to allow RANDOM quizTier, quizCategory, quizLength, and NONE quizDuration.
+gradeQuiz()
+
+
+activeQuizState = 1,2,3
+
+State 1 = Continue disabled, Choices enabled
+State 2 = Continue enabled, choices disabled
+
+
+startQuiz() = state 1
+continueQuiz() = state 1
+stopQuiz() = undefined
+gradeQuiz() = state 2, 3
+
+
+gradeQuiz()
+if (quizData.quizState == 1) {
+    quizData.quizState = 2;
+}
+else if (quizData.quizState == 2) {
+    quizData.quizState = 3;
+}
+
+continueQuiz()
+if (quizData.quizState == 2 || quizData.quizState == 3) {
+    quizData.quizState = 1;
+}
