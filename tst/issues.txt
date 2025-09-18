@@ -1,4 +1,0 @@
-- add proper state control for disabling/enabling continueQuiz and gradeQuiz
-- fix recursive function for looking up indexes
-- combine all javascript code files; index.js and parser.js
-- combine quizData and indexData keys; quizData

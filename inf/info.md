@@ -31,12 +31,42 @@
 - CALCULATE POINTS: Yes or no (PLANNED)
 - SHOW SOLUTION: Yes or no (PLANNED)
 
-# Internal Variables
-## Question Tiers
-- Very Easy
-- Easy
-- Medium
-- Hard
-- Very Hard
-## Question Data
-- Question, Choice, Solution, Answer, Type
+## STATIC POINTS
+### Difficulty Tier
+- Beginner = 50
+- Intermediate = 100
+- Experienced = 200
+- Veteran = 400
+- Expert (PLANNED)
+- RANDOM; points are awarded for the selected category.
+### Question Category
+- General Knowledge = 10
+- Game Mechanics = 20
+- Crafting Recipes = 50
+- Creature Behaviors = 25
+- Blocks and Pickables = 25
+- Updates History = 15
+- Electrics = 150
+- RANDOM; points are awarded for the selected category.
+### Question Count
+- Low = 125
+- Medium = 250
+- High = 500
+- RANDOM; points are awarded for the selected category.
+### Time Limit
+- Easy = 250
+- Medium = 500
+- Hard = 1000
+- NONE; reduced point amounts for questions.
+
+## DYNAMIC POINTS
+### Point Values
+- Very Easy = 5/15/25 points (-10)
+- Easy = 20/35/50 points (-15)
+- Medium = 50/75/100 points (-25)
+- Hard = 120/160/200 points (-40)
+- Very Hard = 180/240/300 points (-60)
+### Time Limits
+- Easy = 60/120/180 seconds (-60)
+- Medium = 40/80/120 seconds (-40)
+- Hard = 20/40/60 seconds (-20)

@@ -21,6 +21,7 @@ h4 {
     font-weight: 300;
 }
 
+/* Classes */
 .choice-button {
     font-family: 'Rubik';
     background-color: white;
@@ -48,4 +49,9 @@ h4 {
 }
 .option-button {
     margin: 5px 1px 5px 1px;
+    
+}
+
+.choice-button, .start-button, .back-button, .continue-button, .quit-button, .option-button {
+    cursor: pointer;
 }

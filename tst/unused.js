@@ -146,3 +146,103 @@ switch(userData.quizCategory) {
 indexData["nextIndex"][categoryIndex][difficultyIndex] = indexData["nextIndex"][categoryIndex][difficultyIndex] + 1;
 let nextIndex = indexData["nextIndex"][categoryIndex][difficultyIndex];
 indexData["generatedIndexes"][categoryIndex][difficultyIndex][nextIndex - 1] = questionIndex;
+
+document.addEventListener("DOMContentLoaded", function() {getElement("").addEventListener("click", "functionName");});
+
+getElement("continue").disabled = true;
+
+function initializeData(id) {
+    if (id === "indexData") {
+        let obj = { 
+            generatedIndexes: {
+                1: {1: [], 2: [], 3: [], 4: [], 5: []},
+                2: {1: [], 2: [], 3: [], 4: [], 5: []},
+                3: {1: [], 2: [], 3: [], 4: [], 5: []},
+                4: {1: [], 2: [], 3: [], 4: [], 5: []},
+                5: {1: [], 2: [], 3: [], 4: [], 5: []},
+                6: {1: [], 2: [], 3: [], 4: [], 5: []},
+                7: {1: [], 2: [], 3: [], 4: [], 5: []}
+            },
+            nextIndex: {
+            1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            6: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            7: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+            }
+        }
+        localStorage.setItem("indexData", JSON.stringify(obj));
+        console.log("[SYSTEM]: Index data, generated indexes initialized" + " (" + getTime() + ").");
+    }
+}
+
+function clearData() {
+    localStorage.removeItem("quizData")
+    localStorage.removeItem("indexData")
+    console.log("[SYSTEM]: User data cleared from local storage" + " (" + getTime() + ").");
+}
+
+function saveData(id, obj) {
+    if (id === "quizData") {
+        localStorage.setItem("quizData", JSON.stringify(obj));
+        console.log("[SYSTEM]: User data saved to local storage" + " (" + getTime() + ").");
+    }
+    else if (id === "indexData") {
+        localStorage.setItem("indexData", JSON.stringify(obj));
+        console.log("[SYSTEM]: Index data saved to local storage" + " (" + getTime() + ").");
+    }
+}
+function getData(id) {
+    let obj = {};
+    if (id === "quizData" && typeof localStorage.quizData !== "undefined") {
+        obj = JSON.parse(localStorage.quizData);
+    } 
+    else if (id === "indexData" && typeof localStorage.quizData !== "undefined") {
+        obj = JSON.parse(localStorage.indexData);
+    }
+    return obj;
+}
+
+if (typeof localStorage.sessionData === "undefined") initializeData("sessionData");
+
+/*
+// instantiate object
+let sessionData = new Session();
+Session.setData(sessionData);
+console.log(sessionData);
+
+sessionData.newProperty = 1;
+
+// Set data
+Session.setData(sessionData);
+
+// Get data
+let test = Session.getData(localStorage.getItem("sessionData"));
+console.log(test);
+
+// clear data
+Session.clearData();
+console.log(localStorage.sessionData);
+*/
+
+function assignIndexes(id) {
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    switch(sessionData.categoryIndex) {
+        case 1: category = "generalKnowledge"; break;
+        case 2: category = "gameMechanics"; break;
+        case 3: category = "craftingRecipes"; break;
+        case 4: category = "creatureBehaviors"; break;
+        case 5: category = "blocksPickables"; break;
+        case 6: category = "updatesHistory"; break;
+        case 7: category = "electrics"; break;
+    }
+    switch(sessionData.difficultyIndex) {
+        case 1: difficulty = "veryEasy"; break;
+        case 2: difficulty = "easy"; break;
+        case 3: difficulty = "medium"; break;
+        case 4: difficulty = "hard"; break;
+        case 5: difficulty = "veryHard"; break;
+    }
+}

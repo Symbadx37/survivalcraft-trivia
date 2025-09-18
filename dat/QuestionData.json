@@ -1,6 +1,6 @@
 {   
-    "generalKnowledge": {
-        "veryEasy": [
+    "category_1": {
+        "difficulty_1": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -9,7 +9,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "easy": [
+        "difficulty_2": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -18,7 +18,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "medium": [
+        "difficulty_3": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -27,7 +27,7 @@
                 "type": "multipleChoice"
             }
         ],
-        "hard": [
+        "difficulty_4": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -36,7 +36,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "veryHard": [
+        "difficulty_5": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -46,8 +46,8 @@
             }
         ]
     },
-    "gameMechanics": {
-        "veryEasy": [
+    "category_2": {
+        "difficulty_1": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -56,7 +56,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "easy": [
+        "difficulty_2": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -65,7 +65,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "medium": [
+        "difficulty_3": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -74,7 +74,7 @@
                 "type": "multipleChoice"
             }
         ],
-        "hard": [
+        "difficulty_4": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -83,7 +83,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "veryHard": [
+        "difficulty_5": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -93,8 +93,8 @@
             }
         ]
     },
-    "craftingRecipes": {
-        "veryEasy": [
+    "category_3": {
+        "difficulty_1": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -103,7 +103,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "easy": [
+        "difficulty_2": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -112,7 +112,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "medium": [
+        "difficulty_3": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -121,7 +121,7 @@
                 "type": "multipleChoice"
             }
         ],
-        "hard": [
+        "difficulty_4": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -130,7 +130,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "veryHard": [
+        "difficulty_5": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -140,8 +140,8 @@
             }
         ]
     },
-    "creatureBehaviors": {
-        "veryEasy": [
+    "category_4": {
+        "difficulty_1": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -150,7 +150,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "easy": [
+        "difficulty_2": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -159,7 +159,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "medium": [
+        "difficulty_3": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -168,7 +168,7 @@
                 "type": "multipleChoice"
             }
         ],
-        "hard": [
+        "difficulty_4": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -177,7 +177,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "veryHard": [
+        "difficulty_5": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -187,8 +187,8 @@
             }
         ]
     },
-    "blocksPickables": {
-        "veryEasy": [
+    "category_5": {
+        "difficulty_1": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -197,7 +197,7 @@
                 "type": "multipleChoice"
             }
         ],
-        "easy": [
+        "difficulty_2": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -206,7 +206,7 @@
                 "type": "multipleChoice"
             }
         ],
-        "medium": [
+        "difficulty_3": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -215,7 +215,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "hard": [
+        "difficulty_4": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -224,7 +224,7 @@
                 "type": "multipleChoice"
             }
         ],
-        "veryHard": [
+        "difficulty_5": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -234,8 +234,8 @@
             }
         ]
     },
-    "updatesHistory": {
-        "veryEasy": [
+    "category_6": {
+        "difficulty_1": [
             {
                 "question": "What was the most recent update?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
@@ -307,7 +307,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "easy": [
+        "difficulty_2": [
             {
                 "question": "Which update enabled werewolves to interact with blocks, such as opening doors or pressing buttons?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
@@ -326,7 +326,7 @@
                 "question": "Which update added colored wires?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
                 "solution": "undefined",
-                "answer": "b",
+                "answer": "a",
                 "type": "multipleChoice"   
             },
             {
@@ -442,7 +442,7 @@
                 "type": "multipleChoice"   
             }
         ],
-        "medium": [
+        "difficulty_3": [
             {
                 "question": "Which were electrics first introduced? ",
                 "choice": ["Alpha 1.13", "Alpha 1.15", "Alpha 1.17", "Alpha 1.19"],
@@ -626,7 +626,7 @@
                 "type": "multipleChoice"   
             }
         ],
-        "hard": [
+        "difficulty_4": [
             {
                 "question": "Which update added NAND and NOR logic gates?",
                 "choice": ["1.28", "1.29", "2.0", "2.1"],
@@ -803,7 +803,7 @@
                 "type": "multipleChoice"   
             }
         ],
-        "veryHard": [
+        "difficulty_5": [
             {
                 "question": "Which update added marble block?",
                 "choice": ["Alpha 1.1", "Alpha 1.3", "Alpha 1.5", "Alpha 1.7"],
@@ -926,8 +926,8 @@
             }
         ]
     },
-    "electrics": {
-        "veryEasy": [
+    "category_7": {
+        "difficulty_1": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -936,7 +936,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "easy": [
+        "difficulty_2": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -945,7 +945,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "medium": [
+        "difficulty_3": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -954,7 +954,7 @@
                 "type": "multipleChoice"
             }
         ],
-        "hard": [
+        "difficulty_4": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
@@ -963,7 +963,7 @@
                 "type": "multipleChoice" 
             }
         ],
-        "veryHard": [
+        "difficulty_5": [
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
