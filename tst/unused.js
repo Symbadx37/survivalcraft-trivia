@@ -246,3 +246,28 @@ function assignIndexes(id) {
         case 5: difficulty = "veryHard"; break;
     }
 }
+
+switch(parsedString) {
+        case "tier": sessionData.quizTier = parsedInt; break;
+        case "ctgr": sessionData.quizCategory = parsedInt; break;
+        case "lgth": sessionData.quizLength = parsedInt; break;
+        case "drtn": sessionData.quizDuration = parsedInt; break;
+    }
+
+
+function initializeSetup(id) {
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    let parsedString = id.slice(0,4);
+    
+    // Update button states
+    if (typeof sessionData[parsedString + "State"] == "undefined") {
+        getElement(id).disabled = true;
+        sessionData[parsedString + "State"] = id;
+    } 
+    else if (typeof sessionData[parsedString + "State"] !== "undefined" && id !== sessionData[parsedString + "State"]) {
+        getElement(id).disabled = true;
+        getElement(sessionData[parsedString + "State"]).disabled = false;
+        sessionData[parsedString + "State"] = id;
+    }
+    Session.setData(sessionData);
+}

@@ -1,4 +1,6 @@
 const tierCount = 4;
+const quizLengthMax = 4;
+const quizDurationMax = 5;
 const categoryCount = 7;
 const questionCount = {
     1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
@@ -22,8 +24,25 @@ document.addEventListener("DOMContentLoaded",
             let sessionObject = new Session();
             Session.setData(sessionObject);
         }
-        // Load Session data
         let sessionData = Session.getData(localStorage.getItem("sessionData"));
+        
+        // Load button states
+        if (typeof sessionData.isActive == "undefined"){
+            if (typeof sessionData.tierState !== "undefined") {
+                getElement(sessionData.tierState).disabled = true;
+            }
+            if (typeof sessionData.ctgrState !== "undefined") {
+                getElement(sessionData.ctgrState).disabled = true;
+            }
+            if (typeof sessionData.lgthState !== "undefined") {
+                getElement(sessionData.lgthState).disabled = true;
+            }
+            if (typeof sessionData.drtnState !== "undefined") {
+                getElement(sessionData.drtnState).disabled = true;
+            }
+        }
+
+        // Initialize or load quiz
         if (sessionData.preloadNeeded) {
             sessionData.preloadNeeded = false;
             Session.setData(sessionData);
@@ -35,99 +54,94 @@ document.addEventListener("DOMContentLoaded",
         }
     }
 );
-
-function initializeQuiz(id) {
+function continueQuiz() { 
     let sessionData = Session.getData(localStorage.getItem("sessionData"));
-    let quizTier;
-    switch(id) {
-        case "tier_1":
-            sessionData.quizTier = 1;
-            quizTier = 1;
-            break;
-        case "tier_2":
-            sessionData.quizTier = 2;
-            quizTier = 2;
-            break;
-        case "tier_3":
-            sessionData.quizTier = 3;
-            quizTier = 3;
-            break;
-        case "tier_4":
-            sessionData.quizTier = 4;
-            quizTier = 4;
-            break;
-         case "tier_rdm":
-            sessionData.quizTier = 5;
-            quizTier = 5;
-            break;
-        case "category_1":
-            sessionData.quizCategory = 1;
-            break;
-        case "category_2":
-            sessionData.quizCategory = 2;
-            break;
-        case "category_3":
-            sessionData.quizCategory = 3;
-            break;
-        case "category_4":
-            sessionData.quizCategory = 4;
-            break;
-        case "category_5":
-            sessionData.quizCategory = 5;
-            break;
-        case "category_6":
-            sessionData.quizCategory = 6;
-            break;
-        case "category_7":
-            sessionData.quizCategory = 7;
-            break;
-        case "category_rdm":
-            sessionData.quizCategory = 8;
-            break;
-        case "length_1":
-            sessionData.quizLength = 1;
-            break;
-        case "length_2":
-            sessionData.quizLength = 2;
-            break;
-        case "length_3":
-            sessionData.quizLength = 3;
-            break;
-        case "length_rdm":
-            sessionData.quizLength = 4;
-            break;
-        case "duration_1":
-            sessionData.quizDuration = 1;
-            break;
-        case "duration_2":
-            sessionData.quizDuration = 2;
-            break;
-        case "duration_3":
-            sessionData.quizDuration = 3;
-            break;
-        case "duration_none":
-            sessionData.quizDuration = 4;
-            break;
-        }
-    sessionData = initializeTier(sessionData, quizTier);
+    if (sessionData.quizState == 2 || sessionData.quizState == 3) {
+        sessionData.activeQuestion += 1;
+        sessionData.quizState = 1;
+        Session.setData(sessionData);
+        generateQuestion();
+        loadQuiz();
+    }
+}
+function initializeSetup(id) {
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    let parsedString = id.slice(0,4);
+    
+    // Update button states
+    if (typeof sessionData[parsedString + "State"] == "undefined") {
+        getElement(id).disabled = true;
+        sessionData[parsedString + "State"] = id;
+    } 
+    else if (typeof sessionData[parsedString + "State"] !== "undefined" && id !== sessionData[parsedString + "State"]) {
+        getElement(id).disabled = true;
+        getElement(sessionData[parsedString + "State"]).disabled = false;
+        sessionData[parsedString + "State"] = id;
+    }
     Session.setData(sessionData);
 }
-function initializeTier(sessionData, quizTier) {
-    switch(quizTier) {
-        case 1:
-            sessionData.tierProbability = probability_beginner;
-            break;
-        case 2:
-            sessionData.tierProbability = probability_intermediate;
-            break;
-        case 3:
-            sessionData.tierProbability = probability_experienced;
-            break;
-        case 4:
-            sessionData.tierProbability = probability_veteran;
-            break;
+
+function startQuiz() {
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    validateSetup();
+    if (sessionData.isSetupValid == true) {
+        sessionData.preloadNeeded = true;
+        sessionData.isActive = true;
+        Session.setData(sessionData);
+        window.location.replace("quiz.html");
     }
-    return sessionData;
+    function validateSetup() {
+        if (typeof sessionData.tierState == "undefined") {
+            alert("Difficulty tier must be selected.");
+            return;
+        }
+        else if (typeof sessionData.ctgrState == "undefined") {
+            alert("Question category must be selected.");
+            return;
+        }
+        else if (typeof sessionData.lgthState == "undefined") {
+            alert("Question count must be selected.");
+            return;
+        }
+        else if (typeof sessionData.drtnState == "undefined") {
+            alert("Time limit must be selected.");
+            return;
+        } else {
+            sessionData.isSetupValid = true;
+            initializeData();  
+        }
+    }
+    function initializeData() {
+        // "tier_3" -> quizTier = 3
+        // buttonStates = {0,0,0,0}
+        // sessionData.quizTier = setupButtonStates[0];
+        // delete setupButtonStates;
+
+        delete sessionData.tierState;
+        
+        if (sessionData.quizTier == 5) {
+            let randomTier = Math.floor((Math.random() * tierCount) + 1)
+            sessionData.quizTier = randomTier;
+            console.log("[SYSTEM]: Parameter randomTier = " + sessionData.quizTier + " (" + getTime() + ").");
+        }
+        if (sessionData.quizLength == 4) {
+            let randomLength = Math.floor((Math.random() * quizLengthMax) + 1)
+            sessionData.quizLength = randomLength;
+            console.log("[SYSTEM]: Parameter randomLength = " + sessionData.quizLength + " (" + getTime() + ").");
+        }
+        if (sessionData.quizDuration == 5) {
+            let randomDuration = Math.floor((Math.random() * quizDurationMax) + 1)
+            sessionData.quizDuration = randomDuration;
+            console.log("[SYSTEM]: Parameter randomDuration = " + sessionData.quizDuration + " (" + getTime() + ").");
+        }
+        switch(sessionData.quizTier) {
+            case 1: sessionData.tierProbability = probability_beginner; break;
+            case 2: sessionData.tierProbability = probability_intermediate; break;
+            case 3: sessionData.tierProbability = probability_experienced; break;
+            case 4: sessionData.tierProbability = probability_veteran; break;
+        }
+        Session.setData(sessionData);
+    } 
 }
 function generateQuestion() {
     let sessionData = Session.getData(localStorage.getItem("sessionData"));
@@ -141,9 +155,8 @@ function generateQuestion() {
     Session.setData(sessionData);
 
     function getCategoryIndex() {
-        if (sessionData.quizCategory == 5) {
-            let randomNumber = Math.floor((Math.random() * categoryCount) + 1);
-            let randomCategory = randomNumber;
+        if (sessionData.quizCategory == 8) {
+            let randomCategory = Math.floor((Math.random() * categoryCount) + 1);
             console.log("[SYSTEM]: Parameter randomCategory = " + randomCategory + " (" + getTime() + ").");
         } else {
             randomCategory = sessionData.quizCategory;
@@ -183,7 +196,7 @@ function generateQuestion() {
         return randomQuestion;
 
         function generateRandomIndex() {
-            let randomNumber = Math.floor((Math.random() * questionIndexRange) + 1);
+            let randomQuestion = Math.floor((Math.random() * questionIndexRange) + 1);
             randomQuestion = randomNumber;
         }
         function lookupIndex() {
@@ -201,31 +214,19 @@ function generateQuestion() {
         }
     }
 }
-function startQuiz() { 
-    let sessionData = Session.getData(localStorage.getItem("sessionData"));
-    sessionData.preloadNeeded = true;
-    sessionData.isActive = true;
-    Session.setData(sessionData);
-    window.location.replace("quiz.html");
-}
-function continueQuiz() { 
-    let sessionData = Session.getData(localStorage.getItem("sessionData"));
-    if (sessionData.quizState == 2 || sessionData.quizState == 3) {
-        sessionData.activeQuestion += 1;
-        sessionData.quizState = 1;
-        Session.setData(sessionData);
-        generateQuestion();
-        loadQuiz();
-    }
-}
 function stopQuiz() {
     Session.clearData();
     window.location.replace("../pgs/options.html");
 }
 function exitSetup() {
     Session.clearData();
-    window.location.replace("index.html");
+    window.location.replace("../index.html");
 }
+function resetSetup() {
+    Session.clearData();
+    window.location.reload();
+}
+
 function getElement(id) {
     return document.getElementById(id);
 }

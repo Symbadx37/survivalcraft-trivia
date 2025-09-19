@@ -47,11 +47,46 @@ h4 {
 .quit-button {
     margin: 7px 0 5px 0;
 }
-.option-button {
-    margin: 5px 1px 5px 1px;
-    
+
+/* BUTTON Classes */
+.btn-start, .btn-reset, .btn-exit {
+    width: 120px;
+    height: 30px;
 }
 
-.choice-button, .start-button, .back-button, .continue-button, .quit-button, .option-button {
+.btn-start, .btn-reset, .btn-exit,
+.btn-tier, .btn-category, .btn-length, .btn-duration,
+.btn-tier-rdm, .btn-category-rdm, .btn-length-rdm, .btn-duration-rdm  {
+    font-family: "Rubik";
+    margin: 5px 1px 5px 1px;
     cursor: pointer;
+    border: solid 1px #c7c1c1;
+    border-radius: 4px;
+    width: 160px;
+    height: 30px;
+    font-size: 0.9rem;
+    transition-duration: 0.1s;
+}
+
+.btn-start:hover, .btn-reset:hover, .btn-exit:hover,
+.btn-tier:hover, .btn-category:hover, .btn-length:hover, .btn-duration:hover,
+.btn-tier-rdm:hover, .btn-category-rdm:hover, .btn-length-rdm:hover, .btn-duration-rdm:hover  {
+    background-color: rgba(239, 239, 239, 0.3);
+    border: solid 1px #c7c1c1;
+    border-radius: 4px;
+    color: black;
+}
+
+.btn-tier-rdm, .btn-category-rdm, .btn-length-rdm, .btn-duration-rdm,
+.btn-tier-rdm:hover, .btn-category-rdm:hover, .btn-length-rdm:hover, .btn-duration-rdm:hover  {
+    font-family: "Rubik";
+    color: red;
+}
+
+.btn-tier:disabled, .btn-category:disabled, .btn-length:disabled, .btn-duration:disabled,
+.btn-tier-rdm:disabled, .btn-category-rdm:disabled, .btn-length-rdm:disabled, .btn-duration-rdm:disabled {
+    font-family: "Rubik";
+    cursor: not-allowed;
+    color: rgb(170, 170, 170);
+    background-color: rgba(239, 239, 239, 0.3);
 }

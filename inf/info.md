@@ -1,3 +1,6 @@
+** Allow for 1-3 categories to be selected
+** Allow for unlimited question count option. Once all active indexes have been used, they are reset
+
 # External Options
 ## Difficulty Tier
 - Beginner
