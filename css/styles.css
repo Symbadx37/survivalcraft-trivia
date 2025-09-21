@@ -54,7 +54,7 @@ h4 {
     height: 30px;
 }
 
-.btn-start, .btn-reset, .btn-exit,
+.btn-start, .btn-reset, .btn-exit, .btn-continue, .btn-quit,
 .btn-tier, .btn-category, .btn-length, .btn-duration,
 .btn-tier-rdm, .btn-category-rdm, .btn-length-rdm, .btn-duration-rdm  {
     font-family: "Rubik";
@@ -65,10 +65,10 @@ h4 {
     width: 160px;
     height: 30px;
     font-size: 0.9rem;
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
 }
 
-.btn-start:hover, .btn-reset:hover, .btn-exit:hover,
+.btn-start:hover, .btn-reset:hover, .btn-exit:hover, .btn-continue:hover, .btn-quit:hover,
 .btn-tier:hover, .btn-category:hover, .btn-length:hover, .btn-duration:hover,
 .btn-tier-rdm:hover, .btn-category-rdm:hover, .btn-length-rdm:hover, .btn-duration-rdm:hover  {
     background-color: rgba(239, 239, 239, 0.3);
@@ -89,4 +89,9 @@ h4 {
     cursor: not-allowed;
     color: rgb(170, 170, 170);
     background-color: rgba(239, 239, 239, 0.3);
+}
+
+.btn-continue, .btn-quit {
+    margin-top: 10px;
+    width: 100px;
 }

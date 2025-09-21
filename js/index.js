@@ -25,58 +25,87 @@ document.addEventListener("DOMContentLoaded",
             Session.setData(sessionObject);
         }
         let sessionData = Session.getData(localStorage.getItem("sessionData"));
-        
         // Load button states
-        if (typeof sessionData.isActive == "undefined"){
-            if (typeof sessionData.tierState !== "undefined") {
-                getElement(sessionData.tierState).disabled = true;
+        if (typeof sessionData.isActive == "undefined") {
+            if (sessionData["buttonStates"]["tier"]["state"] !== 0) {
+                getElement(sessionData["buttonStates"]["tier"]["id"]).disabled = true;
             }
-            if (typeof sessionData.ctgrState !== "undefined") {
-                getElement(sessionData.ctgrState).disabled = true;
+            if (sessionData["buttonStates"]["ctgr"]["state"] !== 0) {
+                getElement(sessionData["buttonStates"]["ctgr"]["id"]).disabled = true;
             }
-            if (typeof sessionData.lgthState !== "undefined") {
-                getElement(sessionData.lgthState).disabled = true;
+            if (sessionData["buttonStates"]["lgth"]["state"] !== 0) {
+                getElement(sessionData["buttonStates"]["lgth"]["id"]).disabled = true;
             }
-            if (typeof sessionData.drtnState !== "undefined") {
-                getElement(sessionData.drtnState).disabled = true;
+            if (sessionData["buttonStates"]["drtn"]["state"] !== 0) {
+                getElement(sessionData["buttonStates"]["drtn"]["id"]).disabled = true;
             }
         }
-
-        // Initialize or load quiz
+        // Load page data
         if (sessionData.preloadNeeded) {
             sessionData.preloadNeeded = false;
             Session.setData(sessionData);
             generateQuestion();
             loadQuiz();
         }
-        else if (typeof sessionData.isActive !== "undefined") {
+        else if (sessionData.isActive) {
             loadQuiz();
+        } 
+        else if (sessionData.isActive == false && sessionData.preloadNeeded == false) {
+            // loadResults();
         }
     }
 );
 function continueQuiz() { 
     let sessionData = Session.getData(localStorage.getItem("sessionData"));
     if (sessionData.quizState == 2 || sessionData.quizState == 3) {
-        sessionData.activeQuestion += 1;
-        sessionData.quizState = 1;
-        Session.setData(sessionData);
-        generateQuestion();
-        loadQuiz();
+        switch(sessionData.quizLength) {
+            case 1: 
+                if (sessionData.activeQuestion == 10) {
+                    sessionData.isActive = false;
+                    Session.setData(sessionData);
+                    window.location.replace("results.html");
+                }
+                break;
+            case 2:
+                if (sessionData.activeQuestion == 20) {
+                    sessionData.isActive = false;
+                    Session.setData(sessionData);
+                    window.location.replace("results.html");
+                }
+                break;
+            case 3:
+                if (sessionData.activeQuestion == 30) {
+                    sessionData.isActive = false;
+                    Session.setData(sessionData);
+                    window.location.replace("results.html");
+                }
+                break;
+        }  
+        if (sessionData.isActive) {
+            sessionData.activeQuestion += 1;
+            sessionData.quizState = 1;
+            Session.setData(sessionData);
+            generateQuestion();
+            loadQuiz();
+        }
     }
 }
 function initializeSetup(id) {
     let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    let parsedInt = parseInt(id.charAt(5));
     let parsedString = id.slice(0,4);
-    
+
     // Update button states
-    if (typeof sessionData[parsedString + "State"] == "undefined") {
+    if (sessionData["buttonStates"][parsedString]["state"] == 0) {
         getElement(id).disabled = true;
-        sessionData[parsedString + "State"] = id;
+        sessionData["buttonStates"][parsedString]["id"] = id;
+        sessionData["buttonStates"][parsedString]["state"] = parsedInt;
     } 
-    else if (typeof sessionData[parsedString + "State"] !== "undefined" && id !== sessionData[parsedString + "State"]) {
+    else if (sessionData["buttonStates"][parsedString]["state"] !== 0 && id !== sessionData["buttonStates"][parsedString]["state"]) {
         getElement(id).disabled = true;
-        getElement(sessionData[parsedString + "State"]).disabled = false;
-        sessionData[parsedString + "State"] = id;
+        getElement(sessionData["buttonStates"][parsedString]["id"]).disabled = false;
+        sessionData["buttonStates"][parsedString]["id"] = id;
+        sessionData["buttonStates"][parsedString]["state"] = parsedInt;
     }
     Session.setData(sessionData);
 }
@@ -91,19 +120,19 @@ function startQuiz() {
         window.location.replace("quiz.html");
     }
     function validateSetup() {
-        if (typeof sessionData.tierState == "undefined") {
+        if (sessionData["buttonStates"]["tier"]["state"] == 0) {
             alert("Difficulty tier must be selected.");
             return;
         }
-        else if (typeof sessionData.ctgrState == "undefined") {
+        else if (sessionData["buttonStates"]["ctgr"]["state"] == 0) {
             alert("Question category must be selected.");
             return;
         }
-        else if (typeof sessionData.lgthState == "undefined") {
+        else if (sessionData["buttonStates"]["lgth"]["state"] == 0) {
             alert("Question count must be selected.");
             return;
         }
-        else if (typeof sessionData.drtnState == "undefined") {
+        else if (sessionData["buttonStates"]["drtn"]["state"] == 0) {
             alert("Time limit must be selected.");
             return;
         } else {
@@ -112,12 +141,10 @@ function startQuiz() {
         }
     }
     function initializeData() {
-        // "tier_3" -> quizTier = 3
-        // buttonStates = {0,0,0,0}
-        // sessionData.quizTier = setupButtonStates[0];
-        // delete setupButtonStates;
-
-        delete sessionData.tierState;
+        sessionData.quizTier = sessionData["buttonStates"]["tier"]["state"];
+        sessionData.quizCategory = sessionData["buttonStates"]["ctgr"]["state"];
+        sessionData.quizLength = sessionData["buttonStates"]["lgth"]["state"];
+        sessionData.quizDuration = sessionData["buttonStates"]["drtn"]["state"];
         
         if (sessionData.quizTier == 5) {
             let randomTier = Math.floor((Math.random() * tierCount) + 1)
@@ -166,11 +193,12 @@ function generateQuestion() {
     } 
     function getDifficultyIndex() {
         let probabilitySum = 0, randomNumber = 0, randomDifficulty;
-        generateRandomNumber(); 
+        generateRandomIndex();
+        validateIndex();
         console.log("[SYSTEM]: Parameter randomDifficulty = " + randomDifficulty + " (" + getTime() + ").");
         return randomDifficulty;
 
-        function generateRandomNumber() {
+        function generateRandomIndex() {
             for(let i in sessionData.tierProbability) {
                 probabilitySum += sessionData.tierProbability[i];
             }
@@ -179,12 +207,14 @@ function generateQuestion() {
                 randomNumber -= sessionData.tierProbability[i];
                 if (randomNumber <= 0) {
                     randomDifficulty = parseInt(i)
-                    if (sessionData["nextIndex"][categoryIndex][randomDifficulty] > questionCount[categoryIndex][randomDifficulty]) {
-                        delete sessionData["tierProbability"][randomDifficulty];
-                        generateRandomNumber();
-                    }
-                    break;
+                    break; 
                 }  
+            }
+        }
+        function validateIndex() {
+            if (sessionData["nextIndex"][categoryIndex][randomDifficulty] > questionCount[categoryIndex][randomDifficulty]) {
+                delete sessionData["tierProbability"][randomDifficulty];
+                generateRandomIndex();
             }
         }
     }
@@ -196,15 +226,23 @@ function generateQuestion() {
         return randomQuestion;
 
         function generateRandomIndex() {
-            let randomQuestion = Math.floor((Math.random() * questionIndexRange) + 1);
-            randomQuestion = randomNumber;
+            randomQuestion = Math.floor((Math.random() * questionIndexRange) + 1);
         }
         function lookupIndex() {
-            for (let lookupIndex = 1; lookupIndex <= questionIndexRange; lookupIndex++) {
+            let lookupNeeded = true;
+            let lookupIndex = 0;
+            while (lookupNeeded) {
                 if (sessionData["generatedIndexes"][categoryIndex][difficultyIndex][lookupIndex - 1] == randomQuestion) {
-                    console.log("index matches, regenerating ...");
+                    console.log("has match, regenerating ...");
                     generateRandomIndex();
-                    lookupIndex();   
+                    lookupIndex = 0;
+                } 
+                else if (lookupIndex >= questionIndexRange || lookupIndex == sessionData.activeQuestion - 1) {
+                    console.log("no match, exiting ...");
+                    lookupNeeded = false;
+                    break;
+                } else {
+                    lookupIndex++;
                 }
             }
             let nextIndex = sessionData["nextIndex"][categoryIndex][difficultyIndex];
@@ -226,7 +264,6 @@ function resetSetup() {
     Session.clearData();
     window.location.reload();
 }
-
 function getElement(id) {
     return document.getElementById(id);
 }

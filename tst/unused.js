@@ -271,3 +271,32 @@ function initializeSetup(id) {
     }
     Session.setData(sessionData);
 }
+
+// Update button states
+    if (typeof sessionData[parsedString + "State"] == "undefined") {
+        getElement(id).disabled = true;
+        sessionData[parsedString + "State"] = id;
+    } 
+    else if (typeof sessionData[parsedString + "State"] !== "undefined" && id !== sessionData[parsedString + "State"]) {
+        getElement(id).disabled = true;
+        getElement(sessionData[parsedString + "State"]).disabled = false;
+        sessionData[parsedString + "State"] = id;
+    }
+    Session.setData(sessionData);
+
+// Load button states
+        if (typeof sessionData.isActive == "undefined"){
+            if (typeof sessionData.tierState !== "undefined") {
+                getElement(sessionData.tierState).disabled = true;
+            }
+            if (typeof sessionData.ctgrState !== "undefined") {
+                getElement(sessionData.ctgrState).disabled = true;
+            }
+            if (typeof sessionData.lgthState !== "undefined") {
+                getElement(sessionData.lgthState).disabled = true;
+            }
+            if (typeof sessionData.drtnState !== "undefined") {
+                getElement(sessionData.drtnState).disabled = true;
+            }
+        }
+

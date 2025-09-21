@@ -1,6 +1,12 @@
 ** Allow for 1-3 categories to be selected
 ** Allow for unlimited question count option. Once all active indexes have been used, they are reset
 
+Home (index.html) = Logo, description about Survivalcraft, how the quiz works and its features
+Play (options.html) = Quiz setup page
+About = Credits and creator biography
+Contact = 
+
+
 # External Options
 ## Difficulty Tier
 - Beginner

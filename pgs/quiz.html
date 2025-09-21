@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
-    <title>SC Trivia - Quiz</title>
+    <title>Survivalcraft Trivia - Quiz</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css"/>
     <script src="../js/index.js" defer></script>
     <script src="../js/session.js" defer></script>
     <script type="module" src="../js/parser.js" defer></script>
-    <link rel="icon" type="favicon" href="../img/survivalcraft.ico">
+    <link rel="icon" type="favicon" href="../img/site-favicon.ico">
 </head>
 <body>
     <header>
@@ -20,13 +20,19 @@
             <p class="placeholder-text" id="question">null</p>
             <div>
                 <input class="choice-button" type="button" id="choice_1" value="null" onclick="gradeQuiz(this.id)"></input>
-                <input class="choice-button" type="button" id="choice_2" value="null" onclick="gradeQuiz(this.id)"></input>
-                <input class="choice-button" type="button" id="choice_3" value="null" onclick="gradeQuiz(this.id)"></input>
-                <input class="choice-button" type="button" id="choice_4" value="null" onclick="gradeQuiz(this.id)"></input>
             </div>
             <div>
-                <input class="continue-button" type="button" id="continue" value="Continue" onclick="continueQuiz(this.id)"></input>
-                <input class="quit-button" type="button" id="quit" value="Quit" onclick="stopQuiz(this.id)"></input>
+                <input class="choice-button" type="button" id="choice_2" value="null" onclick="gradeQuiz(this.id)"></input>
+            </div>
+            <div>
+                <input class="choice-button" type="button" id="choice_3" value="null" onclick="gradeQuiz(this.id)"></input>
+            </div>
+            <div>
+                <input class="choice-button" type="button" id="choice_4" value="null" onclick="gradeQuiz(this.id)"></input>
+            </div>      
+            <div>
+                <input style="margin-left: 5px" class="btn-continue" type="button" id="continue" value="Continue" onclick="continueQuiz(this.id)"></input>
+                <input style="margin-left: 3px" class="btn-quit" type="button" id="quit" value="Quit" onclick="stopQuiz(this.id)"></input>
             </div>
         </div>
     </main>
