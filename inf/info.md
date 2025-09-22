@@ -6,7 +6,6 @@ Play (options.html) = Quiz setup page
 About = Credits and creator biography
 Contact = 
 
-
 # External Options
 ## Difficulty Tier
 - Beginner

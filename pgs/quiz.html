@@ -4,40 +4,59 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
     <script src="../js/index.js" defer></script>
     <script src="../js/session.js" defer></script>
     <script type="module" src="../js/parser.js" defer></script>
     <link rel="icon" type="favicon" href="../img/site-favicon.ico">
 </head>
 <body>
-    <header>
-        <nav>
-        </nav>
-    </header>
     <main>
         <div>
-            <h2>Survivalcraft Trivia</h2>
-            <p class="placeholder-text" id="question">null</p>
+            <h2 class="elm-title">Survivalcraft Trivia</h2>
+            <p class="elm-question" id="question"></p>
             <div>
-                <input class="choice-button" type="button" id="choice_1" value="null" onclick="gradeQuiz(this.id)"></input>
+                <input class="btn-choice" type="button" id="choice_1" value="" onclick="gradeQuiz(this.id)"></input>
             </div>
             <div>
-                <input class="choice-button" type="button" id="choice_2" value="null" onclick="gradeQuiz(this.id)"></input>
+                <input class="btn-choice" type="button" id="choice_2" value="" onclick="gradeQuiz(this.id)"></input>
             </div>
             <div>
-                <input class="choice-button" type="button" id="choice_3" value="null" onclick="gradeQuiz(this.id)"></input>
+                <input class="btn-choice" type="button" id="choice_3" value="" onclick="gradeQuiz(this.id)"></input>
             </div>
             <div>
-                <input class="choice-button" type="button" id="choice_4" value="null" onclick="gradeQuiz(this.id)"></input>
+                <input class="btn-choice" type="button" id="choice_4" value="" onclick="gradeQuiz(this.id)"></input>
             </div>      
             <div>
                 <input style="margin-left: 5px" class="btn-continue" type="button" id="continue" value="Continue" onclick="continueQuiz(this.id)"></input>
                 <input style="margin-left: 3px" class="btn-quit" type="button" id="quit" value="Quit" onclick="stopQuiz(this.id)"></input>
             </div>
         </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Tier</span>
+            <span> = </span>
+            <span id="inf-tier"></span>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Category</span>
+            <span> = </span>
+            <span id="inf-category"></span>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Difficulty</span>
+            <span> = </span>
+            <span id="inf-difficulty"></span>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Progress</span>
+            <span> = </span>
+            <span id="inf-progress"></span>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Time Left</span>
+            <span> = </span>
+            <span id="inf-time"></span>
+        </div>
     </main>
-
-    <footer>
-    </footer>
 </body>
 <html>

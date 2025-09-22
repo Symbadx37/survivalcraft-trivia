@@ -40,76 +40,35 @@ document.addEventListener("DOMContentLoaded",
                 getElement(sessionData["buttonStates"]["drtn"]["id"]).disabled = true;
             }
         }
-        // Load page data
+        // Preload page
         if (sessionData.preloadNeeded) {
             sessionData.preloadNeeded = false;
+            getElement("continue").disabled = true;
             Session.setData(sessionData);
             generateQuestion();
             loadQuiz();
         }
+        // Load quiz data
         else if (sessionData.isActive) {
+            if (sessionData.quizState == 1) {
+                getElement("continue").disabled = true;
+            }
+            if (sessionData.quizState == 2) {
+                getElement("choice_1").disabled = true;
+                getElement("choice_2").disabled = true;
+                getElement("choice_3").disabled = true;
+                getElement("choice_4").disabled = true;
+                if (sessionData.answerState.state == "wrong") getElement(sessionData.answerState.id).classList.add("btn-choice_wrong");
+                else getElement(sessionData.answerState.id).classList.add("btn-choice_right");
+            }
             loadQuiz();
         } 
+        // Load results data
         else if (sessionData.isActive == false && sessionData.preloadNeeded == false) {
-            // loadResults();
+            loadResults();
         }
     }
 );
-function continueQuiz() { 
-    let sessionData = Session.getData(localStorage.getItem("sessionData"));
-    if (sessionData.quizState == 2 || sessionData.quizState == 3) {
-        switch(sessionData.quizLength) {
-            case 1: 
-                if (sessionData.activeQuestion == 10) {
-                    sessionData.isActive = false;
-                    Session.setData(sessionData);
-                    window.location.replace("results.html");
-                }
-                break;
-            case 2:
-                if (sessionData.activeQuestion == 20) {
-                    sessionData.isActive = false;
-                    Session.setData(sessionData);
-                    window.location.replace("results.html");
-                }
-                break;
-            case 3:
-                if (sessionData.activeQuestion == 30) {
-                    sessionData.isActive = false;
-                    Session.setData(sessionData);
-                    window.location.replace("results.html");
-                }
-                break;
-        }  
-        if (sessionData.isActive) {
-            sessionData.activeQuestion += 1;
-            sessionData.quizState = 1;
-            Session.setData(sessionData);
-            generateQuestion();
-            loadQuiz();
-        }
-    }
-}
-function initializeSetup(id) {
-    let sessionData = Session.getData(localStorage.getItem("sessionData"));
-    let parsedInt = parseInt(id.charAt(5));
-    let parsedString = id.slice(0,4);
-
-    // Update button states
-    if (sessionData["buttonStates"][parsedString]["state"] == 0) {
-        getElement(id).disabled = true;
-        sessionData["buttonStates"][parsedString]["id"] = id;
-        sessionData["buttonStates"][parsedString]["state"] = parsedInt;
-    } 
-    else if (sessionData["buttonStates"][parsedString]["state"] !== 0 && id !== sessionData["buttonStates"][parsedString]["state"]) {
-        getElement(id).disabled = true;
-        getElement(sessionData["buttonStates"][parsedString]["id"]).disabled = false;
-        sessionData["buttonStates"][parsedString]["id"] = id;
-        sessionData["buttonStates"][parsedString]["state"] = parsedInt;
-    }
-    Session.setData(sessionData);
-}
-
 function startQuiz() {
     let sessionData = Session.getData(localStorage.getItem("sessionData"));
     validateSetup();
@@ -169,6 +128,67 @@ function startQuiz() {
         }
         Session.setData(sessionData);
     } 
+}
+function continueQuiz() { 
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    if (sessionData.quizState == 2) {
+        switch(sessionData.quizLength) {
+            case 1: 
+                if (sessionData.activeQuestion == 10) {
+                    sessionData.isActive = false;
+                    Session.setData(sessionData);
+                    window.location.replace("results.html");
+                }
+                break;
+            case 2:
+                if (sessionData.activeQuestion == 20) {
+                    sessionData.isActive = false;
+                    Session.setData(sessionData);
+                    window.location.replace("results.html");
+                }
+                break;
+            case 3:
+                if (sessionData.activeQuestion == 30) {
+                    sessionData.isActive = false;
+                    Session.setData(sessionData);
+                    window.location.replace("results.html");
+                }
+                break;
+        }  
+        if (sessionData.isActive) {
+            sessionData.activeQuestion += 1;
+            sessionData.quizState = 1;
+            getElement("continue").disabled = true;
+            if (sessionData.answerState.state == "wrong") getElement(sessionData.answerState.id).classList.remove("btn-choice_wrong");
+            else getElement(sessionData.answerState.id).classList.remove("btn-choice_right");
+            getElement("choice_1").disabled = false;
+            getElement("choice_2").disabled = false;
+            getElement("choice_3").disabled = false;
+            getElement("choice_4").disabled = false;
+            Session.setData(sessionData);
+            generateQuestion();
+            loadQuiz();
+        }
+    }
+}
+function initializeSetup(id) {
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    let parsedInt = parseInt(id.charAt(5));
+    let parsedString = id.slice(0,4);
+
+    // Update button states
+    if (sessionData["buttonStates"][parsedString]["state"] == 0) {
+        getElement(id).disabled = true;
+        sessionData["buttonStates"][parsedString]["id"] = id;
+        sessionData["buttonStates"][parsedString]["state"] = parsedInt;
+    } 
+    else if (sessionData["buttonStates"][parsedString]["state"] !== 0 && id !== sessionData["buttonStates"][parsedString]["state"]) {
+        getElement(id).disabled = true;
+        getElement(sessionData["buttonStates"][parsedString]["id"]).disabled = false;
+        sessionData["buttonStates"][parsedString]["id"] = id;
+        sessionData["buttonStates"][parsedString]["state"] = parsedInt;
+    }
+    Session.setData(sessionData);
 }
 function generateQuestion() {
     let sessionData = Session.getData(localStorage.getItem("sessionData"));
@@ -252,6 +272,108 @@ function generateQuestion() {
         }
     }
 }
+function loadQuiz() { 
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    let questionData = getParser();
+    let questionString, choiceString_a, choiceString_b, choiceString_c, choiceString_d;
+    parseData();
+    loadData();
+    
+    function parseData() {
+        questionString = questionData["category_" + sessionData.categoryIndex]["difficulty_" + sessionData.difficultyIndex][sessionData.questionIndex - 1]["question"];
+        choiceString_a = questionData["category_" + sessionData.categoryIndex]["difficulty_" + sessionData.difficultyIndex][sessionData.questionIndex - 1]["choice"][0];
+        choiceString_b = questionData["category_" + sessionData.categoryIndex]["difficulty_" + sessionData.difficultyIndex][sessionData.questionIndex - 1]["choice"][1];
+        choiceString_c = questionData["category_" + sessionData.categoryIndex]["difficulty_" + sessionData.difficultyIndex][sessionData.questionIndex - 1]["choice"][2];
+        choiceString_d = questionData["category_" + sessionData.categoryIndex]["difficulty_" + sessionData.difficultyIndex][sessionData.questionIndex - 1]["choice"][3];
+    }
+    function loadData() {
+        let tierString, categoryString, difficultyString, lengthString, timeString;
+        switch(sessionData.quizTier) {
+            case 1: tierString = "Beginner"; break;
+            case 2: tierString = "Intermediate"; break;
+            case 3: tierString = "Experienced"; break;
+            case 4: tierString = "Veteran"; break;
+        }
+        switch(sessionData.categoryIndex) {
+            case 1: categoryString = "General Knowledge"; break;
+            case 2: categoryString = "Game Mechanics"; break;
+            case 3: categoryString = "Crafting Recipes"; break;
+            case 4: categoryString = "Creature Behaviors"; break;
+            case 5: categoryString = "Blocks and Pickables"; break;
+            case 6: categoryString = "Updates History"; break;
+            case 7: categoryString = "Electrics"; break;
+        }
+        switch(sessionData.difficultyIndex) {
+            case 1: difficultyString = "Very Easy"; break;
+            case 2: difficultyString = "Easy"; break;
+            case 3: difficultyString = "Medium"; break;
+            case 4: difficultyString = "Hard"; break;
+            case 5: difficultyString = "Very Hard"; break;
+        }
+        switch(sessionData.quizLength) {
+            case 1: lengthString = "10"; break;
+            case 2: lengthString = "20"; break;
+            case 3: lengthString = "30"; break;
+        }
+        getElement("question").innerHTML = questionString;
+        getElement("choice_1").value = choiceString_a;
+        getElement("choice_2").value = choiceString_b;
+        getElement("choice_3").value = choiceString_c;
+        getElement("choice_4").value = choiceString_d;
+        getElement("inf-tier").innerHTML = tierString;
+        getElement("inf-category").innerHTML = categoryString;
+        getElement("inf-difficulty").innerHTML = difficultyString;
+        getElement("inf-progress").innerHTML = sessionData.activeQuestion + "/" + lengthString   
+    }
+}
+function gradeQuiz(id) { 
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    let questionData = getParser();
+    let userAnswer;
+    switch(id) {
+        case "choice_1": userAnswer = "a"; break;
+        case "choice_2": userAnswer = "b"; break;
+        case "choice_3": userAnswer = "c"; break;
+        case "choice_4": userAnswer = "d"; break;
+    }
+    if (sessionData.quizState == 1) {
+        sessionData.quizState = 2;
+        getElement("continue").disabled = false;
+        getElement("choice_1").disabled = true;
+        getElement("choice_2").disabled = true;
+        getElement("choice_3").disabled = true;
+        getElement("choice_4").disabled = true;
+        parseData();
+        Session.setData(sessionData);
+    }
+    function parseData() {
+        if (questionData["category_" + sessionData.categoryIndex]["difficulty_" + sessionData.difficultyIndex][sessionData.questionIndex - 1]["answer"] != userAnswer) {
+            if (typeof sessionData.questionsWrong == "undefined") sessionData.questionsWrong = 0;
+                sessionData.questionsWrong += 1;
+                sessionData.answerState.state = "wrong";
+                sessionData.answerState.id = id;
+                getElement(id).classList.add("btn-choice_wrong");   
+        } else {
+            if (typeof sessionData.questionsRight == "undefined") sessionData.questionsRight = 0;
+                sessionData.questionsRight += 1;
+                sessionData.answerState.state = "right";
+                sessionData.answerState.id = id;
+                getElement(id).classList.add("btn-choice_right"); 
+        } 
+    }  
+}
+function loadResults() {
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    let lengthString;
+    switch(sessionData.quizLength) {
+        case 1: lengthString = "10"; break;
+        case 2: lengthString = "20"; break;
+        case 3: lengthString = "30"; break;
+    }
+    getElement("inf-points").innerHTML = 0;
+    getElement("inf-accuracy").innerHTML = sessionData.questionsRight + "/" + lengthString;
+}
+
 function stopQuiz() {
     Session.clearData();
     window.location.replace("../pgs/options.html");

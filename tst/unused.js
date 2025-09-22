@@ -300,3 +300,8 @@ function initializeSetup(id) {
             }
         }
 
+        function test() {
+    let questionData = getData();
+    questionString = questionData["category_" + 6]["difficulty_" + 1][5]["question"];
+    console.log(questionString);
+}

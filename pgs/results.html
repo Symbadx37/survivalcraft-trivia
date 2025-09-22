@@ -10,15 +10,19 @@
     <link rel="icon" type="favicon" href="../img/site-favicon.ico">
 </head>
 <body>
-    <header>
-        <nav>
-        </nav>
-    </header>
     <main>
-        <p>Quiz complete</p>
-        <input class="quit-button" type="button" id="quit" value="Exit" onclick="stopQuiz()"></input>
+        <h3>Quiz Results</h3>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Points</span>
+            <span> = </span>
+            <span id="inf-points"></span>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Accuracy</span>
+            <span> = </span>
+            <span id="inf-accuracy"></span>
+        </div>
+        <input style="margin-top: 15px;" class="btn-quit" type="button" id="quit" value="Exit" onclick="stopQuiz()"></input>
     </main>
-    <footer>
-    </footer>
 </body>
 <html>

@@ -7,7 +7,7 @@
     src: url(../fnt/Rubik_VariableFont.ttf) format("truetype");
 }
 
-/* Default Styles */
+/* DEFAULT Styles */
 p, body, h1, h2, h3, h4 {
     font-family: 'Rubik';
 }
@@ -21,31 +21,9 @@ h4 {
     font-weight: 300;
 }
 
-/* Classes */
-.choice-button {
-    font-family: 'Rubik';
-    background-color: white;
-    color: black;
-    border: solid 1px gray;
-    border-radius: 5px;
-    width: 500px;
-    height: 40px;
-    margin: 5px;  
-}
-.choice-button:hover {
-    background-color: #cecece;
-}
-.start-button {
-    margin: 0 3px 0 0;
-}
-.back-button {
-    margin: 0 0 0 0;
-}
-.continue-button {
-    margin: 7px 3px 5px 5px;
-}
-.quit-button {
-    margin: 7px 0 5px 0;
+/* GENERAL Classes */
+.elm-question, .elm-title {
+    margin-left: 3px;
 }
 
 /* BUTTON Classes */
@@ -53,7 +31,27 @@ h4 {
     width: 120px;
     height: 30px;
 }
-
+.btn-choice {
+    transition-duration: 0.2s;
+    transition-property: background-color;
+    cursor: pointer;
+    font-family: 'Rubik';
+    background-color: white;
+    color: black;
+    border: solid 1px #c7c1c1;
+    border-radius: 4px;
+    width: 500px;
+    height: 40px;
+    margin: 5px;
+}
+.btn-choice:hover {
+    background-color: rgba(201, 200, 200, 0.3);
+}
+.btn-choice:disabled {
+    background-color: white;
+    cursor: not-allowed;
+    color: rgb(170, 170, 170);
+}
 .btn-start, .btn-reset, .btn-exit, .btn-continue, .btn-quit,
 .btn-tier, .btn-category, .btn-length, .btn-duration,
 .btn-tier-rdm, .btn-category-rdm, .btn-length-rdm, .btn-duration-rdm  {
@@ -67,7 +65,6 @@ h4 {
     font-size: 0.9rem;
     transition-duration: 0.2s;
 }
-
 .btn-start:hover, .btn-reset:hover, .btn-exit:hover, .btn-continue:hover, .btn-quit:hover,
 .btn-tier:hover, .btn-category:hover, .btn-length:hover, .btn-duration:hover,
 .btn-tier-rdm:hover, .btn-category-rdm:hover, .btn-length-rdm:hover, .btn-duration-rdm:hover  {
@@ -76,13 +73,12 @@ h4 {
     border-radius: 4px;
     color: black;
 }
-
 .btn-tier-rdm, .btn-category-rdm, .btn-length-rdm, .btn-duration-rdm,
 .btn-tier-rdm:hover, .btn-category-rdm:hover, .btn-length-rdm:hover, .btn-duration-rdm:hover  {
     font-family: "Rubik";
     color: red;
 }
-
+.btn-continue:disabled,
 .btn-tier:disabled, .btn-category:disabled, .btn-length:disabled, .btn-duration:disabled,
 .btn-tier-rdm:disabled, .btn-category-rdm:disabled, .btn-length-rdm:disabled, .btn-duration-rdm:disabled {
     font-family: "Rubik";
@@ -90,8 +86,15 @@ h4 {
     color: rgb(170, 170, 170);
     background-color: rgba(239, 239, 239, 0.3);
 }
-
 .btn-continue, .btn-quit {
     margin-top: 10px;
     width: 100px;
+}
+.btn-choice_wrong {
+    border-color: #f44336;
+    color: black !important;
+}
+.btn-choice_right {
+    border-color: #04AA6D;
+    color: black !important;
 }

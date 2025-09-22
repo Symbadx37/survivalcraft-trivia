@@ -26,6 +26,9 @@ class Session {
             lgth: {id: "", state: 0},
             drtn: {id: "", state: 0}
         }
+        this.answerState = {
+            state: "", id: ""
+        }
     }
     static setData(parsedJSON) {
         localStorage.setItem("sessionData", JSON.stringify(parsedJSON));
