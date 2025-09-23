@@ -26,6 +26,16 @@ h4 {
     margin-left: 3px;
 }
 
+.elm-error-time {
+    font-family: 'Rubik';
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 1.5px;
+}
+.elm-error-time_hidden {
+    display: none;
+}
+
 /* BUTTON Classes */
 .btn-start, .btn-reset, .btn-exit {
     width: 120px;

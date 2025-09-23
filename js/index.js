@@ -1,15 +1,12 @@
 const tierCount = 4;
 const quizLengthMax = 4;
 const quizDurationMax = 5;
-const categoryCount = 7;
+const categoryCount = 4;
 const questionCount = {
     1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
     2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-    3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-    4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-    5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-    6: {1: 10, 2: 19, 3: 26, 4: 25, 5: 20},
-    7: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+    3: {1: 10, 2: 19, 3: 26, 4: 25, 5: 20},
+    4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
 };
 
 const probability_beginner = {1: 0.55, 2: 0.4, 3: 0.05, 4: 0, 5: 0};
@@ -47,21 +44,31 @@ document.addEventListener("DOMContentLoaded",
             Session.setData(sessionData);
             generateQuestion();
             loadQuiz();
+            loadTimer();
         }
         // Load quiz data
         else if (sessionData.isActive) {
             if (sessionData.quizState == 1) {
                 getElement("continue").disabled = true;
+                if (sessionData.isTimeUp) {
+                    getElement("error_time").classList.add("elm-error-time_hidden");
+                    sessionData.isTimeUp = false;
+                    Session.setData(sessionData);
+                }
             }
             if (sessionData.quizState == 2) {
                 getElement("choice_1").disabled = true;
                 getElement("choice_2").disabled = true;
                 getElement("choice_3").disabled = true;
                 getElement("choice_4").disabled = true;
-                if (sessionData.answerState.state == "wrong") getElement(sessionData.answerState.id).classList.add("btn-choice_wrong");
-                else getElement(sessionData.answerState.id).classList.add("btn-choice_right");
+                if (sessionData.answerState.state == "wrong") {
+                    getElement(sessionData.answerState.id).classList.add("btn-choice_wrong");
+                } else {
+                    getElement(sessionData.answerState.id).classList.add("btn-choice_right");
+                } 
             }
             loadQuiz();
+            loadTimer();
         } 
         // Load results data
         else if (sessionData.isActive == false && sessionData.preloadNeeded == false) {
@@ -158,6 +165,7 @@ function continueQuiz() {
         if (sessionData.isActive) {
             sessionData.activeQuestion += 1;
             sessionData.quizState = 1;
+            sessionData.isTimerResetNeeded = true;
             getElement("continue").disabled = true;
             if (sessionData.answerState.state == "wrong") getElement(sessionData.answerState.id).classList.remove("btn-choice_wrong");
             else getElement(sessionData.answerState.id).classList.remove("btn-choice_right");
@@ -168,6 +176,7 @@ function continueQuiz() {
             Session.setData(sessionData);
             generateQuestion();
             loadQuiz();
+            loadTimer();
         }
     }
 }
@@ -202,7 +211,7 @@ function generateQuestion() {
     Session.setData(sessionData);
 
     function getCategoryIndex() {
-        if (sessionData.quizCategory == 8) {
+        if (sessionData.quizCategory == 5) {
             let randomCategory = Math.floor((Math.random() * categoryCount) + 1);
             console.log("[SYSTEM]: Parameter randomCategory = " + randomCategory + " (" + getTime() + ").");
         } else {
@@ -287,7 +296,7 @@ function loadQuiz() {
         choiceString_d = questionData["category_" + sessionData.categoryIndex]["difficulty_" + sessionData.difficultyIndex][sessionData.questionIndex - 1]["choice"][3];
     }
     function loadData() {
-        let tierString, categoryString, difficultyString, lengthString, timeString;
+        let tierString, categoryString, difficultyString, lengthString;
         switch(sessionData.quizTier) {
             case 1: tierString = "Beginner"; break;
             case 2: tierString = "Intermediate"; break;
@@ -297,11 +306,8 @@ function loadQuiz() {
         switch(sessionData.categoryIndex) {
             case 1: categoryString = "General Knowledge"; break;
             case 2: categoryString = "Game Mechanics"; break;
-            case 3: categoryString = "Crafting Recipes"; break;
-            case 4: categoryString = "Creature Behaviors"; break;
-            case 5: categoryString = "Blocks and Pickables"; break;
-            case 6: categoryString = "Updates History"; break;
-            case 7: categoryString = "Electrics"; break;
+            case 3: categoryString = "Updates History"; break;
+            case 4: categoryString = "Electrics"; break;
         }
         switch(sessionData.difficultyIndex) {
             case 1: difficultyString = "Very Easy"; break;
@@ -362,6 +368,67 @@ function gradeQuiz(id) {
         } 
     }  
 }
+function loadTimer() {
+    let timerObject;
+    let timerData = Timer.getData(localStorage.getItem("timerData"));
+    let sessionData = Session.getData(localStorage.getItem("sessionData"));
+    if (typeof sessionData.hasTimer == "undefined") {
+        setTimer();
+    } 
+    else if (sessionData.isTimerResetNeeded) {
+        sessionData.isTimerResetNeeded = false;
+        setTimer();
+    }
+    if (sessionData.hasTimer) {
+        displayTimer();
+        timerObject = setInterval(updateCount, 1000);
+    } else {
+        displayTimer();
+        return;
+    }
+    function setTimer() {
+        switch(sessionData.quizDuration) {
+        case 1: timerData.currentMinute = 3; timerData.currentSecond = 0; sessionData.hasTimer = true; break;
+        case 2: timerData.currentMinute = 2; timerData.currentSecond = 0; sessionData.hasTimer = true; break;
+        case 3: timerData.currentMinute = 1; timerData.currentSecond = 0; sessionData.hasTimer = true; break;
+        case 4: sessionData.hasTimer = false; break;
+        }
+        Session.setData(sessionData);
+    }
+    function updateCount() {
+        let sessionData_active = Session.getData(localStorage.getItem("sessionData"));
+        if (sessionData_active.quizState == 2) {
+            clearInterval(timerObject);
+        }
+        else if (timerData.currentSecond == 0 && timerData.currentMinute == 0) {
+            clearInterval(timerObject);
+            getElement("error_time").classList.remove("elm-error-time_hidden");
+            sessionData.isTimeUp = true;
+            Session.setData(sessionData);  
+        }
+        else if (timerData.currentSecond !== 0) {
+            timerData.currentSecond -= 1;
+            Timer.setData(timerData);  
+            displayTimer();
+        } 
+        else if (timerData.currentSecond == 0) {
+            timerData.currentMinute -= 1;
+            timerData.currentSecond = 59;
+            Timer.setData(timerData);  
+            displayTimer();
+        } 
+    }
+    function displayTimer() {
+        if (sessionData.hasTimer == false) {
+            getElement("inf-time").innerHTML = "N/A";
+        }
+        else if (timerData.currentSecond < 10) {
+            getElement("inf-time").innerHTML = timerData.currentMinute + ":" + "0" + timerData.currentSecond;
+        } else {
+            getElement("inf-time").innerHTML = timerData.currentMinute + ":" + timerData.currentSecond;
+        }
+    }
+}
 function loadResults() {
     let sessionData = Session.getData(localStorage.getItem("sessionData"));
     let lengthString;
@@ -376,7 +443,7 @@ function loadResults() {
 
 function stopQuiz() {
     Session.clearData();
-    window.location.replace("../pgs/options.html");
+    window.location.replace("../pgs/setup.html");
 }
 function exitSetup() {
     Session.clearData();

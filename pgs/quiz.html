@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="../css/styles.css"/>
     <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
     <script src="../js/index.js" defer></script>
-    <script src="../js/session.js" defer></script>
+    <script src="../js/Session.js" defer></script>
+    <script src="../js/Timer.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="module" src="../js/parser.js" defer></script>
     <link rel="icon" type="favicon" href="../img/site-favicon.ico">
 </head>
@@ -26,7 +28,11 @@
             </div>
             <div>
                 <input class="btn-choice" type="button" id="choice_4" value="" onclick="gradeQuiz(this.id)"></input>
-            </div>      
+            </div> 
+            <div class="elm-error-time_hidden" id="error_time">
+                <i style="color: #f44336; margin-left: 5px" class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <span class="elm-error-time">Time is up. No points will be awarded for this question, regardless if it is correct or not.</span>     
+            </div>
             <div>
                 <input style="margin-left: 5px" class="btn-continue" type="button" id="continue" value="Continue" onclick="continueQuiz(this.id)"></input>
                 <input style="margin-left: 3px" class="btn-quit" type="button" id="quit" value="Quit" onclick="stopQuiz(this.id)"></input>

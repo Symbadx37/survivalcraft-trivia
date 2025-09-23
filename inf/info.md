@@ -78,3 +78,41 @@ Contact =
 - Easy = 60/120/180 seconds (-60)
 - Medium = 40/80/120 seconds (-40)
 - Hard = 20/40/60 seconds (-20)
+
+## WORK IN PROGRESS
+let thresholdFactor = 60;
+let countIndex = (minutes * 60) + seconds
+let thresholdIndex = countIndex - thresholdFactor;
+
+if (thresholdIndex > 120) {
+    activeThreshold = "green";
+} else if (thresholdIndex <= 120 && thresholdIndex > 60) {
+    activeThreshold = "yellow";
+} else {
+    activeThreshold = "red";
+}
+
+- determining score based off of current time threshold
+- displaying "no points awarded" if time reaches "0:00" before answer
+- central loadDocument() method for loading data (setup/quiz/results)
+
+* Pass parameters when calling load methods to indicate preload, load, or reload
+* Update all HTML button IDs to reflect new ones
+
+preloading QUIZ:
+- construct sessionData
+- load button states (continue and choices)
+- load class states (timeUp, correct/incorrect)
+- load elements (question, choices, active stats, timer position)
+- invoke generateQuestion() and updateTimer()
+
+loading SETUP:
+- load button states (options)
+
+loading QUIZ:
+- load button states (continue and choices)
+- load class states (timeUp, correct/incorrect)
+- load elements (question, choices, active stats, timer position)
+
+loading RESULTS:
+- load elements (points, accuracy)

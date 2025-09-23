@@ -96,147 +96,6 @@
     "category_3": {
         "difficulty_1": [
             {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice" 
-            }
-        ],
-        "difficulty_2": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice" 
-            }
-        ],
-        "difficulty_3": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice"
-            }
-        ],
-        "difficulty_4": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice" 
-            }
-        ],
-        "difficulty_5": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice" 
-            }
-        ]
-    },
-    "category_4": {
-        "difficulty_1": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice" 
-            }
-        ],
-        "difficulty_2": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice" 
-            }
-        ],
-        "difficulty_3": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice"
-            }
-        ],
-        "difficulty_4": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice" 
-            }
-        ],
-        "difficulty_5": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice" 
-            }
-        ]
-    },
-    "category_5": {
-        "difficulty_1": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice"
-            }
-        ],
-        "difficulty_2": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice"
-            }
-        ],
-        "difficulty_3": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice" 
-            }
-        ],
-        "difficulty_4": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice"
-            }
-        ],
-        "difficulty_5": [
-            {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
-                "answer": "a",
-                "type": "multipleChoice"
-            }
-        ]
-    },
-    "category_6": {
-        "difficulty_1": [
-            {
                 "question": "What was the most recent update?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
                 "solution": "undefined",
@@ -782,7 +641,7 @@
                 "type": "multipleChoice"   
             },
             {
-                "question": "Which updated made slabs and stairs paintable?",
+                "question": "Which update made slabs and stairs paintable?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
                 "solution": "undefined",
                 "answer": "c",
@@ -926,7 +785,7 @@
             }
         ]
     },
-    "category_7": {
+    "category_4": {
         "difficulty_1": [
             {
                 "question": "This is a question.",

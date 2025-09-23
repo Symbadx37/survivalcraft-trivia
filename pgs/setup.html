@@ -4,16 +4,15 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
     <script src="../js/index.js" defer></script>
-    <script src="../js/session.js" defer></script>
+    <script src="../js/Session.js" defer></script>
+    <script src="../js/Timer.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="module" src="../js/parser.js" defer></script>
     <link rel="icon" type="favicon" href="../img/site-favicon.ico">
 </head>
 <body>
-    <header>
-        <nav>
-        </nav>
-    </header>
     <main>
         <h2>Setup Quiz</h2>
         <h3>Difficulty Tier</h3>
@@ -31,14 +30,13 @@
             <input class="btn-tier" id="tier_4" type="button" value="Veteran" 
                 onclick="initializeSetup(this.id)">
             </input>
+        </div>
+        <div>
             <input class="btn-tier-rdm" id="tier_5" type="button" value="RANDOM" 
                 onclick="initializeSetup(this.id)">
             </input>
-        </div>
-        <div>
             <p style="font-size: 0.75rem">* Selecting Random will choose a random difficulty tier upon start.</p>
         </div>
-
         <h3>Question Category</h3>
         <p>Determines what topics questions will cover.</p>
         <div>
@@ -48,31 +46,19 @@
             <input class="btn-category" id="ctgr_2" type="button" value="Game Mechanics" 
                 onclick="initializeSetup(this.id)">
             </input>
-            <input class="btn-category" id="ctgr_3" type="button" value="Crafting Recipes" 
+            <input class="btn-category" id="ctgr_3" type="button" value="Updates History" 
                 onclick="initializeSetup(this.id)">
             </input>
-            <input class="btn-category" id="ctgr_4" type="button" value="Creature Behaviors" 
-                onclick="initializeSetup(this.id)">
-            </input>
-        </div>
-        <div>
-            <input class="btn-category" id="ctgr_5" type="button" value="Blocks and Pickables" 
-                onclick="initializeSetup(this.id)">
-            </input>
-            <input class="btn-category" id="ctgr_6" type="button" value="Updates History" 
-                onclick="initializeSetup(this.id)">
-            </input>
-            <input class="btn-category" id="ctgr_7" type="button" value="Electrics" 
-                onclick="initializeSetup(this.id)">
-            </input>
-            <input class="btn-category-rdm" id="ctgr_8" type="button" value="RANDOM" 
+            <input class="btn-category" id="ctgr_4" type="button" value="Electrics" 
                 onclick="initializeSetup(this.id)">
             </input>
         </div>
         <div>
+            <input class="btn-category-rdm" id="ctgr_5" type="button" value="RANDOM" 
+                onclick="initializeSetup(this.id)">
+            </input>
             <p style="font-size: 0.75rem">* Selecting Random will choose a random category every question.</p>
         </div>
-
         <h3>Question Count</h3>
         <p>Determines the total number of questions.</p>
         <div>
@@ -85,14 +71,13 @@
             <input class="btn-length" id="lgth_3" type="button" value="High" 
                 onclick="initializeSetup(this.id)">
             </input>
+        </div>
+        <div>
             <input class="btn-length-rdm" id="lgth_4" type="button" value="RANDOM" 
                 onclick="initializeSetup(this.id)">
             </input>
-        </div>
-        <div>
             <p style="font-size: 0.75rem">* Selecting Random will choose a random question count upon start.</p>
         </div>
-
         <h3>Time Limit</h3>
         <p>Determines the amount of time allotted.</p>
         <div>
@@ -108,14 +93,13 @@
             <input class="btn-duration" id="drtn_4" type="button" value="None" 
                 onclick="initializeSetup(this.id)">
             </input>
+        </div>
+        <div>
             <input class="btn-duration-rdm" id="drtn_5" type="button" value="RANDOM" 
                 onclick="initializeSetup(this.id)">
             </input>
-        </div>
-        <div>
             <p style="font-size: 0.75rem">* Selecting Random will choose a random time limit upon start.</p>
         </div>
-
         <h3>Start Quiz</h3>
         <div>
             <input class="btn-start" type="button" id="start" value="Start" 
@@ -134,3 +118,15 @@
     </footer>
 </body>
 <html>
+
+<!-- Unused Categories
+<input class="btn-category" id="ctgr_3" type="button" value="Crafting Recipes" 
+onclick="initializeSetup(this.id)">
+</input>
+<input class="btn-category" id="ctgr_4" type="button" value="Creature Behaviors" 
+onclick="initializeSetup(this.id)">
+</input>
+<input class="btn-category" id="ctgr_5" type="button" value="Blocks and Pickables" 
+onclick="initializeSetup(this.id)">
+</input>
+-->
