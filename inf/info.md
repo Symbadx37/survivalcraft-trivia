@@ -116,3 +116,97 @@ loading QUIZ:
 
 loading RESULTS:
 - load elements (points, accuracy)
+
+ACTIONS
+Update classes (add, remove, toggle)
+Update values (strings/numbers)
+Update buttons (enabled/disabled)
+Update visibility (visible/hidden)
+
+$("id").toggleClass("class", add/remove)
+$("id").val("newValue");
+$("id").prop("disabled", true/false);
+$("id").hide();
+$("id").show();
+
+PARAMETERS
+pageID = {
+   node_1 = {
+       elementID = "#"
+       classID = ["#", "#", "#"]
+       classState = [0, 0, 0]
+       elementValue = "";
+       elementType = (span, input, paragraph, ...)
+       isActive = (true/false/null)
+       isVisible = (true/false/null)
+   },
+   node_2 = {
+       elementID = "#"
+       classID = ["#", "#", "#"]
+       classState = [0, 0, 0]
+       elementType = (span, input, paragraph, ...)
+       isActive = (true/false/null)
+       isVisible = (true/false/null)
+   }
+
+
+sessionData["pageElements"][pageID]["node_" + nodeIndex]
+   ["elementID"]
+   ["classID"][classIDIndex]
+   ["classState"][classStateIndex]
+   ["elementType"]
+   [isActive]
+   [isVisible]
+
+Element Types = Button, Paragraph, Span, Heading, Division
+
+PROCEDURE
+Assign and parse pageID
+Assign and parse nodeIndex (use loop to iterate through nodes, use setup.length)
+Parse and store elementID to temp variable
+Parse and store elementType to temp variable
+
+Parse elementValue and update HTML value if not null
+Parse, and index classID and classState (use nested loop to iterate through arrays). Update classes accordingly
+Parse isVisible state, update visibility state
+Parse isActive state, if elementID is input, update element state
+
+const length = Object.values(sessionData["pageElements"][pageID]).length;
+
+this.booleanFlags = {}
+isSetupValid
+isActive
+isTimerEnabled
+isTimeUp
+isTimerResetNeeded
+setupPreloadNeeded
+quizPreloadNeeded
+resultsPreloadNeeded
+
+this.quizStates = {}
+quizState
+quizTier
+quizCategory
+quizLength
+quizDuration
+tierProbability
+activeQuestion
+questionsWrong
+questionsRight
+
+this.quizIndexes = {}
+categoryIndex
+subcategoryIndex
+difficultyIndex
+questionIndex
+
+nextQuestionIndex = {}
+indexCache = {}
+
+ELEMENT LIST
+
+question
+choice_a
+choice_b
+choice_c
+choice_d

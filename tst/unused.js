@@ -305,3 +305,78 @@ function initializeSetup(id) {
     questionString = questionData["category_" + 6]["difficulty_" + 1][5]["question"];
     console.log(questionString);
 }
+
+class Session {
+    constructor() {
+        this.activeQuestion = 1;
+        this.quizState = 1;
+        this.generatedIndexes = {
+            1: {1: [], 2: [], 3: [], 4: [], 5: []},
+            2: {1: [], 2: [], 3: [], 4: [], 5: []},
+            3: {1: [], 2: [], 3: [], 4: [], 5: []},
+            4: {1: [], 2: [], 3: [], 4: [], 5: []},
+            5: {1: [], 2: [], 3: [], 4: [], 5: []},
+            6: {1: [], 2: [], 3: [], 4: [], 5: []},
+            7: {1: [], 2: [], 3: [], 4: [], 5: []}
+        }
+        this.nextIndex = {
+            1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            6: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            7: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+            5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+        }
+        this.buttonStates = {
+            tier: {id: "", state: 0},
+            ctgr: {id: "", state: 0},
+            lgth: {id: "", state: 0},
+            drtn: {id: "", state: 0}
+        }
+        this.answerState = {
+            state: "", id: ""
+        }
+    }
+    static setData(parsedJSON) {
+        localStorage.setItem("sessionData", JSON.stringify(parsedJSON));
+    }
+    static getData(serializedJSON) {
+        return Object.assign(new Session(), JSON.parse(serializedJSON));
+    }
+    static clearData() {
+        localStorage.removeItem("sessionData");
+    }
+}
+
+function preloadContent(functionID) {
+        const preload_setupPage = function() {
+            sessionData.setupPreloadNeeded = false;
+            // ... ()
+        }
+        const preload_quizPage = function() {
+            sessionData.quizPreloadNeeded = false;
+            $("btn-continue").prop("disabled", true);
+            generateQuestion();
+            loadData("question");
+            // ... (load timer)
+        }
+        const preload_resultsPage = function() {
+            sessionData.resultsPreloadNeeded = false;
+            let lengthString, pointsString = 0;
+            switch(sessionData.quizLength) {
+                case 1: lengthString = "10"; break;
+                case 2: lengthString = "20"; break;
+                case 3: lengthString = "30"; break;
+            }
+            $("inf-points").val(pointsString);
+            $("inf-accuracy").val(sessionData.questionsRight + "/" + lengthString);
+        }
+        // Sequence
+        switch(functionID) {
+            case 1: preload_setupPage(); break;
+            case 2: preload_quizPage(); break;
+            case 3: preload_resultsPage(); break;
+        }
+        updateSessionData("save");
+    }
