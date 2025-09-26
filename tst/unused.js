@@ -380,3 +380,24 @@ function preloadContent(functionID) {
         }
         updateSessionData("save");
     }
+
+    // Check and load HTML value
+        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["elementValue"] !== "") {
+            switch(elementType) {
+                case "paragraph": loadHTMLValue(); break;
+                case "heading": loadHTMLValue(); break;
+                case "span": loadHTMLValue(); break;
+            }   
+        }
+        // Check and load button states
+        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["elementValue"] !== "") {
+
+        }      
+        // Check and load class list
+        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["classID"] !== "") {
+            loadClassList();
+        }
+        // Check and load visibility state
+        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["isVisible"] !== 0) {
+            loadVisibilityState();
+        }

@@ -45,71 +45,88 @@ class Session {
         this.pageElements = {
             setup: {
                 node_1: {
-                    elementID: "p-test",
-                    elementType: "paragraph", // (span, input, paragraph, ...)
+                    nullStateHash: "1100",      // ... (elementValue, classList, isVisible, isActive)
+                    elementID: "p-test",        // ... (STRING: HTML element id)
+                    elementType: "paragraph",   // ... (STRING: button, division, span, paragraph, heading)
+                    elementValue: "New text",   // ... (STRING: HTML text value)
+                    classID: ["test", "test2"], // ... (ARRAY: HTML element id)
+                    classState: [1, 1],         // ... (ARRAY: 0 = null, 1 = add, 2 = remove)
+                    isVisible: 0,               // ... (FLAG: "" = null, true = show, false = hide)
+                    isActive: 0,                // ... (FLAG: "" = null, true = enabled, false = disabled)
+                },
+                node_2: {
+                    nullStateHash: "1000", 
+                    elementID: "span-test",
+                    elementType: "span",
                     elementValue: "New text",
-                    classID: "",
-                    classState: "", // (null/add/remove)
-                    isVisible: 0, // (null/true/false)
-                    isActive: 0, // (null/true/false)
+                    classID: ["#"],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: 0,
                 }
             },
             quiz: {
                 node_1: {
+                    nullStateHash: "0000", 
                     elementID: "#",
-                    elementType: "", // (span, input, paragraph, ...)
+                    elementType: "",
                     elementValue: "",
-                    classID: ["#", "#", "#"],
-                    classState: [0, 0, 0], // (null/add/remove)
-                    isVisible: 0, // (null/true/false)
-                    isActive: 0, // (null/true/false)
+                    classID: ["#"],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: 0,
                 },
                 node_2: {
+                    nullStateHash: "0000", 
                     elementID: "#",
-                    elementType: "", // (span, input, paragraph, ...)
+                    elementType: "",
                     elementValue: "",
-                    classID: ["#", "#", "#"],
-                    classState: [0, 0, 0], // (null/add/remove)
-                    isVisible: 0, // (null/true/false)
-                    isActive: 0, // (null/true/false)
+                    classID: ["#"],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: 0,
                 },
                 node_3: {
+                    nullStateHash: "0000", 
                     elementID: "#",
-                    elementType: "", // (span, input, paragraph, ...)
+                    elementType: "",
                     elementValue: "",
-                    classID: ["#", "#", "#"],
-                    classState: [0, 0, 0], // (null/add/remove)
-                    isVisible: 0, // (null/true/false)
-                    isActive: 0, // (null/true/false)
+                    classID: ["#"],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: 0,
                 }
             },
             results: {
                 node_1: {
+                    nullStateHash: "0000", 
                     elementID: "#",
-                    elementType: "", // (span, input, paragraph, ...)
+                    elementType: "",
                     elementValue: "",
-                    classID: ["#", "#", "#"],
-                    classState: [0, 0, 0], // (null/add/remove)
-                    isVisible: 0, // (null/true/false)
-                    isActive: 0, // (null/true/false)
+                    classID: ["#"],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: 0,
                 },
                 node_2: {
+                    nullStateHash: "0000", 
                     elementID: "#",
-                    elementType: "", // (span, input, paragraph, ...)
+                    elementType: "",
                     elementValue: "",
-                    classID: ["#", "#", "#"],
-                    classState: [0, 0, 0], // (null/add/remove)
-                    isVisible: 0, // (null/true/false)
-                    isActive: 0, // (null/true/false)
+                    classID: ["#"],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: 0,
                 },
                 node_3: {
+                    nullStateHash: "0000", 
                     elementID: "#",
-                    elementType: "", // (span, input, paragraph, ...)
+                    elementType: "",
                     elementValue: "",
-                    classID: ["#", "#", "#"],
-                    classState: [0, 0, 0], // (null/add/remove)
-                    isVisible: 0, // (null/true/false)
-                    isActive: 0, // (null/true/false)
+                    classID: ["#"],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: 0,
                 }
             }
         }

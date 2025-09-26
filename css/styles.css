@@ -35,6 +35,17 @@ h4 {
 .elm-error-time_hidden {
     display: none;
 }
+.loading {
+    display: none;
+}
+
+/* TEST classes */
+.test {
+    color: green;
+}
+.test2 {
+    font-size: 2rem;
+}
 
 /* BUTTON Classes */
 .btn-start, .btn-reset, .btn-exit {

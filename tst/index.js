@@ -425,18 +425,6 @@ function loadResults() {
     getElement("inf-accuracy").innerHTML = sessionData.questionsRight + "/" + lengthString;
 }
 
-function stopQuiz() {
-    Session.clearData();
-    window.location.replace("../pgs/setup.html");
-}
-function exitSetup() {
-    Session.clearData();
-    window.location.replace("../index.html");
-}
-function resetSetup() {
-    Session.clearData();
-    window.location.reload();
-}
 function getElement(id) {
     return document.getElementById(id);
 }
