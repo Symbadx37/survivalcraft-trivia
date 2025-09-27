@@ -401,3 +401,12 @@ function preloadContent(functionID) {
         if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["isVisible"] !== 0) {
             loadVisibilityState();
         }
+
+
+const quizQuestionMax = {
+    1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+    2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+    3: {1: 10, 2: 19, 3: 26, 4: 25, 5: 20},
+    4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+    5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+};

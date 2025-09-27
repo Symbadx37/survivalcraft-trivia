@@ -15,6 +15,7 @@ class Session {
         }
         this.booleanFlags = {
             isSetupValid: false,
+            wasHintUsed: false,
             isActive: false,
             isTimeUp: false,
             isTimerResetNeeded: false,
