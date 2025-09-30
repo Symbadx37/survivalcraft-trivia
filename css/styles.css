@@ -1,3 +1,5 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 @font-face {
     font-family: "Pericles";
     src: url(../fnt/Pericles-Regular.ttf) format("truetype");
@@ -7,115 +9,129 @@
     src: url(../fnt/Rubik_VariableFont.ttf) format("truetype");
 }
 
-/* DEFAULT Styles */
-p, body, h1, h2, h3, h4 {
-    font-family: 'Rubik';
+
+
+/* DEFAULT STYLES */
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
 }
 h2 {
     font-weight: 500;
+    font-size: 1.5rem;
 }
 h3 {
     font-weight: 450;
+    font-size: 0.75rem;
 }
 h4 {
     font-weight: 300;
+    font-size: 0.5rem;
+}
+p {
+    font-weight: 400;
+    font-size: 0.6rem;
 }
 
-/* GENERAL Classes */
-.elm-question, .elm-title {
-    margin-left: 3px;
-}
-
-.elm-error-time {
-    font-family: 'Rubik';
-    font-size: 0.7rem;
-    position: relative;
-    bottom: 1.5px;
-}
-.elm-error-time_hidden {
-    display: none;
-}
-.loading {
+/* GENERAL */
+.content-loading {
     display: none;
 }
 
-/* TEST classes */
-.test {
-    color: green;
+/* PAGE ELEMENTS */
+.quiz-question {
+    font-family: "Rubik";
+    font-size: 0.75rem;
+    text-align: center;
+    text-wrap: wrap;
 }
-.test2 {
-    font-size: 2rem;
-}
-
-/* BUTTON Classes */
-.btn-start, .btn-reset, .btn-exit {
-    width: 120px;
-    height: 30px;
-}
-.btn-choice {
+.button-choice {
     transition-duration: 0.2s;
     transition-property: background-color;
+    text-align: center;
+    font-size: 0.6rem;
     cursor: pointer;
-    font-family: 'Rubik';
-    background-color: white;
+    font-family: "Rubik";
+    background-color: rgb(245, 245, 245);
     color: black;
-    border: solid 1px #c7c1c1;
+    border: solid 1px #ffffff;
     border-radius: 4px;
     width: 500px;
     height: 40px;
-    margin: 5px;
 }
-.btn-choice:hover {
+.button-choice:hover {
     background-color: rgba(201, 200, 200, 0.3);
 }
-.btn-choice:disabled {
+.button-choice:disabled {
     background-color: white;
     cursor: not-allowed;
     color: rgb(170, 170, 170);
 }
-.btn-start, .btn-reset, .btn-exit, .btn-continue, .btn-quit,
-.btn-tier, .btn-category, .btn-length, .btn-duration,
-.btn-tier-rdm, .btn-category-rdm, .btn-length-rdm, .btn-duration-rdm  {
+.button-start, .button-reset, .button-exit, .button-submit, .button-quit, .button-modal-quit,
+.button-tier, .button-category, .button-length, .button-duration,
+.button-tier-rdm, .button-category-rdm, .button-length-rdm, .button-duration-rdm  {
     font-family: "Rubik";
-    margin: 5px 1px 5px 1px;
+    margin: 0 1px 5px 1px;
     cursor: pointer;
     border: solid 1px #c7c1c1;
     border-radius: 4px;
-    width: 160px;
-    height: 30px;
-    font-size: 0.9rem;
+    width: 120px;
+    height: 20px;
+    font-size: 0.6rem;
+    text-align: center;
     transition-duration: 0.2s;
-}
-.btn-start:hover, .btn-reset:hover, .btn-exit:hover, .btn-continue:hover, .btn-quit:hover,
-.btn-tier:hover, .btn-category:hover, .btn-length:hover, .btn-duration:hover,
-.btn-tier-rdm:hover, .btn-category-rdm:hover, .btn-length-rdm:hover, .btn-duration-rdm:hover  {
     background-color: rgba(239, 239, 239, 0.3);
+}
+.button-start:hover, .button-reset:hover, .button-exit:hover, .button-submit:hover, .button-quit:hover, .button-modal-quit:hover,
+.button-tier:hover, .button-category:hover, .button-length:hover, .button-duration:hover,
+.button-tier-rdm:hover, .button-category-rdm:hover, .button-length-rdm:hover, .button-duration-rdm:hover  {
+    background-color: rgba(204, 204, 204, 0.3);
     border: solid 1px #c7c1c1;
     border-radius: 4px;
     color: black;
 }
-.btn-tier-rdm, .btn-category-rdm, .btn-length-rdm, .btn-duration-rdm,
-.btn-tier-rdm:hover, .btn-category-rdm:hover, .btn-length-rdm:hover, .btn-duration-rdm:hover  {
+.button-tier-rdm, .button-category-rdm, .button-length-rdm, .button-duration-rdm,
+.button-tier-rdm:hover, .button-category-rdm:hover, .button-length-rdm:hover, .button-duration-rdm:hover  {
     font-family: "Rubik";
     color: red;
 }
-.btn-continue:disabled,
-.btn-tier:disabled, .btn-category:disabled, .btn-length:disabled, .btn-duration:disabled,
-.btn-tier-rdm:disabled, .btn-category-rdm:disabled, .btn-length-rdm:disabled, .btn-duration-rdm:disabled {
+.button-submit:disabled,
+.button-tier:disabled, .button-category:disabled, .button-length:disabled, .button-duration:disabled,
+.button-tier-rdm:disabled, .button-category-rdm:disabled, .button-length-rdm:disabled, .button-duration-rdm:disabled {
     font-family: "Rubik";
     cursor: not-allowed;
     color: rgb(170, 170, 170);
     background-color: rgba(239, 239, 239, 0.3);
 }
-.btn-continue, .btn-quit {
-    margin-top: 10px;
-    width: 100px;
+.button-start {
+    width: 120px;
+    height: 30px;
 }
-.btn-choice_wrong {
+.button-reset {
+    width: 120px;
+    height: 30px;
+}
+.button-exit {
+    width: 120px;
+    height: 30px;
+}
+.button-submit {
+    width: 100px;
+    position: relative;
+    bottom: 8px; 
+    right: 56px;
+}
+.button-quit {
+    width: 100px;
+    position: relative; 
+    bottom: 8px; 
+    left: 56px;
+}
+.button-choice_wrong {
     border-color: #f44336;
     color: black !important;
 }
-.btn-choice_right {
+.button-choice_right {
     border-color: #04AA6D;
     color: black !important;
 }

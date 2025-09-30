@@ -410,3 +410,241 @@ const quizQuestionMax = {
     4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
     5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
 };
+
+      <h2>Setup Quiz</h2>
+        <h3>Difficulty Tier</h3>
+        <p>Determines the average difficulty of each question.</p>
+        <div>
+            <input class="btn-tier" id="tier_1" type="button" value="Beginner"></input>
+            <input class="btn-tier" id="tier_2" type="button" value="Intermediate"></input>
+            <input class="btn-tier" id="tier_3" type="button" value="Experienced"></input>
+            <input class="btn-tier" id="tier_4" type="button" value="Veteran"></input>
+        </div>
+        <div>
+            <input class="btn-tier-rdm" id="tier_5" type="button" value="RANDOM"></input>
+            <p style="font-size: 0.75rem">* Selecting Random will choose a random difficulty tier upon start.</p>
+        </div>
+        <h3>Question Category</h3>
+        <p>Determines what topics questions will cover.</p>
+        <div>
+            <input class="btn-category" id="ctgr_1" type="button" value="General Knowledge"></input>
+            <input class="btn-category" id="ctgr_2" type="button" value="Game Mechanics"></input>
+            <input class="btn-category" id="ctgr_3" type="button" value="Updates History"></input>
+            <input class="btn-category" id="ctgr_4" type="button" value="Electrics"></input>
+        </div>
+        <div>
+            <input class="btn-category-rdm" id="ctgr_5" type="button" value="RANDOM">
+            </input>
+            <p style="font-size: 0.75rem">* Selecting Random will choose a random category every question.</p>
+        </div>
+        <h3>Question Count</h3>
+        <p>Determines the total number of questions.</p>
+        <div>
+            <input class="btn-length" id="lgth_1" type="button" value="Low"></input>
+            <input class="btn-length" id="lgth_2" type="button" value="Medium"></input>
+            <input class="btn-length" id="lgth_3" type="button" value="High"></input>
+        </div>
+        <div>
+            <input class="btn-length-rdm" id="lgth_4" type="button" value="RANDOM"></input>
+            <p style="font-size: 0.75rem">* Selecting Random will choose a random question count upon start.</p>
+        </div>
+        <h3>Time Limit</h3>
+        <p>Determines the amount of time allotted.</p>
+        <div>
+            <input class="btn-duration" id="drtn_1" type="button" value="Easy"></input>
+            <input class="btn-duration" id="drtn_2" type="button" value="Medium"></input>
+            <input class="btn-duration" id="drtn_3" type="button" value="Hard"></input>
+            <input class="btn-duration" id="drtn_4" type="button" value="None"></input>
+        </div>
+        <div>
+            <input class="btn-duration-rdm" id="drtn_5" type="button" value="RANDOM"></input>
+            <p style="font-size: 0.75rem">* Selecting Random will choose a random time limit upon start.</p>
+        </div>
+        <h3>Start Quiz</h3>
+        <div>
+            <input class="btn-start" type="button" id="start" value="Start" 
+                onclick="startQuiz()">
+            </input>
+            <input class="btn-exit" type="button" id="back" value="Back" 
+                onclick="exitSetup()">
+            </input> 
+            <input class="btn-reset" type="button" id="reset" value="Reset" 
+                onclick="resetSetup()">
+            </input>
+            <p style="font-size: 0.75rem">* Click Reset to clear all selected options.</p>
+        </div>
+
+
+.color_1, .color_2, .color_3 {
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 30px;
+    height: 30px;
+}
+.color_1 {
+    background-color: #17C402;
+}
+.color_2 {
+    background-color: #159c06;
+}
+.color_3 {
+    background-color: #075d0d;
+}
+.color_4 {
+    background-color: #f44336;
+}
+
+.elm-error-time {
+    font-family: 'Rubik';
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 1.5px;
+}
+.elm-error-time_hidden {
+    display: none;
+}
+
+#outer-container {
+    position: fixed;
+    inset: 0px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+<div>
+            <h2 class="elm-title">Survivalcraft Trivia</h2>
+            <p class="elm-question" id="question"></p>
+            <div>
+                <input class="btn-choice" type="button" id="choice_1" value="" onclick="gradeQuiz(this.id)"></input>
+            </div>
+            <div>
+                <input class="btn-choice" type="button" id="choice_2" value="" onclick="gradeQuiz(this.id)"></input>
+            </div>
+            <div>
+                <input class="btn-choice" type="button" id="choice_3" value="" onclick="gradeQuiz(this.id)"></input>
+            </div>
+            <div>
+                <input class="btn-choice" type="button" id="choice_4" value="" onclick="gradeQuiz(this.id)"></input>
+            </div> 
+            <div class="elm-error-time_hidden" id="error_time">
+                <i style="color: #f44336; margin-left: 5px" class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <span class="elm-error-time">Time is up. No points will be awarded for this question, regardless if it is correct or not.</span>     
+            </div>
+            <div>
+                <input style="margin-left: 5px" class="btn-continue" type="button" id="continue" value="Continue" onclick="continueQuiz(this.id)"></input>
+                <input style="margin-left: 3px" class="btn-quit" type="button" id="quit" value="Quit" onclick="stopQuiz(this.id)"></input>
+            </div>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Tier</span>
+            <span> = </span>
+            <span id="inf-tier"></span>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Category</span>
+            <span> = </span>
+            <span id="inf-category"></span>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Difficulty</span>
+            <span> = </span>
+            <span id="inf-difficulty"></span>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Progress</span>
+            <span> = </span>
+            <span id="inf-progress"></span>
+        </div>
+        <div style="margin-top: 15px; margin-left: 3px">
+            <span style="font-weight: 500;">Time Left</span>
+            <span> = </span>
+            <span id="inf-time"></span>
+        </div>
+
+$(".setup-button-group_1 input").on({
+  click: function(){
+    sessionData.pageElements.setup.node_3.isActive = false;
+    updateSessionData("save");
+    loadDocument("setup", "load_partial", [3]);
+  }
+});
+
+$(".setup-button-group_2 input").on({
+  click: function(){
+    sessionData.pageElements.setup.node_4.isActive = false;
+    updateSessionData("save");
+    loadDocument("setup", "load_partial", [4]);
+  }
+});
+
+$("#btn-test-reset").on({
+  click: function(){
+    sessionData.pageElements.setup.node_3.isActive = true;
+    sessionData.pageElements.setup.node_4.isActive = true;
+    updateSessionData("save");
+    loadDocument("setup", "load_partial", [3,4]);
+  }
+});
+
+// $("#").on("click", functionName);
+
+
+#QUIZ_CONTAINER_GRID {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 0.25fr 0.75fr 20px 40px 40px 40px 40px 40px 1fr;
+  row-gap: 15px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+
+#QUIZ_TEXT_HEADING_quitConfirm {
+  font-family: "Rubik";
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 4px 0 12px 0;
+}
+#QUIZ_TEXT_PARAGRAPH_quitConfirm {
+  font-family: "Rubik";
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.6rem;
+  margin-bottom: 12px;
+}
+#QUIZ_CONTAINER_MODAL_BACKGROUND_quitConfirm {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+#QUIZ_CONTAINER_MODAL_CONTENT_quitConfirm {
+  position: fixed;
+  margin: auto;
+  inset: 0;
+  
+  width: 200px;
+  height: 80px;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  background-color: #fefefe;
+}
+
+
+#QUIZ_DIVISION_MODAL_buttonGroup_1 {
+
+}

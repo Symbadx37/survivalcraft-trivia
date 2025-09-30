@@ -3,63 +3,159 @@
     <title>Survivalcraft Trivia - Quiz</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css"/>
-    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="module" src="../js/parser.js" defer></script>
     <link rel="icon" type="favicon" href="../img/site-favicon.ico">
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <!--
+    <script type="module" src="../js/parser.js" defer></script>
+    <script src="../js/session.js" defer></script>
+    <script src="../js/loader.js" defer></script>
+    -->
+    <script src="../js/main.js" defer></script> 
+    
 </head>
 <body>
-    <main>
-        <div>
-            <h2 class="elm-title">Survivalcraft Trivia</h2>
-            <p class="elm-question" id="question"></p>
-            <div>
-                <input class="btn-choice" type="button" id="choice_1" value="" onclick="gradeQuiz(this.id)"></input>
+    <section class="_content-loading">
+        <div id="quiz-container">
+            <p id="quiz-progress-text">Quiz Progress</p>
+            <div id="progress-container"><div id="progress-bar"></div></div>
+            <p class="quiz-question" id="elm-question">Questions will appear here</p>
+            <input type="button" class="button-choice" id="btn-choice_1" value="Option A"></input>
+            <input type="button" class="button-choice" id="btn-choice_2" value="Option B"></input>
+            <input type="button" class="button-choice" id="btn-choice_3" value="Option C"></input>
+            <input type="button" class="button-choice" id="btn-choice_4" value="Option D"></input>
+            <input type="button" class="button-submit" id="btn-submit" value="Submit"></input>
+            <input type="button" class="button-quit" id="btn-quit" value="Quit"></input>
+        </div>
+        <div class="modal-background" id="mdl-quit">
+          <div class="modal-content">
+            <p class="modal-title">Are you sure?</p>
+            <p class="modal-text">All quiz progress will be lost.</p>
+            <div class="modal-button-group">
+              <input type="button" style="width: 50px" class="button-modal-quit" id="btn-quit_yes" value="Yes"></input>
+              <input type="button" style="width: 50px" class="button-modal-quit" id="btn-quit_no" value="No"></input>
             </div>
-            <div>
-                <input class="btn-choice" type="button" id="choice_2" value="" onclick="gradeQuiz(this.id)"></input>
-            </div>
-            <div>
-                <input class="btn-choice" type="button" id="choice_3" value="" onclick="gradeQuiz(this.id)"></input>
-            </div>
-            <div>
-                <input class="btn-choice" type="button" id="choice_4" value="" onclick="gradeQuiz(this.id)"></input>
-            </div> 
-            <div class="elm-error-time_hidden" id="error_time">
-                <i style="color: #f44336; margin-left: 5px" class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                <span class="elm-error-time">Time is up. No points will be awarded for this question, regardless if it is correct or not.</span>     
-            </div>
-            <div>
-                <input style="margin-left: 5px" class="btn-continue" type="button" id="continue" value="Continue" onclick="continueQuiz(this.id)"></input>
-                <input style="margin-left: 3px" class="btn-quit" type="button" id="quit" value="Quit" onclick="stopQuiz(this.id)"></input>
-            </div>
+          </div>
         </div>
-        <div style="margin-top: 15px; margin-left: 3px">
-            <span style="font-weight: 500;">Tier</span>
-            <span> = </span>
-            <span id="inf-tier"></span>
-        </div>
-        <div style="margin-top: 15px; margin-left: 3px">
-            <span style="font-weight: 500;">Category</span>
-            <span> = </span>
-            <span id="inf-category"></span>
-        </div>
-        <div style="margin-top: 15px; margin-left: 3px">
-            <span style="font-weight: 500;">Difficulty</span>
-            <span> = </span>
-            <span id="inf-difficulty"></span>
-        </div>
-        <div style="margin-top: 15px; margin-left: 3px">
-            <span style="font-weight: 500;">Progress</span>
-            <span> = </span>
-            <span id="inf-progress"></span>
-        </div>
-        <div style="margin-top: 15px; margin-left: 3px">
-            <span style="font-weight: 500;">Time Left</span>
-            <span> = </span>
-            <span id="inf-time"></span>
-        </div>
-    </main>
+    </section>
 </body>
 <html>
+<style>
+.modal-title {
+  font-family: "Rubik";
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 4px 0 12px 0;
+}
+.modal-text {
+  font-family: "Rubik";
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.6rem;
+  margin-bottom: 12px;
+}
+.modal-background {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 5px;
+  position: fixed;
+  margin: auto;
+  inset: 0;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 200px;
+  height: 80px;
+}
+.modal-button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#quiz-container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 0.25fr 0.75fr 20px 40px 40px 40px 40px 40px 1fr;
+  place-items: center;
+  row-gap: 15px;
+}
+
+#quiz-progress-text {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 0.7rem;
+
+  grid-column: 2;
+  grid-row: 1 / 2;
+}
+#progress-container {
+  width: 300px;
+  background-color: #ddd;
+  border-radius: 5px;
+  position: relative;
+  top: 15px;
+
+  grid-column: 2;
+  grid-row: 1 / 2;
+}
+#progress-bar {
+  width: 0;
+  height: 5px;
+  background-color: #04AA6D;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-size: 0.5rem;
+
+  place-self: top;
+  grid-column: 2;
+  grid-row: 1 / 2;
+}
+#elm-question {
+  grid-column: 2;
+  grid-row: 3;
+}
+#btn-choice_1 {
+  grid-column: 2;
+  grid-row: 4;
+}
+#btn-choice_2 {
+  grid-column: 2;
+  grid-row: 5;
+}
+#btn-choice_3 {
+  grid-column: 2;
+  grid-row: 6;
+}
+#btn-choice_4 {
+  grid-column: 2;
+  grid-row: 7;
+}
+#btn-submit {
+  grid-column: 2;
+  grid-row: 8;
+}
+#btn-quit {
+  grid-column: 2;
+  grid-row: 8;
+}
+</style>

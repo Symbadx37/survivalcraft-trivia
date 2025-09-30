@@ -30,33 +30,60 @@ const questionCount = {
 };
 
 // Probability sets
-const probability_beginner = {1: 0.55, 2: 0.4, 3: 0.05, 4: 0, 5: 0};
-const probability_intermediate = {1: 0.4, 2: 0.3, 3: 0.15, 4: 0.5, 5: 0};
-const probability_average = {1: 0.4, 2: 0.3, 3: 0.15, 4: 0.5, 5: 0};
-const probability_experienced = {1: 0.15, 2: 0.4, 3: 0.3, 4: 0.1, 5: 0.05};
-const probability_veteran = {1: 0, 2: 0.1, 3: 0.4, 4: 0.35, 5: 0.15};
+const probability_beginner = {1: 0.55, 2: 0.4, 3: 0.05, 4: 0, 5: 0, 6: 0};
+const probability_intermediate = {1: 0.4, 2: 0.3, 3: 0.15, 4: 0.5, 5: 0, 6: 0};
+const probability_average = {1: 0, 2: 0.4, 3: 0.3, 4: 0.25, 5: 0.5, 6: 0};
+const probability_experienced = {1: 0, 2: 0, 3: 0.35, 4: 0.45, 5: 0.15, 6: 0.5};
+const probability_veteran = {1: 0, 2: 0, 3: 0, 4: 0.35, 5: 0.50, 6: 0.15};
 
 // Data objects
 let sessionData;
-let questionData = getParser("questionData");
-let setupData = getParser("setupData");
+// let questionData = getParser("questionData");
+// let setupData = getParser("setupData");
 
 // Event handlers
-$(".setup-button-group_1 input").on({
+$(".btn-choice").on({
   click: function(){
-    console.log("button 1");
-    // ... ()
+    // ... function(this.id);
+  }
+});
+$("#btn-submit").on({
+  click: function(){
+    // ... function(this.id);
+  }
+});
+$("#btn-quit").on({
+  click: function(){
+    $("#mdl-quit").show();
+    $(".modal-button-group input").on({
+        click: function(){
+            if (this.id == "btn-quit_yes") {
+                stopQuiz();
+            } else if (this.id == "btn-quit_no") {
+                $("#mdl-quit").hide();
+            }
+        }
+    });
   }
 });
 
-$(".setup-button-group_2 input").on({
-  click: function(){
-    console.log("button 2");
-    // ... ()
-  }
-});
+$("#btn-submit").on("click", updateProgressBar);
 
-$("#btn-start").on("click", continueQuiz);
+let barWidth = 0;
+let quizLength = 1;
+function updateProgressBar() {
+    switch(quizLength) {
+        case 1: widthFactor = 30; break;
+        case 2: widthFactor = 15; break;
+        case 3: widthFactor = 10; break;
+    }
+    barWidth += widthFactor; // max width is 300
+    $("#progress-bar").animate({width: [barWidth, "swing"]});
+}
+    
+
+
+
 
 function startQuiz() {
     // ... ()
@@ -73,12 +100,9 @@ function generateQuestion() {
 function parseQuizData() {
     // ... ()
 }
-function calculatePoints() {
-    // ... ()
-}
 
 function stopQuiz() {
-    Session.clearData();
+    // Session.clearData();
     window.location.replace("../pgs/setup.html");
 }
 function resetSetup() {
