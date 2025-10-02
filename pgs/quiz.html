@@ -17,9 +17,9 @@
     <section class="_CON-content-loading">
        <!-- Primary Container -->
         <div id="QUIZ_CON_gridContainer">
-            <p id="QUIZ_TXT_progressTitle">Quiz Progress</p>
-            <div id="QUIZ_CON_progressContainer">
-              <div id="QUIZ_ELM_progressBar"></div>
+            <p id="QUIZ_TXT_progressHeading">Quiz Progress</p>
+            <div id="QUIZ_CON_progressContainer" class="ELM-progress-container">
+              <div id="QUIZ_ELM_progressBar" class="ELM-progress-bar"></div>
             </div>
             <p id="QUIZ_TXT_question" class="quiz-question">Questions will appear here</p>
             <input id="QUIZ_BTN_answerChoice_1" class="BTN-answer-choice" type="button" value="Option A"></input>
@@ -33,7 +33,7 @@
         <!-- Quiz Modal -->
         <div id="QUIZ_CON_modalContainer">
           <div id="QUIZ_CON_modalContent">
-            <p id="QUIZ_TXT_modalTitle">Are you sure?</p>
+            <p id="QUIZ_TXT_modalHeading">Are you sure?</p>
             <p id="QUIZ_TXT_modalMessage">All quiz progress will be lost.</p>
             <div id="QUIZ_GRP_modalButtons">
               <input id="QUIZ_BTN_modalQuitYes" class="BTN-general" type="button" value="Yes"></input>
@@ -45,7 +45,6 @@
 </body>
 <html>
 <style>
-
 /* GRID CONTAINER */
 #QUIZ_CON_gridContainer {
   display: grid;
@@ -85,7 +84,6 @@
 #QUIZ_BTN_submit {
   grid-column: 2;
   grid-row: 8;
-  width: 100px;
   position: relative;
   bottom: 8px;
   right: 54px;
@@ -93,7 +91,6 @@
 #QUIZ_BTN_quit {
   grid-column: 2;
   grid-row: 8;
-  width: 100px;
   position: relative;
   bottom: 8px;
   left: 54px;
@@ -130,7 +127,7 @@
   align-items: center;
   gap: 5px;
 }
-#QUIZ_TXT_modalTitle {
+#QUIZ_TXT_modalHeading {
   font-family: "Rubik";
   text-align: center;
   font-weight: 500;
@@ -153,18 +150,16 @@
 
 /* Quiz Progress Bar */
 #QUIZ_CON_progressContainer {
-  position: relative;
-  grid-column: 2;
-  grid-row: 1 / 2;
-  top: 15px;
-  width: 300px;
   background-color: #ddd;
   border-radius: 5px;
+  position: relative;
+  top: 15px;
+  width: 300px;
+  grid-column: 2;
+  grid-row: 1 / 2;
 }
 #QUIZ_ELM_progressBar {
   place-self: top;
-  grid-column: 2;
-  grid-row: 1 / 2;
   width: 0;
   height: 5px;
   font-size: 0.5rem;
@@ -173,12 +168,14 @@
   background-color: #04AA6D;
   text-align: center;
   color: white;
-}
-#QUIZ_TXT_progressTitle {
   grid-column: 2;
   grid-row: 1 / 2;
+}
+#QUIZ_TXT_progressHeading {
   font-family: "Rubik";
   font-weight: 400;
   font-size: 0.7rem;
+  grid-column: 2;
+  grid-row: 1 / 2;
 }
 </style>

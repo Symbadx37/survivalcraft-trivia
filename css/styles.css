@@ -17,7 +17,7 @@
   cursor: pointer;
   border: solid 1px #c7c1c1;
   border-radius: 4px;
-  width: 120px;
+  width: 100px;
   height: 20px;
   font-size: 0.6rem;
   text-align: center;
@@ -36,7 +36,7 @@
   color: rgb(170, 170, 170);
   background-color: rgba(239, 239, 239, 0.3);
 }
-.BTN-answer-choice {
+.BTN-answer-choice, .BTN-input-option {
   transition-duration: 0.2s;
   transition-property: background-color;
   text-align: center;
@@ -50,10 +50,10 @@
   width: 500px;
   height: 40px;
 }
-.BTN-answer-choice:hover {
+.BTN-answer-choice:hover, .BTN-input-option:hover {
   background-color: rgba(177, 177, 177, 0.3);
 }
-.BTN-answer-choice:disabled {
+.BTN-answer-choice:disabled, .BTN-input-option:disabled {
   background-color: rgba(239, 239, 239, 0.3);
   cursor: not-allowed;
   color: rgb(170, 170, 170);
@@ -81,4 +81,18 @@
   background-color: #d03227;
   color: #ffffff !important;
   font-weight: 500;
+}
+.TXT-setup-heading {
+  font-family: "Rubik";
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-wrap: left;
+}
+.TXT-setup-description {
+  font-family: "Rubik";
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-wrap: left;
 }

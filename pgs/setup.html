@@ -8,17 +8,136 @@
     <link rel="icon" type="favicon" href="../img/site-favicon.ico">
     <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-    <!--
     <script type="module" src="../js/parser.js" defer></script>
     <script src="../js/session.js" defer></script>
-    <script src="../js/loader.js" defer></script>
-    -->
+    <!-- <script src="../js/loader.js" defer></script> -->
     <script src="../js/main.js" defer></script> 
 </head>
 <body>
-    <section class="_content-loading">
+    <section class="_CON-content-loading">
+        <!-- Primary Container -->
+        <div id="SETUP_CON_gridContainer">
+          <p id="SETUP_TXT_progressHeading">Setup Progress</p>
+            <div id="SETUP_CON_progressContainer">
+              <div id="SETUP_ELM_progressBar"></div>
+            </div>
+          <h2 id="SETUP_TXT_optionHeading" class="TXT-setup-heading">Question Category</h2>
+          <p id="SETUP_TXT_optionDescription" class="TXT-setup-description">Choose what topics questions will cover. Select up to 3 total categories.</p>
+          <input id="SETUP_BTN_inputOption_1" class="BTN-input-option" type="button" value="General Knowledge"></input>
+          <input id="SETUP_BTN_inputOption_2" class="BTN-input-option" type="button" value="Game Mechanics"></input>
+          <input id="SETUP_BTN_inputOption_3" class="BTN-input-option" type="button" value="Creature Behaviors"></input>
+          <input id="SETUP_BTN_inputOption_4" class="BTN-input-option" type="button" value="Block Properties"></input>
+          <input id="SETUP_BTN_inputOption_5" class="BTN-input-option" type="button" value="Crafting Recipes"></input>
+          <input id="SETUP_BTN_inputOption_6" class="BTN-input-option" type="button" value="Updates History"></input>
+          <input id="SETUP_BTN_inputOption_7" class="BTN-input-option" type="button" value="Electrics"></input>
+          <input id="SETUP_BTN_inputOption_8" class="BTN-input-option" type="button" value="Randomized"></input>
+          <input id="SETUP_BTN_back" class="BTN-general" type="button" value="Back"></input>
+          <input id="SETUP_BTN_next" class="BTN-general" type="button" value="Next"></input>
+        </div>
     </section>
 </body>
 <html>
 <style>
+/* GRID CONTAINER */
+#SETUP_CON_gridContainer {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 200px 200px 1fr;
+  grid-template-rows: 0.25fr 0.75fr 25px 30px 40px 40px 40px 40px 40px 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  width: 100%;
+  min-height: 100vh;
+}
+#SETUP_TXT_progressHeading {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 0.7rem;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+#SETUP_CON_progressContainer {
+  background-color: #ddd;
+  border-radius: 5px;
+  position: relative;
+  top: 15px;
+  width: 300px;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+#SETUP_ELM_progressBar {
+  place-self: top;
+  width: 0;
+  height: 5px;
+  font-size: 0.5rem;
+  border-radius: 5px;
+  line-height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  color: white;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+#SETUP_TXT_optionHeading {
+  justify-self: center;
+  margin-left: 5px;
+  grid-column: 2 / 4;
+  grid-row: 3 / 3;
+}
+#SETUP_TXT_optionDescription {
+  justify-self: center;
+  margin-left: 5px;
+  grid-column: 2 / 4;
+  grid-row: 4 / 4;
+}
+#SETUP_BTN_inputOption_1 {
+  width: 200px;
+  grid-column: 2 / 3;
+  grid-row: 5 / 5;
+}
+#SETUP_BTN_inputOption_2 {
+  width: 200px;
+  grid-column: 3 / 4;
+  grid-row: 5 / 5;
+}
+#SETUP_BTN_inputOption_3 {
+  width: 200px;
+  grid-column: 2 / 3;
+  grid-row: 6 / 6;
+}
+#SETUP_BTN_inputOption_4 {
+  width: 200px;
+  grid-column: 3 / 4;
+  grid-row: 6 / 6;
+}
+#SETUP_BTN_inputOption_5 {
+  width: 200px;
+  grid-column: 2 / 3;
+  grid-row: 7 / 7;
+}
+#SETUP_BTN_inputOption_6 {
+  width: 200px;
+  grid-column: 3 / 4;
+  grid-row: 7 / 7;
+}
+#SETUP_BTN_inputOption_7 {
+  width: 200px;
+  grid-column: 2 / 3;
+  grid-row: 8 / 8;
+}
+#SETUP_BTN_inputOption_8 {
+  width: 200px;
+  grid-column: 3 / 4;
+  grid-row: 8 / 8;
+}
+#SETUP_BTN_back {
+  justify-self: right;
+  grid-column: 2;
+  grid-row: 9 / 9;
+}
+#SETUP_BTN_next {
+  justify-self: left;
+  grid-column: 3;
+  grid-row: 9 / 9;
+}
 </style>
