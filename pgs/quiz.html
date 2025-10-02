@@ -8,34 +8,36 @@
     <link rel="icon" type="favicon" href="../img/site-favicon.ico">
     <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-    <!--
     <script type="module" src="../js/parser.js" defer></script>
     <script src="../js/session.js" defer></script>
-    <script src="../js/loader.js" defer></script>
-    -->
+    <!-- <script src="../js/loader.js" defer></script> -->
     <script src="../js/main.js" defer></script> 
-    
 </head>
 <body>
-    <section class="_content-loading">
-        <div id="quiz-container">
-            <p id="quiz-progress-text">Quiz Progress</p>
-            <div id="progress-container"><div id="progress-bar"></div></div>
-            <p class="quiz-question" id="elm-question">Questions will appear here</p>
-            <input type="button" class="button-choice" id="btn-choice_1" value="Option A"></input>
-            <input type="button" class="button-choice" id="btn-choice_2" value="Option B"></input>
-            <input type="button" class="button-choice" id="btn-choice_3" value="Option C"></input>
-            <input type="button" class="button-choice" id="btn-choice_4" value="Option D"></input>
-            <input type="button" class="button-submit" id="btn-submit" value="Submit"></input>
-            <input type="button" class="button-quit" id="btn-quit" value="Quit"></input>
+    <section class="_CON-content-loading">
+       <!-- Primary Container -->
+        <div id="QUIZ_CON_gridContainer">
+            <p id="QUIZ_TXT_progressTitle">Quiz Progress</p>
+            <div id="QUIZ_CON_progressContainer">
+              <div id="QUIZ_ELM_progressBar"></div>
+            </div>
+            <p id="QUIZ_TXT_question" class="quiz-question">Questions will appear here</p>
+            <input id="QUIZ_BTN_answerChoice_1" class="BTN-answer-choice" type="button" value="Option A"></input>
+            <input id="QUIZ_BTN_answerChoice_2" class="BTN-answer-choice" type="button" value="Option B"></input>
+            <input id="QUIZ_BTN_answerChoice_3" class="BTN-answer-choice" type="button" value="Option C"></input>
+            <input id="QUIZ_BTN_answerChoice_4" class="BTN-answer-choice" type="button" value="Option D"></input>
+            <input id="QUIZ_BTN_submit" class="BTN-general" type="button" value="Submit"></input>
+            <input id="QUIZ_BTN_quit" class="BTN-general" type="button" value="Quit"></input>
         </div>
-        <div class="modal-background" id="mdl-quit">
-          <div class="modal-content">
-            <p class="modal-title">Are you sure?</p>
-            <p class="modal-text">All quiz progress will be lost.</p>
-            <div class="modal-button-group">
-              <input type="button" style="width: 50px" class="button-modal-quit" id="btn-quit_yes" value="Yes"></input>
-              <input type="button" style="width: 50px" class="button-modal-quit" id="btn-quit_no" value="No"></input>
+        
+        <!-- Quiz Modal -->
+        <div id="QUIZ_CON_modalContainer">
+          <div id="QUIZ_CON_modalContent">
+            <p id="QUIZ_TXT_modalTitle">Are you sure?</p>
+            <p id="QUIZ_TXT_modalMessage">All quiz progress will be lost.</p>
+            <div id="QUIZ_GRP_modalButtons">
+              <input id="QUIZ_BTN_modalQuitYes" class="BTN-general" type="button" value="Yes"></input>
+              <input id="QUIZ_BTN_modalQuitNo" class="BTN-general" type="button" value="No"></input>
             </div>
           </div>
         </div>
@@ -43,119 +45,140 @@
 </body>
 <html>
 <style>
-.modal-title {
-  font-family: "Rubik";
-  text-align: center;
-  font-weight: 500;
-  font-size: 0.8rem;
-  margin: 4px 0 12px 0;
+
+/* GRID CONTAINER */
+#QUIZ_CON_gridContainer {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 0.25fr 0.75fr 20px 40px 40px 40px 40px 40px 1fr;
+  row-gap: 15px;
+  width: 100%;
+  min-height: 100vh;
 }
-.modal-text {
+
+/* GRID ELEMENTS */
+#QUIZ_TXT_question {
+  grid-column: 2;
+  grid-row: 3;
   font-family: "Rubik";
+  font-size: 0.75rem;
   text-align: center;
-  font-weight: 400;
-  font-size: 0.6rem;
-  margin-bottom: 12px;
+  text-wrap: wrap;
 }
-.modal-background {
+#QUIZ_BTN_answerChoice_1 {
+  grid-column: 2;
+  grid-row: 4;
+}
+#QUIZ_BTN_answerChoice_2 {
+  grid-column: 2;
+  grid-row: 5;
+}
+#QUIZ_BTN_answerChoice_3 {
+  grid-column: 2;
+  grid-row: 6;
+}
+#QUIZ_BTN_answerChoice_4 {
+  grid-column: 2;
+  grid-row: 7;
+}
+#QUIZ_BTN_submit {
+  grid-column: 2;
+  grid-row: 8;
+  width: 100px;
+  position: relative;
+  bottom: 8px;
+  right: 54px;
+}
+#QUIZ_BTN_quit {
+  grid-column: 2;
+  grid-row: 8;
+  width: 100px;
+  position: relative;
+  bottom: 8px;
+  left: 54px;
+}
+
+/* Quiz Modal */
+#QUIZ_CON_modalContainer {
   display: none;
   position: fixed;
+  overflow: auto;
   z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
 }
-.modal-content {
-  background-color: #fefefe;
-  border-radius: 5px;
+#QUIZ_CON_modalContent {
   position: fixed;
   margin: auto;
   inset: 0;
-  padding: 20px;
-  border: 1px solid #888;
   width: 200px;
   height: 80px;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  background-color: #fefefe;
 }
-.modal-button-group {
+#QUIZ_GRP_modalButtons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-
-#quiz-container {
-  width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 500px 1fr;
-  grid-template-rows: 0.25fr 0.75fr 20px 40px 40px 40px 40px 40px 1fr;
-  place-items: center;
-  row-gap: 15px;
+#QUIZ_TXT_modalTitle {
+  font-family: "Rubik";
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 4px 0 12px 0;
+}
+#QUIZ_TXT_modalMessage {
+  font-family: "Rubik";
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.6rem;
+  margin-bottom: 12px;
+}
+#QUIZ_BTN_modalQuitYes {
+  width: 50px
+}
+#QUIZ_BTN_modalQuitNo {
+  width: 50px
 }
 
-#quiz-progress-text {
-  font-family: "Rubik";
-  font-weight: 400;
-  font-size: 0.7rem;
-
+/* Quiz Progress Bar */
+#QUIZ_CON_progressContainer {
+  position: relative;
   grid-column: 2;
   grid-row: 1 / 2;
-}
-#progress-container {
+  top: 15px;
   width: 300px;
   background-color: #ddd;
   border-radius: 5px;
-  position: relative;
-  top: 15px;
-
-  grid-column: 2;
-  grid-row: 1 / 2;
 }
-#progress-bar {
-  width: 0;
-  height: 5px;
-  background-color: #04AA6D;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-  font-size: 0.5rem;
-
+#QUIZ_ELM_progressBar {
   place-self: top;
   grid-column: 2;
   grid-row: 1 / 2;
+  width: 0;
+  height: 5px;
+  font-size: 0.5rem;
+  border-radius: 5px;
+  line-height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  color: white;
 }
-#elm-question {
+#QUIZ_TXT_progressTitle {
   grid-column: 2;
-  grid-row: 3;
-}
-#btn-choice_1 {
-  grid-column: 2;
-  grid-row: 4;
-}
-#btn-choice_2 {
-  grid-column: 2;
-  grid-row: 5;
-}
-#btn-choice_3 {
-  grid-column: 2;
-  grid-row: 6;
-}
-#btn-choice_4 {
-  grid-column: 2;
-  grid-row: 7;
-}
-#btn-submit {
-  grid-column: 2;
-  grid-row: 8;
-}
-#btn-quit {
-  grid-column: 2;
-  grid-row: 8;
+  grid-row: 1 / 2;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 0.7rem;
 }
 </style>

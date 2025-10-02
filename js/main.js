@@ -2,31 +2,11 @@
 const tierCount = 5; // ... (Beginner, Intermediate, Average, Experienced, Veteran)
 const categoryCount = 5; // ... (General Knowledge, Game Mechanics, Crafting Recipes, Updates History, Electrics)
 const questionCount = {
-    category_1: {
-        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
-    },
-    category_2: {
-        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
-    },
-    category_3: {
-        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
-    },
-    category_4: {
-        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
-    },
-    category_5: {
-        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
-    }
+    category_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+    category_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+    category_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+    category_4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+    category_5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
 };
 
 // Probability sets
@@ -38,37 +18,39 @@ const probability_veteran = {1: 0, 2: 0, 3: 0, 4: 0.35, 5: 0.50, 6: 0.15};
 
 // Data objects
 let sessionData;
-// let questionData = getParser("questionData");
-// let setupData = getParser("setupData");
+let questionData = getParser("questionData");
+let setupData = getParser("setupData");
 
 // Event handlers
-$(".btn-choice").on({
+$(".BTN-answer-choice").on({
   click: function(){
     // ... function(this.id);
   }
 });
-$("#btn-submit").on({
+$("#QUIZ_BTN_submit").on({
   click: function(){
     // ... function(this.id);
   }
 });
-$("#btn-quit").on({
+
+// Quiz quitConfirm modal: WIP
+$("#QUIZ_BTN_quit").on({
   click: function(){
-    $("#mdl-quit").show();
-    $(".modal-button-group input").on({
+    $("#QUIZ_CON_modalContainer").show();
+    $("#QUIZ_GRP_modalButtons input").on({
         click: function(){
-            if (this.id == "btn-quit_yes") {
+            if (this.id == "QUIZ_BTN_modalQuitYes") {
                 stopQuiz();
-            } else if (this.id == "btn-quit_no") {
-                $("#mdl-quit").hide();
+            } else if (this.id == "QUIZ_BTN_modalQuitNo") {
+                $("#QUIZ_CON_modalContainer").hide();
             }
         }
     });
   }
 });
 
-$("#btn-submit").on("click", updateProgressBar);
-
+// Quiz progress bar: WIP
+$("#QUIZ_BTN_submit").on("click", updateProgressBar);
 let barWidth = 0;
 let quizLength = 1;
 function updateProgressBar() {
@@ -78,13 +60,10 @@ function updateProgressBar() {
         case 3: widthFactor = 10; break;
     }
     barWidth += widthFactor; // max width is 300
-    $("#progress-bar").animate({width: [barWidth, "swing"]});
+    $("#QUIZ_ELM_progressBar").animate({width: [barWidth, "swing"]});
 }
-    
 
-
-
-
+// Quiz action functions: WIP
 function startQuiz() {
     // ... ()
 }
@@ -100,7 +79,6 @@ function generateQuestion() {
 function parseQuizData() {
     // ... ()
 }
-
 function stopQuiz() {
     // Session.clearData();
     window.location.replace("../pgs/setup.html");

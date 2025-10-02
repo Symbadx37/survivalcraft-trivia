@@ -1,38 +1,47 @@
 # IDs
-
-#PAGE_ELEMENT_elementClass_elementName_index:selector
-
-
+#PAGE_ELEMENT_elementName_index:selector
 - page = home, setup, quiz, results
-- element = button, text, division, container, modal, grid, flexbox
-- elementName = confirmQuit, buttonGroup, ...
+- element = BTN, TXT, ELM, CON, GRP
 - index = 1,2,3, ...
 - :selector = :hover, :disabled
 
 ex:
-    #QUIZ_CONTAINER_MODAL_confirmQuit
-    #QUIZ_CONTAINER_GRID_mainQuestion
-    #QUIZ_DIVISION_buttonGroup_1
-    #QUIZ_TEXT_HEADING_confirmQuit
-    #QUIZ_TEXT_PARAGRAPH_confirmQuit
+    #QUIZ_CON_gridContainer
 
-    #SETUP_BUTTON_answerChoice_1
-    #SETUP_TEXT_confirmQuitTitle
+    #QUIZ_BTN_answerChoice_1
+    #QUIZ_BTN_answerChoice_2
+    #QUIZ_BTN_answerChoice_3
+    #QUIZ_BTN_answerChoice_4
 
+    #QUIZ_TXT_question
+    #QUIZ_BTN_submit
+    #QUIZ_BTN_quit
+    #QUIZ_BTN_modalQuitYes
+    #QUIZ_BTN_modalQuitNo
+
+    #QUIZ_CON_progressContainer
+    #QUIZ_ELM_progressBar
+    #QUIZ_TXT_progressTitle
+
+    #QUIZ_GRP_modalButtons
+    #QUIZ_CON_modalContent
+    #QUIZ_CON_modalBackground
+    #QUIZ_TXT_modalMessage
+    #QUIZ_TXT_modalTitle
+    
 * Needed for DOM references.
 * Should contain unique CSS properties.
 * Layout properties at top, format properties at bottom
 
 # Classes
-
 .type-className-index:selector
-
-- type = btn, txt, elm, ...
+- type = BTN, TXT, CON, ELM
 - className = answerChoice, ...
 
 ex:
     .BTN-answer-choice
     .TXT-quiz-heading
-    .ELM-content-loading
+    .CON-content-loading
+    .ELM-progress-bar
 
 * Should only contain common and/or reusable properties.

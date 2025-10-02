@@ -590,61 +590,89 @@ $("#btn-test-reset").on({
 
 // $("#").on("click", functionName);
 
-
-#QUIZ_CONTAINER_GRID {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr 500px 1fr;
-  grid-template-rows: 0.25fr 0.75fr 20px 40px 40px 40px 40px 40px 1fr;
-  row-gap: 15px;
-  width: 100%;
-  min-height: 100vh;
+.button-start, .button-reset, .button-exit, .button-submit, .button-quit, .button-modal-quit,
+.button-tier, .button-category, .button-length, .button-duration,
+.button-tier-rdm, .button-category-rdm, .button-length-rdm, .button-duration-rdm  {
+    font-family: "Rubik";
+    margin: 0 1px 5px 1px;
+    cursor: pointer;
+    border: solid 1px #c7c1c1;
+    border-radius: 4px;
+    width: 120px;
+    height: 20px;
+    font-size: 0.6rem;
+    text-align: center;
+    transition-duration: 0.2s;
+    background-color: rgba(239, 239, 239, 0.3);
+}
+.button-start:hover, .button-reset:hover, .button-exit:hover, .button-submit:hover, .button-quit:hover, .button-modal-quit:hover,
+.button-tier:hover, .button-category:hover, .button-length:hover, .button-duration:hover,
+.button-tier-rdm:hover, .button-category-rdm:hover, .button-length-rdm:hover, .button-duration-rdm:hover  {
+    background-color: rgba(204, 204, 204, 0.3);
+    border: solid 1px #c7c1c1;
+    border-radius: 4px;
+    color: black;
+}
+.button-tier-rdm, .button-category-rdm, .button-length-rdm, .button-duration-rdm,
+.button-tier-rdm:hover, .button-category-rdm:hover, .button-length-rdm:hover, .button-duration-rdm:hover  {
+    font-family: "Rubik";
+    color: red;
+}
+.button-submit:disabled,
+.button-tier:disabled, .button-category:disabled, .button-length:disabled, .button-duration:disabled,
+.button-tier-rdm:disabled, .button-category-rdm:disabled, .button-length-rdm:disabled, .button-duration-rdm:disabled {
+    font-family: "Rubik";
+    cursor: not-allowed;
+    color: rgb(170, 170, 170);
+    background-color: rgba(239, 239, 239, 0.3);
 }
 
-
-
-#QUIZ_TEXT_HEADING_quitConfirm {
-  font-family: "Rubik";
-  text-align: center;
-  font-weight: 500;
-  font-size: 0.8rem;
-  margin: 4px 0 12px 0;
+/* DEFAULT STYLES */
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
 }
-#QUIZ_TEXT_PARAGRAPH_quitConfirm {
-  font-family: "Rubik";
-  text-align: center;
-  font-weight: 400;
-  font-size: 0.6rem;
-  margin-bottom: 12px;
+h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
 }
-#QUIZ_CONTAINER_MODAL_BACKGROUND_quitConfirm {
-  display: none;
-  position: fixed;
-  overflow: auto;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+h3 {
+    font-weight: 450;
+    font-size: 0.75rem;
 }
-#QUIZ_CONTAINER_MODAL_CONTENT_quitConfirm {
-  position: fixed;
-  margin: auto;
-  inset: 0;
-  
-  width: 200px;
-  height: 80px;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 5px;
-  background-color: #fefefe;
+h4 {
+    font-weight: 300;
+    font-size: 0.5rem;
+}
+p {
+    font-weight: 400;
+    font-size: 0.6rem;
 }
 
-
-#QUIZ_DIVISION_MODAL_buttonGroup_1 {
-
-}
+const questionCount = {
+    category_1: {
+        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    },
+    category_2: {
+        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    },
+    category_3: {
+        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    },
+    category_4: {
+        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    },
+    category_5: {
+        subcategory_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+        subcategory_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    }
+};
