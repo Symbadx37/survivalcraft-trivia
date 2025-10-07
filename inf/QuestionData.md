@@ -28,6 +28,8 @@ Who is the developer of Survivalcraft?
 - Andrew Spinks, Robert Topola, Igor Kalicinski, Markus Person (C)
 What is the name of the company that developed and published Survivalcraft?
 - K5 Games, Candy Rufus Games, 11-Bit Studios, Rufus Games (B)
+What website providor does the developer use to post updates and announcements?
+- Wordpress, Squarespace, Wix, The website is self-hosted (A)
 ## Medium
 When did Survivalcraft release on Android?
 - December 9th, 2011; March 15th, 2012; September 17th, 2012; October 14th, 2012 (D)
@@ -41,8 +43,16 @@ What is the name of the official Survivalcraft Discord server?
 - Survivalcraft Community Server, Survivalcraft Content Community, Survivalcraft Official, Survivalcraft Building Community (B)
 Which of the following land animals are NOT in the game?
 - Cheetah, Gnu Antelope, Rhinocerous, Cassowary (A)
+Which of the following land animals are NOT in the game?
+- Jaguar, Tiger, Leopard, Cheetah
+
+
 Which of the following ocean animals are NOT in the game?
 - Starfish, Killer Whale, Great White Shark, Beluga (B)
+Which of the following flying animals are NOT in the game?
+- Pigeon, Seagull, Sparrow, Crow (D)
+
+
 ## Hard
 When did Survivalcraft release on iOS?
 - February 2012, April 2013, October 2013, August 2014 (B)
@@ -66,7 +76,7 @@ What online service is the official Survivalcraft forum hosted with?
 What online service is the official Survivalcraft Wiki hosted on?
 - Wikia, Fandom, SkyWiki, MediaWiki (B)
 ## Extreme
-____________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________
 
 # GAME MECHANICS
 Total Questions = X
@@ -111,7 +121,7 @@ What is the maximum insulation amount achievable in any survival mode?
 ## Extreme
 If a campfire is exposed to rain or snow, by how much faster does it deplete?
 - 20%, 40%, 60%, 80% (D)
-____________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________
 
 # Crafting Recipes
 Total Questions = X
@@ -171,7 +181,7 @@ How do you craft Green Flickering Large Burst (Low) fireworks?
 - One sulphur, two coal, two gunpowder, green paint.
 - Two sulphur, one coal, four gunpowder, pale green paint.
 - Two coal, four gunpowder, green paint. (C)
-____________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________
 
 # Updates History
 Total Questions = 100
@@ -381,7 +391,7 @@ Which update added the Despair button?
 - Alpha 1.1, Alpha 1.3, Alpha 1.5, Alpha 1.7 (A)
 Which update allowed for renaming of existing worlds?
 - Alpha 1.6, Alpha 1.7, Alpha 1.8, Alpha 1.9 (C)
-____________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________
 
 # Electrics
 Total Questions = X
@@ -596,14 +606,172 @@ If a projectile hits the exact center of the target block, what hexadecimal valu
 - Only F
 - E or F
 - D, E, or F
-VARIABLE: Supplying a [voltage signal || hexadecimal value] of [x || x volts] to a lightbulb will illuminate how many blocks?
-- [x] blocks ()
-VARIABLE: Supplying a [voltage signal || hexadecimal value] of [x || x volts] to a [multicolored LED || 1-LED] will emit what color?
-- White, Cyan, ... ()
-VARIABLE: Using the logic rules for the [x] gate: if input one is [x (HEX)] and input two is [x (HEX)], what will be the output?
--
-VARIABLE: Supplying a [voltage signal/hexadecimal value] of [x] to a piston with a max extension set to [x] will extend how many blocks?
--
+Supplying a voltage signal of 0.8 volts to a lightbulb will illuminate how many blocks?
+- 1 block, 3 blocks, 5 blocks, 7 blocks (A)
+Supplying a voltage signal of 1.4 volts to a lightbulb will illuminate how many blocks?
+- 7 blocks, 10 blocks, 13 blocks, 16 blocks (C)
+Supplying a voltage signal of 0.5 volts to a lightbulb will illuminate how many blocks?
+- 3 blocks, 4 blocks, 5 blocks, 0 blocks (D)
+Supplying a voltage signal of 1.1 volts to a lightbulb will illuminate how many blocks?
+- 5 blocks, 6 blocks, 7 blocks, 8 blocks (C)
+Supplying a voltage signal of 1.3 volts to a lightbulb will illuminate how many blocks?
+- 9 blocks, 11 blocks, 13 blocks, 15 blocks (B)
+Supplying a voltage signal of 0.9 volts to a lightbulb will illuminate how many blocks?
+- 3 blocks, 4 blocks, 5 blocks, 6 blocks (A)
+Supplying a voltage signal of 0.3 volts to a lightbulb will illuminate how many blocks?
+- 1 block, 3 blocks, 5 blocks, 0 blocks (D)
+Supplying a voltage signal of 0.2 volts to a lightbulb will illuminate how many blocks?
+- 1 block, 2 blocks, 3 blocks, 0 blocks (D)
+Supplying a voltage signal of 1.2 volts to a lightbulb will illuminate how many blocks?
+- 9 blocks, 10 blocks, 11 blocks, 12 blocks (A)
+Supplying a voltage signal of 0.7 volts to a lightbulb will illuminate how many blocks?
+- 7 blocks, 8 blocks, 9 blocks, 0 blocks (D)
+Supplying a voltage signal of 1.0 volts to a lightbulb will illuminate how many blocks?
+- 3 blocks, 5 blocks, 7 blocks, 9 blocks (B)
+Supplying a voltage signal of 1.5 volts to a lightbulb will illuminate how many blocks?
+- 13 blocks, 14 blocks, 15 blocks, 16 blocks (C)
+Using the logic rules for the OR gate: if input one is C and input two is A, what will be the output?
+- E, A, C, F (A)
+Using the logic rules for the NOT gate: if the input is 6, what will be the output?
+- 9, 6, F, 4 (A)
+Using the logic rules for the OR gate: if input one is 9 and input two is 7, what will be the output?
+- 9, B, F, 7 (C)
+Using the logic rules for the OR gate: if input one is A and input two is 8, what will be the output?
+- A, 8, F, 5 (A)
+Using the logic rules for the NOT gate: if the input is D, what will be the output?
+- 3, D, 2, 7 (C)
+Using the logic rules for the AND gate: if input one is 0 and input two is 3, what will be the output?
+- 6, 0, 2, 3 (B)
+Using the logic rules for the NOT gate: if the input is 7, what will be the output?
+- D, 7, 3, 8 (D)
+Using the logic rules for the NOT gate: if the input is B, what will be the output?
+- 4, 7, B, F (A)
+Using the logic rules for the AND gate: if input one is 6 and input two is A, what will be the output?
+- 6, 9, A, C (A)
+Using the logic rules for the AND gate: if input one is B and input two is 5, what will be the output?
+- E, 8, 5, B (C)
+Using the logic rules for the AND gate: if input one is 3 and input two is C, what will be the output?
+- F, 3, C, 9 (B)
+Using the logic rules for the NOT gate: if the input is 8, what will be the output?
+- 8, C, 7, 4 (C)
+Using the logic rules for the OR gate: if input one is 2 and input two is 7, what will be the output?
+- 7, 2, B, 6 (A)
+Using the logic rules for the NOT gate: if the input is 5, what will be the output?
+- 5, A, 7, E (B)
+Using the logic rules for the AND gate: if input one is 6 and input two is A, what will be the output?
+- 0, A, 6, 0 (C)
+Using the logic rules for the NOT gate: if the input is E, what will be the output?
+- 1, B, 4, E (A)
+Using the logic rules for the OR gate: if input one is 2 and input two is 5, what will be the output?
+- 5, D, 5, 7 (D)
+Using the logic rules for the OR gate: if input one is 6 and input two is A, what will be the output?
+- A, 5, 6, E (D)
+Using the logic rules for the AND gate: if input one is 9 and input two is B, what will be the output?
+- 9, F, B, 6 (A)
+Using the logic rules for the OR gate: if input one is 1 and input two is 5, what will be the output?
+- 1, D, 5, 6 (C)
+Using the logic rules for the NOT gate: if the input is 2, what will be the output?
+- 4, D, 8, 2 (B)
+Using the logic rules for the OR gate: if input one is B and input two is 0, what will be the output?
+- 9, B, 0, 5 (B)
+Using the logic rules for the AND gate: if input one is 4 and input two is A, what will be the output?
+- A, 8, D, 4 (D)
+Using the logic rules for the AND gate: if input one is 8 and input two is 5, what will be the output?
+- 5, 0, 8, 0 (A)
+Supplying a voltage signal of 0.6 volts to a multicolored LED will emit what color?
+- Blue, Orange, White, None of the above (D)
+Supplying a hexadecimal value of A to a 1-LED will emit what color?
+- Purple, Red, Orange, Cyan (B)
+Supplying a hexadecimal value of 3 to a 1-LED will emit what color?
+- White, Blue, Yellow, None of the above (D)
+Supplying a voltage signal of 1.0 volts to a multicolored LED will emit what color?
+- Cyan, White, Red, Yellow (C)
+Supplying a hexadecimal value of D to a 1-LED will emit what color?
+- Green, Orange, Cyan, Green (A)
+Supplying a voltage signal of 0.4 volts to a multicolored LED will emit what color?
+- Orange, White, Red, None of the above (D)
+Supplying a hexadecimal value of F to a 1-LED will emit what color?
+- Green, Purple, Blue, Cyan (B)
+Supplying a voltage signal of 0.8 volts to a multicolored LED will emit what color?
+- White, Purple, Red, Yellow (A)
+Supplying a hexadecimal value of B to a 1-LED will emit what color?
+- Orange, Cyan, Blue, White (C)
+Supplying a voltage signal of 1.3 volts to a multicolored LED will emit what color?
+- Blue, Green, Cyan, Orange (B)
+Supplying a hexadecimal value of 8 to a 1-LED will emit what color?
+- Yellow, Green, White, Purple (C)
+Supplying a voltage signal of 0.3 volts to a multicolored LED will emit what color?
+- Purple, Green, Orange, None of the above (D)
+Supplying a hexadecimal value of D to a 1-LED will emit what color?
+- Green, Orange, Cyan, Green (A)
+Supplying a hexadecimal value of B to a 1-LED will emit what color?
+- Orange, Cyan, Blue, White (C)
+Supplying a voltage signal of 1.5 volts to a multicolored LED will emit what color?
+- Orange, Red, Purple, Yellow (C)
+Supplying a hexadecimal value of 2 to a 1-LED will emit what color?
+- Cyan, Orange, Red, None of the above (D)
+Supplying a hexadecimal value of C to a 1-LED will emit what color?
+- Green, Red, Yellow, Blue (C)
+Supplying a voltage signal of 0.7 volts to a multicolored LED will emit what color?
+- Yellow, Red, Cyan, None of the above (D)
+Supplying a voltage signal of 1.1 volts to a multicolored LED will emit what color?
+- Orange, Blue, White, Green (B)
+Supplying a hexadecimal value of 9 to a 1-LED will emit what color?
+- Cyan, Yellow, Red, Orange (A)
+Supplying a voltage signal of 1.4 volts to a multicolored LED will emit what color?
+- Blue, Green, Cyan, Orange (D)
+Supplying a hexadecimal value of 5 to a 1-LED will emit what color?
+- Red, Purple, Cyan, None of the above (D)
+Supplying a hexadecimal value of E to a 1-LED will emit what color?
+- Yellow, White, Green, Orange (D)
+Supplying a voltage signal of 1.2 volts to a multicolored LED will emit what color?
+- Yellow, Red, Cyan, Purple (A)
+Supplying a voltage signal of 0.9 volts to a multicolored LED will emit what color?
+- White, Green, Cyan, Orange (C)
+Supplying a hexadecimal value of 1 to a 1-LED will emit what color?
+- Orange, Blue, Yellow, None of the above (D)
+Supplying a hexadecimal value of D to a 1-LED will emit what color?
+- Green, Orange, Cyan, Green (A)
+Supplying a hexadecimal value of A to a piston with a max extension set to 5 will extend how many blocks?
+- 2 blocks, 3 blocks, 4 blocks, 5 blocks (B)
+Supplying a hexadecimal value of 2 to a piston with a max extension set to 2 will extend how many blocks?
+- 1 block, 2 blocks, 3 blocks, 0 blocks (D)
+Supplying a hexadecimal value of C to a piston with a max extension set to 8 will extend how many blocks?
+- 5 blocks, 6 blocks, 7 blocks, 8 blocks (A)
+Supplying a hexadecimal value of B to a piston with a max extension set to 3 will extend how many blocks?
+- 1 block, 2 blocks, 3 blocks, 4 blocks (C)
+Supplying a hexadecimal value of F to a piston with a max extension set to 1 will extend how many blocks?
+- 1 block, 3 blocks, 5 blocks, 7 blocks (A)
+Supplying a hexadecimal value of 6 to a piston with a max extension set to 2 will extend how many blocks?
+- 2 block, 3 blocks, 4 blocks, 0 blocks (D)
+Supplying a hexadecimal value of E to a piston with a max extension set to 6 will extend how many blocks?
+- 5 blocks, 6 blocks, 7 blocks, 8 blocks (B)
+Supplying a hexadecimal value of 9 to a piston with a max extension set to 2 will extend how many blocks?
+- 2 blocks, 4 blocks, 6 blocks, 8 blocks (A)
+Supplying a hexadecimal value of D to a piston with a max extension set to 7 will extend how many blocks?
+- 5 blocks, 6 blocks, 7 blocks, 8 blocks (B)
+Supplying a hexadecimal value of 7 to a piston with a max extension set to 2 will extend how many blocks?
+- 3 block, 4 blocks, 5 blocks, 0 blocks (D)
+Supplying a hexadecimal value of 8 to a piston with a max extension set to 4 will extend how many blocks?
+- 1 block, 2 blocks, 3 blocks, 4 blocks (A)
+Supplying a hexadecimal value of C to a piston with a max extension set to 5 will extend how many blocks?
+- 4 blocks, 5 blocks, 6 blocks, 7 blocks (B)
+Supplying a hexadecimal value of B to a piston with a max extension set to 8 will extend how many blocks?
+- 2 blocks, 3 blocks, 4 blocks, 5 blocks (C)
+Supplying a hexadecimal value of 9 to a piston with a max extension set to 1 will extend how many blocks?
+- 1 block, 2 blocks, 3 blocks, 0 blocks (A)
+Supplying a hexadecimal value of D to a piston with a max extension set to 3 will extend how many blocks?
+- 3 blocks, 4 blocks, 5 blocks, 6 blocks (A)
+Supplying a hexadecimal value of 8 to a piston with a max extension set to 6 will extend how many blocks?
+- 1 block, 2 blocks, 3 blocks, 4 blocks (A)
+Supplying a hexadecimal value of C to a piston with a max extension set to 5 will extend how many blocks?
+- 2 blocks, 3 blocks, 4 blocks, 5 blocks (D)
+Supplying a hexadecimal value of F to a piston with a max extension set to 4 will extend how many blocks?
+- 2 blocks, 4 blocks, 6 blocks, 8 blocks (B)
+Supplying a hexadecimal value of 3 to a piston with a max extension set to 2 will extend how many blocks?
+- 2 block, 3 blocks, 4 blocks, 0 blocks (D)
+Supplying a hexadecimal value of E to a piston with a max extension set to 2 will extend how many blocks?
+- 1 block, 2 blocks, 3 blocks, 4 blocks (B)
 ## Very Hard
 Supplying a binary value of 0101 to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Unlit, Lit 
@@ -639,106 +807,58 @@ Supplying a binary value of 1011 to a 4-LED display will output what illuminatio
 - Unlit, Lit, Lit, Unlit
 - Lit, Lit, Unlit, Lit
 - Lit, Unlit, Lit, Lit
-- Unlint, Unlit, Lit, Unlit (C)
+- Unlit, Unlit, Lit, Unlit (C)
 Supplying a binary value of 1001 to a 4-LED display will output what illumination pattern?
 - Lit, Unlit, Lit, Unlit
 - Lit, Lit, Unlit, Lit
 - Unlit, Lit, Unlit, Lit
 - Unlit, Unlit, Lit, Unlit (A)
-Using the logic rules for the NOT gate: if the input is 0110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the NOT gate: if the input is 1011, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the NOT gate: if the input is 1110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the NOT gate: if the input is 0100, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the NOT gate: if the input is 1101, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the NOT gate: if the input is 0001, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the NOT gate: if the input is 1010, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the NOT gate: if the input is 0111, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the OR gate: if input one is 0100 and input two is 1010, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the OR gate: if input one is 1001 and input two is 1110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the OR gate: if input one is 0101 and input two is 0001, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the OR gate: if input one is 0110 and input two is 0101, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the OR gate: if input one is 1000 and input two is 1010, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the OR gate: if input one is 1011 and input two is 0101, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the OR gate: if input one is 1101 and input two is 0000, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the OR gate: if input one is 0100 and input two is 1110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
 Using the logic rules for the XOR gate: if input one is 1000 and input two is 1110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the XOR gate: if input one is 0110 and input two is 1111, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the XOR gate: if input one is 0111 and input two is 1001, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
 Using the logic rules for the XOR gate: if input one is 0000 and input two is 1011, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the XOR gate: if input one is 1011 and input two is 0010, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (D)
 Using the logic rules for the XOR gate: if input one is 1101 and input two is 1010, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
 Using the logic rules for the XOR gate: if input one is 1100 and input two is 1110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
 Using the logic rules for the XOR gate: if input one is 0010 and input two is 1001, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the AND gate: if input one is 0110 and input two is 0101, what will be the output?
-- 0.2 volts, 1.2 volts, 0.9 volts, 1.1 volts (A)
-Using the logic rules for the AND gate: if input one is 1101 and input two is 0110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the AND gate: if input one is 0010 and input two is 0101, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the AND gate: if input one is 1001 and input two is 1101, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the AND gate: if input one is 0000 and input two is 1000, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the AND gate: if input one is 0110 and input two is 0101, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the AND gate: if input one is 0001 and input two is 1010, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
-Using the logic rules for the AND gate: if input one is 1100 and input two is 1011, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the NOR gate: if input one is 1110 and input two is 1101, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
 Using the logic rules for the NOR gate: if input one is 1011 and input two is 0110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the NOR gate: if input one is 0010 and input two is 1111, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (D)
 Using the logic rules for the NOR gate: if input one is 1101 and input two is 1110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the NOR gate: if input one is 0001 and input two is 1110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
 Using the logic rules for the NOR gate: if input one is 0101 and input two is 1111, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (D)
 Using the logic rules for the NOR gate: if input one is 0011 and input two is 1011, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
 Using the logic rules for the NOR gate: if input one is 1111 and input two is 0101, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
 Using the logic rules for the NAND gate: if input one is 0101 and input two is 0000, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the NAND gate: if input one is 0100 and input two is 1100, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
 Using the logic rules for the NAND gate: if input one is 1001 and input two is 0101, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
 Using the logic rules for the NAND gate: if input one is 1100 and input two is 0110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the NAND gate: if input one is 0010 and input two is 1011, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
 Using the logic rules for the NAND gate: if input one is 1000 and input two is 1011, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (D)
 Using the logic rules for the NAND gate: if input one is 0000 and input two is 1110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the NAND gate: if input one is 1100 and input two is 1110, what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts ()
+- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
 ## Extreme
