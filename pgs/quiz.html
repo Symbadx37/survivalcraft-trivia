@@ -14,159 +14,48 @@
     <script src="../js/main.js" defer></script> 
 </head>
 <body>
-    <section class="_CON-content-loading">
+    <section class="_content-loading">
        <!-- Primary Container -->
-        <div id="QUIZ_CON_gridContainer">
-            <p id="QUIZ_TXT_progressTitle">Quiz Progress</p>
-            <div id="QUIZ_CON_progressContainer">
-              <div id="QUIZ_ELM_progressBar"></div>
+        <div id="quiz_mainGridContainer">
+            <p id="quiz_progressHeading">Quiz Progress</p>
+            <div id="quiz_progressContainer">
+              <div id="quiz_progressBar"></div>
             </div>
-            <p id="QUIZ_TXT_question" class="quiz-question">Questions will appear here</p>
-            <input id="QUIZ_BTN_answerChoice_1" class="BTN-answer-choice" type="button" value="Option A"></input>
-            <input id="QUIZ_BTN_answerChoice_2" class="BTN-answer-choice" type="button" value="Option B"></input>
-            <input id="QUIZ_BTN_answerChoice_3" class="BTN-answer-choice" type="button" value="Option C"></input>
-            <input id="QUIZ_BTN_answerChoice_4" class="BTN-answer-choice" type="button" value="Option D"></input>
-            <input id="QUIZ_BTN_submit" class="BTN-general" type="button" value="Submit"></input>
-            <input id="QUIZ_BTN_quit" class="BTN-general" type="button" value="Quit"></input>
-        </div>
-        
-        <!-- Quiz Modal -->
-        <div id="QUIZ_CON_modalContainer">
-          <div id="QUIZ_CON_modalContent">
-            <p id="QUIZ_TXT_modalTitle">Are you sure?</p>
-            <p id="QUIZ_TXT_modalMessage">All quiz progress will be lost.</p>
-            <div id="QUIZ_GRP_modalButtons">
-              <input id="QUIZ_BTN_modalQuitYes" class="BTN-general" type="button" value="Yes"></input>
-              <input id="QUIZ_BTN_modalQuitNo" class="BTN-general" type="button" value="No"></input>
-            </div>
-          </div>
+            <p id="quiz_questionText">Questions will appear here</p>
+            <input id="quiz_answerChoiceButton_1" class="btn-answer-choice" type="button" value="Option A">
+            <input id="quiz_answerChoiceButton_2" class="btn-answer-choice" type="button" value="Option B">
+            <input id="quiz_answerChoiceButton_3" class="btn-answer-choice" type="button" value="Option C">
+            <input id="quiz_answerChoiceButton_4" class="btn-answer-choice" type="button" value="Option D">
+            <input id="quiz_submitButton" class="btn-general" type="button" value="Submit">
+            <input id="quiz_quitButton" class="btn-general" type="button" value="Quit">
         </div>
     </section>
 </body>
 <html>
 <style>
-
-/* GRID CONTAINER */
-#QUIZ_CON_gridContainer {
+#quiz_mainGridContainer {
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 500px 1fr;
-  grid-template-rows: 0.25fr 0.75fr 20px 40px 40px 40px 40px 40px 1fr;
+  grid-template-columns: 1fr 700px 1fr;
+  grid-template-rows: 0.25fr 0.75fr 30px 50px 50px 50px 50px 50px 1fr;
   row-gap: 15px;
   width: 100%;
   min-height: 100vh;
 }
-
-/* GRID ELEMENTS */
-#QUIZ_TXT_question {
-  grid-column: 2;
-  grid-row: 3;
-  font-family: "Rubik";
-  font-size: 0.75rem;
-  text-align: center;
-  text-wrap: wrap;
-}
-#QUIZ_BTN_answerChoice_1 {
-  grid-column: 2;
-  grid-row: 4;
-}
-#QUIZ_BTN_answerChoice_2 {
-  grid-column: 2;
-  grid-row: 5;
-}
-#QUIZ_BTN_answerChoice_3 {
-  grid-column: 2;
-  grid-row: 6;
-}
-#QUIZ_BTN_answerChoice_4 {
-  grid-column: 2;
-  grid-row: 7;
-}
-#QUIZ_BTN_submit {
-  grid-column: 2;
-  grid-row: 8;
-  width: 100px;
-  position: relative;
-  bottom: 8px;
-  right: 54px;
-}
-#QUIZ_BTN_quit {
-  grid-column: 2;
-  grid-row: 8;
-  width: 100px;
-  position: relative;
-  bottom: 8px;
-  left: 54px;
-}
-
-/* Quiz Modal */
-#QUIZ_CON_modalContainer {
-  display: none;
-  position: fixed;
-  overflow: auto;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-}
-#QUIZ_CON_modalContent {
-  position: fixed;
-  margin: auto;
-  inset: 0;
-  width: 200px;
-  height: 80px;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 5px;
-  background-color: #fefefe;
-}
-#QUIZ_GRP_modalButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-#QUIZ_TXT_modalTitle {
-  font-family: "Rubik";
-  text-align: center;
-  font-weight: 500;
-  font-size: 0.8rem;
-  margin: 4px 0 12px 0;
-}
-#QUIZ_TXT_modalMessage {
-  font-family: "Rubik";
-  text-align: center;
-  font-weight: 400;
-  font-size: 0.6rem;
-  margin-bottom: 12px;
-}
-#QUIZ_BTN_modalQuitYes {
-  width: 50px
-}
-#QUIZ_BTN_modalQuitNo {
-  width: 50px
-}
-
-/* Quiz Progress Bar */
-#QUIZ_CON_progressContainer {
+#quiz_progressContainer {
   position: relative;
   grid-column: 2;
   grid-row: 1 / 2;
-  top: 15px;
-  width: 300px;
+  top: 5px;
+  width: 400px;
   background-color: #ddd;
   border-radius: 5px;
 }
-#QUIZ_ELM_progressBar {
-  place-self: top;
+#quiz_progressBar {
   grid-column: 2;
   grid-row: 1 / 2;
   width: 0;
-  height: 5px;
+  height: 8px;
   font-size: 0.5rem;
   border-radius: 5px;
   line-height: 30px;
@@ -174,11 +63,54 @@
   text-align: center;
   color: white;
 }
-#QUIZ_TXT_progressTitle {
+#quiz_progressHeading {
+  position: relative;
+  bottom: 16px;
   grid-column: 2;
   grid-row: 1 / 2;
   font-family: "Rubik";
   font-weight: 400;
-  font-size: 0.7rem;
+  font-size: 1rem;
+}
+#quiz_questionText {
+  grid-column: 2;
+  grid-row: 3;
+  font-family: "Rubik";
+  font-size: 1rem;
+  text-align: center;
+}
+#quiz_answerChoiceButton_1 {
+  grid-column: 2;
+  grid-row: 4;
+}
+#quiz_answerChoiceButton_2 {
+  grid-column: 2;
+  grid-row: 5;
+}
+#quiz_answerChoiceButton_3 {
+  grid-column: 2;
+  grid-row: 6;
+}
+#quiz_answerChoiceButton_4 {
+  grid-column: 2;
+  grid-row: 7;
+}
+#quiz_submitButton {
+  grid-column: 2;
+  grid-row: 8;
+  width: 120px;
+  height: 25px;
+  position: relative;
+  bottom: 8px;
+  right: 64px;
+}
+#quiz_quitButton {
+  grid-column: 2;
+  grid-row: 8;
+  width: 120px;
+  height: 25px;
+  position: relative;
+  bottom: 8px;
+  left: 64px;
 }
 </style>

@@ -7,77 +7,88 @@
     font-family: "Rubik";
     src: url(../fnt/Rubik_VariableFont.ttf) format("truetype");
 }
- /* Classes */
-.CON-content-loading {
+
+body {
+  font-family: "Rubik";
+}
+h2 {
+  font-weight: 500;
+}
+h3 {
+  font-weight: 450;
+}
+
+/* Classes */
+.content-loading {
   display: none;
 }
-.BTN-general {
+.btn-general {
   font-family: "Rubik";
   margin: 0 1px 5px 1px;
   cursor: pointer;
   border: solid 1px #c7c1c1;
   border-radius: 4px;
   width: 120px;
-  height: 20px;
-  font-size: 0.6rem;
+  height: 22px;
+  font-size: 0.75rem;
   text-align: center;
   transition-duration: 0.2s;
   background-color: rgba(239, 239, 239, 0.3);
 }
-.BTN-general:hover {
+.btn-general:hover {
   background-color: rgba(197, 197, 197, 0.3);
   border: solid 1px #c7c1c1;
   border-radius: 4px;
   color: black;
 }
-.BTN-general:disabled {
+.btn-general:disabled {
   font-family: "Rubik";
   cursor: not-allowed;
   color: rgb(170, 170, 170);
   background-color: rgba(239, 239, 239, 0.3);
 }
-.BTN-answer-choice {
+.btn-answer-choice {
   transition-duration: 0.2s;
   transition-property: background-color;
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   cursor: pointer;
   font-family: "Rubik";
   background-color: rgb(245, 245, 245);
   color: black;
   border: solid 1px #ffffff;
   border-radius: 4px;
-  width: 500px;
-  height: 40px;
+  width: 580px;
+  height: 50px;
 }
-.BTN-answer-choice:hover {
+.btn-answer-choice:hover {
   background-color: rgba(177, 177, 177, 0.3);
 }
-.BTN-answer-choice:disabled {
+.btn-answer-choice:disabled {
   background-color: rgba(239, 239, 239, 0.3);
   cursor: not-allowed;
   color: rgb(170, 170, 170);
 }
-.BTN-answer-choice-right {
+.btn-answer-choice-right {
   transition-duration: 0.2s;
   transition-property: background-color;
   background-color: #04AA6Ddf;
   color: #ffffff !important;
   font-weight: 500;
 }
-.BTN-answer-choice-right:hover {
+.btn-answer-choice-right:hover {
   background-color: #059862;
   color: #ffffff !important;
   font-weight: 500;
 }
-.BTN-answer-choice-wrong {
+.btn-answer-choice-wrong {
   transition-duration: 0.2s;
   transition-property: background-color;
   background-color: #e23225df;
   color: #ffffff !important;
   font-weight: 500;
 }
-.BTN-answer-choice-wrong:hover {
+.btn-answer-choice-wrong:hover {
   background-color: #d03227;
   color: #ffffff !important;
   font-weight: 500;

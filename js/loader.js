@@ -41,9 +41,6 @@ function updateSessionData(actionID) {
     }
 }
 
-
-sessionData.newProperty = "new";
-
 // Document loader
 function loadDocument(pageID, actionID, nodeArray) {
     let elementID, elementType, nodeLength, classLength, nodeArrayLength;

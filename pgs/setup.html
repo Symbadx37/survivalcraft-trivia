@@ -8,16 +8,63 @@
     <link rel="icon" type="favicon" href="../img/site-favicon.ico">
     <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-    <!--
     <script type="module" src="../js/parser.js" defer></script>
     <script src="../js/session.js" defer></script>
-    <script src="../js/loader.js" defer></script>
-    -->
     <script src="../js/main.js" defer></script> 
+    <!-- <script src="../js/loader.js" defer></script> -->
 </head>
 <body>
     <section class="_content-loading">
+      <h2>Survivalcraft Trivia</h2>
+      <h3>Difficulty Tier</h3>
+      <p style="font-size: 0.9rem;">Determines the average difficulty of each question.</p>
+      <div id="setup_buttonGroup_1">
+        <input id="setup_tierButton_1" class="btn-general" type="button" value="Beginner">
+        <input id="setup_tierButton_2" class="btn-general" type="button" value="Intermediate">
+        <input id="setup_tierButton_3" class="btn-general" type="button" value="Average">
+        <input id="setup_tierButton_4" class="btn-general" type="button" value="Experienced">
+        <input id="setup_tierButton_5" class="btn-general" type="button" value="Veteran">
+        <input id="setup_tierButton_6" class="btn-general" type="button" value="Randomized">
+      </div>
+      <p style="font-size: 0.75rem;">* Selecting <span style="color: #f11b0c">Randomized</span> will choose a random difficulty tier upon start.</p>
+
+      <h3>Question Category</h3>
+      <p style="font-size: 0.9rem;">Determines what topics questions will cover.</p>
+      <div id="setup_buttonGroup_2">
+        <input id="setup_categoryButton_1" class="btn-general" type="button" value="General Knowledge">
+        <input id="setup_categoryButton_2" class="btn-general" type="button" value="Game Mechanics">
+        <input id="setup_categoryButton_3" class="btn-general" type="button" value="Crafting Recipes">
+        <input id="setup_categoryButton_4" class="btn-general" type="button" value="Updates History">
+        <input id="setup_categoryButton_5" class="btn-general" type="button" value="Electrics">
+        <input id="setup_categoryButton_6" class="btn-general" type="button" value="Randomized">
+      </div>
+      <p style="font-size: 0.75rem">* Selecting <span style="color: #f11b0c">Randomized</span> will choose a random category every question.</p>
+
+      <h3>Question Count</h3>
+      <p style="font-size: 0.9rem;">Determines the total number of questions, between 10 and 30 questions.</p>
+      <div id="setup_buttonGroup_3">
+        <input id="setup_lengthButton_1" class="btn-general" type="button" value="Short">
+        <input id="setup_lengthButton_2" class="btn-general" type="button" value="Medium">
+        <input id="setup_lengthButton_3" class="btn-general" type="button" value="Long">
+        <input id="setup_lengthButton_4" class="btn-general" type="button" value="Randomized">
+      </div>
+      <p style="font-size: 0.75rem">* Selecting <span style="color: #f11b0c">Randomized</span> will choose a random question count upon start.</p>  
+
+      <h3>Time Limit</h3>
+      <p style="font-size: 0.9rem;">Determines the amount of time allotted per question, if any.</p>
+      <div id="setup_buttonGroup_4">
+        <input id="setup_durationButton_1" class="btn-general" type="button" value="Easy">
+        <input id="setup_durationButton_2" class="btn-general" type="button" value="Medium">
+        <input id="setup_durationButton_3" class="btn-general" type="button" value="Hard">
+        <input id="setup_durationButton_4" class="btn-general" type="button" value="Randomized">
+      </div>
+      <p style="font-size: 0.75rem">* Selecting <span style="color: #f11b0c">Randomized</span> will choose a random time limit upon start.</p>  
     </section>
+
+    <h3>Start Quiz</h3>
+    <input id="setup_startButton" class="btn-general" type="button" value="Start">
+    <input id="setup_resetButton" class="btn-general" type="button" value="Reset">
+    <input id="setup_exitButton" class="btn-general" type="button" value="Exit">
 </body>
 <html>
 <style>

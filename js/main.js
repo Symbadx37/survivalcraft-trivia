@@ -16,52 +16,34 @@ const probability_average = {1: 0, 2: 0.4, 3: 0.3, 4: 0.25, 5: 0.5, 6: 0};
 const probability_experienced = {1: 0, 2: 0, 3: 0.35, 4: 0.45, 5: 0.15, 6: 0.5};
 const probability_veteran = {1: 0, 2: 0, 3: 0, 4: 0.35, 5: 0.50, 6: 0.15};
 
+// Disable console access
+window.addEventListener('keydown', function(event) {
+    if (event.code === 'F12') {
+        event.preventDefault();
+        console.log('Blocked F12');
+    }
+    if (event.shiftKey && event.ctrlKey && event.code === 'KeyI') {
+        event.preventDefault();
+        console.log('Blocked Ctrl + Shift + i');
+    }
+});
+window.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    console.log('Blocked RightClick');
+});
+
 // Data objects
 let sessionData;
-let questionData = getParser("questionData");
-let setupData = getParser("setupData");
+let questionData = getParser();
 
 // Event handlers
-$(".BTN-answer-choice").on({
-  click: function(){
-    // ... function(this.id);
-  }
-});
-$("#QUIZ_BTN_submit").on({
-  click: function(){
-    // ... function(this.id);
-  }
-});
-
-// Quiz quitConfirm modal: WIP
-$("#QUIZ_BTN_quit").on({
-  click: function(){
-    $("#QUIZ_CON_modalContainer").show();
-    $("#QUIZ_GRP_modalButtons input").on({
-        click: function(){
-            if (this.id == "QUIZ_BTN_modalQuitYes") {
-                stopQuiz();
-            } else if (this.id == "QUIZ_BTN_modalQuitNo") {
-                $("#QUIZ_CON_modalContainer").hide();
-            }
-        }
-    });
-  }
-});
-
-// Quiz progress bar: WIP
-$("#QUIZ_BTN_submit").on("click", updateProgressBar);
-let barWidth = 0;
-let quizLength = 1;
-function updateProgressBar() {
-    switch(quizLength) {
-        case 1: widthFactor = 30; break;
-        case 2: widthFactor = 15; break;
-        case 3: widthFactor = 10; break;
-    }
-    barWidth += widthFactor; // max width is 300
-    $("#QUIZ_ELM_progressBar").animate({width: [barWidth, "swing"]});
-}
+$("#setup_buttonGroup_1 input").on("click", );
+$("#setup_buttonGroup_2 input").on("click", );
+$("#setup_buttonGroup_3 input").on("click", );
+$("#setup_buttonGroup_4 input").on("click", );
+$("#setup_startButton").on("click", startQuiz);
+$("#setup_resetButton").on("click", resetSetup);
+$("#setup_exitButton").on("click", exitSetup);
 
 // Quiz action functions: WIP
 function startQuiz() {
@@ -80,7 +62,7 @@ function parseQuizData() {
     // ... ()
 }
 function stopQuiz() {
-    // Session.clearData();
+    Session.clearData();
     window.location.replace("../pgs/setup.html");
 }
 function resetSetup() {
