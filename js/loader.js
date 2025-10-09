@@ -1,33 +1,29 @@
 // Active document deferred loader
 $(document).ready(function() {
-    updateSessionData("refresh");
+    updateSession("refresh");
     // Initialize and/or refresh session
     if (typeof localStorage.sessionData === "undefined") {
         let obj = new Session();
         Session.setData(obj);
-        updateSessionData("refresh");
+        updateSession("refresh");
     }
     // Commence loading checks
     if (sessionData.booleanFlags.setupPreloadNeeded) {
-        console.log("preloading setup ...");
-        loadDocument("setup", "load_full");
+        updateSession("load", "setup", "load_full");
     }
     else if (sessionData.booleanFlags.quizPreloadNeeded) {
-        console.log("preloading quiz ...");
-        loadDocument("quiz", "load_full");
+        updateSession("load", "quiz", "load_full");
     }
     else if (sessionData.booleanFlags.resultsPreloadNeeded) {
-        console.log("preloading results ...");
-        loadDocument("results", "load_full");
+        updateSession("load", "results", "load_full");
     }
     else if (sessionData.booleanFlags.isQuizActive) {
-        console.log("loading quiz ...");
-        loadDocument("quiz", "load_full");
+        updateSession("load", "quiz", "load_full");
     }
 });
 
 // Automates data saving, refreshing, and loading
-function updateSessionData(actionID) {
+function updateSession(functionID, pageID, actionID, nodeArray) {
     const setData = function() {
         Session.setData(sessionData);
     }
@@ -35,9 +31,13 @@ function updateSessionData(actionID) {
         sessionData = Session.getData(localStorage.getItem("sessionData"));
     }
     // Sequence
-    switch(actionID) {
-        case "refresh": getData(); break;
-        case "save": setData(); getData(); break;
+    switch(functionID) {
+        case "refresh": 
+            getData(); break;
+        case "save": 
+            setData(); getData(); break;
+        case "load": 
+            setData(); getData(); loadDocument(pageID, actionID, nodeArray); break;
     }
 }
 
@@ -47,7 +47,6 @@ function loadDocument(pageID, actionID, nodeArray) {
     let maxNodeIndexReached = false, nodeIndex = 1, arrayIndex = 0;
     
     if (actionID == "load_partial") nodeArrayLength = nodeArray.length;
-
     while (!maxNodeIndexReached) {
         // Get length indexes
         if (actionID == "load_full") {
@@ -91,7 +90,7 @@ function loadDocument(pageID, actionID, nodeArray) {
     } 
 
     // Render page
-    $("#loading-container_setup").removeClass("loading");
+    $("#setup_pageContainer").removeClass("content_loading");
 
     function checkHashStates() {
         let hashIndex = 0;

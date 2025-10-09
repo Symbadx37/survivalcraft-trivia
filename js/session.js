@@ -1,7 +1,7 @@
 class Session {
     constructor() {
         this.setupParameters = {
-            // ... ()
+           // ...
         }
         this.quizParameters = {
             quizTier: 0,
@@ -51,29 +51,32 @@ class Session {
         this.pageElements = {
             setup: {
                 node_1: {
-                    nullStateHash: "0000", // ... (elementValue, classList, isVisible, isActive)
-                    elementID: "",         // ... (STRING: HTML element id)
-                    elementType: "",       // ... (STRING: button, division, span, paragraph, heading)
-                    elementValue: "",      // ... (STRING: HTML text value)
-                    classID: [""],         // ... (ARRAY: HTML element id)
-                    classState: [0],       // ... (ARRAY: 0 = null, 1 = add, 2 = remove)
-                    isVisible: 0,          // ... (FLAG: "" = null, true = show, false = hide)
-                    isActive: 0,           // ... (FLAG: "" = null, true = enabled, false = disabled)
-                },
-                node_2: {
-                    nullStateHash: "0000", 
-                    elementID: "",
-                    elementType: "",
+                    nullStateHash: "0001",
+                    elementID: "setup_tierButton_1",
+                    elementGroup: "buttonGroup_1",
+                    elementType: "button",
                     elementValue: "",
                     classID: [""],
                     classState: [0],
                     isVisible: 0,
-                    isActive: 0,
+                    isActive: true,
+                },
+                node_2: {
+                    nullStateHash: "0001", 
+                    elementID: "setup_tierButton_2",
+                    elementGroup: "buttonGroup_1",
+                    elementType: "button",
+                    elementValue: "",
+                    classID: [""],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: true,
                 },
                 node_3: {
-                    nullStateHash: "0000", 
-                    elementID: "",
-                    elementType: "",
+                    nullStateHash: "0001", 
+                    elementID: "setup_tierButton_3",
+                    elementGroup: "buttonGroup_1",
+                    elementType: "button",
                     elementValue: "",
                     classID: [""],
                     classState: [0],
@@ -81,9 +84,32 @@ class Session {
                     isActive: true,
                 },
                 node_4: {
-                    nullStateHash: "0000", 
-                    elementID: "",
-                    elementType: "",
+                    nullStateHash: "0001", 
+                    elementID: "setup_tierButton_4",
+                    elementGroup: "buttonGroup_1",
+                    elementType: "button",
+                    elementValue: "",
+                    classID: [""],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: true,
+                },
+                node_5: {
+                    nullStateHash: "0001", 
+                    elementID: "setup_tierButton_5",
+                    elementGroup: "buttonGroup_1",
+                    elementType: "button",
+                    elementValue: "",
+                    classID: [""],
+                    classState: [0],
+                    isVisible: 0,
+                    isActive: true,
+                },
+                node_6: {
+                    nullStateHash: "0001", 
+                    elementID: "setup_tierButton_6",
+                    elementGroup: "buttonGroup_1",
+                    elementType: "button",
                     elementValue: "",
                     classID: [""],
                     classState: [0],
@@ -95,18 +121,20 @@ class Session {
                 node_1: {
                     nullStateHash: "0000", 
                     elementID: "",
+                    elementGroup: "",
                     elementType: "",
                     elementValue: "",
                     classID: [""],
                     classState: [0],
                     isVisible: 0,
-                    isActive: true,
+                    isActive: 0,
                 }
             },
             results: {
                 node_1: {
                     nullStateHash: "0000", 
                     elementID: "",
+                    elementGroup: "",
                     elementType: "",
                     elementValue: "",
                     classID: [""],

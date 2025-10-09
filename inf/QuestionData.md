@@ -37,22 +37,30 @@ When did Survivalcraft release on Amazon?
 - July 26th, 2011; November 6th, 2012; December 7th, 2012; March 18th, 2013 (B)
 When did Survivalcraft 2 release on Windows Store?
 - November 24th, 2016; December 14th, 2016; December 21st, 2016; January 5th, 2017 (B)
-What is the difference between Survivalcraft and Survivalcraft 2?
-- X, X, X, X ()
 What is the name of the official Survivalcraft Discord server?
 - Survivalcraft Community Server, Survivalcraft Content Community, Survivalcraft Official, Survivalcraft Building Community (B)
 Which of the following land animals are NOT in the game?
-- Cheetah, Gnu Antelope, Rhinocerous, Cassowary (A)
+- Water Buffalo, Rhinocerous, Gnu Antelope, Cassowary (A)
 Which of the following land animals are NOT in the game?
-- Jaguar, Tiger, Leopard, Cheetah
-
-
+- Jaguar, Tiger, Leopard, Cheetah (D)
+Which of the following land animals are NOT in the game?
+- Albino Bull, Grizzly Bear, Albino Tiger, Artic Fox (D)
+Which of the following land animals are NOT in the game?
+- Hippopotamus, Giraffe, Wildboar, Reindeer (A)
 Which of the following ocean animals are NOT in the game?
-- Starfish, Killer Whale, Great White Shark, Beluga (B)
-Which of the following flying animals are NOT in the game?
-- Pigeon, Seagull, Sparrow, Crow (D)
-
-
+- Starfish, Blue Whale, Great White Shark, Beluga (B)
+Which of the following ocean animals are NOT in the game?
+- Sea Urchin, Jellyfish, Tiger Shark, Freshwater Bass (B)
+Which of the following ocean animals are NOT in the game?
+- Yellow Ray, Killer Whale, Barracuda, Dolphin (D)
+Which of the following ocean animals are NOT in the game?
+- Piranha, Seabass, Leopard Shark, Brown Ray (C)
+Which of the following birds are NOT in the game?
+- Pigeon, Robin, Sparrow, Raven (B)
+Which of the following birds are NOT in the game?
+- Duck, Seagull, Dove, Pigeon (C)
+Which of the following supernatural creatures are in the game?
+- Sasquatch, Werewolf, Dwarf, Goblin (B)
 ## Hard
 When did Survivalcraft release on iOS?
 - February 2012, April 2013, October 2013, August 2014 (B)
@@ -70,6 +78,10 @@ What programming language is Survivalcraft written in?
 - Java, C++, C#, Python (C)
 What game engine does Survivalcraft utilize?
 - Unity, Engine Power, Unreal Engine, Godot (B)
+What is the highest visibility range allowed for mobile devices?
+- 224 blocks, 320 blocks, 448 blocks, 532 blocks (B)
+What is the highest visibility range allowed on PC?
+- 320 blocks, 448 blocks, 532 blocks, 624 blocks (B)
 ## Very Hard
 What online service is the official Survivalcraft forum hosted with?
 - Reddit, Tapatalk, 4Chan, Lefora (B)
