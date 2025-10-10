@@ -785,17 +785,17 @@ Supplying a hexadecimal value of 3 to a piston with a max extension set to 2 wil
 Supplying a hexadecimal value of E to a piston with a max extension set to 2 will extend how many blocks?
 - 1 block, 2 blocks, 3 blocks, 4 blocks (B)
 ## Very Hard
-Supplying a binary value of 0101 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 1010 to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Unlit, Lit 
 - Lit, Unlit, Lit, Lit
 - Unlit, Unlit, Lit, Unlit
 - Lit, Unlit, Lit, Unlit (A)
-Supplying a binary value of 0111 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 1110 to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Unlit, Unlit
 - Lit, Unlit, Lit, Lit
 - Unlit, Lit, Lit, Lit
 - Unlit, Unlit, Lit, Lit (B)
-Supplying a binary value of 0010 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 0100 to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Unlit, Unlit
 - Lit, Lit, Unlit, Lit
 - Unlit, Unlit, Lit, Unlit
@@ -805,17 +805,17 @@ Supplying a binary value of 0110 to a 4-LED display will output what illuminatio
 - Lit, Unlit, Lit, Lit
 - Lit, Lit, Unlit, Unlit
 - Unlit, Lit, Unlit, Lit (D)
-Supplying a binary value of 1110 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 0111 to a 4-LED display will output what illumination pattern?
 - Lit, Lit, Lit, Unlit
 - Unlit, Lit, Unlit, Unlit
 - Lit, Unlit, Lit, Lit
 - Unlit, Lit, Unlit, Lit (A)
-Supplying a binary value of 0011 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 1100 to a 4-LED display will output what illumination pattern?
 - Lit, Unlit, Unlit, Lit
 - Unlit, Unlit, Lit, Lit
 - Lit, Lit, Unlit, Lit
 - Lit, Unlit, Unlit, Unlit (B)
-Supplying a binary value of 1011 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 1101 to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Lit, Unlit
 - Lit, Lit, Unlit, Lit
 - Lit, Unlit, Lit, Lit
