@@ -1,49 +1,50 @@
 name: Obfuscate and Deploy
-
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   workflow_dispatch:
-
 jobs:
   obfuscate-and-deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Create distribution directory
-        run: |
-          mkdir -p dist
-          cp -r . dist/
-          rm -rf dist/.git dist/.github dist/dist
-
-      - name: Obfuscate JavaScript
-        uses: KevinRohn/github-action-javascript-obfuscator@v1
-        with:
-          input_path: dist/js
-          output_path: dist/js
-          compact: true
-          control_flow_flattening: true
-          dead_code_injection: true
-          debug_protection: false
-          disable_console_output: true
-          log: false
-          rename_globals: false
-          self_defending: true
-          string_array: true
-          string_array_encoding: "base64"
-          string_array_rotate: true
-          string_array_shuffle: true
-          string_array_threshold: 0.75
-          unicode_escape_sequence: false
-          target: browser
-
-      - name: Deploy to production branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: production
-          force_orphan: true
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Create distribution directory
+      run: |
+        mkdir -p dist
+        rsync -av --exclude='.git' --exclude='.github' --exclude='dist' ./ dist/
+    
+    - name: Obfuscate JavaScript
+      uses: KevinRohn/github-action-javascript-obfuscator@v1
+      with:
+        input_path: dist/js
+        output_path: dist/js
+        compact: true
+        control_flow_flattening: true
+        dead_code_injection: true
+        debug_protection: false
+        disable_console_output: true
+        log: false
+        rename_globals: false
+        self_defending: true
+        string_array: true
+        string_array_encoding: 'base64'
+        string_array_rotate: true
+        string_array_shuffle: true
+        string_array_threshold: 0.75
+        unicode_escape_sequence: false
+        target: browser
+    
+    - name: Deploy to production branch
+      run: |
+        cd dist
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git init
+        git add .
+        git commit -m "Obfuscated build from ${{ github.sha }}"
+        git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:production
