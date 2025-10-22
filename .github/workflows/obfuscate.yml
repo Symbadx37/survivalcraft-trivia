@@ -18,26 +18,37 @@ jobs:
         mkdir -p dist
         rsync -av --exclude='.git' --exclude='.github' --exclude='dist' ./ dist/
     
-    - name: Obfuscate JavaScript
-      uses: KevinRohn/github-action-javascript-obfuscator@v1
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
       with:
-        input_path: dist/js
-        output_path: dist/js
-        compact: true
-        control_flow_flattening: true
-        dead_code_injection: true
-        debug_protection: false
-        disable_console_output: true
-        log: false
-        rename_globals: false
-        self_defending: true
-        string_array: true
-        string_array_encoding: 'base64'
-        string_array_rotate: true
-        string_array_shuffle: true
-        string_array_threshold: 0.75
-        unicode_escape_sequence: false
-        target: browser
+        node-version: '20'
+    
+    - name: Update parser.js import
+      run: |
+        sed -i 's|import questionData from "./dat/QuestionData.json" with {type: "json"};|import questionData from "./dat/QuestionData.js";|g' dist/js/parser.js
+    
+    - name: Convert JSON to JS module
+      run: |
+        echo "export default " > dist/dat/QuestionData.js
+        cat dist/dat/QuestionData.json >> dist/dat/QuestionData.js
+        rm dist/dat/QuestionData.json
+    
+    - name: Install javascript-obfuscator
+      run: npm install -g javascript-obfuscator
+    
+    - name: Obfuscate QuestionData.js
+      run: |
+        javascript-obfuscator dist/dat/QuestionData.js \
+          --output dist/dat/QuestionData.js \
+          --compact true \
+          --control-flow-flattening true \
+          --dead-code-injection true \
+          --string-array true \
+          --string-array-encoding base64 \
+          --string-array-rotate true \
+          --string-array-shuffle true \
+          --string-array-threshold 0.75 \
+          --self-defending true
     
     - name: Deploy to production branch
       run: |
