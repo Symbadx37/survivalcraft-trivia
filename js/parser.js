@@ -1,4 +1,4 @@
-import questionData from"../dat/QuestionData.json" with {type: "json"};
+import questionData from"../dat/QuestionData.json" with {type: "js"};
 window.getParser = getParser;
 
 function getParser() {
