@@ -3,6 +3,10 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
   obfuscate-and-deploy:
     runs-on: ubuntu-latest
