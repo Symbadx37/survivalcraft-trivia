@@ -70,8 +70,9 @@ $("#setup_exitButton").on("click", exitSetup);
 
 function initializeSetup(elementID, elementGroup) {
     let nodeIndex, isNodeFound = false;
+    let activeNodes = [];
     const nodeLength = Object.values(sessionData["pageElements"]["setup"]).length;
-    let lookupIndex_1 = 1, lookupIndex_2 = 1, lookupIndex_3 = 1, activeNodeThreshold = 1;
+    let lookupIndex_1 = 1, lookupIndex_2 = 1, lookupIndex_3 = 1, activeNodeThreshold = 0;
 
     // Gets active button node
     while (!isNodeFound) {
@@ -85,9 +86,10 @@ function initializeSetup(elementID, elementGroup) {
         }
     }
 
-    // Gets total number of button nodes in active group
-    while (lookupIndex_2 < nodeLength) {
+    // Gets total number of button nodes in active group, pushes active nodes to array
+    while (lookupIndex_2 <= nodeLength) {
         if (sessionData["pageElements"]["setup"]["node_" + lookupIndex_2]["elementGroup"] == elementGroup) {
+            activeNodes.push(lookupIndex_2);
             activeNodeThreshold++;
         }
         lookupIndex_2++;
@@ -95,11 +97,11 @@ function initializeSetup(elementID, elementGroup) {
 
     // Updates states of all inactive and unselected buttons
     while (lookupIndex_3 <= activeNodeThreshold) {
-        if (sessionData["pageElements"]["setup"]["node_" + lookupIndex_3]["elementGroup"] == elementGroup &&
-            sessionData["pageElements"]["setup"]["node_" + lookupIndex_3]["elementID"] !== elementID &&
-            sessionData["pageElements"]["setup"]["node_" + lookupIndex_3]["isActive"] == false) {
-                sessionData["pageElements"]["setup"]["node_" + lookupIndex_3]["isActive"] = true; 
-                updateSession("load", "setup", "load_partial", [lookupIndex_3]);
+        if (sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["elementGroup"] == elementGroup &&
+            sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["elementID"] !== elementID &&
+            sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["isActive"] == false) {
+                sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["isActive"] = true; 
+                updateSession("load", "setup", "load_partial", [activeNodes[lookupIndex_3 - 1]]);
         } 
         lookupIndex_3++;
     }
@@ -107,7 +109,11 @@ function initializeSetup(elementID, elementGroup) {
 
 // WIP
 function startQuiz() {
+    const nodeLength = Object.values(sessionData["pageElements"]["setup"]).length;
+    let lookupIndex = 1;
     validateSetup();
+
+    /*
     // Update flags
     if (sessionData.booleanFlags.isSetupValid) {
         sessionData.booleanFlags.setupPreloadNeeded = false;
@@ -116,10 +122,24 @@ function startQuiz() {
         updateSession("save");
         window.location.replace("quiz.html");
     }
+    */
 
     function validateSetup() {
-        // ... (insert loop for validating button states)
-        initializeData();
+        let activeGroup = [];
+        while (lookupIndex <= nodeLength) {
+            if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["isActive"] == false) {
+                activeGroup.push(sessionData["pageElements"]["setup"]["node_" + lookupIndex]["elementGroup"]);
+            }
+            lookupIndex++;
+        }
+        
+        // ... (add code for detecting which button groups are present in array and display error message for each one)
+
+        if (activeGroup.length = 4) {
+            sessionData.booleanFlags.isSetupValid = true;
+            updateSession("save");
+            initializeData();
+        }
     }
     function initializeData() {
         // ... (insert code for slicing and assigning button states to sessionData parameters)

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Survivalcraft Trivia - Home</title>
     <meta charset="UTF-8"/>
@@ -10,14 +11,17 @@
 </head>
 <body>
    <div id="content-container">
-        <span id="grid-item_1">Under Construction</span>
-        <span id="grid-item_2">This site is currently under construction. Please check back soon!</span>
+        <p id="grid-item_1">Under Construction</p>
+        <p id="grid-item_2">This site is currently under construction. Please check back soon!</p>
         <a id="grid-item_3" href="https://github.com/Symbadx37/survivalcraft-trivia">View Development Status on GitHub</a>
    </div>
 </body>
 <html>
 
 <style>
+@media(max-width:550px) {
+
+}
 #content-container {
   width: 100%;
   min-height: 100vh;
@@ -27,6 +31,7 @@
   place-items: center;
   text-align: center;
   font-family: "Rubik";
+  overflow-wrap: break-word;
 }
 #grid-item_1 {
   grid-column: 2;
