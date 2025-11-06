@@ -4,11 +4,11 @@ const categoryCount = 5; // ... (General Knowledge, Game Mechanics, Crafting Rec
 const lengthCount = 3; // ... (Easy = 10, Medium = 20, Hard = 30)
 const durationCount = 4; // ... (High = 3m, Moderate = 2m, Low = 1m, None)
 const questionCount = {
-    category_1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-    category_2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-    category_3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-    category_4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-    category_5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+    2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+    3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+    4: {1: 34, 2: 24, 3: 46, 4: 85, 5: 35, 6: 64},
+    5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
 };
 
 // Probability sets
@@ -19,7 +19,6 @@ const probability_experienced = {1: 0, 2: 0, 3: 0.35, 4: 0.45, 5: 0.15, 6: 0.5};
 const probability_veteran = {1: 0, 2: 0, 3: 0, 4: 0.35, 5: 0.50, 6: 0.15};
 
 /* REMOVE COMMENTS BEFORE SHIPPING
-
 // Disable console access
 window.addEventListener('keydown', function(event) {
     if (event.code === 'F12') {
@@ -67,6 +66,8 @@ $("#setup_buttonGroup_4 input").on({
 $("#setup_startButton").on("click", startQuiz);
 $("#setup_resetButton").on("click", resetSetup);
 $("#setup_exitButton").on("click", exitSetup);
+$("#quiz_submitButton").on("click", continueQuiz);
+$("#quiz_quitButton").on("click", stopQuiz);
 
 function initializeSetup(elementID, elementGroup) {
     let nodeIndex, isNodeFound = false;
@@ -107,14 +108,13 @@ function initializeSetup(elementID, elementGroup) {
     }
 }
 
-// WIP
 function startQuiz() {
     const nodeLength = Object.values(sessionData["pageElements"]["setup"]).length;
-    let lookupIndex = 1;
     validateSetup();
+    generateQuestion();
 
     /*
-    // Update flags
+    // Update session flags
     if (sessionData.booleanFlags.isSetupValid) {
         sessionData.booleanFlags.setupPreloadNeeded = false;
         sessionData.booleanFlags.quizPreloadNeeded = true;
@@ -125,24 +125,39 @@ function startQuiz() {
     */
 
     function validateSetup() {
-        let activeGroup = [];
+        let activeGroup = [], lookupIndex = 1;
         while (lookupIndex <= nodeLength) {
             if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["isActive"] == false) {
                 activeGroup.push(sessionData["pageElements"]["setup"]["node_" + lookupIndex]["elementGroup"]);
             }
             lookupIndex++;
         }
-        
-        // ... (add code for detecting which button groups are present in array and display error message for each one)
-
-        if (activeGroup.length = 4) {
+        if (activeGroup.length == 4) {
             sessionData.booleanFlags.isSetupValid = true;
             updateSession("save");
             initializeData();
+        } else {
+            alert("All options must be selected.");
         }
     }
     function initializeData() {
-        // ... (insert code for slicing and assigning button states to sessionData parameters)
+        let lookupIndex = 1;
+        while (lookupIndex <= nodeLength) {
+            let nodeID, groupID, nodeSlice, groupSlice;
+            if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["isActive"] == false) {
+                nodeID = sessionData["pageElements"]["setup"]["node_" + lookupIndex]["elementID"];
+                groupID = sessionData["pageElements"]["setup"]["node_" + lookupIndex]["elementGroup"];
+                nodeSlice = parseInt(nodeID.charAt(nodeID.length - 1));
+                groupSlice = parseInt(groupID.charAt(groupID.length - 1));
+                switch (groupSlice) {
+                    case 1: sessionData.quizParameters.quizTier = nodeSlice; break;
+                    case 2: sessionData.quizParameters.quizCategory = nodeSlice; break;
+                    case 3: sessionData.quizParameters.quizLength = nodeSlice; break;
+                    case 4: sessionData.quizParameters.quizDuration = nodeSlice; break;
+                }
+            }
+            lookupIndex++;
+        }
         
         if (sessionData.quizParameters.quizTier == 5) {
             const randomTier = Math.floor((Math.random() * tierCount) + 1)
@@ -159,7 +174,7 @@ function startQuiz() {
             sessionData.quizParameters.quizDuration = randomDuration;
             console.info("SYSTEM: Parameter randomDuration = " + sessionData.quizParameters.quizDuration + " (at " + getTime() + ").");
         }
-        switch(sessionData.quizTier) {
+        switch(sessionData.quizParameters.quizTier) {
             case 1: sessionData.quizParameters.activeTierProbability = probability_beginner; break;
             case 2: sessionData.quizParameters.activeTierProbability = probability_intermediate; break;
             case 3: sessionData.quizParameters.activeTierProbability = probability_average; break;
@@ -167,8 +182,7 @@ function startQuiz() {
             case 5: sessionData.quizParameters.activeTierProbability = probability_veteran; break;
         }
         updateSession("save");
-    } 
-
+    }
 }
 function continueQuiz() {
     // ... ()

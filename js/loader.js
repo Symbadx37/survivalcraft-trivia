@@ -1,3 +1,7 @@
+// ... (update loader code to accomdate null fields in session object. only necessary fields should be listed, instead of using state hash)
+// ... (add extra fields to session object and loader: textValue, styleID, styleValue)
+
+
 // Active document deferred loader
 $(document).ready(function() {
     updateSession("refresh");
