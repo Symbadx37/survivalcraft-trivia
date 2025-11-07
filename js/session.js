@@ -51,324 +51,291 @@ class Session {
         this.pageElements = {
             setup: {
                 node_1: {
-                    nullStateHash: "0001",
-                    elementID: "setup_tierButton_1",
-                    elementGroup: "buttonGroup_1",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_tierButton_1",
+                        group: "buttonGroup_1",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_2: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_tierButton_2",
-                    elementGroup: "buttonGroup_1",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_tierButton_2",
+                        group: "buttonGroup_1",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_3: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_tierButton_3",
-                    elementGroup: "buttonGroup_1",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_tierButton_3",
+                        group: "buttonGroup_1",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_4: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_tierButton_4",
-                    elementGroup: "buttonGroup_1",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_tierButton_4",
+                        group: "buttonGroup_1",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_5: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_tierButton_5",
-                    elementGroup: "buttonGroup_1",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_tierButton_5",
+                        group: "buttonGroup_1",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_6: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_tierButton_6",
-                    elementGroup: "buttonGroup_1",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_tierButton_6",
+                        group: "buttonGroup_1",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_7: {
-                    nullStateHash: "0001",
-                    elementID: "setup_categoryButton_1",
-                    elementGroup: "buttonGroup_2",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_categoryButton_1",
+                        group: "buttonGroup_2",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_8: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_categoryButton_2",
-                    elementGroup: "buttonGroup_2",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_categoryButton_2",
+                        group: "buttonGroup_2",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_9: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_categoryButton_3",
-                    elementGroup: "buttonGroup_2",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_categoryButton_3",
+                        group: "buttonGroup_2",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_10: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_categoryButton_4",
-                    elementGroup: "buttonGroup_2",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_categoryButton_4",
+                        group: "buttonGroup_2",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_11: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_categoryButton_5",
-                    elementGroup: "buttonGroup_2",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_categoryButton_5",
+                        group: "buttonGroup_2",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_12: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_categoryButton_6",
-                    elementGroup: "buttonGroup_2",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_categoryButton_6",
+                        group: "buttonGroup_2",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_13: {
-                    nullStateHash: "0001",
-                    elementID: "setup_lengthButton_1",
-                    elementGroup: "buttonGroup_3",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_lengthButton_1",
+                        group: "buttonGroup_3",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_14: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_lengthButton_2",
-                    elementGroup: "buttonGroup_3",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_lengthButton_2",
+                        group: "buttonGroup_3",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_15: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_lengthButton_3",
-                    elementGroup: "buttonGroup_3",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_lengthButton_3",
+                        group: "buttonGroup_3",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_16: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_lengthButton_4",
-                    elementGroup: "buttonGroup_3",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_lengthButton_4",
+                        group: "buttonGroup_3",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_17: {
-                    nullStateHash: "0001",
-                    elementID: "setup_durationButton_1",
-                    elementGroup: "buttonGroup_4",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_durationButton_1",
+                        group: "buttonGroup_4",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_18: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_durationButton_2",
-                    elementGroup: "buttonGroup_4",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_durationButton_2",
+                        group: "buttonGroup_4",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_19: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_durationButton_3",
-                    elementGroup: "buttonGroup_4",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_durationButton_3",
+                        group: "buttonGroup_4",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_20: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_durationButton_4",
-                    elementGroup: "buttonGroup_4",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_durationButton_4",
+                        group: "buttonGroup_4",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
                 node_21: {
-                    nullStateHash: "0001", 
-                    elementID: "setup_durationButton_5",
-                    elementGroup: "buttonGroup_4",
-                    elementType: "button",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: true,
+                    element: {
+                        id: "setup_durationButton_5",
+                        group: "buttonGroup_4",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: true
+                    }
                 },
             },
             quiz: {
                 node_1: {
-                    nullStateHash: "0000", 
-                    elementID: "quiz_progressBar",
-                    elementGroup: "",
-                    elementType: "",
-                    elementValue: "",
-                    // styleID: ["width"],
-                    // styleValue: [0],
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: 0,
+                    element: {
+                        id: "quiz_progressBar",
+                        type: "",
+                    },
+                    style: {
+                        attributes: ["width"],
+                        values: ["0"]
+                    }
                 },
                 node_2: {
-                    nullStateHash: "0000", 
-                    elementID: "quiz_question",
-                    elementGroup: "",
-                    elementType: "",
-                    elementValue: "",
-                    // textValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: 0,
+                    element: {
+                        id: "quiz_question",
+                        type: "paragraph",
+                    },
+                    value: {
+                        text: ""
+                    }
                 },
                 node_3: {
-                    nullStateHash: "0000", 
-                    elementID: "quiz_answerChoice_1",
-                    elementGroup: "",
-                    elementType: "",
-                    elementValue: "",
-                    // textValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: 0,
+                    element: {
+                        id: "quiz_answerChoice_1",
+                        type: "button",
+                    },
+                    class: {
+                        name: ["btn-answer-choice-right", "btn-answer-choice-wrong"],
+                        state: [0, 0]
+                    },
+                    state: {
+                        isActive: false
+                    }
                 },
                 node_4: {
-                    nullStateHash: "0000", 
-                    elementID: "quiz_answerChoice_2",
-                    elementGroup: "",
-                    elementType: "",
-                    elementValue: "",
-                    // textValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: 0,
+                    element: {
+                        id: "quiz_answerChoice_2",
+                        type: "button",
+                    },
+                    class: {
+                        name: ["btn-answer-choice-right", "btn-answer-choice-wrong"],
+                        state: [0, 0]
+                    },
+                    state: {
+                        isActive: false
+                    }
                 },
                 node_5: {
-                    nullStateHash: "0000", 
-                    elementID: "quiz_answerChoice_3",
-                    elementGroup: "",
-                    elementType: "",
-                    elementValue: "",
-                    // textValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: 0,
+                    element: {
+                        id: "quiz_answerChoice_3",
+                        type: "button",
+                    },
+                    class: {
+                        name: ["btn-answer-choice-right", "btn-answer-choice-wrong"],
+                        state: [0, 0]
+                    },
+                    state: {
+                        isActive: false
+                    }
                 },
                 node_6: {
-                    nullStateHash: "0000", 
-                    elementID: "quiz_answerChoice_4",
-                    elementGroup: "",
-                    elementType: "",
-                    elementValue: "",
-                    // textValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: 0,
-                }
+                    element: {
+                        id: "quiz_answerChoice_4",
+                        type: "button",
+                    },
+                    class: {
+                        name: ["btn-answer-choice-right", "btn-answer-choice-wrong"],
+                        state: [0, 0]
+                    },
+                    state: {
+                        isActive: false
+                    }
+                },
             },
             results: {
-                node_1: {
-                    nullStateHash: "0000", 
-                    elementID: "",
-                    elementGroup: "",
-                    elementType: "",
-                    elementValue: "",
-                    classID: [""],
-                    classState: [0],
-                    isVisible: 0,
-                    isActive: 0,
-                }
+                node_1: {}
             }
         }
     }

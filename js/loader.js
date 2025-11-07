@@ -1,7 +1,3 @@
-// ... (update loader code to accomdate null fields in session object. only necessary fields should be listed, instead of using state hash)
-// ... (add extra fields to session object and loader: textValue, styleID, styleValue)
-
-
 // Active document deferred loader
 $(document).ready(function() {
     updateSession("refresh");
@@ -47,25 +43,25 @@ function updateSession(functionID, pageID, actionID, nodeArray) {
 
 // Document loader
 function loadDocument(pageID, actionID, nodeArray) {
-    let elementID, elementType, nodeLength, classLength, nodeArrayLength;
+    let elementID, elementType, nodeLength, nodeArrayLength;
     let maxNodeIndexReached = false, nodeIndex = 1, arrayIndex = 0;
-    
+    const nodeFields = ["element", "value", "style", "class", "state"];
+
     if (actionID == "load_partial") nodeArrayLength = nodeArray.length;
     while (!maxNodeIndexReached) {
-        // Get length indexes
+        // Get node length index
         if (actionID == "load_full") {
             nodeLength = Object.values(sessionData["pageElements"][pageID]).length;
-            classLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["classID"]).length;
         } else {
             nodeIndex = nodeArray[arrayIndex];
         }
         
         // Get elementID and elementType
-        elementID = sessionData["pageElements"][pageID]["node_" + nodeIndex]["elementID"];
-        elementType = sessionData["pageElements"][pageID]["node_" + nodeIndex]["elementType"];
+        elementID = sessionData["pageElements"][pageID]["node_" + nodeIndex]["element"]["id"];
+        elementType = sessionData["pageElements"][pageID]["node_" + nodeIndex]["element"]["type"];
 
         // Check if node is null
-        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["nullStateHash"] == "00000") {
+        if (typeof sessionData["pageElements"][pageID]["node_" + nodeIndex] === "undefined") {
             if (actionID == "load_full") {
                 nodeIndex++;
                 break;
@@ -74,7 +70,7 @@ function loadDocument(pageID, actionID, nodeArray) {
                 break;
             }  
         } else {
-            checkHashStates();  
+            checkNullStates();  
         }
 
         // Iterate loop
@@ -91,74 +87,79 @@ function loadDocument(pageID, actionID, nodeArray) {
                 arrayIndex++;
             }
         }
-    } 
+    }
 
     // Render page
     $("#setup_pageContainer").removeClass("content_loading");
 
-    function checkHashStates() {
-        let hashIndex = 0;
-        let hashString = sessionData["pageElements"][pageID]["node_" + nodeIndex]["nullStateHash"];
-        let hashLength = sessionData["pageElements"][pageID]["node_" + nodeIndex]["nullStateHash"].length;        
-        while (hashIndex < hashLength) {
-            let slicedHash = hashString.charAt(hashIndex);
-            if (slicedHash == 1) {
-                switch(hashIndex) {
-                    case 0: loadHTMLValue(); break;
-                    case 1: loadClassList(); break;
-                    case 2: loadVisibilityState(); break;
-                    case 3: loadButtonState(); break;
+    function checkNullStates() {
+        let fieldIndex = 0;
+        while (fieldIndex < nodeFields.length) {
+            if (typeof sessionData["pageElements"][pageID]["node_" + nodeIndex][nodeFields[fieldIndex]] !== "undefined") {
+                switch(nodeFields[fieldIndex]) {
+                    case "value": loadValue(); break;
+                    case "style": loadStyle(); break;
+                    case "class": loadClass(); break;
+                    case "state": loadState(); break;
                 }
             }
-            hashIndex++;
-        }    
-    }
-    function loadHTMLValue() {
-        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["elementValue"] !== "") {
-            let elementValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["elementValue"];
-            $("#" + elementID).text(elementValue);
-        } else {
-            return;
+            fieldIndex++;
         }
     }
-    function loadButtonState() {
-        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["isActive"] !== 0) {
-            let buttonState = sessionData["pageElements"][pageID]["node_" + nodeIndex]["isActive"];
-            if (buttonState) {
-                $("#" + elementID).prop("disabled", false);
-            } 
-            else if (!buttonState) {
-                $("#" + elementID).prop("disabled", true);
+
+    function loadValue() {
+        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["value"]["text"] !== "") {
+            let elementValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["value"]["text"];
+            if (elementType == "button") {
+                $("#" + elementID).val(elementValue);
             }
-        } else {
-            return;
-        }
-    }
-    function loadClassList() {
-        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["classState"][0] !== 0) {
-            for (let classIndex = 0; classIndex < classLength; classIndex++) {
-                let classID = sessionData["pageElements"][pageID]["node_" + nodeIndex]["classID"][classIndex];
-                let classState = sessionData["pageElements"][pageID]["node_" + nodeIndex]["classState"][classIndex];
-                switch(classState) {
-                    case 1: $("#" + elementID).addClass(classID); break;
-                    case 2: $("#" + elementID).removeClass(classID); break;
-                }
+            else {
+                $("#" + elementID).text(elementValue);
             }
-        } else {
-            return;
         }
     }
-    function loadVisibilityState() {
-        if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["isVisible"] !== 0) {
-            let visibilityState = sessionData["pageElements"][pageID]["node_" + nodeIndex]["isVisible"];
+    function loadStyle() {
+        let styleLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"]).length;
+        for (let styleIndex = 0; styleIndex < styleLength; styleIndex++) {
+            let styleAttribute = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"][styleIndex];
+            let styleValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["values"][styleIndex];
+            switch(styleAttribute) {
+                case "width": $("#" + elementID).width(styleValue); break;
+                case "height": $("#" + elementID).height(styleValue); break;
+                // ... (add more statements for adjustable style attributes)
+            }
+        }
+    }
+    function loadClass() {
+        let classLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["class"]["name"]).length;
+        for (let classIndex = 0; classIndex < classLength; classIndex++) {
+            let classID = sessionData["pageElements"][pageID]["node_" + nodeIndex]["class"]["name"][classIndex];
+            let classState = sessionData["pageElements"][pageID]["node_" + nodeIndex]["class"]["state"][classIndex];
+            switch(classState) {
+                case 1: $("#" + elementID).addClass(classID); break;
+                case 2: $("#" + elementID).removeClass(classID); break;
+            }
+        }
+    }
+    function loadState() {
+        if (typeof sessionData["pageElements"][pageID]["node_" + nodeIndex]["state"]["isVisible"] !== "undefined") {
+            let visibilityState = sessionData["pageElements"][pageID]["node_" + nodeIndex]["state"]["isVisible"];
             if (visibilityState) {
                 $("#" + elementID).show();
             } 
             else if (!visibilityState) {
                 $("#" + elementID).hide();
             }
-        } else {
-            return;
+        }
+        if (typeof sessionData["pageElements"][pageID]["node_" + nodeIndex]["state"]["isActive"] !== "undefined") {
+            let buttonState = sessionData["pageElements"][pageID]["node_" + nodeIndex]["state"]["isActive"];
+            if (buttonState) {
+                $("#" + elementID).prop("disabled", false);
+            } 
+            else if (!buttonState) {
+                $("#" + elementID).prop("disabled", true);
+            }
         }
     }
+
 }

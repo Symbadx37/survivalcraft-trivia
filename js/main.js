@@ -77,10 +77,10 @@ function initializeSetup(elementID, elementGroup) {
 
     // Gets active button node
     while (!isNodeFound) {
-        if (sessionData["pageElements"]["setup"]["node_" + lookupIndex_1]["elementID"] == elementID) {
+        if (sessionData["pageElements"]["setup"]["node_" + lookupIndex_1]["element"]["id"] == elementID) {
             nodeIndex = lookupIndex_1;
             isNodeFound = true;
-            sessionData["pageElements"]["setup"]["node_" + nodeIndex]["isActive"] = false;
+            sessionData["pageElements"]["setup"]["node_" + nodeIndex]["state"]["isActive"] = false;
             updateSession("load", "setup", "load_partial", [nodeIndex]);
         } else {
             lookupIndex_1++;
@@ -89,7 +89,7 @@ function initializeSetup(elementID, elementGroup) {
 
     // Gets total number of button nodes in active group, pushes active nodes to array
     while (lookupIndex_2 <= nodeLength) {
-        if (sessionData["pageElements"]["setup"]["node_" + lookupIndex_2]["elementGroup"] == elementGroup) {
+        if (sessionData["pageElements"]["setup"]["node_" + lookupIndex_2]["element"]["group"] == elementGroup) {
             activeNodes.push(lookupIndex_2);
             activeNodeThreshold++;
         }
@@ -98,10 +98,10 @@ function initializeSetup(elementID, elementGroup) {
 
     // Updates states of all inactive and unselected buttons
     while (lookupIndex_3 <= activeNodeThreshold) {
-        if (sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["elementGroup"] == elementGroup &&
-            sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["elementID"] !== elementID &&
-            sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["isActive"] == false) {
-                sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["isActive"] = true; 
+        if (sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["element"]["group"] == elementGroup &&
+            sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["element"]["id"] !== elementID &&
+            sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["state"]["isActive"] == false) {
+                sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["state"]["isActive"] = true; 
                 updateSession("load", "setup", "load_partial", [activeNodes[lookupIndex_3 - 1]]);
         } 
         lookupIndex_3++;
@@ -127,8 +127,8 @@ function startQuiz() {
     function validateSetup() {
         let activeGroup = [], lookupIndex = 1;
         while (lookupIndex <= nodeLength) {
-            if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["isActive"] == false) {
-                activeGroup.push(sessionData["pageElements"]["setup"]["node_" + lookupIndex]["elementGroup"]);
+            if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["state"]["isActive"] == false) {
+                activeGroup.push(sessionData["pageElements"]["setup"]["node_" + lookupIndex]["element"]["group"]);
             }
             lookupIndex++;
         }
@@ -144,9 +144,9 @@ function startQuiz() {
         let lookupIndex = 1;
         while (lookupIndex <= nodeLength) {
             let nodeID, groupID, nodeSlice, groupSlice;
-            if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["isActive"] == false) {
-                nodeID = sessionData["pageElements"]["setup"]["node_" + lookupIndex]["elementID"];
-                groupID = sessionData["pageElements"]["setup"]["node_" + lookupIndex]["elementGroup"];
+            if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["state"]["isActive"] == false) {
+                nodeID = sessionData["pageElements"]["setup"]["node_" + lookupIndex]["element"]["id"];
+                groupID = sessionData["pageElements"]["setup"]["node_" + lookupIndex]["element"]["group"];
                 nodeSlice = parseInt(nodeID.charAt(nodeID.length - 1));
                 groupSlice = parseInt(groupID.charAt(groupID.length - 1));
                 switch (groupSlice) {
