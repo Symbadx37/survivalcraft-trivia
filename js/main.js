@@ -7,7 +7,7 @@ const questionCount = {
     1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
     2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
     3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
-    4: {1: 34, 2: 24, 3: 46, 4: 85, 5: 35, 6: 64},
+    4: {1: 10, 2: 19, 3: 26, 4: 25, 5: 20, 6: 0},
     5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
 };
 
@@ -18,30 +18,26 @@ const probability_average = {1: 0, 2: 0.4, 3: 0.3, 4: 0.25, 5: 0.5, 6: 0};
 const probability_experienced = {1: 0, 2: 0, 3: 0.35, 4: 0.45, 5: 0.15, 6: 0.5};
 const probability_veteran = {1: 0, 2: 0, 3: 0, 4: 0.35, 5: 0.50, 6: 0.15};
 
+// Global data objects
+let sessionData;
+let questionData = getParser();
+
 /* REMOVE COMMENTS BEFORE SHIPPING
 // Disable console access
 window.addEventListener('keydown', function(event) {
     if (event.code === 'F12') {
         event.preventDefault();
-        console.log('Blocked F12');
     }
     if (event.shiftKey && event.ctrlKey && event.code === 'KeyI') {
         event.preventDefault();
-        console.log('Blocked Ctrl + Shift + i');
     }
 });
 window.addEventListener('contextmenu', (e) => {
     e.preventDefault();
-    console.log('Blocked RightClick');
 }); 
-
 */
 
-// Data objects
-let sessionData;
-let questionData = getParser();
-
-// Event handlers
+// Setup option buttons
 $("#setup_buttonGroup_1 input").on({
   click: function(){
     initializeSetup(this.id, "buttonGroup_1");
@@ -63,10 +59,33 @@ $("#setup_buttonGroup_4 input").on({
   }
 });
 
+// Quiz choice buttons
+$("#quiz_answerChoiceButton_1").on({
+  click: function(){
+    
+  }
+});
+$("#quiz_answerChoiceButton_2").on({
+  click: function(){
+    
+  }
+});
+$("#quiz_answerChoiceButton_3").on({
+  click: function(){
+    
+  }
+});
+$("#quiz_answerChoiceButton_4").on({
+  click: function(){
+
+  }
+});
+
+// Setup and quiz action buttons
 $("#setup_startButton").on("click", startQuiz);
 $("#setup_resetButton").on("click", resetSetup);
 $("#setup_exitButton").on("click", exitSetup);
-$("#quiz_submitButton").on("click", continueQuiz);
+$("#quiz_submitButton").on("click", gradeQuiz);
 $("#quiz_quitButton").on("click", stopQuiz);
 
 function initializeSetup(elementID, elementGroup) {
@@ -86,7 +105,6 @@ function initializeSetup(elementID, elementGroup) {
             lookupIndex_1++;
         }
     }
-
     // Gets total number of button nodes in active group, pushes active nodes to array
     while (lookupIndex_2 <= nodeLength) {
         if (sessionData["pageElements"]["setup"]["node_" + lookupIndex_2]["element"]["group"] == elementGroup) {
@@ -95,7 +113,6 @@ function initializeSetup(elementID, elementGroup) {
         }
         lookupIndex_2++;
     }
-
     // Updates states of all inactive and unselected buttons
     while (lookupIndex_3 <= activeNodeThreshold) {
         if (sessionData["pageElements"]["setup"]["node_" + activeNodes[lookupIndex_3 - 1]]["element"]["group"] == elementGroup &&
@@ -112,8 +129,8 @@ function startQuiz() {
     const nodeLength = Object.values(sessionData["pageElements"]["setup"]).length;
     validateSetup();
     generateQuestion();
+    parseQuizData();
 
-    /*
     // Update session flags
     if (sessionData.booleanFlags.isSetupValid) {
         sessionData.booleanFlags.setupPreloadNeeded = false;
@@ -122,7 +139,6 @@ function startQuiz() {
         updateSession("save");
         window.location.replace("quiz.html");
     }
-    */
 
     function validateSetup() {
         let activeGroup = [], lookupIndex = 1;
@@ -184,17 +200,66 @@ function startQuiz() {
         updateSession("save");
     }
 }
-function continueQuiz() {
-    // ... ()
-}
-function gradeQuiz() {
-    // ... ()
-}
-function generateQuestion() {
-    // ... ()
-}
 function parseQuizData() {
+    // Question
+    sessionData["pageElements"]["quiz"]["node_" + 2]["value"]["text"] = questionData
+        ["category_" + sessionData.quizIndexes.categoryIndex]
+        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
+        [sessionData.quizIndexes.questionIndex - 1]["question"];
+    // Answer choices
+    sessionData["pageElements"]["quiz"]["node_" + 3]["value"]["text"] = questionData
+        ["category_" + sessionData.quizIndexes.categoryIndex]
+        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
+        [sessionData.quizIndexes.questionIndex - 1]["choice"][0];
+    sessionData["pageElements"]["quiz"]["node_" + 4]["value"]["text"] = questionData
+        ["category_" + sessionData.quizIndexes.categoryIndex]
+        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
+        [sessionData.quizIndexes.questionIndex - 1]["choice"][1];
+    sessionData["pageElements"]["quiz"]["node_" + 5]["value"]["text"] = questionData
+        ["category_" + sessionData.quizIndexes.categoryIndex]
+        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
+        [sessionData.quizIndexes.questionIndex - 1]["choice"][2];
+    sessionData["pageElements"]["quiz"]["node_" + 6]["value"]["text"] = questionData
+        ["category_" + sessionData.quizIndexes.categoryIndex]
+        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
+        [sessionData.quizIndexes.questionIndex - 1]["choice"][3];
+    updateSession("save");
+}
+function gradeQuiz(id) {
     // ... ()
+}
+
+
+function continueQuiz() {
+    // Check if active question has hit max question threshold
+    switch (sessionData.quizParameters.quiz) {
+        case 1: 
+            if (sessionData.quizParameters.activeQuestion == 10) {
+                sessionData.isActive = false;
+                updateSession("save");
+                window.location.replace("results.html");
+            }
+            break;
+        case 2:
+            if (sessionData.quizParameters.activeQuestion == 20) {
+                sessionData.isActive = false;
+                updateSession("save");
+                window.location.replace("results.html");
+            }
+            break;
+        case 3:
+            if (sessionData.quizParameters.activeQuestion == 30) {
+                sessionData.isActive = false;
+                updateSession("save");
+                window.location.replace("results.html");
+            }
+            break;
+    }
+
+    
+
+
+
 }
 function stopQuiz() {
     Session.clearData();

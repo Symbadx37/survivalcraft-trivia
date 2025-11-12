@@ -274,7 +274,7 @@ class Session {
                 },
                 node_2: {
                     element: {
-                        id: "quiz_question",
+                        id: "quiz_questionText",
                         type: "paragraph",
                     },
                     value: {
@@ -283,54 +283,66 @@ class Session {
                 },
                 node_3: {
                     element: {
-                        id: "quiz_answerChoice_1",
+                        id: "quiz_answerChoiceButton_1",
                         type: "button",
+                    },
+                    value: {
+                        text: ""
                     },
                     class: {
                         name: ["btn-answer-choice-right", "btn-answer-choice-wrong"],
                         state: [0, 0]
                     },
                     state: {
-                        isActive: false
+                        isActive: true
                     }
                 },
                 node_4: {
                     element: {
-                        id: "quiz_answerChoice_2",
+                        id: "quiz_answerChoiceButton_2",
                         type: "button",
+                    },
+                    value: {
+                        text: ""
                     },
                     class: {
                         name: ["btn-answer-choice-right", "btn-answer-choice-wrong"],
                         state: [0, 0]
                     },
                     state: {
-                        isActive: false
+                        isActive: true
                     }
                 },
                 node_5: {
                     element: {
-                        id: "quiz_answerChoice_3",
+                        id: "quiz_answerChoiceButton_3",
                         type: "button",
+                    },
+                    value: {
+                        text: ""
                     },
                     class: {
                         name: ["btn-answer-choice-right", "btn-answer-choice-wrong"],
                         state: [0, 0]
                     },
                     state: {
-                        isActive: false
+                        isActive: true
                     }
                 },
                 node_6: {
                     element: {
-                        id: "quiz_answerChoice_4",
+                        id: "quiz_answerChoiceButton_4",
                         type: "button",
+                    },
+                    value: {
+                        text: ""
                     },
                     class: {
                         name: ["btn-answer-choice-right", "btn-answer-choice-wrong"],
                         state: [0, 0]
                     },
                     state: {
-                        isActive: false
+                        isActive: true
                     }
                 },
             },
