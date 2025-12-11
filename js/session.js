@@ -12,6 +12,7 @@ class Session {
             activeQuestion: 1,
             questionsRight: 0,
             questionsWrong: 0,
+            answerState: 0,
             totalPoints: 0,
             currentMinute: 0,
             currentSecond: 0
@@ -265,7 +266,7 @@ class Session {
                 node_1: {
                     element: {
                         id: "quiz_progressBar",
-                        type: "",
+                        type: "element",
                     },
                     style: {
                         attributes: ["width"],
@@ -345,6 +346,15 @@ class Session {
                         isActive: true
                     }
                 },
+                node_7: {
+                    element: {
+                        id: "quiz_continueButton",
+                        type: "button",
+                    },
+                    state: {
+                        isActive: false
+                    }
+                }
             },
             results: {
                 node_1: {}

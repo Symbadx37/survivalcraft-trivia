@@ -88,7 +88,6 @@ function loadDocument(pageID, actionID, nodeArray) {
             }
         }
     }
-
     // Render page
     $("#setup_pageContainer").removeClass("content_loading");
 
@@ -106,7 +105,6 @@ function loadDocument(pageID, actionID, nodeArray) {
             fieldIndex++;
         }
     }
-
     function loadValue() {
         if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["value"]["text"] !== "") {
             let elementValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["value"]["text"];
