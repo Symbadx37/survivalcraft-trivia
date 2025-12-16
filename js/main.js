@@ -13,18 +13,14 @@ const questionCount = {
 
 // Probability sets
 const probability_beginner = {1: 0.55, 2: 0.4, 3: 0.05, 4: 0, 5: 0, 6: 0};
-const probability_intermediate = {1: 0.4, 2: 0.3, 3: 0.15, 4: 0.5, 5: 0, 6: 0};
-const probability_average = {1: 0, 2: 0.4, 3: 0.3, 4: 0.25, 5: 0.5, 6: 0};
-const probability_experienced = {1: 0, 2: 0, 3: 0.35, 4: 0.45, 5: 0.15, 6: 0.5};
+const probability_intermediate = {1: 0.4, 2: 0.3, 3: 0.15, 4: 0.05, 5: 0, 6: 0};
+const probability_average = {1: 0, 2: 0.4, 3: 0.3, 4: 0.25, 5: 0.05, 6: 0};
+const probability_experienced = {1: 0, 2: 0, 3: 0.35, 4: 0.45, 5: 0.15, 6: 0.05};
 const probability_veteran = {1: 0, 2: 0, 3: 0, 4: 0.35, 5: 0.50, 6: 0.15};
 
 // Global data objects
 let sessionData;
 let questionData = getParser();
-
-// Global constants
-const setupNodeLength = Object.values(sessionData["pageElements"]["setup"]).length;
-const quizNodeLength = Object.values(sessionData["pageElements"]["quiz"]).length;
 
 /* REMOVE COMMENTS BEFORE SHIPPING
 // Disable console access
@@ -89,7 +85,7 @@ $("#quiz_answerChoiceButton_4").on({
 $("#setup_startButton").on("click", startQuiz);
 $("#setup_resetButton").on("click", resetSetup);
 $("#setup_exitButton").on("click", exitSetup);
-$("#quiz_submitButton").on("click", gradeQuiz);
+$("#quiz_continueButton").on("click", continueQuiz);
 $("#quiz_quitButton").on("click", stopQuiz);
 
 function initializeSetup(elementID, elementGroup) {
@@ -109,7 +105,7 @@ function initializeSetup(elementID, elementGroup) {
         }
     }
     // Gets total number of button nodes in active group, pushes active nodes to array
-    while (lookupIndex_2 <= setupNodeLength) {
+    while (lookupIndex_2 <= Object.values(sessionData["pageElements"]["setup"]).length) {
         if (sessionData["pageElements"]["setup"]["node_" + lookupIndex_2]["element"]["group"] == elementGroup) {
             activeNodes.push(lookupIndex_2);
             activeNodeThreshold++;
@@ -144,7 +140,7 @@ function startQuiz() {
 
     function validateSetup() {
         let activeGroup = [], lookupIndex = 1;
-        while (lookupIndex <= setupNodeLength) {
+        while (lookupIndex <= Object.values(sessionData["pageElements"]["setup"]).length) {
             if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["state"]["isActive"] == false) {
                 activeGroup.push(sessionData["pageElements"]["setup"]["node_" + lookupIndex]["element"]["group"]);
             }
@@ -160,7 +156,7 @@ function startQuiz() {
     }
     function initializeData() {
         let lookupIndex = 1;
-        while (lookupIndex <= setupNodeLength) {
+        while (lookupIndex <= Object.values(sessionData["pageElements"]["setup"]).length) {
             let nodeID, groupID, nodeSlice, groupSlice;
             if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["state"]["isActive"] == false) {
                 nodeID = sessionData["pageElements"]["setup"]["node_" + lookupIndex]["element"]["id"];
@@ -176,7 +172,6 @@ function startQuiz() {
             }
             lookupIndex++;
         }
-        
         if (sessionData.quizParameters.quizTier == 5) {
             const randomTier = Math.floor((Math.random() * tierCount) + 1)
             sessionData.quizParameters.quizTier = randomTier;
@@ -202,101 +197,129 @@ function startQuiz() {
         updateSession("save");
     }
 }
+
 function parseQuizData() {
-    // Question
-    sessionData["pageElements"]["quiz"]["node_" + 2]["value"]["text"] = questionData
-        ["category_" + sessionData.quizIndexes.categoryIndex]
-        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
-        [sessionData.quizIndexes.questionIndex - 1]["question"];
-    // Answer choices
-    sessionData["pageElements"]["quiz"]["node_" + 3]["value"]["text"] = questionData
-        ["category_" + sessionData.quizIndexes.categoryIndex]
-        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
-        [sessionData.quizIndexes.questionIndex - 1]["choice"][0];
-    sessionData["pageElements"]["quiz"]["node_" + 4]["value"]["text"] = questionData
-        ["category_" + sessionData.quizIndexes.categoryIndex]
-        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
-        [sessionData.quizIndexes.questionIndex - 1]["choice"][1];
-    sessionData["pageElements"]["quiz"]["node_" + 5]["value"]["text"] = questionData
-        ["category_" + sessionData.quizIndexes.categoryIndex]
-        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
-        [sessionData.quizIndexes.questionIndex - 1]["choice"][2];
-    sessionData["pageElements"]["quiz"]["node_" + 6]["value"]["text"] = questionData
-        ["category_" + sessionData.quizIndexes.categoryIndex]
-        ["difficulty_" + sessionData.quizIndexes.difficultyIndex]
-        [sessionData.quizIndexes.questionIndex - 1]["choice"][3];
-    updateSession("save");
+    let lookupIndex = 1, choiceIndex = 0;
+    while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
+        if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["group"] == "answerGroup") {
+            sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"][choiceIndex];
+            updateSession("load", "quiz", "load_partial", [lookupIndex]);
+            choiceIndex++;
+        }
+        else if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_questionText") {
+            sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["question"]; 
+            updateSession("load", "quiz", "load_partial", [lookupIndex]);
+        }
+        lookupIndex++;
+    }
 }
 
-/* WIP
 function gradeQuiz(id) {
-    let userAnswer, lookupIndex;
+    let userAnswer, lookupIndex = 1;
     switch(id) {
         case "quiz_answerChoiceButton_1": userAnswer = "a"; break;
         case "quiz_answerChoiceButton_2": userAnswer = "b"; break;
         case "quiz_answerChoiceButton_3": userAnswer = "c"; break;
         case "quiz_answerChoiceButton_4": userAnswer = "d"; break;
     }
+    lookupAnswer();
+    updateButtonStates();
 
-    while (lookupIndex <= quizNodeLength) {
-        if (sessionData["pageElements"]["setup"]["node_" + lookupIndex]["element"]["id"] == id) {
-            
-
-            sessionData["pageElements"]["setup"]["node_" + lookupIndex]["class"]["state"][0] = 1; // set to right
-            sessionData["pageElements"]["setup"]["node_" + lookupIndex]["class"]["state"][1] = 1; // set to wrong
+    function updateButtonStates() {
+        while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
+            if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["group"] == "answerGroup") {
+                sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["state"]["isActive"] = false;
+                updateSession("load", "quiz", "load_partial", [lookupIndex]);
+            }
+            else if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_continueButton") {
+                sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["state"]["isActive"] = true;
+                updateSession("load", "quiz", "load_partial", [lookupIndex]);
+            }
+            lookupIndex++;
         }
-        lookupIndex++;
-    }
-
-
-    if (!sessionData.booleanFlags.isAnswerSubmitted) {
-        lookupAnswer();
-        sessionData.booleanFlags.isAnswerSubmitted = true;
-        updateSession("save");
     }
 
     function lookupAnswer() {
-        if (questionData["category_" + sessionData.categoryIndex]["difficulty_" + sessionData.difficultyIndex][sessionData.questionIndex - 1]["answer"] != userAnswer) {
-            sessionData.quizParameters.questionsWrong += 1;
-            sessionData.quizParameters.answerState = 1;
-        } else {
-            sessionData.quizParameters.questionsRight += 1;
-            sessionData.quizParameters.answerState = 2;
+        while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
+            if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == id) {
+                if (questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["answer"] != userAnswer) {
+                    sessionData.quizParameters.questionsWrong += 1;
+                    sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][1] = 1;
+                    break;
+                } else {
+                    sessionData.quizParameters.questionsRight += 1;
+                    sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][0] = 1;
+                    break;
+                }  
+            }
+            lookupIndex++;
         }
     }
 }
-*/
 
 function continueQuiz() {
-    // Reset continue button state
-    sessionData["pageElements"]["quiz"]["node_7"]["state"]["isActive"] = true;
-    updateSession("save");
+    let lookupIndex = 1;
+    updateSession("refresh");
+    updateButtonStates();
+    checkQuizPosition();
+
+    // Reset button states to default state
+    function updateButtonStates() {
+        while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
+            if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["group"] == "answerGroup") {
+                sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][0] = 2;
+                sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][1] = 2;
+                sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["state"]["isActive"] = true;
+                updateSession("load", "quiz", "load_partial", [lookupIndex]);
+            }
+            else if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_continueButton") {
+                sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["state"]["isActive"] = false;
+                updateSession("load", "quiz", "load_partial", [lookupIndex]);
+            }
+            lookupIndex++;
+        }
+    }
 
     // Check if active question has hit max question threshold
-    switch (sessionData.quizParameters.quiz) {
-        case 1: 
-            if (sessionData.quizParameters.activeQuestion == 10) {
-                sessionData.isActive = false;
-                updateSession("save");
-                window.location.replace("results.html");
-            }
-            break;
-        case 2:
-            if (sessionData.quizParameters.activeQuestion == 20) {
-                sessionData.isActive = false;
-                updateSession("save");
-                window.location.replace("results.html");
-            }
-            break;
-        case 3:
-            if (sessionData.quizParameters.activeQuestion == 30) {
-                sessionData.isActive = false;
-                updateSession("save");
-                window.location.replace("results.html");
-            }
-            break;
+    function checkQuizPosition() {
+        switch (sessionData.quizParameters.quizLength) {
+            case 1: 
+                if (sessionData.quizParameters.activeQuestion == 10) {
+                    sessionData.booleanFlags.isActive = false;
+                    updateSession("save");
+                    window.location.replace("results.html");
+                } else {
+                    generateQuestion();
+                    parseQuizData();
+                }
+                break;
+            case 2:
+                if (sessionData.quizParameters.activeQuestion == 20) {
+                    sessionData.booleanFlags.isActive = false;
+                    updateSession("save");
+                    window.location.replace("results.html");
+                } else {
+                    generateQuestion();
+                    parseQuizData();
+                }
+                break;
+            case 3:
+                if (sessionData.quizParameters.activeQuestion == 30) {
+                    sessionData.booleanFlags.isActive = false;
+                    updateSession("save");
+                    window.location.replace("results.html");
+                } else {
+                    generateQuestion();
+                    parseQuizData();
+                }
+                break;
+        }
     }
+    // Update active question count
+    sessionData.quizParameters.activeQuestion += 1;
+    updateSession("save");
 }
+
 function stopQuiz() {
     Session.clearData();
     window.location.replace("../pgs/setup.html");

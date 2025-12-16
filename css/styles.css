@@ -72,7 +72,7 @@ h3 {
 .btn-answer-choice-right {
   transition-duration: 0.2s;
   transition-property: background-color;
-  background-color: #04AA6Ddf;
+  background-color: #04AA6Ddf !important;
   color: #ffffff !important;
   font-weight: 500;
 }
@@ -84,7 +84,7 @@ h3 {
 .btn-answer-choice-wrong {
   transition-duration: 0.2s;
   transition-property: background-color;
-  background-color: #e23225df;
+  background-color: #e23225df !important;
   color: #ffffff !important;
   font-weight: 500;
 }

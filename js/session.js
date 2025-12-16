@@ -12,7 +12,6 @@ class Session {
             activeQuestion: 1,
             questionsRight: 0,
             questionsWrong: 0,
-            answerState: 0,
             totalPoints: 0,
             currentMinute: 0,
             currentSecond: 0
@@ -20,7 +19,6 @@ class Session {
         this.booleanFlags = {
             isSetupValid: false,
             isQuizActive: false,
-            isAnswerSubmitted: false,
             isActive: false,
             isTimeUp: false,
             isTimerResetNeeded: false,
@@ -31,22 +29,21 @@ class Session {
         }
         this.quizIndexes = {
             categoryIndex: "",
-            subcategoryIndex: "",
-            dificultyIndex: "",
+            difficultyIndex: "",
             questionIndex: "",
             indexCache: {
-                1: {1: [], 2: [], 3: [], 4: [], 5: []},
-                2: {1: [], 2: [], 3: [], 4: [], 5: []},
-                3: {1: [], 2: [], 3: [], 4: [], 5: []},
-                4: {1: [], 2: [], 3: [], 4: [], 5: []},
-                5: {1: [], 2: [], 3: [], 4: [], 5: []}
+                1: {1: [], 2: [], 3: [], 4: [], 5: [], 6: []},
+                2: {1: [], 2: [], 3: [], 4: [], 5: [], 6: []},
+                3: {1: [], 2: [], 3: [], 4: [], 5: [], 6: []},
+                4: {1: [], 2: [], 3: [], 4: [], 5: [], 6: []},
+                5: {1: [], 2: [], 3: [], 4: [], 5: [], 6: []}
             },
             nextQuestionIndex: {
-                1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-                2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-                3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-                4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
-                5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+                1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+                2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+                3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+                4: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+                5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
             }
         }
         this.pageElements = {
@@ -285,6 +282,7 @@ class Session {
                 node_3: {
                     element: {
                         id: "quiz_answerChoiceButton_1",
+                        group: "answerGroup",
                         type: "button",
                     },
                     value: {
@@ -301,6 +299,7 @@ class Session {
                 node_4: {
                     element: {
                         id: "quiz_answerChoiceButton_2",
+                        group: "answerGroup",
                         type: "button",
                     },
                     value: {
@@ -317,6 +316,7 @@ class Session {
                 node_5: {
                     element: {
                         id: "quiz_answerChoiceButton_3",
+                        group: "answerGroup",
                         type: "button",
                     },
                     value: {
@@ -333,6 +333,7 @@ class Session {
                 node_6: {
                     element: {
                         id: "quiz_answerChoiceButton_4",
+                        group: "answerGroup",
                         type: "button",
                     },
                     value: {

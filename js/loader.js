@@ -90,6 +90,8 @@ function loadDocument(pageID, actionID, nodeArray) {
     }
     // Render page
     $("#setup_pageContainer").removeClass("content_loading");
+    $("#quiz_pageContainer").removeClass("content_loading");
+    $("#results_pageContainer").removeClass("content_loading");
 
     function checkNullStates() {
         let fieldIndex = 0;

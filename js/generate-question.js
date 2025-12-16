@@ -10,11 +10,9 @@ function generateQuestion() {
 
     function getCategoryIndex() {
         if (sessionData.quizParameters.quizCategory == 5) {
-            let randomCategory = Math.floor((Math.random() * quizCategoryMax) + 1);
-            console.log("[SYSTEM]: Parameter randomCategory = " + randomCategory + " (" + getTime() + ").");
+            var randomCategory = Math.floor((Math.random() * quizCategoryMax) + 1);
         } else {
             randomCategory = sessionData.quizParameters.quizCategory;
-            console.log("[SYSTEM]: Parameter quizCategory = " + sessionData.quizParameters.quizCategory + " (" + getTime() + ").");
         }
         return randomCategory;
     } 
@@ -22,7 +20,6 @@ function generateQuestion() {
         let probabilitySum = 0, randomNumber = 0, randomDifficulty;
         generateRandomIndex();
         validateIndex();
-        console.log("[SYSTEM]: Parameter randomDifficulty = " + randomDifficulty + " (" + getTime() + ").");
         return randomDifficulty;
 
         function generateRandomIndex() {
@@ -60,12 +57,10 @@ function generateQuestion() {
             let lookupIndex = 0;
             while (lookupNeeded) {
                 if (sessionData["quizIndexes"]["indexCache"][categoryIndex][difficultyIndex][lookupIndex] == randomQuestion) {
-                    console.log("has match, regenerating ...");
                     generateRandomIndex();
                     lookupIndex = 0;
                 } 
                 else if (lookupIndex >= questionIndexRange || lookupIndex == sessionData.quizParameters.activeQuestion - 1) {
-                    console.log("no match, exiting ...");
                     lookupNeeded = false;
                     break;
                 } else {
@@ -75,7 +70,6 @@ function generateQuestion() {
             let nextIndex = sessionData["quizIndexes"]["nextQuestionIndex"][categoryIndex][difficultyIndex];
             sessionData["quizIndexes"]["indexCache"][categoryIndex][difficultyIndex][nextIndex] = randomQuestion;
             sessionData["quizIndexes"]["nextQuestionIndex"][categoryIndex][difficultyIndex] = sessionData["quizIndexes"]["nextQuestionIndex"][categoryIndex][difficultyIndex] + 1;
-            console.log("[SYSTEM]: Parameter randomQuestion = " + randomQuestion + " (" + getTime() + ").");
         }
     }
 }

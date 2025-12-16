@@ -4,24 +4,33 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="module" src="../js/parser.js" defer></script>
     <link rel="icon" type="favicon" href="../img/site-favicon.ico">
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script type="module" src="../js/parser.js" defer></script>
+    <script src="../js/session.js" defer></script>
+    <script src="../js/main.js" defer></script> 
+    <script src="../js/loader.js" defer></script>
+    <script src="../js/generate-question.js" defer></script>
+    <script src="../js/calculate-points.js" defer></script>
 </head>
 <body>
-    <main>
-        <h3>Quiz Results</h3>
-        <div style="margin-top: 15px; margin-left: 3px">
-            <span style="font-weight: 500;">Points</span>
-            <span> = </span>
-            <span id="inf-points"></span>
-        </div>
-        <div style="margin-top: 15px; margin-left: 3px">
-            <span style="font-weight: 500;">Accuracy</span>
-            <span> = </span>
-            <span id="inf-accuracy"></span>
-        </div>
-        <input style="margin-top: 15px;" class="btn-quit" type="button" id="quit" value="Exit" onclick="stopQuiz()"></input>
-    </main>
+  <main>
+    <section id="results_pageContainer" class="content_loading">
+      <h2>Survivalcraft Trivia</h2>
+      <h3>Quiz Results</h3>
+      <div style="margin-top: 15px; margin-left: 3px">
+        <span style="font-weight: 450;">Points</span>
+        <span> = </span>
+        <span id="results_pointCount"></span>
+      </div>
+      <div style="margin-top: 15px; margin-left: 3px">
+        <span style="font-weight: 450;">Accuracy</span>
+        <span> = </span>
+        <span id="results_accuracyCount"></span>
+      </div>
+      <input id="results_exitButton" style="margin-top: 15px;" class="btn-general" type="button" value="Exit" onclick="stopQuiz()"></input>
+    </section>
+  </main>
 </body>
 <html>
