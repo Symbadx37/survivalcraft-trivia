@@ -266,8 +266,12 @@ class Session {
                         type: "element",
                     },
                     style: {
-                        attributes: ["width"],
-                        values: ["0"]
+                        attributes: ["width", "height"], // animation attributes
+                        values: [0,8] // attribute values
+                    },
+                    animation: {
+                        mode: ["swing", "swing"], // animation type
+                        state: [1,2] // 0 = null, 1 = dynamic, 2 = static
                     }
                 },
                 node_2: {

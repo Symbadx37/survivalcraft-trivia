@@ -1,9 +1,10 @@
 function calculatePoints() {
     // Determine active time threshold
+    let thresholdLevel;
     calculateTimeThreshold();
     function calculateTimeThreshold() {
-        let thresholdFactor = sessionData.quizDuration;
-        let thresholdIndex = (sessionData.currentMinute * 60) + sessionData.currentSecond;
+        let thresholdFactor = sessionData.quizParameters.quizDuration;
+        let thresholdIndex = (sessionData.quizParameters.currentMinute * 60) + sessionData.quizParameters.currentSecond;
         
         if (thresholdIndex <= (60 * thresholdFactor) && thresholdIndex > (50 * thresholdFactor)) {
             thresholdLevel = 0;
@@ -21,17 +22,18 @@ function calculatePoints() {
     }
 
     // Calculate static point amount
-    let reductionFactor = 2.5 * (2 ** (sessionData.difficultyIndex - 1));
-    let baseAmount = (25 * (2 ** (sessionData.difficultyIndex - 1)) - (reductionFactor * thresholdLevel));
+    let reductionFactor = 2.5 * (2 ** (sessionData.quizIndexes.difficultyIndex - 1));
+    let baseAmount = (25 * (2 ** (sessionData.quizIndexes.difficultyIndex - 1)) - (reductionFactor * thresholdLevel));
 
     // Assign multipliers
-    switch(sessionData.quizLength) {
+    let categoryMultiplier, timeMultiplier
+    switch(sessionData.quizIndexes.quizLength) {
         case 1: timeMultiplier = 0.125; break;
         case 2: timeMultiplier = 0.25; break;
         case 3: timeMultiplier = 0.5; break;
         default: timeMultiplier = 0;
     }
-    switch(sessionData.quizCategory) {
+    switch(sessionData.quizIndexes.quizCategory) {
         case 1: categoryMultiplier = 0.025;  break;
         case 2: categoryMultiplier = 0.05; break;
         case 3: categoryMultiplier = 0.075; break;
@@ -45,17 +47,17 @@ function calculatePoints() {
         let pointsAfter_cm = ((baseAmount * categoryMultiplier) + baseAmount); // applies category multiplier
         let pointsAfter_tm = ((pointsAfter_cm * timeMultiplier) + pointsAfter_cm); // applies interval multiplier
         let pointAmount = pointsAfter_tm;
-        if (sessionData.wasHintUsed) {
+        if (sessionData.booleanFlags.wasHintUsed) {
             pointAmount = pointAmount - (pointAmount * 0.5);
         }
-        if (sessionData.isTimeUp) {
+        if (sessionData.booleanFlags.isTimeUp) {
             pointAmount = pointAmount - (pointAmount * 0.75);
         }
         return pointAmount;
     }
 
     // Round and save point amount
-    let totalPoints = sessionStorage.totalPoints;
-    sessionStorage.totalPoints = Math.round(totalPoints + pointAmount);
-    updateSessionData("save");
+    let totalPoints = sessionData.quizParameters.totalPoints;
+    sessionData.quizParameters.totalPoints = Math.round(totalPoints + pointAmount);
+    updateSession("save");
 }

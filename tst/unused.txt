@@ -765,30 +765,7 @@ $("#QUIZ_BTN_quit").on({
   }
 });
 
-// Quiz progress bar: WIP
-$("#QUIZ_BTN_submit").on("click", updateProgressBar);
-let barWidth = 0;
-let quizLength = 1;
-function updateProgressBar() {
-    switch(quizLength) {
-        case 1: widthFactor = 30; break;
-        case 2: widthFactor = 15; break;
-        case 3: widthFactor = 10; break;
-    }
-    barWidth += widthFactor; // max width is 300
-    $("#QUIZ_ELM_progressBar").animate({width: [barWidth, "swing"]});
-}
 
-$(".BTN-answer-choice").on({
-  click: function(){
-    // ... function(this.id);
-  }
-});
-$("#QUIZ_BTN_submit").on({
-  click: function(){
-    // ... function(this.id);
-  }
-});
 
 
 // Document loader

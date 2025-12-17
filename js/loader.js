@@ -118,18 +118,50 @@ function loadDocument(pageID, actionID, nodeArray) {
             }
         }
     }
+    /* WIP
     function loadStyle() {
-        let styleLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"]).length;
-        for (let styleIndex = 0; styleIndex < styleLength; styleIndex++) {
+        let arrayLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"]).length;
+        let arrayIndex = 0;
+        while (arrayIndex <= arrayLength) {
             let styleAttribute = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"][styleIndex];
             let styleValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["values"][styleIndex];
+            let animationMode = sessionData["pageElements"][pageID]["node_" + nodeIndex]["animate"]["mode"][animationIndex];
+
+            switch(sessionData["pageElements"][pageID]["node_" + nodeIndex]["animate"]["state"][animationIndex]) {
+                case 0:
+                    arrayIndex++; break;
+                case 1:
+                    loadAnimation("dynamic"); break;
+                case 2:
+                    loadAnimation("static"); break;
+            }  
+
+
+            function loadAnimation() {
+                switch(styleAttribute) {
+                    case "width": $("#" + elementID).animate({width: [styleValue, "swing"], height: 8});
+                }
+            }
+        }
+        
+        
+        
+        for (let styleIndex = 0; styleIndex < styleLength; styleIndex++) {
+            
+
             switch(styleAttribute) {
-                case "width": $("#" + elementID).width(styleValue); break;
+                // case "width": $("#" + elementID).width(styleValue); break;
+                
                 case "height": $("#" + elementID).height(styleValue); break;
                 // ... (add more statements for adjustable style attributes)
             }
         }
     }
+    */
+
+
+
+
     function loadClass() {
         let classLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["class"]["name"]).length;
         for (let classIndex = 0; classIndex < classLength; classIndex++) {

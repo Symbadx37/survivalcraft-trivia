@@ -85,8 +85,36 @@ $("#quiz_answerChoiceButton_4").on({
 $("#setup_startButton").on("click", startQuiz);
 $("#setup_resetButton").on("click", resetSetup);
 $("#setup_exitButton").on("click", exitSetup);
-$("#quiz_continueButton").on("click", continueQuiz);
 $("#quiz_quitButton").on("click", stopQuiz);
+$("#quiz_continueButton").on({
+  click: function(){
+    continueQuiz();
+    updateProgressBar();
+  }
+});
+
+    
+    
+
+
+
+
+function updateProgressBar() {
+    let widthFactor;
+    switch(sessionData.quizParameters.quizLength) {
+        case 1: widthFactor = 30; break;
+        case 2: widthFactor = 15; break;
+        case 3: widthFactor = 10; break;
+    }
+    let barWidth = (sessionData["pageElements"]["quiz"]["node_1"]["style"]["values"][0] += widthFactor); // max width is 300
+    console.log(barWidth);
+    updateSession("load", "quiz", "load_partial", [1]);
+    // $("#quiz_progressBar").animate({width: [barWidth, "swing"]});
+
+
+
+
+}
 
 function initializeSetup(elementID, elementGroup) {
     let nodeIndex, isNodeFound = false;
@@ -172,7 +200,7 @@ function startQuiz() {
             }
             lookupIndex++;
         }
-        if (sessionData.quizParameters.quizTier == 5) {
+        if (sessionData.quizParameters.quizTier == 6) {
             const randomTier = Math.floor((Math.random() * tierCount) + 1)
             sessionData.quizParameters.quizTier = randomTier;
             console.info("SYSTEM: Parameter randomTier = " + sessionData.quizParameters.quizTier + " (at " + getTime() + ").");
@@ -249,6 +277,7 @@ function gradeQuiz(id) {
                 } else {
                     sessionData.quizParameters.questionsRight += 1;
                     sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][0] = 1;
+                    calculatePoints();
                     break;
                 }  
             }
