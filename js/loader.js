@@ -1,7 +1,7 @@
 // Active document deferred loader
 $(document).ready(function() {
-    updateSession("refresh");
     // Initialize and/or refresh session
+    updateSession("refresh");
     if (typeof localStorage.sessionData === "undefined") {
         let obj = new Session();
         Session.setData(obj);
@@ -45,7 +45,7 @@ function updateSession(functionID, pageID, actionID, nodeArray) {
 function loadDocument(pageID, actionID, nodeArray) {
     let elementID, elementType, nodeLength, nodeArrayLength;
     let maxNodeIndexReached = false, nodeIndex = 1, arrayIndex = 0;
-    const nodeFields = ["element", "value", "style", "class", "state"];
+    const nodeFields = ["element", "value", "style", "class", "animation", "state"];
 
     if (actionID == "load_partial") nodeArrayLength = nodeArray.length;
     while (!maxNodeIndexReached) {
@@ -101,12 +101,14 @@ function loadDocument(pageID, actionID, nodeArray) {
                     case "value": loadValue(); break;
                     case "style": loadStyle(); break;
                     case "class": loadClass(); break;
+                    case "animation": loadAnimation(actionID); break;
                     case "state": loadState(); break;
                 }
             }
             fieldIndex++;
         }
     }
+
     function loadValue() {
         if (sessionData["pageElements"][pageID]["node_" + nodeIndex]["value"]["text"] !== "") {
             let elementValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["value"]["text"];
@@ -118,49 +120,19 @@ function loadDocument(pageID, actionID, nodeArray) {
             }
         }
     }
-    /* WIP
+
     function loadStyle() {
-        let arrayLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"]).length;
-        let arrayIndex = 0;
-        while (arrayIndex <= arrayLength) {
-            let styleAttribute = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"][styleIndex];
-            let styleValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["values"][styleIndex];
-            let animationMode = sessionData["pageElements"][pageID]["node_" + nodeIndex]["animate"]["mode"][animationIndex];
-
-            switch(sessionData["pageElements"][pageID]["node_" + nodeIndex]["animate"]["state"][animationIndex]) {
-                case 0:
-                    arrayIndex++; break;
-                case 1:
-                    loadAnimation("dynamic"); break;
-                case 2:
-                    loadAnimation("static"); break;
-            }  
-
-
-            function loadAnimation() {
-                switch(styleAttribute) {
-                    case "width": $("#" + elementID).animate({width: [styleValue, "swing"], height: 8});
-                }
-            }
-        }
-        
-        
-        
+        let styleLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"]).length;
+        let styleAttribute = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"][styleIndex];
+        let styleValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["values"][styleIndex];
         for (let styleIndex = 0; styleIndex < styleLength; styleIndex++) {
-            
-
             switch(styleAttribute) {
-                // case "width": $("#" + elementID).width(styleValue); break;
-                
+                case "width": $("#" + elementID).width(styleValue); break;
                 case "height": $("#" + elementID).height(styleValue); break;
                 // ... (add more statements for adjustable style attributes)
             }
         }
     }
-    */
-
-
-
 
     function loadClass() {
         let classLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["class"]["name"]).length;
@@ -173,6 +145,33 @@ function loadDocument(pageID, actionID, nodeArray) {
             }
         }
     }
+
+    function loadAnimation(actionID) {
+        let parameters = {};
+        let animationLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["animation"]["attributes"]).length;
+        for (let animationIndex = 0; animationIndex < animationLength; animationIndex++) {
+            let animationAttribute = sessionData["pageElements"][pageID]["node_" + nodeIndex]["animation"]["attributes"][animationIndex];
+            let animationValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["animation"]["values"][animationIndex];
+            if (actionID == "load_partial") {
+                let attributes = [];
+                switch (sessionData["pageElements"][pageID]["node_" + nodeIndex]["animation"]["type"][animationIndex]) {
+                    case "dynamic":
+                        attributes.push(animationValue, sessionData["pageElements"][pageID]["node_" + nodeIndex]["animation"]["mode"][animationIndex]);
+                        parameters[animationAttribute] = attributes;
+                        break;
+                    case "static":
+                        parameters[animationAttribute] = animationValue;
+                        break;
+                }
+            } else {
+                $("#" + elementID)[animationAttribute](animationValue);
+            }  
+        }
+        if (actionID == "load_partial") {
+            $("#" + elementID).animate(parameters);
+        }
+    }
+    
     function loadState() {
         if (typeof sessionData["pageElements"][pageID]["node_" + nodeIndex]["state"]["isVisible"] !== "undefined") {
             let visibilityState = sessionData["pageElements"][pageID]["node_" + nodeIndex]["state"]["isVisible"];
@@ -193,5 +192,4 @@ function loadDocument(pageID, actionID, nodeArray) {
             }
         }
     }
-
 }

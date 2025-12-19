@@ -93,27 +93,20 @@ $("#quiz_continueButton").on({
   }
 });
 
-    
-    
-
-
-
-
 function updateProgressBar() {
-    let widthFactor;
+    let widthFactor, lookupIndex = 1;
     switch(sessionData.quizParameters.quizLength) {
         case 1: widthFactor = 30; break;
         case 2: widthFactor = 15; break;
         case 3: widthFactor = 10; break;
     }
-    let barWidth = (sessionData["pageElements"]["quiz"]["node_1"]["style"]["values"][0] += widthFactor); // max width is 300
-    console.log(barWidth);
-    updateSession("load", "quiz", "load_partial", [1]);
-    // $("#quiz_progressBar").animate({width: [barWidth, "swing"]});
-
-
-
-
+    while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
+        if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_progressBar") {
+            sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["animation"]["values"][0] += widthFactor;
+            updateSession("load", "quiz", "load_partial", [lookupIndex]);
+        }
+        lookupIndex++;
+    }
 }
 
 function initializeSetup(elementID, elementGroup) {
@@ -314,9 +307,7 @@ function continueQuiz() {
         switch (sessionData.quizParameters.quizLength) {
             case 1: 
                 if (sessionData.quizParameters.activeQuestion == 10) {
-                    sessionData.booleanFlags.isActive = false;
-                    updateSession("save");
-                    window.location.replace("results.html");
+                    loadResults(); 
                 } else {
                     generateQuestion();
                     parseQuizData();
@@ -324,9 +315,7 @@ function continueQuiz() {
                 break;
             case 2:
                 if (sessionData.quizParameters.activeQuestion == 20) {
-                    sessionData.booleanFlags.isActive = false;
-                    updateSession("save");
-                    window.location.replace("results.html");
+                    loadResults();
                 } else {
                     generateQuestion();
                     parseQuizData();
@@ -334,15 +323,36 @@ function continueQuiz() {
                 break;
             case 3:
                 if (sessionData.quizParameters.activeQuestion == 30) {
-                    sessionData.booleanFlags.isActive = false;
-                    updateSession("save");
-                    window.location.replace("results.html");
+                    loadResults();
                 } else {
                     generateQuestion();
                     parseQuizData();
                 }
                 break;
         }
+    }
+    function loadResults() {
+        let lookupIndex = 1, totalQuestions;
+        while (lookupIndex <= Object.values(sessionData["pageElements"]["results"]).length) {
+            if (sessionData["pageElements"]["results"]["node_" + lookupIndex]["element"]["id"] == "results_pointCount") {
+                const totalPoints = sessionData.quizParameters.totalPoints;
+                sessionData["pageElements"]["results"]["node_" + lookupIndex]["value"]["text"] = parseFloat(totalPoints.toFixed(0)).toLocaleString('en');
+            }
+            else if (sessionData["pageElements"]["results"]["node_" + lookupIndex]["element"]["id"] == "results_accuracyCount") {
+                switch(sessionData.quizParameters.quizLength) {
+                    case 1: totalQuestions = 10; break;
+                    case 2: totalQuestions = 20; break;
+                    case 3: totalQuestions = 30; break;
+                }
+                sessionData["pageElements"]["results"]["node_" + lookupIndex]["value"]["text"] = sessionData.quizParameters.questionsRight + "/" + totalQuestions;
+            }
+            lookupIndex++;
+        }
+        // Update flags and redirect page
+        sessionData.booleanFlags.resultsPreloadNeeded = true;
+        sessionData.booleanFlags.quizPreloadNeeded = false;
+        updateSession("save");
+        setTimeout(() => {window.location.replace("results.html")}, 400);
     }
     // Update active question count
     sessionData.quizParameters.activeQuestion += 1;

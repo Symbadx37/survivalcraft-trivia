@@ -23,7 +23,7 @@
               <div id="quiz_progressBar"></div>
             </div>
             <p id="quiz_questionText"></p>
-            <input id="quiz_answerChoiceButton_1" class="btn-answer-choice btn-answer-choice-selected" type="button">
+            <input id="quiz_answerChoiceButton_1" class="btn-answer-choice" type="button">
             <input id="quiz_answerChoiceButton_2" class="btn-answer-choice" type="button">
             <input id="quiz_answerChoiceButton_3" class="btn-answer-choice" type="button">
             <input id="quiz_answerChoiceButton_4" class="btn-answer-choice" type="button">
@@ -84,8 +84,11 @@
 #quiz_questionText {
   grid-column: 2;
   grid-row: 3;
+  margin-bottom: 25px;
+  line-height: 1.5rem;
   font-family: "Rubik";
-  font-size: 1rem;
+  font-size: 1.1rem;
+  text-wrap: balance;
   text-align: center;
 }
 #quiz_answerChoiceButton_1 {

@@ -1,0 +1,3 @@
+Fix button states not disabling
+Fix issues with button classes flickering
+Fix issue with point calculation

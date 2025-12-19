@@ -37,7 +37,8 @@ function generateQuestion() {
         }
         function validateIndex() {
             if (sessionData["quizIndexes"]["nextQuestionIndex"][categoryIndex][randomDifficulty] > questionCount[categoryIndex][randomDifficulty]) {
-                delete sessionData["quizParameters"]["activeactiveTierProbability"][randomDifficulty];
+                console.log("reroll needed"); // remove after testing
+                sessionData["quizParameters"]["activeTierProbability"][randomDifficulty] = 0;
                 generateRandomIndex();
             }
         }

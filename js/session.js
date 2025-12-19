@@ -18,14 +18,12 @@ class Session {
         }
         this.booleanFlags = {
             isSetupValid: false,
-            isQuizActive: false,
-            isActive: false,
             isTimeUp: false,
             isTimerResetNeeded: false,
             wasHintUsed: false,
             setupPreloadNeeded: true,
-            quizPreloadNeeded: "",
-            resultsPreloadNeeded: ""
+            quizPreloadNeeded: false,
+            resultsPreloadNeeded: false
         }
         this.quizIndexes = {
             categoryIndex: "",
@@ -265,13 +263,11 @@ class Session {
                         id: "quiz_progressBar",
                         type: "element",
                     },
-                    style: {
-                        attributes: ["width", "height"], // animation attributes
-                        values: [0,8] // attribute values
-                    },
                     animation: {
+                        attributes: ["width", "height"], // animation attributes
                         mode: ["swing", "swing"], // animation type
-                        state: [1,2] // 0 = null, 1 = dynamic, 2 = static
+                        type: ["dynamic", "static"], // animation type
+                        values: [0,8] // attribute values
                     }
                 },
                 node_2: {
@@ -362,7 +358,24 @@ class Session {
                 }
             },
             results: {
-                node_1: {}
+                node_1: {
+                    element: {
+                        id: "results_pointCount",
+                        type: "paragraph"
+                    },
+                    value: {
+                        text: ""
+                    }
+                },
+                node_2: {
+                    element: {
+                        id: "results_accuracyCount",
+                        type: "paragraph"
+                    },
+                    value: {
+                        text: ""
+                    }
+                }
             }
         }
     }
