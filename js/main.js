@@ -59,28 +59,6 @@ $("#setup_buttonGroup_4 input").on({
   }
 });
 
-// Quiz choice buttons
-$("#quiz_answerChoiceButton_1").on({
-  click: function(){
-    gradeQuiz(this.id);
-  }
-});
-$("#quiz_answerChoiceButton_2").on({
-  click: function(){
-    gradeQuiz(this.id);
-  }
-});
-$("#quiz_answerChoiceButton_3").on({
-  click: function(){
-    gradeQuiz(this.id);
-  }
-});
-$("#quiz_answerChoiceButton_4").on({
-  click: function(){
-    gradeQuiz(this.id);
-  }
-});
-
 // Setup and quiz action buttons
 $("#setup_startButton").on("click", startQuiz);
 $("#setup_resetButton").on("click", resetSetup);
@@ -149,6 +127,7 @@ function startQuiz() {
     validateSetup();
     generateQuestion();
     parseQuizData();
+    setQuestionTimestamp();
 
     // Update session flags
     if (sessionData.booleanFlags.isSetupValid) {
@@ -236,7 +215,7 @@ function parseQuizData() {
 }
 
 function gradeQuiz(id) {
-    let userAnswer, lookupIndex = 1;
+    let userAnswer;
     switch(id) {
         case "quiz_answerChoiceButton_1": userAnswer = "a"; break;
         case "quiz_answerChoiceButton_2": userAnswer = "b"; break;
@@ -245,8 +224,10 @@ function gradeQuiz(id) {
     }
     lookupAnswer();
     updateButtonStates();
+    // ...
 
     function updateButtonStates() {
+        let lookupIndex = 1;
         while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
             if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["group"] == "answerGroup") {
                 sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["state"]["isActive"] = false;
@@ -261,6 +242,7 @@ function gradeQuiz(id) {
     }
 
     function lookupAnswer() {
+        let lookupIndex = 1;
         while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
             if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == id) {
                 if (questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["answer"] != userAnswer) {
@@ -311,6 +293,7 @@ function continueQuiz() {
                 } else {
                     generateQuestion();
                     parseQuizData();
+                    // ...
                 }
                 break;
             case 2:
@@ -319,6 +302,7 @@ function continueQuiz() {
                 } else {
                     generateQuestion();
                     parseQuizData();
+                    // ...
                 }
                 break;
             case 3:
@@ -327,6 +311,7 @@ function continueQuiz() {
                 } else {
                     generateQuestion();
                     parseQuizData();
+                    // ...
                 }
                 break;
         }

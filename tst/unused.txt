@@ -984,3 +984,44 @@ updateSessionData("load", "quiz");
 // Save and refresh session data
 sessionData.newProperty = "";
 updateSessionData("save");
+
+function setQuestionTimestamp() {
+    sessionData.quizParameters.questionLoadTimestamp = new Date();
+    const startTime = new Date(sessionData.quizParameters.questionLoadTimestamp);
+
+    setInterval(calculateTimeDifference, 1000);
+
+
+    
+
+    function calculateTimeDifference() {
+        const currentTime = new Date();
+        
+        let minuteDifference = Math.abs(startTime.getMinutes() - currentTime.getMinutes());
+        let secondDifference = Math.abs(startTime.getSeconds() - currentTime.getSeconds());
+        let totalDifference = (minuteDifference * 60) + secondDifference;
+
+        let timeIndex;
+        switch(sessionData.quizParameters.quizDuration) {
+            case 1: timeIndex = 180; break;
+            case 2: timeIndex = 120; break;
+            case 3: timeIndex = 60; break;
+        }
+
+        let timeRemaining = timeIndex - totalDifference;
+        console.log("Time Remaining: ", timeRemaining);
+
+        let lookupIndex = 1;
+        while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
+            if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_timeRemainingText") {
+                
+                let timeString = (Math.floor(timeRemaining / 60)) + ":" + (timeRemaining % 60);
+                console.log(timeString);
+                sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = timeString;
+                updateSession("save");
+            }
+            lookupIndex++;
+        }
+
+    }
+}

@@ -8,13 +8,12 @@ class Session {
             quizCategory: 0,
             quizLength: 0,
             quizDuration: 0,
-            activeTierProbability: {},
             activeQuestion: 1,
             questionsRight: 0,
             questionsWrong: 0,
             totalPoints: 0,
-            currentMinute: 0,
-            currentSecond: 0
+            activeTierProbability: {},
+            questionLoadTimestamp: ""
         }
         this.booleanFlags = {
             isSetupValid: false,
@@ -354,6 +353,15 @@ class Session {
                     },
                     state: {
                         isActive: false
+                    }
+                },
+                node_8: {
+                    element: {
+                        id: "quiz_timeRemainingText",
+                        type: "paragraph",
+                    },
+                    value: {
+                        text: ""
                     }
                 }
             },
