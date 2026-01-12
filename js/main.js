@@ -4,7 +4,7 @@ const categoryCount = 5; // ... (General Knowledge, Game Mechanics, Crafting Rec
 const lengthCount = 3; // ... (Easy = 10, Medium = 20, Hard = 30)
 const durationCount = 4; // ... (High = 3m, Moderate = 2m, Low = 1m, None)
 const questionCount = {
-    1: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
+    1: {1: 10, 2: 16, 3: 30, 4: 19, 5: 16, 6: 7},
     2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
     3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
     4: {1: 10, 2: 19, 3: 26, 4: 25, 5: 20, 6: 0},
@@ -127,7 +127,6 @@ function startQuiz() {
     validateSetup();
     generateQuestion();
     parseQuizData();
-    setQuestionTimestamp();
 
     // Update session flags
     if (sessionData.booleanFlags.isSetupValid) {

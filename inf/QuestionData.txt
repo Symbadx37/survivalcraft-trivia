@@ -1,12 +1,12 @@
 # TOTALS
-1. General Knowledge: 6 + 10 + 30 + 34 + 6 + 7 = 93 questions
+1. General Knowledge: 10 + 16 + 30 + 19 + 16 + 7 = 98 questions
 2. Game Mechanics: 0 + 7 + 15 + 3 + 0 + 1...... = 26 questions
 3. Crafting Recipes: 5 + 13 + 8 + 3 + 2 + 1.... = 32 questions
 4. Updates History: 10 + 19 + 26 + 25 + 14 + 6 = 100 questions
 5. Electrics: 14 + 23 + 29 + 89 + 32 + 0...... = 187 questions
 
 # GENERAL KNOWLEDGE
-## Very Easy (6)
+## Very Easy (10)
 What year did Survivalcraft 1.0 release?
 - 2011, 2012, 2013, 2014 (A)
 What year did Survivalcraft 2.0 release?
@@ -19,8 +19,16 @@ What nickname does the developer of Survivalcraft go by?
 - Kairos, Kaalus, Cairo, There are multiple developers (C)
 What popular indie game inspired the creation of Survivalcraft?
 - Roblox, Minecraft, Terraria, Infiniminer (B)
+Who is the developer of Survivalcraft?
+- Andrew Spinks, Robert Topola, Igor Kalicinski, Markus Persson (C)
+What is the name of the company that developed and published Survivalcraft?
+- K5 Games, Candy Rufus Games, 11-Bit Studios, Rufus Games (B)
+What website provider does the developer use to post updates and announcements?
+- Wordpress, Squarespace, Wix, The website is self-hosted (A)
+What online cloud service is integrated into the game?
+- Google Drive, Dropbox, OneDrive, None of the above (B)
 
-## Easy (10)
+## Easy (16)
 What year did Survivalcraft release on Android?
 - 2011, 2012, 2013, 2014 (B)
 What year did Survivalcraft release on Amazon?
@@ -31,18 +39,32 @@ What date did Survivalcraft 1.0 release?
 - April 14th, 2011; November 16th, 2011; June 9th, 2012; November 12th, 2012 (B)
 What date did Survivalcraft 2.0 release?
 - November 23rd, 2016; December 10th, 2016; February 4th, 2017; October 14th, 2017 (B)
-Who is the developer of Survivalcraft?
-- Andrew Spinks, Robert Topola, Igor Kalicinski, Markus Person (C)
-What is the name of the company that developed and published Survivalcraft?
-- K5 Games, Candy Rufus Games, 11-Bit Studios, Rufus Games (B)
-What website providor does the developer use to post updates and announcements?
-- Wordpress, Squarespace, Wix, The website is self-hosted (A)
-What online cloud service is integrated into the game?
-- Google Drive, Dropbox, OneDrive, None of the above (B)
+Which player action is NOT in the game?
+- Jumping, Flying, Crouching, Sprinting (D)
+What is the name of the system used for creating contraptions in the game?
+- Redstone, Electrics, Logics, There isn't one (B)
 How many unique gamemodes are there?
 - 4, 5, 6, 7 (C)
+How many different camera view modes are there?
+- 2, 3, 4, 5 (C)
+How many default player skins are there?
+- 4, 8, 12, 16 (B)
+Which PC control is used to open or close the inventory?
+- E, F, G, Y (A)
+Which PC control is used to drop items?
+- Q, V, Ctrl + Q, Z (A)
+Which PC control is used to change the time of day?
+- O, T, C, B (A)
+Which PC control is used to summon lightning?
+- S, L, Y, U (B)
+Which PC control is used to change the camera mode?
+- C, V, G, O (B)
+Which PC control is used to take screenshots?
+- P, F12, S, F8 (A)
 
 ## Medium (30)
+What platform was Survivalcraft first released on?
+- Windows Phone, Google Play, iOS, Amazon (A)
 When did Survivalcraft release on Android?
 - December 9th, 2011; March 15th, 2012; September 17th, 2012; October 14th, 2012 (D)
 When did Survivalcraft release on Amazon?
@@ -72,9 +94,9 @@ Which of the following birds are NOT in the game?
 Which of the following birds are NOT in the game?
 - Duck, Seagull, Dove, Pigeon (C)
 Which of the following supernatural creatures are in the game?
-- Sasquatch, Werewolf, Dwarf, Goblin (B)
-How many default player skins are there?
-- 4, 8, 12, 16 (B)
+- Sasquatch, Werewolf, Dwarf, Gremlin (B)
+What two types of illnesses are in the game?
+- Malaria and Flu, Flu and Food Poisoning, Polio and Food Poisoning, Tuberculosis and Flu (B)
 What are the names of all default male skins?
 - Thomas, Walter, Arthur, Zachary
 - Basil, Zachary, Walter, Geoffrey
@@ -89,28 +111,30 @@ What worlds on the Community Content were published by the developer of the game
 - Far Future, Cabin in the Woods, Multiplayer Preview, None of the above (D)
 What furniture packs on the Community Content were published by the developer of the game?
 - Modern Kitchen, Amazing House Pack, Cabin Furniture, Both A and C (D)
-Which PC control is used to open or close the inventory?
-- E, F, G, Y (A)
-Which PC control is used to drop items?
-- Q, V, Ctrl + Q, Z (A)
-Which PC control is used to change the time of day?
-- T, O, C, B (A)
-Which PC control is used to summon lightning?
-- S, L, Y, U (B)
-Which PC control is used to change the camera mode?
-- C, V, G, O (B)
-Which PC control is used to take screenshots?
-- P, F12, S, F8 (A)
+Which PC control is used to toggle fog?
+- J, U, K, F (A)
+Which PC control is used to toggle precipitation?
+- L, P, K, J (C)
+Which PC control is used to edit a block or item?
+- X, H, G, E (C)
+Which PC control is used to mount creatures or boats?
+- V, G, R, M (C)
+Which PC control is used to open or close the character panel?
+- N, C, K, X (B)
 Which PC control is used to pause the game?
 - Tab, Esc, P, There is no pause control (B)
 Which PC control is used to toggle fly mode?
 - V, F, Press space twice, Both B and C (D)
 Which PC control is used to pick the selected block?
-- Ctrl + P, Mouse Wheel, Tab, Right mouse house (B)
+- Ctrl + P, Mouse Wheel, Tab, Right mouse click (B)
 Which PC control is used to split an item stack?
 - Ctrl + S, Hold down right mouse button, Shift + S, Left click twice (B)
 
-## Hard (34)
+## Hard (19)
+What online service is the official Survivalcraft forum hosted with?
+- Reddit, Tapatalk, 4Chan, Lefora (B)
+What online service is the official Survivalcraft Wiki hosted on?
+- Wikia, Fandom, SkyWiki, MediaWiki (B)
 When did Survivalcraft release on iOS?
 - February 2012, April 2013, October 2013, August 2014 (B)
 When did Survivalcraft 2 release on Steam?
@@ -137,25 +161,11 @@ What is the highest skin resolution supported by the game?
 - 32x32, 64x64, 256x256, 512x512 (C)
 Which platform tends to receive new updates first?
 - Microsoft Store, Google Play, iOS, Amazon (B)
-Around how many unique block icons are in the game, as of update 2.4?
-- 800, 1200, 1600, 2000 (C)
-Worlds are stored within what file container?
-- .zip, .scworld, .rar, .wrld (B)
-Blocks textures are stored within what file container?
-- .zip, .scbtex, .rar, .btex (B)
-Character skins are stored within what file container?
-- .zip, .scskin, .rar, .cskn (B)
-Furniture packs are stored within what file container?
-- .zip, .scfpack, .rar, .frpk (B)
-What is the oldest world version on the Community Content?
-- 1.22, 1.24, 1.26, 1.28 (C)
-What is the newest world version on the Community Content?
-- 1.30, 2.3, 2.4, 3.5 (C)
 What is unique about worlds in adventure mode?
-- Player combat is always disabled.
-- Blocks cannot be broken without the correct tool.
-- Survival mechanics like temperature and hunger are disabled.
-- Player respawn is not allowed. (B)
+- Player combat is always disabled
+- Blocks cannot be broken without the correct tool
+- Survival mechanics like temperature and hunger are disabled
+- Player respawn is not allowed (B)
 How do you delete a blocks texture?
 - Content > Private > Texture Pack Name > Delete
 - Play > World Name > ... > Options > ... > Texture Pack Name > Delete
@@ -171,8 +181,10 @@ How do you report worlds downloaded from the Community Content?
 - Content > Community Content > World Name > ... > Report
 - Pause Menu > ... > Rate > Report
 - You cannot report worlds (C)
+
+## Very Hard (16)
 Which report category is NOT available?
-- Cruelty, Sexism, Hate Speech, Dating (B)
+- Cruelty, Sexism, Plagarism, Dating (B)
 Which world on the Community Content has the most downloads?
 - HugeCity v1.0, The Arena, Huge Cruise Ship, Electricity Unleashed (A)
 Which blocks texture on the Community Content has the most downloads?
@@ -181,22 +193,6 @@ Which character skin on the Community Content has the most downloads?
 - Assasin, Iron Man, Barbie, Minecraft Steve 2020 (A)
 Which furniture pack on the Community Content has the most downloads?
 - Cabin Furniture, Amazing House Pack 2.0, Simple Foods 3.0, Modern Kitchen (B)
-Which PC control is used to toggle fog?
-- J, U, K, F (A)
-Which PC control is used to toggle precipitation?
-- L, P, K, J (C)
-Which PC control is used to edit a block or item?
-- X, H, G, E (C)
-Which PC control is used to mount creatures or boats?
-- V, G, R, M (C)
-Which PC control is used to open or close the character panel?
-- N, C, K, X (B)
-
-## Very Hard (6)
-What online service is the official Survivalcraft forum hosted with?
-- Reddit, Tapatalk, 4Chan, Lefora (B)
-What online service is the official Survivalcraft Wiki hosted on?
-- Wikia, Fandom, SkyWiki, MediaWiki (B)
 Player data is stored in what file format?
 - .xml, .json, .dat, .zip (A)
 Furniture block data is stored in what file format?
@@ -205,6 +201,20 @@ Region, or chunk data, is stored in what file format?
 - .bak, .dat, .xml, .json (B)
 Adventure world snapshots are saved in what file format?
 - .scworld, .zip, .dat, .snapshot (D)
+Around how many unique block icons are in the game, as of update 2.4?
+- 800, 1200, 1600, 2000 (C)
+Worlds are stored within what file container?
+- .zip, .wrld, .rar, .scworld (B)
+Blocks textures are stored within what file container?
+- .rar, .scbtex, .btex, .zip (B)
+Character skins are stored within what file container?
+- .zip, .rar, .scskin, .cskn (C)
+Furniture packs are stored within what file container?
+- .zip, .scfpack, .rar, .frpk (B)
+What is the oldest playable world version on the Community Content?
+- 1.22, 1.24, 1.26, 1.28 (C)
+What is the newest playable world version on the Community Content?
+- 1.30, 2.3, 2.4, 3.5 (C)
 
 ## Extreme (7)
 How many unique menu music tracks are there?
@@ -214,25 +224,25 @@ How many unique texture squares are used, as of update 2.4?
 Which Survivalcraft version was never released on iOS?
 - 1.19, 1.20, 1.21, 1.22 (B)
 What does Disabled mode for Community Content do?
-- Shows only manually whitelisted listings.
-- Disables the Community Content menu entirely.
-- Hides all content listings except your own.
-- Disables all content search filters. (B)
+- Shows only manually whitelisted listings
+- Disables the Community Content menu entirely
+- Hides all content listings except your own
+- Disables all content search filters (B)
 What does Strict mode for Community Content do?
-- Shows only moderated listings.
-- Hides all metadata for each listing, except content type and name.
-- Shows only manually whitelisted listings.
-- Hides all other content forms except worlds. (C)
+- Shows only moderated listings
+- Hides all metadata for each listing, except content type and name
+- Shows only manually whitelisted listings
+- Hides all other content forms except worlds (C)
 What does Normal mode for Community Content do?
-- Shows only manually whitelisted listings.
-- Shows all content listings, except recently added ones.
-- Places the listings with the most downloads at the top.
-- Shows only moderated listings. (D)
+- Shows only manually whitelisted listings
+- Shows all content listings, except recently added ones
+- Places the listings with the most downloads at the top
+- Shows only moderated listings (D)
 What does Show All mode for Community Content do?
-- Shows all worlds, and only manually whitelisted listings of other content types.
-- Shows all content listings, except flagged ones.
-- Shows all worlds, and only moderated listings of other content types.
-- Shows all content listings. (D)
+- Shows all worlds, and only manually whitelisted listings of other content types
+- Shows all content listings, except flagged ones
+- Shows all worlds, and only moderated listings of other content types
+- Shows all content listings (D)
 ___________________________________________________________________________________________________________________________
 # GAME MECHANICS
 ## Very Easy (0)
