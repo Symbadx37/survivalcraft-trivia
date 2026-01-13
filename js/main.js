@@ -223,7 +223,6 @@ function gradeQuiz(id) {
     }
     lookupAnswer();
     updateButtonStates();
-    // ...
 
     function updateButtonStates() {
         let lookupIndex = 1;

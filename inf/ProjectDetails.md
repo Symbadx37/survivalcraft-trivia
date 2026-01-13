@@ -92,30 +92,4 @@ Home (index.html) = Logo, description about Survivalcraft, how the quiz works an
 Play (options.html) = Quiz setup page
 About = Credits and creator biography
 Contact = 
-Changelog = 
-
-# WORK IN PROGRESS
-let thresholdFactor = 60;
-let countIndex = (minutes * 60) + seconds
-let thresholdIndex = countIndex - thresholdFactor;
-
-if (thresholdIndex > 120) {
-    activeThreshold = "green";
-} else if (thresholdIndex <= 120 && thresholdIndex > 60) {
-    activeThreshold = "yellow";
-} else {
-    activeThreshold = "red";
-}
-
-ACTIONS
-Update classes (add, remove, toggle)
-Update values (strings/numbers)
-Update buttons (enabled/disabled)
-Update visibility (visible/hidden)
-
-$("id").toggleClass("class", add/remove)
-$("id").val("newValue");
-$("id").text("newText");
-$("id").prop("disabled", true/false);
-$("id").hide();
-$("id").show();
+Changelog = s

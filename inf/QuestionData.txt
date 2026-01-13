@@ -637,7 +637,7 @@ Which update allowed for renaming of existing worlds?
 - Alpha 1.6, Alpha 1.7, Alpha 1.8, Alpha 1.9 (C)
 ___________________________________________________________________________________________________________________________
 # ELECTRICS
-## Very Easy (14)
+## Very Easy ()
 How many total states does a switch have?
 - None, One, Two, Four (C)
 How many total states does a button have?
@@ -654,6 +654,11 @@ What does the photodiode detect?
 - Block updates, Light levels, Atmospheric changes, Entity movement (B)
 What does the target block detect?
 - Projectile movement, Entity updates, Projectile updates, Entity movement (C)
+What does the Real Time Clock do?
+- It outputs the time elapsed since the world was created
+- It outputs incremental values at consistent intervals, with each input determining the update speed
+- It outputs the current time based on the time of day and year
+- It outputs random values at consistent intervals, with each input determining the update speed (A)
 What surfaces can wires be placed on?
 - Only on walls.
 - Walls and floors.
@@ -685,7 +690,7 @@ What surfaces can target blocks be placed on?
 - Only on floors.
 - Walls, ceilings, and floors. (A)
 
-## Easy (23)
+## Easy ()
 What speed does the electricty simulation run at?
 - 12.5 Hertz, 25 Hertz, 50 Hertz, 100 Hertz (D)
 An electric button provides a pulse duration for how long?
@@ -694,7 +699,50 @@ An electric switch provides a pulse duration for how long?
 - 150 milliseconds, 300 milliseconds, 500 milliseconds, None of the above (D)
 A single, non-adjustable delay gate provides a pulse duartion for how long?
 - 50 milliseconds, 200 milliseconds, 300 milliseconds, 500 milliseconds (B)
-How many unique instruments are there?
+What is the average update frequency for the random generator, when in asynchronous mode?
+- 0.5 Hertz, 2 Hertz, 5 Hertz, 16 Hertz (B)
+What are the four primary sound generator inputs?
+- Voice, Clock, Volume, Octave
+- Pitch, Octave, Volume, Tone
+- Volume, Pitch, Instrument, Octave
+- Octave, Frequency, Tone, Volume (C)
+What is the purpose of the fifth sound generator input, accessible only through the back of the component?
+- It acts as a secondary tone input
+- It serves as a buffer, if a high signal is supplied the component is disabled
+- It controls the sustain duration for produced notes
+- It acts as a secondary pitch input (A)
+What is the purpose of the fifth Random Generator input, accessible only through the back of the component?
+- It serves as a buffer, if a high signal is supplied the component is disabled
+- It acts as a secondary output
+- It halves the update speed when supplied a constant high signal
+- It does nothing (B)
+What is the purpose of the fifth Real Time Clock input, accessible only through the back of the component?
+- It outputs a random value, at the slowest interval from the other 4 inputs
+- It outputs the current game year
+- It extends the overflow period to 256 game days
+- It does nothing (C)
+What is the purpose of the fifth SR latch input, accessible only through the back of the component?
+- It acts as a secondary reset input
+- It acts as a secondary output
+- It serves as a buffer, if a high signal is supplied the component is disabled
+- It does nothing (B)
+What is the purpose of the fifth 4-bit counter input, accessible only through the back of the component?
+- It acts as a secondary output
+- It resets the counter memory to zero
+- It acts as a secondary overflow output
+- It serves as a buffer, if a high signal is supplied the component is disabled (B)
+What is the purpose of the bottom connection on the 4-bit counter?
+- It is the overflow, that outputs when the counter goes from F to 0
+- It is the primary counter output
+- It is the reset control
+- None of the above (A)
+What does the S input on the SR latch mean?
+- Start, Set, Synchronous, Seed (B)
+What does the R input on the SR latch mean?
+-  Reset, Register, Restart, Refresh (A)
+Which instrument does not respond to octave?
+- Bell, Organ, Drums, Bass (C)
+How many unique sound generator instruments are there?
 - 6, 8, 10, 12 (C)
 Which of the following is NOT a placeable logic gate?
 - NOR, NXOR, XOR, NAND (B)
@@ -733,7 +781,41 @@ What type of hexadecimal value is F designated as?
 What type of hexadecimal value is B designated as?
 - Low, Medium, High, None of the above (C)
 
-## Medium (29)
+## Medium ()
+How many unique 4-bit values can a memory bank store?
+- 64, 128, 256, 512 (C) 
+How many unique sound generator sounds are there?
+- 287, 324, 396, 439 (D)
+How many unique sounds can the Bell instrument produce?
+- 27, 32, 49, 56 (C)
+How many unique sounds can the Organ instrument produce?
+- 28, 37, 44, 53 (B)
+How many unique sounds can the Ping instrument produce?
+- 27, 32, 49, 56 (C)
+How many unique sounds can the String instrument produce?
+- 18, 26, 37, 49 (D)
+How many unique sounds can the Trumpet instrument produce?
+- 27, 32, 49, 56 (C)
+How many unique sounds can the Voice instrument produce?
+- 35, 49, 52, 61 (B)
+How many unique sounds can the Piano instrument produce?
+- 35, 49, 52, 61 (B)
+How many unique sounds can the Piano Sustain instrument produce?
+- 27, 32, 49, 56 (C)
+How many unique sounds can the Drum instrument produce?
+- 6, 10, 16, 20 (B)
+How many unique sounds can the Bass instrument produce?
+- 49, 56, 78, 83 (A)
+What does the clock input on the SR latch do?
+- Disables the latch from operating when supplied a high signal
+- Modifies the latch behavior so the S and R inputs will only update the latch state when supplied a high signal 
+- Sets the latch state to 1 when it receives a high signal
+- Modifies the latch behavior so it only toggles between states 0 and 1, ignoring the S and R inputs (B)
+What is the process for writing to a memory bank?
+- Supply a high signal through the back of the component and supply the memory location through the address inputs
+- Supply a high or low signal through the back of the component and set the memory addresses to zero
+- Supply a low signal to the clock input and the value to be written through the back of the component
+- Memory banks can only be written to manually (C)
 What logical notation do electrical components utilize?
 - Numerical, Decimal, Alphanumerical, Hexadecimal (D)
 What numeral system do electrical components utilize?
@@ -823,9 +905,7 @@ If the world time is set to Midnight, what voltage signal will the photodiode ou
 If the world time is set to Midnight, what hexadecimal value will the photodiode output?
 - 1, 2, 3, 4 (C)
 
-## Hard (89)
-How many unique sound generator sounds are there?
-- 287, 324, 396, 439 (D)
+## Hard ()
 If a projectile hits the first circle of the target block, what hexadecimal value(s) will it output?
 - Only 8
 - 8 or 9
@@ -850,7 +930,7 @@ If a projectile hits the exact center of the target block, what hexadecimal valu
 - Only E
 - Only F
 - E or F
-- D, E, or F
+- D, E, or F (B)
 Supplying a voltage signal of 0.8 volts to a lightbulb will illuminate how many blocks?
 - 1 block, 3 blocks, 5 blocks, 7 blocks (A)
 Supplying a voltage signal of 1.4 volts to a lightbulb will illuminate how many blocks?
@@ -1019,93 +1099,93 @@ Supplying a hexadecimal value of E to a piston with a max extension set to 2 wil
 - 1 block, 2 blocks, 3 blocks, 4 blocks (B)
 
 ## Very Hard (32)
-Supplying a binary value of 1010 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 1010 (big-endian) to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Unlit, Lit
 - Lit, Unlit, Lit, Lit
 - Unlit, Unlit, Lit, Unlit
 - Lit, Unlit, Lit, Unlit (A)
-Supplying a binary value of 1110 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 1110 (big-endian) to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Unlit, Unlit
 - Lit, Unlit, Lit, Lit
 - Unlit, Lit, Lit, Lit
 - Unlit, Unlit, Lit, Lit (B)
-Supplying a binary value of 0100 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 0100 (big-endian) to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Unlit, Unlit
 - Lit, Lit, Unlit, Lit
 - Unlit, Unlit, Lit, Unlit
 - Lit, Unlit, Unlit, Lit (C)
-Supplying a binary value of 0110 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 0110 (big-endian) to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Lit, Lit
 - Lit, Unlit, Lit, Lit
 - Lit, Lit, Unlit, Unlit
 - Unlit, Lit, Unlit, Lit (D)
-Supplying a binary value of 0111 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 0111 (big-endian) to a 4-LED display will output what illumination pattern?
 - Lit, Lit, Lit, Unlit
 - Unlit, Lit, Unlit, Unlit
 - Lit, Unlit, Lit, Lit
 - Unlit, Lit, Unlit, Lit (A)
-Supplying a binary value of 1100 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 1100 (big-endian) to a 4-LED display will output what illumination pattern?
 - Lit, Unlit, Unlit, Lit
 - Unlit, Unlit, Lit, Lit
 - Lit, Lit, Unlit, Lit
 - Lit, Unlit, Unlit, Unlit (B)
-Supplying a binary value of 1101 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 1101 (big-endian) to a 4-LED display will output what illumination pattern?
 - Unlit, Lit, Lit, Unlit
 - Lit, Lit, Unlit, Lit
 - Lit, Unlit, Lit, Lit
 - Unlit, Unlit, Lit, Unlit (C)
-Supplying a binary value of 1001 to a 4-LED display will output what illumination pattern?
+Supplying a binary value of 1001 (big-endian) to a 4-LED display will output what illumination pattern?
 - Lit, Unlit, Lit, Unlit
 - Lit, Lit, Unlit, Lit
 - Unlit, Lit, Unlit, Lit
 - Unlit, Unlit, Lit, Unlit (A)
-Using the logic rules for the XOR gate: if input one is 1000 and input two is 1110, what will be the output?
+Using the logic rules for the XOR gate: if input one is 1000 and input two is 1110 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
-Using the logic rules for the XOR gate: if input one is 0110 and input two is 1111, what will be the output?
+Using the logic rules for the XOR gate: if input one is 0110 and input two is 1111 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
-Using the logic rules for the XOR gate: if input one is 0111 and input two is 1001, what will be the output?
+Using the logic rules for the XOR gate: if input one is 0111 and input two is 1001 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
-Using the logic rules for the XOR gate: if input one is 0000 and input two is 1011, what will be the output?
+Using the logic rules for the XOR gate: if input one is 0000 and input two is 1011 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
-Using the logic rules for the XOR gate: if input one is 1011 and input two is 0010, what will be the output?
+Using the logic rules for the XOR gate: if input one is 1011 and input two is 0010 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (D)
-Using the logic rules for the XOR gate: if input one is 1101 and input two is 1010, what will be the output?
+Using the logic rules for the XOR gate: if input one is 1101 and input two is 1010 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
-Using the logic rules for the XOR gate: if input one is 1100 and input two is 1110, what will be the output?
+Using the logic rules for the XOR gate: if input one is 1100 and input two is 1110 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
-Using the logic rules for the XOR gate: if input one is 0010 and input two is 1001, what will be the output?
+Using the logic rules for the XOR gate: if input one is 0010 and input two is 1001 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
-Using the logic rules for the NOR gate: if input one is 1110 and input two is 1101, what will be the output?
+Using the logic rules for the NOR gate: if input one is 1110 and input two is 1101 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
-Using the logic rules for the NOR gate: if input one is 1011 and input two is 0110, what will be the output?
+Using the logic rules for the NOR gate: if input one is 1011 and input two is 0110 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
-Using the logic rules for the NOR gate: if input one is 0010 and input two is 1111, what will be the output?
+Using the logic rules for the NOR gate: if input one is 0010 and input two is 1111 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (D)
-Using the logic rules for the NOR gate: if input one is 1101 and input two is 1110, what will be the output?
+Using the logic rules for the NOR gate: if input one is 1101 and input two is 1110 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
-Using the logic rules for the NOR gate: if input one is 0001 and input two is 1110, what will be the output?
+Using the logic rules for the NOR gate: if input one is 0001 and input two is 1110 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
-Using the logic rules for the NOR gate: if input one is 0101 and input two is 1111, what will be the output?
+Using the logic rules for the NOR gate: if input one is 0101 and input two is 1111 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (D)
-Using the logic rules for the NOR gate: if input one is 0011 and input two is 1011, what will be the output?
+Using the logic rules for the NOR gate: if input one is 0011 and input two is 1011 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
-Using the logic rules for the NOR gate: if input one is 1111 and input two is 0101, what will be the output?
+Using the logic rules for the NOR gate: if input one is 1111 and input two is 0101 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
-Using the logic rules for the NAND gate: if input one is 0101 and input two is 0000, what will be the output?
+Using the logic rules for the NAND gate: if input one is 0101 and input two is 0000 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
-Using the logic rules for the NAND gate: if input one is 0100 and input two is 1100, what will be the output?
+Using the logic rules for the NAND gate: if input one is 0100 and input two is 1100 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
-Using the logic rules for the NAND gate: if input one is 1001 and input two is 0101, what will be the output?
+Using the logic rules for the NAND gate: if input one is 1001 and input two is 0101 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
-Using the logic rules for the NAND gate: if input one is 1100 and input two is 0110, what will be the output?
+Using the logic rules for the NAND gate: if input one is 1100 and input two is 0110 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
-Using the logic rules for the NAND gate: if input one is 0010 and input two is 1011, what will be the output?
+Using the logic rules for the NAND gate: if input one is 0010 and input two is 1011 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
-Using the logic rules for the NAND gate: if input one is 1000 and input two is 1011, what will be the output?
+Using the logic rules for the NAND gate: if input one is 1000 and input two is 1011 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (D)
-Using the logic rules for the NAND gate: if input one is 0000 and input two is 1110, what will be the output?
+Using the logic rules for the NAND gate: if input one is 0000 and input two is 1110 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
-Using the logic rules for the NAND gate: if input one is 1100 and input two is 1110, what will be the output?
+Using the logic rules for the NAND gate: if input one is 1100 and input two is 1110 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
 
 ## Extreme (0)
