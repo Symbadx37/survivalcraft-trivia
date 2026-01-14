@@ -127,6 +127,7 @@ function startQuiz() {
     validateSetup();
     generateQuestion();
     parseQuizData();
+    setTimer();
 
     // Update session flags
     if (sessionData.booleanFlags.isSetupValid) {
@@ -198,12 +199,36 @@ function startQuiz() {
 }
 
 function parseQuizData() {
-    let lookupIndex = 1, choiceIndex = 0;
+    let choiceIndex = 0, lookupIndex = 1;
+    randomizeChoiceOrder();
+
+    // Generate random choice order
+    function randomizeChoiceOrder() {
+        let orderIndex = 0;
+        const choiceOrder = [];
+        while (orderIndex < 4) {
+            const num = Math.floor(Math.random() * 4);
+            if (choiceOrder[orderIndex] == "") {
+                choiceOrder.push(num);
+                orderIndex++;
+            }
+            else if (!(choiceOrder.includes(num))) {
+                choiceOrder.push(num);
+                orderIndex++;
+            } 
+        }
+        sessionData.quizIndexes.choiceOrder = choiceOrder;
+        updateSession("save");
+        console.log("Choice Order: ", choiceOrder);
+    }
+    
+    // Set node text values
     while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
         if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["group"] == "answerGroup") {
-            sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"][choiceIndex];
+            sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"][sessionData.quizIndexes.choiceOrder[choiceIndex]];
             updateSession("load", "quiz", "load_partial", [lookupIndex]);
             choiceIndex++;
+        
         }
         else if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_questionText") {
             sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["question"]; 
@@ -214,13 +239,7 @@ function parseQuizData() {
 }
 
 function gradeQuiz(id) {
-    let userAnswer;
-    switch(id) {
-        case "quiz_answerChoiceButton_1": userAnswer = "a"; break;
-        case "quiz_answerChoiceButton_2": userAnswer = "b"; break;
-        case "quiz_answerChoiceButton_3": userAnswer = "c"; break;
-        case "quiz_answerChoiceButton_4": userAnswer = "d"; break;
-    }
+    clearTimer();
     lookupAnswer();
     updateButtonStates();
 
@@ -243,16 +262,31 @@ function gradeQuiz(id) {
         let lookupIndex = 1;
         while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
             if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == id) {
-                if (questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["answer"] != userAnswer) {
-                    sessionData.quizParameters.questionsWrong += 1;
-                    sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][1] = 1;
-                    break;
-                } else {
+                let validAnswer, userAnswer;
+                switch(questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["answer"]) {
+                    case "a": validAnswer = 0; break;
+                    case "b": validAnswer = 1; break;
+                    case "c": validAnswer = 2; break;
+                    case "d": validAnswer = 3; break;
+                }
+                switch(id) {
+                    case "quiz_answerChoiceButton_1": userAnswer = 0; break;
+                    case "quiz_answerChoiceButton_2": userAnswer = 1; break;
+                    case "quiz_answerChoiceButton_3": userAnswer = 2; break;
+                    case "quiz_answerChoiceButton_4": userAnswer = 3; break;
+                }
+                if (userAnswer == (sessionData.quizIndexes.choiceOrder.indexOf(validAnswer))) {
+                    console.log("correct");
                     sessionData.quizParameters.questionsRight += 1;
                     sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][0] = 1;
                     calculatePoints();
                     break;
-                }  
+                } else {
+                    console.log("incorrect");
+                    sessionData.quizParameters.questionsWrong += 1;
+                    sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][1] = 1;
+                    break;
+                }
             }
             lookupIndex++;
         }

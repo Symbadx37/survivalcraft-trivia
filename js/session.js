@@ -4,16 +4,17 @@ class Session {
            // ...
         }
         this.quizParameters = {
-            quizTier: 0,
-            quizCategory: 0,
-            quizLength: 0,
-            quizDuration: 0,
+            quizTier: "",
+            quizCategory: "",
+            quizLength: "",
+            quizDuration: "",
             activeQuestion: 1,
-            questionsRight: 0,
-            questionsWrong: 0,
-            totalPoints: 0,
+            questionsRight: "",
+            questionsWrong: "",
+            totalPoints: "",
+            currentSecond: "",
+            currentMinute: "",
             activeTierProbability: {},
-            questionLoadTimestamp: ""
         }
         this.booleanFlags = {
             isSetupValid: false,
@@ -28,6 +29,7 @@ class Session {
             categoryIndex: "",
             difficultyIndex: "",
             questionIndex: "",
+            choiceOrder: [],
             indexCache: {
                 1: {1: [], 2: [], 3: [], 4: [], 5: [], 6: []},
                 2: {1: [], 2: [], 3: [], 4: [], 5: [], 6: []},
