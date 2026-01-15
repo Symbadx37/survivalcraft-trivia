@@ -127,7 +127,7 @@ function startQuiz() {
     validateSetup();
     generateQuestion();
     parseQuizData();
-    setTimer();
+    loadTimer("set");
 
     // Update session flags
     if (sessionData.booleanFlags.isSetupValid) {
@@ -219,7 +219,6 @@ function parseQuizData() {
         }
         sessionData.quizIndexes.choiceOrder = choiceOrder;
         updateSession("save");
-        console.log("Choice Order: ", choiceOrder);
     }
     
     // Set node text values
@@ -239,6 +238,10 @@ function parseQuizData() {
 }
 
 function gradeQuiz(id) {
+    // Update flags
+    sessionData.booleanFlags.isAnswerSubmitted = true;
+    updateSession("save");
+
     clearTimer();
     lookupAnswer();
     updateButtonStates();
@@ -276,13 +279,11 @@ function gradeQuiz(id) {
                     case "quiz_answerChoiceButton_4": userAnswer = 3; break;
                 }
                 if (userAnswer == (sessionData.quizIndexes.choiceOrder.indexOf(validAnswer))) {
-                    console.log("correct");
                     sessionData.quizParameters.questionsRight += 1;
                     sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][0] = 1;
                     calculatePoints();
                     break;
                 } else {
-                    console.log("incorrect");
                     sessionData.quizParameters.questionsWrong += 1;
                     sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][1] = 1;
                     break;
@@ -294,13 +295,18 @@ function gradeQuiz(id) {
 }
 
 function continueQuiz() {
-    let lookupIndex = 1;
+    // Update flags
     updateSession("refresh");
+    sessionData.booleanFlags.isAnswerSubmitted = false;
+    updateSession("save");
+    
     updateButtonStates();
     checkQuizPosition();
+    loadTimer("reset");
 
     // Reset button states to default state
     function updateButtonStates() {
+        let lookupIndex = 1;
         while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
             if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["group"] == "answerGroup") {
                 sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["class"]["state"][0] = 2;
@@ -325,7 +331,6 @@ function continueQuiz() {
                 } else {
                     generateQuestion();
                     parseQuizData();
-                    // ...
                 }
                 break;
             case 2:
@@ -334,7 +339,6 @@ function continueQuiz() {
                 } else {
                     generateQuestion();
                     parseQuizData();
-                    // ...
                 }
                 break;
             case 3:
@@ -343,7 +347,6 @@ function continueQuiz() {
                 } else {
                     generateQuestion();
                     parseQuizData();
-                    // ...
                 }
                 break;
         }

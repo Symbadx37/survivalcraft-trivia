@@ -2,6 +2,14 @@
 $(document).ready(function() {
     // Initialize and/or refresh session
     updateSession("refresh");
+    
+    // Initialize timer if on quiz page
+    const activeWindow = window.location.href;
+    if (activeWindow == "http://127.0.0.1:5558/pgs/quiz.html") { // CHANGE BEFORE SHIPPING
+        loadTimer("set");
+    }
+
+    // Create new session object if none exists
     if (typeof localStorage.sessionData === "undefined") {
         let obj = new Session();
         Session.setData(obj);

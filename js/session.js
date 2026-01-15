@@ -20,6 +20,7 @@ class Session {
             isSetupValid: false,
             isTimeUp: false,
             isTimerResetNeeded: false,
+            isAnswerSubmitted: false,
             wasHintUsed: false,
             setupPreloadNeeded: true,
             quizPreloadNeeded: false,
@@ -365,7 +366,16 @@ class Session {
                     value: {
                         text: ""
                     }
-                }
+                },
+                node_9: {
+                    element: {
+                        id: "quiz_timeRemainingText",
+                        type: "paragraph",
+                    },
+                    value: {
+                        text: ""
+                    }
+                },
             },
             results: {
                 node_1: {

@@ -4,70 +4,70 @@
             {
                 "question": "What year did Survivalcraft 1.0 release?",
                 "choice": ["2011", "2012", "2013", "2014"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What year did Survivalcraft 2.0 release?",
                 "choice": ["2014", "2015", "2016", "2017"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What was the most recent update, as of 2025?",
                 "choice": ["2.2", "2.3", "2.4", "2.5"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What is the next update version, as of 2025?",
                 "choice": ["2.3", "2.4", "2.5", "2.6"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What nickname does the developer of Survivalcraft go by?",
                 "choice": ["Kairos", "Kaalus", "Cairo", "There are multiple developers"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What popular indie game inspired the creation of Survivalcraft?",
                 "choice": ["Roblox", "Minecraft", "Terraria", "Infiniminer"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Who is the developer of Survivalcraft?",
                 "choice": ["Andrew Spinks", "Robert Topola", "Igor Kalicinski", "Markus Persson"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What is the name of the company that developed and published Survivalcraft?",
                 "choice": ["K5 Games", "Candy Rufus Games", "11-Bit Studios", "Rufus Games"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What website provider does the developer use to post updates and announcements?",
                 "choice": ["Wordpress", "Squarespace", "Wix", "The website is self-hosted"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What online cloud service is integrated into the game?",
                 "choice": ["Google Drive", "Dropbox", "OneDrive", "None of the above"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             }
@@ -76,112 +76,112 @@
             {
                 "question": "What year did Survivalcraft release on Android?",
                 "choice": ["2011", "2012", "2013", "2014"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What year did Survivalcraft release on Amazon?",
                 "choice": ["2010", "2011", "2012", "2013"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What year did Survivalcraft release on Windows Store?",
                 "choice": ["2014", "2015", "2016", "2017"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What date did Survivalcraft 1.0 release?",
                 "choice": ["April 14th, 2011", "November 16th, 2011", "June 9th, 2012", "November 12th, 2012"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What date did Survivalcraft 2.0 release?",
                 "choice": ["November 23rd, 2016", "December 10th, 2016", "February 4th, 2017", "October 14th, 2017"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which player action is NOT in the game?",
                 "choice": ["Jumping", "Flying", "Crouching", "Sprinting"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What is the name of the system used for creating contraptions in the game?",
                 "choice": ["Redstone", "Electrics", "Logics", "There isn't one"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "How many unique gamemodes are there?",
                 "choice": ["4", "5", "6", "7"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "How many different camera view modes are there?",
                 "choice": ["2", "3", "4", "5"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "How many default player skins are there?",
                 "choice": ["4", "8", "12", "16"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which PC control is used to open or close the inventory?",
                 "choice": ["E", "F", "G", "Y"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which PC control is used to drop items?",
                 "choice": ["Q", "V", "Ctrl + Q", "Z"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which PC control is used to change the time of day?",
                 "choice": ["O", "T", "C", "B"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which PC control is used to summon lightning?",
                 "choice": ["S", "L", "Y", "U"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which PC control is used to change the camera mode?",
                 "choice": ["C", "V", "G", "O"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which PC control is used to take screenshots?",
                 "choice": ["P", "F12", "S", "F8"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -190,210 +190,210 @@
             {
                 "question": "What platform was Survivalcraft first released on?",
                 "choice": ["Windows Phone", "Google Play", "iOS", "Amazon"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"
             },
             {
                 "question": "When did Survivalcraft release on Android?",
                 "choice": ["December 9th, 2011", "March 15th, 2012", "September 17th, 2012", "October 14th, 2012"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "When did Survivalcraft release on Amazon?",
                 "choice": ["July 26th, 2011", "November 6th, 2012", "December 7th, 2012", "March 18th, 2013"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "When did Survivalcraft 2 release on Windows Store?",
                 "choice": ["November 24th, 2016", "December 14th, 2016", "December 21st, 2016", "January 5th, 2017"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "What is the name of the official Survivalcraft Discord server?",
                 "choice": ["Survivalcraft Community Server", "Survivalcraft Content Community", "Survivalcraft Official", "Survivalcraft Building Community"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following land animals are NOT in the game?",
                 "choice": ["Water Buffalo", "Rhinocerous", "Gnu Antelope", "Cassowary"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following land animals are NOT in the game?",
                 "choice": ["Jaguar", "Tiger", "Leopard", "Cheetah"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following land animals are NOT in the game?",
                 "choice": ["Albino Bull", "Grizzly Bear", "Albino Tiger", "Artic Fox"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following land animals are NOT in the game?",
                 "choice": ["Hippopotamus", "Giraffe", "Wildboar", "Reindeer"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following ocean animals are NOT in the game?",
                 "choice": ["Starfish", "Blue Whale", "Great White Shark", "Beluga"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following ocean animals are NOT in the game?",
                 "choice": ["Sea Urchin", "Jellyfish", "Tiger Shark", "Freshwater Bass"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following ocean animals are NOT in the game?",
                 "choice": ["Yellow Ray", "Killer Whale", "Barracuda", "Dolphin"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following ocean animals are NOT in the game?",
                 "choice": ["Piranha", "Seabass", "Leopard Shark", "Brown Ray"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following birds are NOT in the game?",
                 "choice": ["Pigeon", "Robin", "Sparrow", "Raven"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following birds are NOT in the game?",
                 "choice": ["Duck", "Seagull", "Dove", "Pigeon"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which of the following supernatural creatures are in the game?",
                 "choice": ["Sasquatch", "Werewolf", "Dwarf", "Gremlin"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "What two types of illnesses are in the game?",
                 "choice": ["Malaria and Flu", "Flu and Food Poisoning", "Polio and Food Poisoning", "Tuberculosis and Flu"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "What are the names of all default male skins?",
                 "choice": ["Thomas, Walter, Arthur, Zachary", "Basil, Zachary, Walter, Geoffrey", "Geoffrey, Robert, Basil, Zachary", "Walter, Jackson, Basil, Henry"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "What are the names of all default female skins?",
                 "choice": ["Ada, Darcy, Mabel, Shirley", "Mabel, Chloe, Doris, Sophie", "Doris, Shirley, Mabel, Ada", "Mabel, Eva, Doris, Shirley"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "What worlds on the Community Content were published by the developer of the game?",
                 "choice": ["Far Future", "Cabin in the Woods", "Multiplayer Preview", "None of the above"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "What furniture packs on the Community Content were published by the developer of the game?",
                 "choice": ["Modern Kitchen", "Amazing House Pack", "Cabin Furniture", "Both A and C"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which PC control is used to toggle fog?",
                 "choice": ["J", "U", "K", "F"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which PC control is used to toggle precipitation?",
                 "choice": ["L", "P", "K", "J"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which PC control is used to edit a block or item?",
                 "choice": ["X", "H", "G", "E"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which PC control is used to mount creatures or boats?",
                 "choice": ["V", "G", "R", "M"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which PC control is used to open or close the character panel?",
                 "choice": ["N", "C", "K", "X"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which PC control is used to pause the game?",
                 "choice": ["Tab", "Esc", "P", "There is no pause control"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which PC control is used to toggle fly mode?",
                 "choice": ["V", "F", "Press space twice", "Both B and C"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which PC control is used to pick the selected block?",
                 "choice": ["Ctrl + P", "Mouse Wheel", "Tab", "Right mouse click"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which PC control is used to split an item stack?",
                 "choice": ["Ctrl + S", "Hold down right mouse button", "Shift + S", "Left click twice"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             }
@@ -402,133 +402,133 @@
             {
                 "question": "What online service is the official Survivalcraft forum hosted with?",
                 "choice": ["Reddit", "Tapatalk", "4Chan", "Lefora"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What online service is the official Survivalcraft Wiki hosted on?",
                 "choice": ["Wikia", "Fandom", "SkyWiki", "MediaWiki"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "When did Survivalcraft release on iOS?",
                 "choice": ["February 2012", "April 2013", "October 2013", "August 2014"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "When did Survivalcraft 2 release on Steam?",
                 "choice": ["December 2016,", "October 2017", "January 2025", "None of the above"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "What date did Survivalcraft Day One release?",
                 "choice": ["October 26th, 2016", "January 9th, 2017", "May 12th, 2018", "December 10th, 2019"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "What was the last version to be considered Alpha?",
                 "choice": ["1.15", "1.20", "1.24", "1.29"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "What was the first version to be considered a full release?",
                 "choice": ["1.21", "1.25", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"
             },
             {
                 "question": "How long is the trial period for Survivalcraft Day One?",
                 "choice": ["10 minutes", "15 minutes", "20 minutes", "25 minutes"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "What programming language is Survivalcraft written in?",
                 "choice": ["Java", "C++", "C#", "Python"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "What game engine does Survivalcraft utilize?",
                 "choice": ["Unity", "Engine Power", "Unreal Engine", "Godot"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What is the highest visibility range allowed for mobile devices?",
                 "choice": ["224 blocks", "320 blocks", "448 blocks", "532 blocks"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What is the highest visibility range allowed on PC?",
                 "choice": ["320 blocks", "448 blocks", "532 blocks", "624 blocks"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
-                "question": "What is the highest blocks texture resolution supported by the game?",
+                "question": "What is the highest blocks texture rehint supported by the game?",
                 "choice": ["64x64", "256x256", "512x512", "1024x1024"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice" 
             },
             {
-                "question": "What is the highest skin resolution supported by the game?",
+                "question": "What is the highest skin rehint supported by the game?",
                 "choice": ["32x32", "64x64", "256x256", "512x512"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which platform tends to receive new updates first?",
                 "choice": ["Microsoft Store", "Google Play", "iOS", "Amazon"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What is unique about worlds in adventure mode?",
                 "choice": ["Player combat is always disabled", "Blocks cannot be broken without the correct tool", "Survival mechanics like temperature and hunger are disabled", "Player respawn is not allowed"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "How do you delete a blocks texture?",
                 "choice": ["Content > Private > Texture Pack Name > Delete", "Play > World Name > ... > Options > ... > Texture Pack Name > Delete", "Content > Manage > Select Skin > Delete", "None of the above"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "How do you rate worlds downloaded from the Community Content?",
                 "choice": ["Play > World Name > ... > Rate", "Pause Menu > ... > Rate", "Content > Community Content > World Name > ... > Rate", "You cannot rate worlds"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             },
             {
                 "question": "How do you report worlds downloaded from the Community Content?",
                 "choice": ["Play > World Name > ... > Report ", "Content > Community Content > World Name > ... > Report", "Pause Menu > ... > Rate > Report", "You cannot report worlds"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             }
@@ -537,112 +537,112 @@
             {
                 "question": "Which report category is NOT available?",
                 "choice": ["Cruelty", "Sexism", "Plagarism", "Dating"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which world on the Community Content has the most downloads?",
                 "choice": ["HugeCity v1.0", "The Arena", "Huge Cruise Ship", "Electricity Unleashed"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which blocks texture on the Community Content has the most downloads?",
                 "choice": ["Minecraft Realistic Texture Pack", "AlexHunter MagicHills HD 2.14", "The Real Photo Realism 2.1", "AlterDefault 2.1 Drake512"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which character skin on the Community Content has the most downloads?",
                 "choice": ["Assasin", "Iron Man", "Barbie", "Minecraft Steve 2020"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which furniture pack on the Community Content has the most downloads?",
                 "choice": ["Cabin Furniture", "Amazing House Pack 2.0", "Simple Foods 3.0", "Modern Kitchen"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Player data is stored in what file format?",
                 "choice": [".xml", ".json", ".dat", ".zip"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Furniture block data is stored in what file format?",
                 "choice": [".dat", ".xml", ".json", ".txt"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Region, or chunk data, is stored in what file format?",
                 "choice": [".bak", ".dat", ".xml", ".json"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Adventure world snapshots are saved in what file format?",
                 "choice": [".scworld", ".zip", ".dat", ".snapshot"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Around how many unique block icons are in the game, as of update 2.4?",
                 "choice": ["800", "1200", "1600", "2000"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Worlds are stored within what file container?",
                 "choice": [".zip", ".wrld", ".rar", ".scworld"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Blocks textures are stored within what file container?",
                 "choice": [".rar", ".scbtex", ".btex", ".zip"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Character skins are stored within what file container?",
                 "choice": [".zip", ".rar", ".scskin", ".cskn"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Furniture packs are stored within what file container?",
                 "choice": [".zip", ".scfpack", ".rar", ".frpk"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What is the oldest playable world version on the Community Content?",
                 "choice": ["1.22", "1.24", "1.26", "1.28"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What is the newest playable world version on the Community Content?",
                 "choice": ["1.30", "2.3", "2.4", "3.5"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             }
@@ -651,49 +651,49 @@
             {
                 "question": "How many unique menu music tracks are there?",
                 "choice": ["4", "5", "6", "7"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "How many unique texture squares are used, as of update 2.4?",
                 "choice": ["83", "162", "199", "234"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which Survivalcraft version was never released on iOS?",
                 "choice": ["1.19", "1.20", "1.21", "1.22"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What does Disabled mode for Community Content do?",
                 "choice": ["Shows only manually whitelisted listings", "Disables the Community Content menu entirely", "Hides all content listings except your own", "Disables all content search filters"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What does Strict mode for Community Content do?",
                 "choice": ["Shows only moderated listings", "Hides all metadata for each listing, except content type and name", "Shows only manually whitelisted listings", "Hides all other content forms except worlds"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What does Normal mode for Community Content do?",
                 "choice": ["Shows only manually whitelisted listings", "Shows all content listings, except recently added ones", "Places the listings with the most downloads at the top", "Shows only moderated listings"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice" 
             },
             {
                 "question": "What does Show All mode for Community Content do?",
                 "choice": ["Shows all worlds, and only manually whitelisted listings of other content types", "Shows all content listings, except flagged ones", "Shows all worlds, and only moderated listings of other content types", "Shows all content listings"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice" 
             }
@@ -704,7 +704,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -713,7 +713,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -722,7 +722,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"
             }
@@ -731,7 +731,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -740,7 +740,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -749,7 +749,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -760,7 +760,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -769,7 +769,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -778,7 +778,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"
             }
@@ -787,7 +787,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -796,7 +796,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -805,7 +805,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -816,70 +816,70 @@
             {
                 "question": "What was the most recent update?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"
             },
             {
                 "question": "What is the next update version?",
                 "choice": ["2.4", "2.5", "2.6", "3.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which update added proper PC controls?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which update adding proper player crouching?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which update added splitscreen multiplayer?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which update increased the terrain height to 256 blocks?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"
             },
             {
                 "question": "Which update changed the UI style to use rounded shapes?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice" 
             },
             {
                 "question": "When were pistons added?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which update added changing seasons?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which update added furniture?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -888,133 +888,133 @@
             {
                 "question": "Which update enabled werewolves to interact with blocks, such as opening doors or pressing buttons?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added food rot?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which update added colored wires?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added dispensers?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added Poplar trees?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When was a search bar added to Community Content?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added Survival mode?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added copper tools and armor?",
                 "choice": ["1.28", "1.29", "2.0", "2.1"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added explosion ground shake?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the Bass instrument for the sound generator?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added layered fog?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added dirt slabs and stairs?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When were pigeons added?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the hammer tool?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the stone axe?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the wooden club?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the stone club?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When were cairns added?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When were default player names added?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             }
@@ -1023,182 +1023,182 @@
             {
                 "question": "Which were electrics first introduced? ",
                 "choice": ["Alpha 1.13", "Alpha 1.15", "Alpha 1.17", "Alpha 1.19"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added river generation?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which update improved world file compression?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added sickness and flu?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added multicolored LEDs?",
                 "choice": ["1.29", "2.0", "2.1", "2.2"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added Mimosa trees?",
                 "choice": ["1.29", "2.0", "2.1", "2.2"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When were Tall Spruce trees added?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added fireworks?",
                 "choice": ["1.26", "1.27", "1.28", "1.29"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the Drum instrument for the sound generator?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added custom island terrain generation?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added great white sharks?",
                 "choice": ["2.0", "2.1", "2.2", "2.3"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the North Star to the night sky?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added variable field of view to the settings menu?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added iron signs and ladders?",
                 "choice": ["1.26", "1.27", "1.28", "1.29"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the adjustable delay gate?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When was the fixed camera mode added?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added clothes dyeing?",
                 "choice": ["1.24", "1.25", "1.26", "1.27"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added incendiary kegs?",
                 "choice": ["1.29", "2.0", "2.1", "2.2"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added male and female player distinctions?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When were muskets added?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added the player leveling system?",
                 "choice": ["1.29", "2.0", "2.1", "2.2"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added moose?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added pickables prioritization?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added bison?",
                 "choice": ["1.28", "1.29", "2.0", "2.1"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When was the campfire block added?",
                 "choice": ["1.26", "1.27", "1.28", "1.29"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When were jaguars and leopards added?",
                 "choice": ["1.29", "2.0", "2.1", "2.2"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             }
@@ -1207,175 +1207,175 @@
             {
                 "question": "Which update added NAND and NOR logic gates?",
                 "choice": ["1.28", "1.29", "2.0", "2.1"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added custom palette colors?",
                 "choice": ["1.29", "2.0", "2.1", "2.2"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice" 
             },
             {
                 "question": "Which update added Adventure mode?",
                 "choice": ["Alpha 1.7", "Alpha 1.10", "Alpha 1.13", "Alpha 1.16"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added integrated Dropbox support?",
                 "choice": ["Alpha 1.5", "Alpha 1.7", "Alpha 1.9", "Alpha 1.11"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update removed defunct transfer.sh support?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added wildboars?",
                 "choice": ["Alpha 1.3", "Alpha 1.5", "Alpha 1.7", "Alpha 1.9"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added Community Content?",
                 "choice": ["Alpha 1.19", "Alpha 1.20", "1.21", "1.22"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update improved the Community Content server, i.e. making it self-hosted instead of cloud-based?",
                 "choice": ["2.2", "2.3", "2.4", "None of the above"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added precipitation?",
                 "choice": ["Alpha 1.15", "Alpha 1.16", "Alpha 1.17", "Alpha 1.18"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update made lightbulbs paintable?",
                 "choice": ["1.28", "1.29", "2.0", "2.1"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added custom player death messages?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added semiconductor block?",
                 "choice": ["1.28", "1.29", "2.0", "2.1"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added dimmable lightbulbs?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update reorganized the creative inventory into seperate block categories?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added analog electric components?",
                 "choice": ["Alpha 1.19", "1.21", "1.23", "1.25"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added bulls?",
                 "choice": ["Alpha 1.6", "Alpha 1.8", "Alpha 1.10", "Alpha 1.12"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When were explosives first added?",
                 "choice": ["Alpha 1.9", "Alpha 1.11", "Alpha 1.13", "Alpha 1.15"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added polar bears?",
                 "choice": ["Alpha 1.12", "Alpha 1.14", "Alpha 1.16", "Alpha 1.18"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added horizontal creative flight to the settings menu?",
                 "choice": ["1.28", "1.29", "2.0", "2.1"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added music to the main menu?",
                 "choice": ["1.29", "2.0", "2.1", "2.2"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added digging cracks when breaking blocks?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "When was wire-through-cobblestone added?",
                 "choice": ["1.29", "2.0", "2.1", "2.2"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update made slabs and stairs paintable?",
                 "choice": ["1.27", "1.28", "1.29", "2.0"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update added beluga whales?",
                 "choice": ["1.25", "1.26", "1.27", "1.28"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b",
                 "type": "multipleChoice"   
             },
             {
                 "question": "Which update changed motion detector functionality, allowing it to detect piston, projectile, and pickable movement?",
                 "choice": ["2.1", "2.2", "2.3", "2.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c",
                 "type": "multipleChoice"   
             }
@@ -1384,121 +1384,121 @@
             {
                 "question": "Which update added marble block?",
                 "choice": ["Alpha 1.1", "Alpha 1.3", "Alpha 1.5", "Alpha 1.7"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b"  
             },
             {
                 "question": "When were Christmas trees first added?",
                 "choice": ["Alpha 1.1", "Alpha 1.2", "Alpha 1.3", "Alpha 1.4"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b"  
             },
             {
                 "question": "Which update added support for 32-Bit block data?",
                 "choice": ["1.28", "1.29", "2.0", "2.1"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b"  
             },
             {
                 "question": "Which update added XOR logic gates?",
                 "choice": ["Alpha 1.19", "1.21", "1.23", "1.25"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b"  
             },
             {
                 "question": "Which update added the 'Despair' button?",
                 "choice": ["Alpha 1.1", "Alpha 1.3", "Alpha 1.5", "Alpha 1.7"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a"  
             },
             {
                 "question": "Which update added the Recipaedia?",
                 "choice": ["Alpha 1.1", "Alpha 1.3", "Alpha 1.5", "Alpha 1.7"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a"  
             },
             {
                 "question": "Which update added furnaces?",
                 "choice": ["Alpha 1.1", "Alpha 1.3", "Alpha 1.5", "Alpha 1.7"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b"  
             },
             {
                 "question": "Which update added brick blocks?",
                 "choice": ["Alpha 1.2", "Alpha 1.3", "Alpha 1.4", "Alpha 1.5"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c"  
             },
             {
                 "question": "Which update added Cruel mode?",
                 "choice": ["Alpha 1.3", "Alpha 1.5", "Alpha 1.7", "Alpha 1.9"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c"  
             },
             {
                 "question": "Which update added Creative mode?",
                 "choice": ["Alpha 1.5", "Alpha 1.6", "Alpha 1.7", "Alpha 1.8"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d"  
             },
             {
                 "question": "Which update added wooden signs?",
                 "choice": ["Alpha 1.8", "Alpha 1.10", "Alpha 1.12", "Alpha 1.14"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b"  
             },
             {
                 "question": "Which update allowed for renaming of existing worlds?",
                 "choice": ["Alpha 1.6", "Alpha 1.7", "Alpha 1.8", "Alpha 1.9"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c"  
             },
             {
                 "question": "Which update allowed for flat terrain generation?",
                 "choice": ["Alpha 1.9", "Alpha 1.10", "Alpha 1.11", "Alpha 1.12"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d"  
             },
             {
                 "question": "Which update added egg laying?",
                 "choice": ["Alpha 1.11", "Alpha 1.13", "Alpha 1.15", "Alpha 1.17"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b"  
             },
             {
                 "question": "Which update added a single block?",
                 "choice": ["Alpha 1.13", "Alpha 1.14", "Alpha 1.15", "Alpha 1.16"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c"  
             },
             {
                 "question": "Which update added cactus?",
                 "choice": ["Alpha 1.11", "Alpha 1.13", "Alpha 1.15", "Alpha 1.17"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "c"  
             },
             {
                 "question": "Which update had zero content additions?",
                 "choice": ["Alpha 1.3", "Alpha 1.6", "Alpha 1.9", "Alpha 1.11"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "b"  
             },
             {
                 "question": "Which update added the Engine Power logo?",
                 "choice": ["Alpha 1.9", "Alpha 1.15", "1.21", "1.27"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d"  
             },
             {
                 "question": "Which update added support for left-handed controls?",
                 "choice": ["1.22", "1.24", "1.26", "1.28"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d"  
             },
             {
                 "question": "Which updated added the 'surprise' animal?",
                 "choice": ["Alpha 1.15", "Alpha 1.17", "Alpha 1.19", "1.21"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "d"  
             }
         ],
@@ -1506,7 +1506,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -1517,7 +1517,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -1526,7 +1526,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -1535,7 +1535,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice"
             }
@@ -1544,7 +1544,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -1553,7 +1553,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
@@ -1562,7 +1562,7 @@
             {
                 "question": "This is a question.",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
-                "solution": "undefined",
+                "hint": "undefined",
                 "answer": "a",
                 "type": "multipleChoice" 
             }
