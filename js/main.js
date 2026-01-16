@@ -8,7 +8,7 @@ const questionCount = {
     2: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
     3: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0},
     4: {1: 10, 2: 19, 3: 26, 4: 25, 5: 20, 6: 0},
-    5: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+    5: {1: 15, 2: 34, 3: 0, 4: 0, 5: 0, 6: 0}
 };
 
 // Probability sets
@@ -233,9 +233,43 @@ function parseQuizData() {
                     variableChoiceIndex = choices.indexOf(choices[index]);
                     console.log("Variable Choice Found: ", variableChoiceIndex);
 
-                    // Slice variable answer values (NOTE: HARDCODED INDEXES)
-                    answer_1 = choices[index].charAt(5);
-                    answer_2 = choices[index].charAt(11); 
+                    //NOTE: HARDCODED INDEXES
+                    // Slice variable answer values
+                    answer_1 = (choices[index].charAt(5));
+                    answer_2 = (choices[index].charAt(11));
+
+                    // Convert answer values to numeric index
+                    switch(answer_1) {
+                        case "A": answer_1 = 0; break;
+                        case "B": answer_1 = 1; break;
+                        case "C": answer_1 = 2; break;
+                        case "D": answer_1 = 3; break;
+                    }
+                    switch(answer_2) {
+                        case "A": answer_2 = 0; break;
+                        case "B": answer_2 = 1; break;
+                        case "C": answer_2 = 2; break;
+                        case "D": answer_2 = 3; break;
+                    }
+
+                    // Get randomized choice index
+                    let index_1 = choiceOrder.indexOf(answer_1);
+                    let index_2 = choiceOrder.indexOf(answer_2);
+
+                    // Convert numeric index back to alphanumeric values
+                    switch(index_1) {
+                        case 0: answer_1 = "A"; break;
+                        case 1: answer_1 = "B"; break;
+                        case 2: answer_1 = "C"; break;
+                        case 3: answer_1 = "D"; break;
+                    }
+                    switch(index_2) {
+                        case 0: answer_1 = "A"; break;
+                        case 1: answer_1 = "B"; break;
+                        case 2: answer_1 = "C"; break;
+                        case 3: answer_1 = "D"; break;
+                    }
+                    sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = "Both " + answer_1 + "and " + answer_2;
                     break;
                 } else {
                     sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"][sessionData.quizIndexes.choiceOrder[choiceIndex]];

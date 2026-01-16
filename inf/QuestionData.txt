@@ -1,9 +1,9 @@
 # TOTALS
-1. General Knowledge: 10 + 16 + 30 + 19 + 16 + 7 = 98 questions
-2. Game Mechanics: 0 + 7 + 15 + 3 + 0 + 1...... = 26 questions
-3. Crafting Recipes: 5 + 13 + 8 + 3 + 2 + 1.... = 32 questions
-4. Updates History: 10 + 19 + 26 + 25 + 14 + 6 = 100 questions
-5. Electrics: 14 + 23 + 29 + 89 + 32 + 0...... = 187 questions
+1. General Knowledge: 10 + 16 + 30 + 19 + 16 + 7.. = 98 questions
+2. Game Mechanics: 00 + 07 + 15 + 03 + 00 + 01.... = 26 questions
+3. Crafting Recipes: 05 + 13 + 08 + 03 + 02 + 01.. = 32 questions
+4. Updates History: 10 + 19 + 26 + 25 + 14 + 06... = 100 questions
+5. Electrics: 15 + 34 + 00 + 00 + 00 + 00......... = 49 questions
 
 # GENERAL KNOWLEDGE
 ## Very Easy (10)
@@ -637,7 +637,7 @@ Which update allowed for renaming of existing worlds?
 - Alpha 1.6, Alpha 1.7, Alpha 1.8, Alpha 1.9 (C)
 ___________________________________________________________________________________________________________________________
 # ELECTRICS
-## Very Easy ()
+## Very Easy (15)
 How many total states does a switch have?
 - None, One, Two, Four (C)
 How many total states does a button have?
@@ -660,37 +660,37 @@ What does the Real Time Clock do?
 - It outputs the current time based on the time of day and year
 - It outputs random values at consistent intervals, with each input determining the update speed (A)
 What surfaces can wires be placed on?
-- Only on walls.
-- Walls and floors.
-- Only on floors.
-- Walls, ceilings, and floors. (D)
+- Only on walls
+- Walls and floors
+- Only on floors
+- Walls, ceilings, and floors (D)
 What surfaces can lightbulbs be placed on?
-- Only on walls.
-- Walls and floors.
-- Only on floors.
-- Walls, ceilings, and floors. (A)
+- Only on walls
+- Walls and floors
+- Only on floors
+- Walls, ceilings, and floors (A)
 What surfaces can 7-segment displays be placed on?
-- Only on walls.
-- Walls and floors.
-- Only on floors.
-- Walls, ceilings, and floors. (A)
+- Only on walls
+- Walls and floors
+- Only on floors
+- Walls, ceilings, and floors (A)
 What surfaces can multicolored LEDs be placed on?
-- Only on walls.
-- Walls and floors.
-- Only on floors.
-- Walls, ceilings, and floors. (D)
+- Only on walls
+- Walls and floors
+- Only on floors
+- Walls, ceilings, and floors (D)
 What surfaces can 4-LEDs be placed on?
-- Only on walls.
-- Walls and floors.
-- Only on floors.
-- Walls, ceilings, and floors. (D)
+- Only on walls
+- Walls and floors
+- Only on floors
+- Walls, ceilings, and floors (D)
 What surfaces can target blocks be placed on?
-- Only on walls.
-- Walls and floors.
-- Only on floors.
-- Walls, ceilings, and floors. (A)
+- Only on walls
+- Walls and floors
+- Only on floors
+- Walls, ceilings, and floors (A)
 
-## Easy ()
+## Easy (34)
 What speed does the electricty simulation run at?
 - 12.5 Hertz, 25 Hertz, 50 Hertz, 100 Hertz (D)
 An electric button provides a pulse duration for how long?
@@ -1171,22 +1171,23 @@ Using the logic rules for the NOR gate: if input one is 0011 and input two is 10
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
 Using the logic rules for the NOR gate: if input one is 1111 and input two is 0101 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
+
 Using the logic rules for the NAND gate: if input one is 0101 and input two is 0000 (big-endian), what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
+- 0.2 volts, 0.9 volts 1.5 volts, 1.3 volts (C)
 Using the logic rules for the NAND gate: if input one is 0100 and input two is 1100 (big-endian), what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
+- 1.1 volts, 0.5 volts 0.1 volts, 0.8 volts (A)
 Using the logic rules for the NAND gate: if input one is 1001 and input two is 0101 (big-endian), what will be the output?
 - 0.3 volts, 1.4 volts 1.0 volts, 0.7 volts (B)
 Using the logic rules for the NAND gate: if input one is 1100 and input two is 0110 (big-endian), what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
+- 0.9 volts, 1.2 volts 1.1 volts, 0.6 volts (C)
 Using the logic rules for the NAND gate: if input one is 0010 and input two is 1011 (big-endian), what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
+- 1.5 volts, 1.0 volts 0.3 volts, 1.2 volts (A)
 Using the logic rules for the NAND gate: if input one is 1000 and input two is 1011 (big-endian), what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (D)
+- 0.4 volts, 1.2 volts 0.6 volts, 0.7 volts (D)
 Using the logic rules for the NAND gate: if input one is 0000 and input two is 1110 (big-endian), what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
+- 0.3 volts, 1.1 volts 1.5 volts, 0.8 volts (C)
 Using the logic rules for the NAND gate: if input one is 1100 and input two is 1110 (big-endian), what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
+- 0.6 volts, 0.3 volts 0.9 volts, 1.4 volts (B)
 
 ## Extreme (0)
 -
