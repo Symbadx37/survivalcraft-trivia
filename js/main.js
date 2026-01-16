@@ -224,10 +224,25 @@ function parseQuizData() {
     // Set node text values
     while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
         if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["group"] == "answerGroup") {
-            sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"][sessionData.quizIndexes.choiceOrder[choiceIndex]];
+            // Check for variable choice strings
+            let variableChoiceIndex, answer_1, answer_2;
+            const choices = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"]
+            const choiceLength = Object.values(choices).length
+            for (let index = 0; index < choiceLength; index++) {
+                if (/^\b(?:both|Both)\b\s[a-dA-D]\s\b(?:and|And)\b\s[a-dA-D]$/.test(choices[index])) {
+                    variableChoiceIndex = choices.indexOf(choices[index]);
+                    console.log("Variable Choice Found: ", variableChoiceIndex);
+
+                    // Slice variable answer values (NOTE: HARDCODED INDEXES)
+                    answer_1 = choices[index].charAt(5);
+                    answer_2 = choices[index].charAt(11); 
+                    break;
+                } else {
+                    sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"][sessionData.quizIndexes.choiceOrder[choiceIndex]];
+                }
+            }
             updateSession("load", "quiz", "load_partial", [lookupIndex]);
             choiceIndex++;
-        
         }
         else if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_questionText") {
             sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["question"]; 

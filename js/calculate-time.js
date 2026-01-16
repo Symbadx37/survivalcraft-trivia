@@ -57,12 +57,11 @@ function loadTimer(actionID) {
                     else {
                         sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = "0" + currentMinute.toString() + ":" + currentSecond.toString();
                     }
-                    updateSession("load", "quiz", "load_partial", [lookupIndex]);
-                    break;
                 } else {
                     sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = "Time up. Awarded points will be reduced.";
-                    updateSession("load", "quiz", "load_partial", [lookupIndex]);
                 }
+                updateSession("load", "quiz", "load_partial", [lookupIndex]);
+                break;
             }
             lookupIndex++;
         }
