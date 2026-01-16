@@ -131,12 +131,13 @@ function loadDocument(pageID, actionID, nodeArray) {
 
     function loadStyle() {
         let styleLength = Object.values(sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"]).length;
-        let styleAttribute = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"][styleIndex];
-        let styleValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["values"][styleIndex];
         for (let styleIndex = 0; styleIndex < styleLength; styleIndex++) {
+            let styleAttribute = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["attributes"][styleIndex];
+            let styleValue = sessionData["pageElements"][pageID]["node_" + nodeIndex]["style"]["values"][styleIndex];
             switch(styleAttribute) {
                 case "width": $("#" + elementID).width(styleValue); break;
                 case "height": $("#" + elementID).height(styleValue); break;
+                case "color": $("#" + elementID).css("color", styleValue); break;
                 // ... (add more statements for adjustable style attributes)
             }
         }

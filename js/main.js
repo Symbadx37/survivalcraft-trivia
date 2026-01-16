@@ -242,7 +242,7 @@ function gradeQuiz(id) {
     sessionData.booleanFlags.isAnswerSubmitted = true;
     updateSession("save");
 
-    clearTimer();
+    loadTimer("stop");
     lookupAnswer();
     updateButtonStates();
 

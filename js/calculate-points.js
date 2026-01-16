@@ -14,23 +14,23 @@ function calculatePoints() {
     // Determine active time threshold
     function calculateTimeThreshold() {
         let thresholdLevel, thresholdFactor;
-        let thresholdIndex = (sessionData.quizParameters.currentMinute * 60) + sessionData.quizParameters.currentSecond;
+        let thresholdIndex = sessionData.quizParameters.secondsRemaining;
         switch(sessionData.quizParameters.quizDuration) {
             case 1: thresholdFactor = 3; break;
             case 2: thresholdFactor = 2; break;
             case 3: thresholdFactor = 1; break;
         }
-        if (thresholdIndex <= (60 * thresholdFactor) && thresholdIndex > (50 * thresholdFactor)) {
+        if (thresholdIndex <= (30 * thresholdFactor) && thresholdIndex > (25 * thresholdFactor)) {
             thresholdLevel = 0;
-        } else if (thresholdIndex <= (50 * thresholdFactor) && thresholdIndex > (40 * thresholdFactor)) {
+        } else if (thresholdIndex <= (25 * thresholdFactor) && thresholdIndex > (20 * thresholdFactor)) {
             thresholdLevel = 1;
-        } else if (thresholdIndex <= (40 * thresholdFactor) && thresholdIndex > (30 * thresholdFactor)) {
+        } else if (thresholdIndex <= (20 * thresholdFactor) && thresholdIndex > (15 * thresholdFactor)) {
             thresholdLevel = 2;
-        } else if (thresholdIndex <= (30 * thresholdFactor) && thresholdIndex > (20 * thresholdFactor)) {
+        } else if (thresholdIndex <= (15 * thresholdFactor) && thresholdIndex > (10 * thresholdFactor)) {
             thresholdLevel = 3;
-        } else if (thresholdIndex <= (20 * thresholdFactor) && thresholdIndex > (10 * thresholdFactor)) {
+        } else if (thresholdIndex <= (10 * thresholdFactor) && thresholdIndex > (5 * thresholdFactor)) {
             thresholdLevel = 4;
-        } else if (thresholdIndex <= (10 * thresholdFactor) && thresholdIndex > 0) {
+        } else if (thresholdIndex <= (5 * thresholdFactor) && thresholdIndex > 0) {
             thresholdLevel = 5;
         }
         return thresholdLevel;

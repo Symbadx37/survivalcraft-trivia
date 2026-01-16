@@ -1,1 +1,1 @@
-Fix issue with point calculation
+- Add support for all question answer choices that use "Both X and X" to account for choice randomization.

@@ -438,7 +438,7 @@
                 "question": "What was the last version to be considered Alpha?",
                 "choice": ["1.15", "1.20", "1.24", "1.29"],
                 "hint": "undefined",
-                "answer": "c",
+                "answer": "b",
                 "type": "multipleChoice"
             },
             {
@@ -484,14 +484,14 @@
                 "type": "multipleChoice" 
             },
             {
-                "question": "What is the highest blocks texture rehint supported by the game?",
+                "question": "What is the highest blocks texture resolution supported by the game?",
                 "choice": ["64x64", "256x256", "512x512", "1024x1024"],
                 "hint": "undefined",
                 "answer": "d",
                 "type": "multipleChoice" 
             },
             {
-                "question": "What is the highest skin rehint supported by the game?",
+                "question": "What is the highest skin resolution supported by the game?",
                 "choice": ["32x32", "64x64", "256x256", "512x512"],
                 "hint": "undefined",
                 "answer": "c",

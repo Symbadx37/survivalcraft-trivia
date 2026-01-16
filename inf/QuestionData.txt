@@ -1140,7 +1140,7 @@ Supplying a binary value of 1001 (big-endian) to a 4-LED display will output wha
 - Unlit, Lit, Unlit, Lit
 - Unlit, Unlit, Lit, Unlit (A)
 Using the logic rules for the XOR gate: if input one is 1000 and input two is 1110 (big-endian), what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
+- 0.9 volts, 1.4 volts 0.6 volts, 1.1 volts (C)
 Using the logic rules for the XOR gate: if input one is 0110 and input two is 1111 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the XOR gate: if input one is 0111 and input two is 1001 (big-endian), what will be the output?
@@ -1176,7 +1176,7 @@ Using the logic rules for the NAND gate: if input one is 0101 and input two is 0
 Using the logic rules for the NAND gate: if input one is 0100 and input two is 1100 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (A)
 Using the logic rules for the NAND gate: if input one is 1001 and input two is 0101 (big-endian), what will be the output?
-- 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (B)
+- 0.3 volts, 1.4 volts 1.0 volts, 0.7 volts (B)
 Using the logic rules for the NAND gate: if input one is 1100 and input two is 0110 (big-endian), what will be the output?
 - 0.0 volts, 0.0 volts 0.0 volts, 0.0 volts (C)
 Using the logic rules for the NAND gate: if input one is 0010 and input two is 1011 (big-endian), what will be the output?

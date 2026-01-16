@@ -1,80 +1,78 @@
 let timerObject;
 function loadTimer(actionID) {
-    switch(actionID) {
-        case "set": 
-            if (!sessionData.booleanFlags.isAnswerSubmitted) {
-                displayTimer(); setTimer(); createTimer(); 
-            } break;
-        case "reset": clearTimer(); setTimer(); displayTimer(); createTimer(); break;
+    if (sessionData.quizParameters.quizDuration !== 4) {
+        switch(actionID) {
+            case "set": 
+                if (!sessionData.booleanFlags.isAnswerSubmitted) {
+                    displayTimer(); setTimer(); createTimer(); 
+                } break;
+            case "reset": clearTimer(); setTimer(); displayTimer(); createTimer(); break;
+            case "stop": clearTimer(); break;
+        }
     }
 
     function setTimer() {
         if (typeof sessionData.booleanFlags.hasTimer == "undefined" || actionID == "reset") {
             switch(sessionData.quizParameters.quizDuration) {
                 case 1:
-                    sessionData.quizParameters.currentMinute = 3;
-                    sessionData.quizParameters.currentSecond = 0; break;
+                    sessionData.quizParameters.secondsRemaining = 90; break;
                 case 2:
-                    sessionData.quizParameters.currentMinute = 2; 
-                    sessionData.quizParameters.currentSecond = 0; break;
+                    sessionData.quizParameters.secondsRemaining = 60; break;
                 case 3:
-                    sessionData.quizParameters.currentMinute = 1;
-                    sessionData.quizParameters.currentSecond = 0; break;
+                    sessionData.quizParameters.secondsRemaining = 30; break;
                 default:
                     sessionData.booleanFlags.hasTimer = false;
             }
+
+            // Update flags
+            sessionData.quizParameters.isTimeUp = false;
             sessionData.booleanFlags.hasTimer = true;
             updateSession("save");
         }
     }
-}
 
-function updateTimer() {
-    // Clear object when timer reaches zero
-    if (sessionData.quizParameters.currentSecond == 0 && sessionData.quizParameters.currentSecond == 0) {
-        clearTimer();
-        sessionData.quizParameters.isTimeUp = true;
+    function updateTimer() {
+        // Decrement count
+        if (sessionData.quizParameters.secondsRemaining !== 0) {
+            sessionData.quizParameters.secondsRemaining -= 1;
+            displayTimer();
+        } else {
+            sessionData.quizParameters.isTimeUp = true;
+            clearTimer();
+            displayTimer();
+        }
+        updateSession("save");
     }
 
-    // WIP: FIX ISSUE WITH TIMER NOT DECREMENTING AFTER HITTING 0:59
-    // Decrement minute and seconds
-    if (sessionData.quizParameters.currentSecond == 0) {
-        sessionData.quizParameters.currentMinute -= 1;
-        sessionData.quizParameters.currentSecond = 59;
-        displayTimer();
+    function displayTimer() {
+        let lookupIndex = 1;
+        while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
+            if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_timeRemainingText") {
+                if (!sessionData.quizParameters.isTimeUp) {
+                    const currentMinute = Math.floor(sessionData.quizParameters.secondsRemaining / 60);
+                    const currentSecond = sessionData.quizParameters.secondsRemaining % 60;
+                    if (currentSecond < 10) {
+                        sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = "0" + currentMinute.toString() + ":" + "0" + currentSecond.toString();
+                    } 
+                    else {
+                        sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = "0" + currentMinute.toString() + ":" + currentSecond.toString();
+                    }
+                    updateSession("load", "quiz", "load_partial", [lookupIndex]);
+                    break;
+                } else {
+                    sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = "Time up. Awarded points will be reduced.";
+                    updateSession("load", "quiz", "load_partial", [lookupIndex]);
+                }
+            }
+            lookupIndex++;
+        }
     }
-    // Decrement seconds
-    if (sessionData.quizParameters.currentSecond !== 0) {
-        sessionData.quizParameters.currentSecond -= 1;
-        displayTimer();
+
+    function createTimer() {
+        timerObject = setInterval(updateTimer, 1000);
     }
     
-    updateSession("save");
-}
-
-function createTimer() {
-    timerObject = setInterval(updateTimer, 1000);
-}
-
-function clearTimer() {
-    clearInterval(timerObject);
-}
-
-// WIP: ADD CODE TO HIDE TIMER WHEN DURATION IS SET TO NONE
-function displayTimer() {
-    let lookupIndex = 1;
-    while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
-        if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_timeRemainingText") {
-            if (sessionData.quizParameters.currentSecond < 10) {
-                timeString = "0" + sessionData.quizParameters.currentMinute.toString() + ":" + "0" + sessionData.quizParameters.currentSecond.toString();
-            } 
-            else {
-                timeString = "0" + sessionData.quizParameters.currentMinute.toString() + ":" + sessionData.quizParameters.currentSecond.toString();
-            }
-            sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = timeString;
-            updateSession("load", "quiz", "load_partial", [lookupIndex]);
-            break;
-        }
-        lookupIndex++;
+    function clearTimer() {
+        clearInterval(timerObject);
     }
 }

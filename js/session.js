@@ -4,16 +4,15 @@ class Session {
            // ...
         }
         this.quizParameters = {
-            quizTier: "",
-            quizCategory: "",
-            quizLength: "",
-            quizDuration: "",
+            quizTier: 0,
+            quizCategory: 0,
+            quizLength: 0,
+            quizDuration: 0,
             activeQuestion: 1,
-            questionsRight: "",
-            questionsWrong: "",
-            totalPoints: "",
-            currentSecond: "",
-            currentMinute: "",
+            questionsRight: 0,
+            questionsWrong: 0,
+            totalPoints: 0,
+            secondsRemaining: 0,
             activeTierProbability: {},
         }
         this.booleanFlags = {
@@ -27,9 +26,9 @@ class Session {
             resultsPreloadNeeded: false
         }
         this.quizIndexes = {
-            categoryIndex: "",
-            difficultyIndex: "",
-            questionIndex: "",
+            categoryIndex: 0,
+            difficultyIndex: 0,
+            questionIndex: 0,
             choiceOrder: [],
             indexCache: {
                 1: {1: [], 2: [], 3: [], 4: [], 5: [], 6: []},
