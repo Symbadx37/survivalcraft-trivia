@@ -9,8 +9,8 @@ function generateQuestion() {
     updateSession("save");
 
     function getCategoryIndex() {
-        if (sessionData.quizParameters.quizCategory == 5) {
-            var randomCategory = Math.floor((Math.random() * quizCategoryMax) + 1);
+        if (sessionData.quizParameters.quizCategory == 6) {
+            var randomCategory = Math.floor((Math.random() * categoryCount) + 1);
         } else {
             randomCategory = sessionData.quizParameters.quizCategory;
         }

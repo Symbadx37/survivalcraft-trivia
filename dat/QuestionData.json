@@ -702,7 +702,7 @@
     "category_2": {
         "difficulty_1": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -711,7 +711,7 @@
         ],
         "difficulty_2": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -720,7 +720,7 @@
         ],
         "difficulty_3": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -729,7 +729,7 @@
         ],
         "difficulty_4": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -738,7 +738,7 @@
         ],
         "difficulty_5": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -747,7 +747,7 @@
         ],
         "difficulty_6": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -758,7 +758,7 @@
     "category_3": {
         "difficulty_1": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -767,7 +767,7 @@
         ],
         "difficulty_2": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -776,7 +776,7 @@
         ],
         "difficulty_3": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -785,7 +785,7 @@
         ],
         "difficulty_4": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -794,7 +794,7 @@
         ],
         "difficulty_5": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -803,7 +803,7 @@
         ],
         "difficulty_6": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -1504,7 +1504,7 @@
         ],
         "difficulty_6": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -1862,16 +1862,310 @@
         ],
         "difficulty_3": [
             {
-                "question": "This is a question.",
-                "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
+                "question": "How many unique 4-bit values can a memory bank store?",
+                "choice": ["64", "128", "256", "512"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sound generator sounds are there?",
+                "choice": ["287", "324", "396", "439"],
+                "hint": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the Bell instrument produce?",
+                "choice": ["27", "32", "49", "56"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the Organ instrument produce?",
+                "choice": ["25", "37", "44", "53"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the Ping instrument produce?",
+                "choice": ["27", "32", "49", "56"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the String instrument produce?",
+                "choice": ["18", "26", "37", "49"],
+                "hint": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the Trumpet instrument produce?",
+                "choice": ["27", "32", "49", "56"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the Voice instrument produce?",
+                "choice": ["35", "49", "52", "61"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the Piano instrument produce?",
+                "choice": ["38", "49", "52", "65"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the Piano Sustain instrument produce?",
+                "choice": ["27", "32", "49", "56"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the Drum instrument produce?",
+                "choice": ["6", "10", "16", "20"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "How many unique sounds can the Bass instrument produce?",
+                "choice": ["49", "56", "78", "83"],
                 "hint": "undefined",
                 "answer": "a",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What does the clock input on the SR latch do?",
+                "choice": ["Disables the latch from operating when supplied a high signal", "Modifies the latch behavior so the S and R inputs will only update the latch state when supplied a high signal", "Sets the latch state to 1 when it receives a high signal", "Modifies the latch behavior so it only toggles between states 0 and 1, ignoring the S and R inputs"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What is the process for writing to a memory bank?",
+                "choice": ["Supply a high signal through the back of the component and supply the memory location through the address inputs", "Supply a high or low signal through the back of the component and set the memory addresses to zero", "Supply a low signal to the clock input and the value to be written through the back of the component", "Memory banks can only be written to manually"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What logical notation do electrical components utilize?",
+                "choice": ["Numerical", "Decimal", "Alphanumerical", "Hexadecimal"],
+                "hint": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What numeral system do electrical components utilize?",
+                "choice": ["Base 8", "Base 10", "Base 15", "Base 16"],
+                "hint": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What delay, if any, do wires produce when transmitting signals?",
+                "choice": ["1 millisecond", "10 milliseconds", "100 milliseconds", "None"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What is the calculation delay, or circuit step, for all electrical components?",
+                "choice": ["10 milliseconds", "20 milliseconds", "30 milliseconds", "It is variable"],
+                "hint": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What is the maximum detection range for the motion detector, excluding the block face it resides in?",
+                "choice": ["4 blocks", "8 blocks", "12 blocks", "16 blocks"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What is the functional difference between the pull piston and strict pull piston?",
+                "choice": ["Strict pull pistons will only retract when the its set pull count requirements are met", "Pull pistons have a higher pull count than strict pull pistons", "Strict pull pistons will only extend when the its set pull count requirements are met", "Strict pull pistons have a higher pull count than pull pistons"],
+                "hint": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What are the correct logic rules for the OR gate?",
+                "choice": ["If either or both inputs are true, the output will be true", "If both inputs are true, the output will be true", "If either input is true, but not both, the output will be true", "If both inputs are true, the output will be true"],
+                "hint": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What are the correct logic rules for the XOR gate?",
+                "choice": ["If both inputs are true, the output will be true", "If either input is true, but not both, the output will be true", "If neither input is true, the output will be true", "If either or both inputs are true, the output will be true"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What are the correct logic rules for the NOT gate?",
+                "choice": ["If the input is true, the output will be false", "If the input is true, the output will be true", "If the input is false, the output will be true", "Both A and C"],
+                "hint": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What are the correct logic rules for the AND gate?",
+                "choice": ["If both inputs are true, the output will be true", "If either or both inputs are true, the output will be true", "If either input is false, but not both, the output will be true", "If neither input is true, the output will be true"],
+                "hint": "undefined",
+                "answer": "a",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What are the correct logic rules for the NOR gate?",
+                "choice": ["If both inputs are true, the output will be true", "If either input or both inputs are true, the output will be false", "If neither input is false, the output will be true", "If either input is true, but not both, the output will be true"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What are the correct logic rules for the NAND gate?",
+                "choice": ["If either input is true, but not both, the output will be false", "If both inputs are false, the output will be true", "If either or both inputs are false, the output will be true", "If neither input is false, the output will be true"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Two chained (no wire inbetween), non-adjustable delay gates provide a pulse duartion for how long?",
+                "choice": ["250 milliseconds", "500 milliseconds", "1000 milliseconds", "2000 milliseconds"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Three chained (no wire inbetween), non-adjustable delay gates provide a pulse duartion for how long?",
+                "choice": ["1500 milliseconds", "3000 milliseconds", "5000 milliseconds", "8000 milliseconds"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Two unchained (one wire between each gate), non-adjustable delay gates provide a pulse duration for how long?",
+                "choice": ["200 milliseconds", "400 milliseconds", "600 milliseconds", "800 milliseconds"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Three unchained (one wire between each gate), non-adjustable delay gates provide a pulse duration for how long?",
+                "choice": ["300 milliseconds", "600 milliseconds", "900 milliseconds", "1200 milliseconds"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Five unchained (one wire between each gate), non-adjustable delay gates provide a pulse duration for how long?",
+                "choice": ["400 milliseconds", "700 milliseconds", "1000 milliseconds", "1300 milliseconds"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "Eight unchained (one wire between each gate), non-adjustable delay gates provide a pulse duration for how long?",
+                "choice": ["1200 milliseconds", "1600 milliseconds", "2000 milliseconds", "2400 milliseconds"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What is most true of colored wires?",
+                "choice": ["Colored wires will connect to other colored wires, but not regular wires", "Colored wires only connect to other wires with the same color", "Colored wires transmit electrical signals faster than regular wires", "Colored wires have no functional purpose and are simply for aesthetics"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What is the functional difference between the push piston and pull piston?",
+                "choice": ["Pull pistons can only push blocks, while push pistons can push and pull blocks", "Push pistons have a higher push count, but pull pistons can extend further", "Push pistons can only push blocks, while pull pistons can push and pull blocks", "Pull pistons have a higher pull count, but push pistons can extend further"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "What is the functional difference between the wooden and stone pressure plates?",
+                "choice": ["Wooden pressure plates can only detect pickables, while stone pressure plates can only detect entities", "Wooden pressure plates can only detect entities, while stone pressure plates can detect both entities and pickables", "Wooden pressure plates can only detect entities, while stone pressure plates can only detect pickables", "None of the above"],
+                "hint": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "If the world time is set to Dawn, what voltage signal will the photodiode output?",
+                "choice": ["0.3 volts", "0.6 volts", "0.9 volts", "1.2 volts"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "If the world time is set to Dawn, what hexadecimal value will the photodiode output?",
+                "choice": ["8", "9", "A", "B"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "If the world time is set to Noon, what voltage signal will the photodiode output?",
+                "choice": ["1.2 volts", "1.3 volts", "1.4 volts", "1.5 volts"],
+                "hint": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "If the world time is set to Noon, what hexadecimal value will the photodiode output?",
+                "choice": ["C", "D", "E", "F"],
+                "hint": "undefined",
+                "answer": "d",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "If the world time is set to Dusk, what voltage signal will the photodiode output?",
+                "choice": ["0.2 volts", "0.5 volts", "0.8 volts", "1.1 volts"],
+                "hint": "undefined",
+                "answer": "c",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "If the world time is set to Dusk, what hexadecimal value will the photodiode output?",
+                "choice": ["7", "8", "9", "A"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "If the world time is set to Midnight, what voltage signal will the photodiode output?",
+                "choice": ["0.1 volts", "0.2 volts", "0.3 volts", "0.4 volts"],
+                "hint": "undefined",
+                "answer": "b",
+                "type": "multipleChoice"
+            },
+            {
+                "question": "If the world time is set to Midnight, what hexadecimal value will the photodiode output?",
+                "choice": ["1", "2", "3", "4"],
+                "hint": "undefined",
+                "answer": "c",
                 "type": "multipleChoice"
             }
         ],
         "difficulty_4": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -1880,7 +2174,7 @@
         ],
         "difficulty_5": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",
@@ -1889,7 +2183,7 @@
         ],
         "difficulty_6": [
             {
-                "question": "This is a question.",
+                "question": "",
                 "choice": ["ChoiceA", "ChoiceB", "ChoiceC", "ChoiceD"],
                 "hint": "undefined",
                 "answer": "a",

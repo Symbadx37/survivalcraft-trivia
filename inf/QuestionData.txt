@@ -3,7 +3,7 @@
 2. Game Mechanics: 00 + 07 + 15 + 03 + 00 + 01.... = 26 questions
 3. Crafting Recipes: 05 + 13 + 08 + 03 + 02 + 01.. = 32 questions
 4. Updates History: 10 + 19 + 26 + 25 + 14 + 06... = 100 questions
-5. Electrics: 15 + 34 + 00 + 00 + 00 + 00......... = 49 questions
+5. Electrics: 15 + 34 + 43 + 00 + 00 + 00......... = 92 questions
 
 # GENERAL KNOWLEDGE
 ## Very Easy (10)
@@ -781,7 +781,7 @@ What type of hexadecimal value is F designated as?
 What type of hexadecimal value is B designated as?
 - Low, Medium, High, None of the above (C)
 
-## Medium ()
+## Medium (43)
 How many unique 4-bit values can a memory bank store?
 - 64, 128, 256, 512 (C) 
 How many unique sound generator sounds are there?
@@ -789,7 +789,7 @@ How many unique sound generator sounds are there?
 How many unique sounds can the Bell instrument produce?
 - 27, 32, 49, 56 (C)
 How many unique sounds can the Organ instrument produce?
-- 28, 37, 44, 53 (B)
+- 25, 37, 44, 53 (B)
 How many unique sounds can the Ping instrument produce?
 - 27, 32, 49, 56 (C)
 How many unique sounds can the String instrument produce?
@@ -799,7 +799,7 @@ How many unique sounds can the Trumpet instrument produce?
 How many unique sounds can the Voice instrument produce?
 - 35, 49, 52, 61 (B)
 How many unique sounds can the Piano instrument produce?
-- 35, 49, 52, 61 (B)
+- 38, 49, 52, 65 (B)
 How many unique sounds can the Piano Sustain instrument produce?
 - 27, 32, 49, 56 (C)
 How many unique sounds can the Drum instrument produce?
@@ -827,40 +827,40 @@ What is the calculation delay, or circuit step, for all electrical components?
 What is the maximum detection range for the motion detector, excluding the block face it resides in?
 - 4 blocks, 8 blocks, 12 blocks, 16 blocks (B)
 What is the functional difference between the pull piston and strict pull piston?
-- Strict pull pistons will only retract when the its set pull count requirements are met.
-- Pull pistons have a higher pull count than strict pull pistons.
-- Strict pull pistons will only extend when the its set pull count requirements are met.
-- Strict pull pistons have a higher pull count than pull pistons. (A)
+- Strict pull pistons will only retract when the its set pull count requirements are met
+- Pull pistons have a higher pull count than strict pull pistons
+- Strict pull pistons will only extend when the its set pull count requirements are met
+- Strict pull pistons have a higher pull count than pull pistons (A)
 What are the correct logic rules for the OR gate?
-- If either or both inputs are true, the output will be true.
-- If both inputs are true, the output will be true.
-- If either input is true, but not both, the output will be true.
-- If both inputs are true, the output will be true. (A)
+- If either or both inputs are true, the output will be true
+- If both inputs are true, the output will be true
+- If either input is true, but not both, the output will be true
+- If both inputs are true, the output will be true (A)
 What are the correct logic rules for the XOR gate?
-- If both inputs are true, the output will be true.
-- If either input is true, but not both, the output will be true.
-- If neither input is true, the output will be true.
-- If either or both inputs are true, the output will be true. (B)
+- If both inputs are true, the output will be true
+- If either input is true, but not both, the output will be true
+- If neither input is true, the output will be true
+- If either or both inputs are true, the output will be true (B)
 What are the correct logic rules for the NOT gate?
-- If the input is true, the output will be false.
-- If the input is true, the output will be true.
-- If the input is false, the output will be true.
-- Both A and C. (D)
+- If the input is true, the output will be false
+- If the input is true, the output will be true
+- If the input is false, the output will be true
+- Both A and C (D)
 What are the correct logic rules for the AND gate?
-- If both inputs are true, the output will be true.
-- If either or both inputs are true, the output will be true.
-- If either input is false, but not both, the output will be true.
-- If neither input is true, the output will be true. (A)
+- If both inputs are true, the output will be true
+- If either or both inputs are true, the output will be true
+- If either input is false, but not both, the output will be true
+- If neither input is true, the output will be true (A)
 What are the correct logic rules for the NOR gate?
-- If both inputs are true, the output will be true.
-- If either input or both inputs are true, the output will be false.
-- If neither input is false, the output will be true.
-- If either input is true, but not both, the output will be true. (B)
+- If both inputs are true, the output will be true
+- If either input or both inputs are true, the output will be false
+- If neither input is false, the output will be true
+- If either input is true, but not both, the output will be true (B)
 What are the correct logic rules for the NAND gate?
-- If either input is true, but not both, the output will be false.
-- If both inputs are false, the output will be true.
-- If either or both inputs are false, the output will be true.
-- If neither input is false, the output will be true. (B)
+- If either input is true, but not both, the output will be false
+- If both inputs are false, the output will be true
+- If either or both inputs are false, the output will be true
+- If neither input is false, the output will be true (B)
 Two chained (no wire inbetween), non-adjustable delay gates provide a pulse duartion for how long?
 - 250 milliseconds, 500 milliseconds, 1000 milliseconds, 2000 milliseconds (B)
 Three chained (no wire inbetween), non-adjustable delay gates provide a pulse duartion for how long?
@@ -874,20 +874,20 @@ Five unchained (one wire between each gate), non-adjustable delay gates provide 
 Eight unchained (one wire between each gate), non-adjustable delay gates provide a pulse duration for how long?
 - 1200 milliseconds, 1600 milliseconds, 2000 milliseconds, 2400 milliseconds (B)
 What is most true of colored wires?
-- Colored wires will connect to other colored wires, but not regular wires.
-- Colored wires only connect to other wires with the same color.
-- Colored wires transmit electrical signals faster than regular wires.
-- Colored wires have no functional purpose and are simply for aesthetics. (B)
+- Colored wires will connect to other colored wires, but not regular wires
+- Colored wires only connect to other wires with the same color
+- Colored wires transmit electrical signals faster than regular wires
+- Colored wires have no functional purpose and are simply for aesthetics (B)
 What is the functional difference between the push piston and pull piston?
-- Pull pistons can only push blocks, while push pistons can push and pull blocks.
-- Push pistons have a higher push count, but pull pistons can extend further.
-- Push pistons can only push blocks, while pull pistons can push and pull blocks.
-- Pull pistons have a higher pull count, but push pistons can extend further. (C)
+- Pull pistons can only push blocks, while push pistons can push and pull blocks
+- Push pistons have a higher push count, but pull pistons can extend further
+- Push pistons can only push blocks, while pull pistons can push and pull blocks
+- Pull pistons have a higher pull count, but push pistons can extend further (C)
 What is the functional difference between the wooden and stone pressure plates?
-- Wooden pressure plates can only detect pickables, while stone pressure plates can only detect entities.
-- Wooden pressure plates can only detect entities, while stone pressure plates can detect both entities and pickables.
-- Wooden pressure plates can only detect entities, while stone pressure plates can only detect pickables.
-- None of the above. (D)
+- Wooden pressure plates can only detect pickables, while stone pressure plates can only detect entities
+- Wooden pressure plates can only detect entities, while stone pressure plates can detect both entities and pickables
+- Wooden pressure plates can only detect entities, while stone pressure plates can only detect pickables
+- None of the above (D)
 If the world time is set to Dawn, what voltage signal will the photodiode output?
 - 0.3 volts, 0.6 volts, 0.9 volts, 1.2 volts (C)
 If the world time is set to Dawn, what hexadecimal value will the photodiode output?
