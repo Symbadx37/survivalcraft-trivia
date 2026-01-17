@@ -200,12 +200,12 @@ function startQuiz() {
 
 function parseQuizData() {
     let choiceIndex = 0, lookupIndex = 1;
+    const choiceOrder = [];
     randomizeChoiceOrder();
 
     // Generate random choice order
     function randomizeChoiceOrder() {
         let orderIndex = 0;
-        const choiceOrder = [];
         while (orderIndex < 4) {
             const num = Math.floor(Math.random() * 4);
             if (choiceOrder[orderIndex] == "") {
@@ -220,63 +220,50 @@ function parseQuizData() {
         sessionData.quizIndexes.choiceOrder = choiceOrder;
         updateSession("save");
     }
-    
+
+    // Lookup question choice data
+    let variableChoiceIndex;
+    let choices = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"];
+    const choiceLength = Object.values(choices).length
+    for (let choiceIndex = 0; choiceIndex < choiceLength; choiceIndex++) {
+        if (/^\b(?:both|Both)\b\s[a-dA-D]\s\b(?:and|And)\b\s[a-dA-D]$/.test(choices[choiceIndex])) {
+            variableChoiceIndex = choices.indexOf(choices[choiceIndex]);
+            parseVariableChoices();
+            break;
+        }
+    }
+
+    function parseVariableChoices() {
+        // Parse choice slices
+        let sliceIndex = 0;
+        const choiceSlicePostions = [5, 11], choiceSlices = []; 
+        while (sliceIndex < choiceSlicePostions.length) {
+            let index, answer = choices[variableChoiceIndex].charAt(choiceSlicePostions[sliceIndex]);
+            switch(answer) {
+                case "A": answer = 0; break; case "B": answer = 1; break; case "C": answer = 2; break; case "D": answer = 3; break;
+            }
+            index = choiceOrder.indexOf(answer);
+            switch(index) {
+                case 0: answer = "A"; break; case 1: answer = "B"; break; case 2: answer = "C"; break; case 3: answer = "D"; break;
+            }
+            choiceSlices.push(answer);
+            sliceIndex++;
+        }
+
+        // Update choice array
+        if (choiceSlices[0].charCodeAt(0) < choiceSlices[1].charCodeAt(0)) {
+            choices[variableChoiceIndex] = "Both " + choiceSlices[0] + " and " + choiceSlices[1];
+        } else {
+            choices[variableChoiceIndex] = "Both " + choiceSlices[1] + " and " + choiceSlices[0];
+        }
+    }
+
     // Set node text values
     while (lookupIndex <= Object.values(sessionData["pageElements"]["quiz"]).length) {
         if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["group"] == "answerGroup") {
-            // Check for variable choice strings
-            let variableChoiceIndex, answer_1, answer_2;
-            const choices = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"]
-            const choiceLength = Object.values(choices).length
-            for (let index = 0; index < choiceLength; index++) {
-                if (/^\b(?:both|Both)\b\s[a-dA-D]\s\b(?:and|And)\b\s[a-dA-D]$/.test(choices[index])) {
-                    variableChoiceIndex = choices.indexOf(choices[index]);
-                    console.log("Variable Choice Found: ", variableChoiceIndex);
-
-                    //NOTE: HARDCODED INDEXES
-                    // Slice variable answer values
-                    answer_1 = (choices[index].charAt(5));
-                    answer_2 = (choices[index].charAt(11));
-
-                    // Convert answer values to numeric index
-                    switch(answer_1) {
-                        case "A": answer_1 = 0; break;
-                        case "B": answer_1 = 1; break;
-                        case "C": answer_1 = 2; break;
-                        case "D": answer_1 = 3; break;
-                    }
-                    switch(answer_2) {
-                        case "A": answer_2 = 0; break;
-                        case "B": answer_2 = 1; break;
-                        case "C": answer_2 = 2; break;
-                        case "D": answer_2 = 3; break;
-                    }
-
-                    // Get randomized choice index
-                    let index_1 = choiceOrder.indexOf(answer_1);
-                    let index_2 = choiceOrder.indexOf(answer_2);
-
-                    // Convert numeric index back to alphanumeric values
-                    switch(index_1) {
-                        case 0: answer_1 = "A"; break;
-                        case 1: answer_1 = "B"; break;
-                        case 2: answer_1 = "C"; break;
-                        case 3: answer_1 = "D"; break;
-                    }
-                    switch(index_2) {
-                        case 0: answer_1 = "A"; break;
-                        case 1: answer_1 = "B"; break;
-                        case 2: answer_1 = "C"; break;
-                        case 3: answer_1 = "D"; break;
-                    }
-                    sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = "Both " + answer_1 + "and " + answer_2;
-                    break;
-                } else {
-                    sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["choice"][sessionData.quizIndexes.choiceOrder[choiceIndex]];
-                }
-            }
+            sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = choices[sessionData.quizIndexes.choiceOrder[choiceIndex]];
             updateSession("load", "quiz", "load_partial", [lookupIndex]);
-            choiceIndex++;
+            choiceIndex++;   
         }
         else if (sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["element"]["id"] == "quiz_questionText") {
             sessionData["pageElements"]["quiz"]["node_" + lookupIndex]["value"]["text"] = questionData["category_" + sessionData.quizIndexes.categoryIndex]["difficulty_" + sessionData.quizIndexes.difficultyIndex][sessionData.quizIndexes.questionIndex - 1]["question"]; 

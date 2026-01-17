@@ -1588,7 +1588,7 @@
                 "question": "What surfaces can lightbulbs be placed on?",
                 "choice": ["Only on walls", "Walls and floors", "Only on floors", "Walls, ceilings, and floors"],
                 "hint": "undefined",
-                "answer": "a",
+                "answer": "",
                 "type": "multipleChoice" 
             },
             {
